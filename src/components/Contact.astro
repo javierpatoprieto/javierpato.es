@@ -1,0 +1,30 @@
+---
+const year = 2026;
+---
+<section id="contacto" class="section contact">
+  <div class="wrap">
+  <div class="contact__card" data-reveal>
+    <span class="contact__tag">¿Colaboramos?</span>
+    <h2 class="contact__title">¿Empezamos<br />tu proyecto?</h2>
+    <a class="contact__email" href="mailto:javier@javierpato.es?subject=Proyecto%20—%20Lanzamiento%20299€">javier@javierpato.es</a>
+    <div class="contact__row">
+      <a class="btn btn--black" href="https://wa.me/34669385624">WhatsApp →</a>
+      <a class="btn btn--ghost" href="https://x.com/ArtiMindArt" target="_blank" rel="noopener">X · ArtiMindArt →</a>
+      <a class="btn btn--ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn →</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<style>
+  .contact__card { background: var(--panel); color: var(--panel-ink); border-radius: var(--radius-lg); padding: clamp(36px, 6vw, 80px); text-align: center; }
+  .contact__tag { font-family: var(--font-display); font-weight: 700; background: rgba(255,255,255,0.15); padding: 6px 16px; border-radius: var(--radius-pill); font-size: 0.9rem; }
+  .contact__title { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.6rem, 8vw, 6rem); color: #fff; margin: var(--s-4) 0; line-height: 0.95; }
+  .contact__email { display: inline-block; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.3rem, 4vw, 2.4rem); color: var(--yellow); border-bottom: 3px solid var(--yellow); padding-bottom: 4px; }
+  .contact__row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: var(--s-6); }
+  .contact__row .btn--ghost { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.25); color: #fff; }
+  .contact__row .btn--ghost:hover { background: rgba(255,255,255,0.22); }
+  .footer { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding-top: var(--s-6); padding-bottom: var(--s-5); }
+  .footer__logo { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
+  .footer__meta { font-family: var(--font-body); font-size: 0.85rem; color: var(--ink-mute); }
+</style>

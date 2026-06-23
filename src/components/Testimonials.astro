@@ -1,0 +1,42 @@
+---
+const quotes = [
+  { q: 'Entendió nuestro negocio a la primera y nos dio una imagen que por fin nos representa. Las reservas subieron desde la primera semana.', a: 'Centro Infantil Periquete', r: 'Cantabria', i: 'CP' },
+  { q: 'Rápido, claro y con un gusto exquisito. La web nos cambió la primera impresión — ahora da gusto pasarla.', a: 'Fisio Mamá', r: 'Santander', i: 'FM' },
+  { q: 'Una web técnica que por fin se entiende y carga rápido. Justo lo que necesitábamos, sin marear.', a: 'Click & Cargo', r: 'Online', i: 'CC' },
+];
+---
+<section class="section testi">
+  <div class="wrap">
+    <h2 class="testi__head" data-reveal>Lo que dicen<br />mis clientes</h2>
+    <div class="testi__grid" data-stagger>
+      {quotes.map((t, idx) => (
+        <blockquote class={`tcard tcard--${['warm', 'stone', 'deep'][idx % 3]}`} data-reveal>
+          <span class="tcard__mark" aria-hidden="true">“</span>
+          <p class="tcard__q">{t.q}</p>
+          <footer class="tcard__by">
+            <span class="tcard__av" aria-hidden="true">{t.i}</span>
+            <span class="tcard__who"><span class="tcard__name">{t.a}</span><span class="tcard__r">{t.r}</span></span>
+          </footer>
+        </blockquote>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testi__head { font-size: var(--fs-h2); font-weight: 700; margin-bottom: var(--s-6); }
+  .testi__grid { display: grid; grid-template-columns: 1fr; gap: clamp(16px,2vw,24px); }
+  .tcard { position: relative; border-radius: var(--radius); padding: clamp(26px,3vw,40px) clamp(24px,3vw,36px) clamp(22px,2.6vw,30px); overflow: hidden; transition: transform var(--dur) var(--ease); display: flex; flex-direction: column; }
+  .tcard:hover { transform: translateY(-6px); }
+  .tcard--warm { background: var(--t-warm); color: var(--t-warm-ink); }
+  .tcard--stone { background: var(--t-stone); color: var(--t-stone-ink); }
+  .tcard--deep { background: var(--t-deep); color: var(--t-deep-ink); }
+  .tcard__mark { position: absolute; top: -0.1em; right: 0.2em; font-family: var(--font-display); font-weight: 700; font-size: 8rem; line-height: 1; opacity: 0.16; }
+  .tcard__q { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.1rem,1.7vw,1.35rem); line-height: 1.3; position: relative; flex: 1; }
+  .tcard__by { display: flex; align-items: center; gap: 12px; margin-top: var(--s-5); }
+  .tcard__av { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 700; display: grid; place-items: center; font-size: 0.95rem; flex: none; }
+  .tcard__who { display: flex; flex-direction: column; }
+  .tcard__name { font-family: var(--font-display); font-weight: 700; }
+  .tcard__r { font-size: 0.82rem; opacity: 0.8; }
+  @media (min-width: 880px) { .testi__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

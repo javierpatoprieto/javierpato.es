@@ -1,0 +1,148 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact.astro';
+---
+<Layout
+  title="Contacto — Empieza tu proyecto en Cantabria | Javier Pato"
+  description="Cuéntame tu proyecto en 1 minuto y te respondo el mismo día. Diseño web, marca, fotografía y vídeo en Cantabria. Desde 299€."
+>
+  <section class="section ci">
+    <div class="wrap ci__grid">
+      <div class="ci__intro">
+        <span class="ci__k" data-reveal>Hablemos sin rodeos</span>
+        <h1 class="ci__h" data-reveal>Cuéntame tu<br /><span class="ci__a">proyecto.</span></h1>
+        <p class="ci__l" data-reveal>Rellena esto en 1 minuto. Con tus respuestas voy preparado a la llamada o al WhatsApp — nada de formularios eternos ni presupuestos de 12 páginas. Te respondo <strong>el mismo día</strong>.</p>
+        <ul class="ci__pts" data-reveal>
+          <li>Respuesta el mismo día</li>
+          <li>Sin compromiso ni venta agresiva</li>
+          <li>Te digo qué necesitas de verdad</li>
+        </ul>
+      </div>
+
+      <form class="qz" id="qz" data-reveal>
+        <div class="qz__field">
+          <label for="q-serv">¿Qué necesitas?</label>
+          <select id="q-serv" required>
+            <option value="" disabled selected>Elige una opción</option>
+            <option>Diseño web</option>
+            <option>Branding / identidad</option>
+            <option>Diseño gráfico</option>
+            <option>Fotografía de producto</option>
+            <option>Vídeo corporativo</option>
+            <option>Aún no lo tengo claro</option>
+          </select>
+        </div>
+        <div class="qz__field">
+          <label for="q-neg">¿Qué tipo de negocio tienes?</label>
+          <input id="q-neg" type="text" placeholder="Ej: restaurante, clínica, tienda…" required />
+        </div>
+        <div class="qz__field">
+          <span class="qz__lbl">¿Tienes web ahora?</span>
+          <div class="qz__radios">
+            <label><input type="radio" name="web" value="No tengo" required /> No tengo</label>
+            <label><input type="radio" name="web" value="Sí, pero da pena" /> Sí, pero da pena</label>
+            <label><input type="radio" name="web" value="Sí, y va bien" /> Sí, y va bien</label>
+          </div>
+        </div>
+        <div class="qz__row">
+          <div class="qz__field">
+            <label for="q-pres">Presupuesto aproximado</label>
+            <select id="q-pres" required>
+              <option value="" disabled selected>Elige</option>
+              <option>Menos de 500€</option>
+              <option>500 – 1.000€</option>
+              <option>1.000 – 2.000€</option>
+              <option>Más de 2.000€</option>
+              <option>No lo sé aún</option>
+            </select>
+          </div>
+          <div class="qz__field">
+            <label for="q-cuando">¿Para cuándo?</label>
+            <select id="q-cuando" required>
+              <option value="" disabled selected>Elige</option>
+              <option>Cuanto antes</option>
+              <option>Este mes</option>
+              <option>En 1–3 meses</option>
+              <option>Sin prisa, explorando</option>
+            </select>
+          </div>
+        </div>
+        <div class="qz__row">
+          <div class="qz__field">
+            <label for="q-nombre">Tu nombre</label>
+            <input id="q-nombre" type="text" placeholder="¿Cómo te llamas?" required />
+          </div>
+          <div class="qz__field">
+            <label for="q-cont">Teléfono o email</label>
+            <input id="q-cont" type="text" placeholder="Para responderte" required />
+          </div>
+        </div>
+        <button type="submit" class="qz__send">Enviar por WhatsApp →</button>
+        <p class="qz__alt">¿Prefieres email? <a href="#" id="qz-mail" class="tlink">Enviar por correo</a></p>
+        <p class="qz__fine">Al enviar se abre WhatsApp con tu mensaje listo. Tú solo le das a enviar.</p>
+      </form>
+    </div>
+  </section>
+
+  <Contact />
+
+  <script is:inline>
+    (function () {
+      const PHONE = '34669385624';
+      const form = document.getElementById('qz');
+      if (!form) return;
+      function build() {
+        const v = (id) => (document.getElementById(id) || {}).value || '';
+        const web = (document.querySelector('input[name="web"]:checked') || {}).value || '';
+        return [
+          'Hola Javier, te escribo desde la web 👋',
+          '',
+          '• Necesito: ' + v('q-serv'),
+          '• Negocio: ' + v('q-neg'),
+          '• Web actual: ' + web,
+          '• Presupuesto: ' + v('q-pres'),
+          '• Plazo: ' + v('q-cuando'),
+          '• Soy: ' + v('q-nombre'),
+          '• Contacto: ' + v('q-cont'),
+        ].join('\n');
+      }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(build()), '_blank');
+      });
+      const mail = document.getElementById('qz-mail');
+      if (mail) mail.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (!form.reportValidity()) return;
+        window.location.href = 'mailto:javier@javierpato.es?subject=' + encodeURIComponent('Proyecto desde la web') + '&body=' + encodeURIComponent(build());
+      });
+    })();
+  </script>
+
+  <style>
+    .ci { padding-top: clamp(36px, 6vw, 72px); }
+    .ci__grid { display: grid; grid-template-columns: 1fr; gap: clamp(28px,4vw,56px); align-items: start; }
+    .ci__k { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .ci__h { font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 700; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .ci__a { color: var(--accent-ink); }
+    .ci__l { font-size: var(--fs-lead); color: var(--ink-soft); line-height: 1.45; max-width: 46ch; }
+    .ci__l strong { color: var(--ink); }
+    .ci__pts { list-style: none; display: grid; gap: 10px; margin-top: var(--s-5); }
+    .ci__pts li { display: flex; align-items: center; color: var(--ink); }
+    .ci__pts li::before { content: ''; width: 16px; height: 2px; background: var(--accent); margin-right: 12px; border-radius: 2px; }
+
+    .qz { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(24px,3vw,40px); display: grid; gap: var(--s-4); }
+    .qz__field { display: grid; gap: 8px; }
+    .qz__row { display: grid; grid-template-columns: 1fr; gap: var(--s-4); }
+    .qz label, .qz__lbl { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; }
+    .qz input[type="text"], .qz select { width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--ink); font: inherit; }
+    .qz input[type="text"]:focus, .qz select:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+    .qz__radios { display: grid; gap: 8px; }
+    .qz__radios label { display: flex; align-items: center; gap: 8px; font-weight: 400; font-family: var(--font-body); color: var(--ink-soft); cursor: pointer; }
+    .qz__send { background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; padding: 15px; border-radius: var(--radius-pill); transition: transform var(--dur) var(--ease), background var(--dur) var(--ease-soft); }
+    .qz__send:hover { transform: translateY(-2px); background: var(--accent-ink); }
+    .qz__alt { font-size: 0.9rem; color: var(--ink-soft); text-align: center; }
+    .qz__fine { font-size: 0.78rem; color: var(--ink-mute); text-align: center; }
+    @media (min-width: 880px) { .ci__grid { grid-template-columns: 0.85fr 1.15fr; } .qz__row { grid-template-columns: 1fr 1fr; } }
+  </style>
+</Layout>

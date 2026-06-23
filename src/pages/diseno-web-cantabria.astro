@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqs = [
+  { q: '¿Cuánto cuesta una web en Cantabria?', a: 'Mi web de lanzamiento empieza en 299€ (una página, a medida, entregada en 2 semanas). Webs más completas, multipágina o con tienda, se presupuestan aparte — pero siempre con precio de estudio, no de agencia.' },
+  { q: '¿Cuánto tardas en entregar la web?', a: 'La web de lanzamiento, 2 semanas. Proyectos de marca + web completa, entre 3 y 5 semanas. Rápido no significa plantilla: uso IA para lo repetitivo y pongo el criterio yo.' },
+  { q: '¿Trabajas con negocios de toda Cantabria?', a: 'Sí. Santander, Torrelavega, Castro, Laredo, los valles… donde estés. Soy de aquí y entiendo a tu cliente local.' },
+  { q: '¿La web aparecerá en Google?', a: 'Sí. Toda web sale optimizada para SEO local desde el día uno: velocidad, estructura, datos de tu negocio y las palabras por las que te buscan en Cantabria.' },
+  { q: '¿Qué necesitas de mí para empezar?', a: 'Una conversación de 20 minutos y lo que tengas (logo, fotos, textos). Si no tienes, lo resolvemos — incluso generamos imágenes con dirección de arte.' },
+];
+const jsonld = {
+  '@context': 'https://schema.org', '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const stats = [['299€', 'Desde'], ['2 sem', 'Entrega'], ['100%', 'A medida'], ['SEO', 'Incluido']];
+const props = [
+  { t: 'Hecha para vender', d: 'No decoro: diseño para que tu web convierta visitas en clientes. Cada bloque tiene un porqué.', c: 'warm', e: '💸' },
+  { t: 'SEO local de serie', d: 'Optimizada para que te encuentren en Cantabria cuando buscan lo que ofreces. Rápida y limpia.', c: 'stone', e: '📍' },
+  { t: 'Criterio de estudio', d: 'Tipografía, color y espacio con intención. La diferencia entre parecer serio y parecer plantilla.', c: 'warm', e: '✦' },
+  { t: 'Sin letra pequeña', d: 'Precio cerrado, plazo cerrado. Sabes qué pagas y cuándo lo tienes. Sin sorpresas.', c: 'stone', e: '🤝' },
+];
+const steps = [
+  ['Hablamos', 'Una charla de 20 min. Entiendo tu negocio, tu cliente y a qué quieres parecerte.'],
+  ['Diseño', 'Te enseño una dirección clara antes de tocar el detalle. Apruebas y avanzo.'],
+  ['Lanzamos', 'Publico, te enseño a usarla y queda lista para vender. En semanas, no en meses.'],
+];
+const planes = [
+  { n: 'One-page', p: '299€', t: '3 días', pop: false },
+  { n: 'Básica', p: '549€', t: '1 semana', pop: true },
+  { n: 'Pro', p: '699€', t: '1 semana', pop: false },
+  { n: 'Ecommerce', p: 'desde 999€', t: '2–3 sem', pop: false },
+];
+---
+<Layout
+  title="Diseño web en Cantabria desde 299€ | Javier Pato"
+  description="¿Buscas diseño web en Cantabria? Webs a medida que venden, con SEO local y entrega rápida. Desde 299€. Para negocios de Santander, Torrelavega y toda la región."
+  jsonld={jsonld}
+>
+  <section class="section lp-hero">
+    <div class="wrap lp-hero__grid">
+      <div class="lp-hero__text">
+        <span class="lp-kicker" data-reveal>Diseño web · Cantabria</span>
+        <h1 class="lp-h1" data-reveal>Diseño web en Cantabria<br />para negocios <span class="lp-accent">hartos de su web.</span></h1>
+        <p class="lp-lead" data-reveal>Si tu web parece de 2012, te está costando clientes. Diseño webs a medida que cargan rápido, salen en Google y hacen que tu negocio parezca lo que vale — desde <strong>299€</strong>.</p>
+        <div class="lp-cta" data-reveal>
+          <a href="/contacto" class="btn btn--green">Pide presupuesto →</a>
+          <a href="/proyectos" class="btn btn--ghost">Ver trabajos</a>
+        </div>
+      </div>
+      <div class="lp-mock" data-reveal aria-hidden="true">
+        <div class="lp-mock__bar"><i></i><i></i><i></i><em>tunegocio.es</em></div>
+        <div class="lp-mock__screen">
+          <div class="lp-mock__nav"><b>Tu Negocio</b><span></span><span></span><u></u></div>
+          <div class="lp-mock__hero">
+            <div class="lp-mock__line lg"></div>
+            <div class="lp-mock__line md"></div>
+            <div class="lp-mock__pill"></div>
+          </div>
+          <div class="lp-mock__row"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="lp-stats" data-stagger>
+        {stats.map(([n, l]) => (<div class="lp-stat" data-reveal><span class="lp-stat__n">{n}</span><span class="lp-stat__l">{l}</span></div>))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>Por qué tu web<br />debería ser mía</h2>
+      <div class="lp-grid" data-stagger>
+        {props.map((p, i) => (
+          <div class={`lp-card lp-card--${p.c}`} data-reveal>
+            <span class="lp-num">0{i + 1}</span>
+            <h3 class="lp-card-t">{p.t}</h3>
+            <p class="lp-card-d">{p.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section lp-process">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>De la charla<br />a tu web, en 3 pasos</h2>
+      <div class="lp-steps" data-stagger>
+        {steps.map(([t, d], i) => (
+          <div class="lp-step" data-reveal>
+            <span class="lp-step-n">{i + 1}</span>
+            <div><h3 class="lp-card-t">{t}</h3><p class="lp-card-d">{d}</p></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section lp-precios">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>Precios claros,<br />sin sorpresas</h2>
+      <div class="lp-planes" data-stagger>
+        {planes.map((p) => (
+          <a href="/precios" class={`lp-plan ${p.pop ? 'is-pop' : ''}`} data-reveal>
+            {p.pop && <span class="lp-plan__b">El más elegido</span>}
+            <span class="lp-plan__n">{p.n}</span>
+            <span class="lp-plan__p">{p.p}</span>
+            <span class="lp-plan__t">Entrega en {p.t}</span>
+            <span class="lp-plan__go">Ver qué incluye →</span>
+          </a>
+        ))}
+      </div>
+      <p class="lp-precios__note" data-reveal><a href="/precios" class="tlink">Configura tu web y ve el total al momento →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>Preguntas que<br />me hacen siempre</h2>
+      <div class="lp-faq" data-stagger>
+        {faqs.map((f) => (
+          <details class="lp-q" data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .lp-hero { padding-top: clamp(24px, 4vw, 56px); }
+    .lp-hero__grid { display: grid; grid-template-columns: 1fr; gap: clamp(24px,4vw,48px); align-items: center; margin-bottom: var(--s-6); }
+    .lp-kicker { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .lp-h1 { font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 800; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .lp-accent { color: var(--accent-ink); }
+    .lp-lead { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 50ch; line-height: 1.45; }
+    .lp-lead strong { color: var(--ink); }
+    .lp-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--s-5); }
+    /* Mockup de navegador */
+    .lp-mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--card); box-shadow: 0 30px 60px -30px rgba(0,0,0,0.45); transform: rotate(1.2deg); transition: transform var(--dur) var(--ease); }
+    .lp-mock:hover { transform: rotate(0deg) translateY(-4px); }
+    .lp-mock__bar { display: flex; align-items: center; gap: 7px; padding: 11px 14px; background: var(--bg-2); border-bottom: 1px solid var(--line); }
+    .lp-mock__bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+    .lp-mock__bar em { margin-left: 14px; font-style: normal; font-size: 0.78rem; color: var(--ink-mute); font-family: var(--font-body); }
+    .lp-mock__screen { padding: clamp(18px,2.4vw,30px); display: grid; gap: 18px; }
+    .lp-mock__nav { display: flex; align-items: center; gap: 14px; }
+    .lp-mock__nav b { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; }
+    .lp-mock__nav span { width: 36px; height: 7px; border-radius: 4px; background: var(--line); }
+    .lp-mock__nav u { margin-left: auto; width: 64px; height: 26px; border-radius: 100px; background: var(--accent); }
+    .lp-mock__hero { display: grid; gap: 12px; padding: clamp(10px,2vw,24px) 0; }
+    .lp-mock__line { height: 22px; border-radius: 7px; background: var(--ink); opacity: 0.85; }
+    .lp-mock__line.lg { width: 80%; height: clamp(26px,3vw,40px); }
+    .lp-mock__line.md { width: 55%; background: var(--accent); opacity: 1; }
+    .lp-mock__pill { width: 120px; height: 34px; border-radius: 100px; background: var(--ink); margin-top: 6px; }
+    .lp-mock__row { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .lp-mock__row i { aspect-ratio: 1/1; border-radius: 12px; }
+    .lp-mock__row i:nth-child(1) { background: var(--t-warm); }
+    .lp-mock__row i:nth-child(2) { background: var(--t-stone); }
+    .lp-mock__row i:nth-child(3) { background: var(--accent); }
+
+    .lp-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+    .lp-stat { background: var(--panel); color: var(--panel-ink); border-radius: var(--radius); padding: clamp(18px,2.4vw,28px); }
+    .lp-stat__n { display: block; font-family: var(--font-display); font-weight: 900; font-size: clamp(1.8rem,4vw,2.8rem); color: var(--accent); line-height: 1; }
+    .lp-stat__l { font-size: 0.85rem; opacity: 0.8; }
+
+    .lp-h2 { font-size: var(--fs-h2); font-weight: 800; margin-bottom: var(--s-6); }
+    .lp-grid { display: grid; grid-template-columns: 1fr; gap: clamp(14px,2vw,20px); }
+    .lp-card { border-radius: var(--radius); padding: clamp(24px,3vw,36px); transition: transform var(--dur) var(--ease); }
+    .lp-card:hover { transform: translateY(-5px); }
+    .lp-card--warm { background: var(--t-warm); color: var(--t-warm-ink); }
+    .lp-card--stone { background: var(--t-stone); color: var(--t-stone-ink); }
+    .lp-num { font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; opacity: 0.6; }
+
+    /* Tarjetas de precio → /precios */
+    .lp-planes { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .lp-plan { position: relative; display: flex; flex-direction: column; gap: 4px; background: var(--bg-2); border: 2px solid var(--line); border-radius: var(--radius); padding: clamp(20px,2.4vw,28px); transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease-soft); }
+    .lp-plan:hover { transform: translateY(-5px); border-color: var(--accent); }
+    .lp-plan.is-pop { border-color: var(--accent); }
+    .lp-plan__b { position: absolute; top: -11px; left: 20px; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 600; font-size: 0.72rem; padding: 3px 12px; border-radius: var(--radius-pill); }
+    .lp-plan__n { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--ink-soft); }
+    .lp-plan__p { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.8rem,3vw,2.4rem); color: var(--accent-ink); line-height: 1; }
+    .lp-plan__t { font-size: 0.82rem; color: var(--ink-soft); }
+    .lp-plan__go { margin-top: 10px; font-family: var(--font-display); font-weight: 600; font-size: 0.85rem; color: var(--ink); }
+    .lp-precios__note { margin-top: var(--s-4); }
+    .lp-card-t { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h3); margin: 12px 0 8px; color: inherit; }
+    .lp-card-d { color: inherit; opacity: 0.85; line-height: 1.5; }
+
+    .lp-steps { display: grid; gap: clamp(14px,2vw,20px); }
+    .lp-step { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(20px,2.6vw,30px); }
+    .lp-step-n { width: 48px; height: 48px; border-radius: 50%; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 800; display: grid; place-items: center; font-size: 1.3rem; }
+
+    .lp-faq { display: grid; gap: 12px; }
+    .lp-q { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(18px,2.4vw,26px); }
+    .lp-q summary { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+    .lp-q summary::after { content: '+'; color: var(--accent-ink); font-size: 1.4rem; line-height: 1; }
+    .lp-q[open] summary::after { content: '–'; }
+    .lp-q p { color: var(--ink-soft); margin-top: 14px; line-height: 1.6; max-width: 70ch; }
+
+    @media (min-width: 820px) {
+      .lp-hero__grid { grid-template-columns: 1.1fr 0.9fr; }
+      .lp-stats { grid-template-columns: repeat(4,1fr); }
+      .lp-grid { grid-template-columns: 1fr 1fr; }
+      .lp-steps { grid-template-columns: repeat(3,1fr); }
+      .lp-planes { grid-template-columns: repeat(4,1fr); }
+    }
+  </style>
+</Layout>

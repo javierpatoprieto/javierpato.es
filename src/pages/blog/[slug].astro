@@ -1,0 +1,72 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await post.render();
+const d = post.data;
+const fmt = (date: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  datePublished: d.pubDate.toISOString(),
+  keywords: d.keyword,
+  author: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
+  publisher: { '@type': 'Person', name: 'Javier Pato' },
+  mainEntityOfPage: `https://javierpato.es/blog/${post.slug}`,
+};
+---
+<Layout title={`${d.title} | Javier Pato`} description={d.description} jsonld={jsonld}>
+  <article class="section post">
+    <div class="wrap post__wrap">
+      <nav class="post__bc" aria-label="Migas"><a href="/blog">Blog</a> <span aria-hidden="true">/</span> <span>{d.tags[0] ?? 'Artículo'}</span></nav>
+      <span class="post__meta">{d.read} de lectura · {fmt(d.pubDate)}</span>
+      <h1 class="post__h1">{d.title}</h1>
+      <p class="post__intro">{d.description}</p>
+      <figure class="post__cover"><img src={d.cover} alt={d.title} fetchpriority="high" /></figure>
+      <div class="post__body">
+        <Content />
+      </div>
+
+      <aside class="post__cta">
+        <h2 class="post__cta-t">¿Quieres una web así para tu negocio?</h2>
+        <p>Diseño web y marca en Cantabria desde 299€. Una charla de 20 min y te digo qué necesitas — sin compromiso.</p>
+        <div class="post__cta-btns">
+          <a href="/precios" class="btn btn--green">Ver precios →</a>
+          <a href="/contacto" class="btn btn--ghost">Hablar conmigo</a>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+  <style>
+    .post__wrap { max-width: 760px; }
+    .post__bc { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-mute); margin-bottom: var(--s-4); }
+    .post__bc a { color: var(--accent-ink); }
+    .post__meta { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-ink); text-transform: uppercase; letter-spacing: 0.06em; }
+    .post__h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; line-height: 1.0; margin: var(--s-3) 0 var(--s-4); }
+    .post__intro { font-size: var(--fs-lead); color: var(--ink-soft); line-height: 1.4; margin-bottom: var(--s-5); }
+    .post__cover { border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 16/9; margin-bottom: var(--s-6); }
+    .post__cover img { width: 100%; height: 100%; object-fit: cover; }
+    .post__body { font-size: 1.0625rem; line-height: 1.7; color: var(--ink); }
+    .post__body :global(h2) { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.5rem,3vw,2rem); margin: var(--s-6) 0 var(--s-3); line-height: 1.1; }
+    .post__body :global(h3) { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; margin: var(--s-5) 0 var(--s-2); }
+    .post__body :global(p) { margin-bottom: var(--s-4); }
+    .post__body :global(ul), .post__body :global(ol) { margin: 0 0 var(--s-4) 1.2em; display: grid; gap: 8px; }
+    .post__body :global(strong) { color: var(--ink); font-weight: 700; }
+    .post__body :global(a) { color: var(--accent-ink); font-weight: 600; border-bottom: 1px solid currentColor; }
+    .post__body :global(blockquote) { border-left: 3px solid var(--accent); padding-left: 18px; margin: var(--s-4) 0; color: var(--ink-soft); font-style: italic; }
+    .post__cta { background: var(--panel); color: var(--panel-ink); border-radius: var(--radius-lg); padding: clamp(28px,4vw,44px); margin-top: var(--s-7); }
+    .post__cta-t { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.4rem,3vw,2rem); color: var(--panel-ink); margin-bottom: 10px; }
+    .post__cta p { opacity: 0.85; margin-bottom: var(--s-4); max-width: 50ch; }
+    .post__cta-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+    .post__cta .btn--ghost { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.25); color: #fff; }
+  </style>
+</Layout>

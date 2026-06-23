@@ -1,0 +1,49 @@
+---
+// Estudio de marca + IA. Cada servicio con su botón.
+const services = [
+  { k: 'Branding', d: 'Identidad, logo, sistema visual y voz. La base de todo lo demás.', c: 'warm', cta: 'Hablar de marca', href: '/contacto' },
+  { k: 'Diseño web', d: 'Webs a medida que venden y salen en Google. Desde 299€.', c: 'stone', cta: 'Ver diseño web', href: '/diseno-web-cantabria' },
+  { k: 'Diseño gráfico', d: 'Cartas, redes, campañas, packaging. Tu imagen del día a día.', c: 'deep', cta: 'Saber más', href: '/blog/diseno-grafico-cantabria' },
+  { k: 'Fotografía de producto', d: 'Imágenes de tu producto con IA, sin estudio de fotos carísimo.', c: 'stone', cta: 'Lo quiero', href: '/contacto' },
+  { k: 'Vídeo corporativo', d: 'Piezas de vídeo para tu marca, generadas con IA y dirigidas con criterio.', c: 'warm', cta: 'Hablar de vídeo', href: '/contacto' },
+  { k: 'Reportajes & contenido', d: 'Contenido visual para tu negocio: lo que necesites, con IA como herramienta.', c: 'deep', cta: 'Cuéntame', href: '/contacto' },
+];
+---
+<section id="estudio" class="section services">
+  <div class="wrap">
+    <header class="services__head" data-reveal>
+      <h2 class="services__title">No solo webs.<br /><span class="services__a">Un estudio de marca.</span></h2>
+      <p class="services__lead">Marca, web, gráfica, fotografía de producto, vídeo… Lo que tu negocio necesite, con criterio de estudio y la IA como herramienta — no como excusa.</p>
+    </header>
+    <div class="services__grid" data-stagger>
+      {services.map((s, i) => (
+        <div class={`scard scard--${s.c}`} data-reveal>
+          <span class="scard__n">0{i + 1}</span>
+          <h3 class="scard__k">{s.k}</h3>
+          <p class="scard__d">{s.d}</p>
+          <a href={s.href} class="scard__btn">{s.cta} →</a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services__head { margin-bottom: var(--s-6); max-width: 60ch; }
+  .services__title { font-size: var(--fs-h2); font-weight: 700; line-height: 0.98; }
+  .services__a { color: var(--accent-ink); }
+  .services__lead { font-size: var(--fs-lead); color: var(--ink-soft); margin-top: var(--s-3); line-height: 1.45; }
+  .services__grid { display: grid; grid-template-columns: 1fr; gap: clamp(14px, 2vw, 22px); }
+  .scard { display: flex; flex-direction: column; border-radius: var(--radius); padding: clamp(22px, 3vw, 32px); transition: transform var(--dur) var(--ease); }
+  .scard:hover { transform: translateY(-5px); }
+  .scard--warm { background: var(--t-warm); color: var(--t-warm-ink); }
+  .scard--stone { background: var(--t-stone); color: var(--t-stone-ink); }
+  .scard--deep { background: var(--t-deep); color: var(--t-deep-ink); }
+  .scard__n { font-family: var(--font-display); font-weight: 700; opacity: 0.55; font-size: 0.85rem; }
+  .scard__k { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-h3); margin: 8px 0; color: inherit; }
+  .scard__d { color: inherit; opacity: 0.85; line-height: 1.4; flex: 1; margin-bottom: var(--s-4); }
+  .scard__btn { align-self: flex-start; display: inline-flex; background: color-mix(in srgb, currentColor 12%, transparent); color: inherit; font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; padding: 9px 16px; border-radius: var(--radius-pill); transition: background var(--dur) var(--ease-soft), transform var(--dur) var(--ease); }
+  .scard__btn:hover { background: var(--accent); color: #fff; transform: translateX(3px); }
+  @media (min-width: 700px) { .services__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1040px) { .services__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

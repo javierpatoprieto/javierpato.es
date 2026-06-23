@@ -1,0 +1,80 @@
+---
+// Trabajo · clon benshih: por AÑO con marcador, título verde + descripción + mockup navegador (CSS, sin IA).
+const years = [
+  {
+    year: '2026',
+    items: [
+      { title: 'Centro Infantil Periquete', url: 'centroinfantilperiquete.es', desc: 'Web alegre y clara para que las familias conozcan el centro y reserven plaza sin líos.', tone: 'peach', status: 'Live', img: '/img/proj-periquete.webp' },
+      { title: 'Fisio Mamá', url: 'fisiomama.es', desc: 'Fisioterapia para embarazo y posparto. Calma, confianza y cita online en un par de clics.', tone: 'sky', status: 'Live', img: '/img/proj-andrea.webp' },
+      { title: 'Click & Cargo', url: 'clickandcargo.com', desc: 'Plataforma de logística y transporte. Web técnica, rápida y directa al grano.', tone: 'lilac', status: 'Live', img: '/img/proj-cargo.webp' },
+    ],
+  },
+];
+---
+<section id="trabajo" class="section work">
+  <div class="wrap">
+    <header class="work__head" data-reveal>
+      <h2 class="work__title">Algo de trabajo<br />reciente</h2>
+      <p class="work__sub">(marcas y negocios reales)</p>
+    </header>
+
+    {years.map((y) => (
+      <div class="work__year">
+        <span class="work__y" data-reveal><span class="work__dot" aria-hidden="true"></span>{y.year}</span>
+        <div class="work__list" data-stagger>
+          {y.items.map((p) => (
+            <a class="work__item" href="#contacto" data-reveal aria-label={`${p.title} — ${p.desc}`}>
+              <div class="work__text">
+                <div class="work__row">
+                  <h3 class="work__name">{p.title}</h3>
+                  <span class={`work__status work__status--${p.status === 'Password' ? 'lock' : p.status === 'Live' ? 'live' : 'case'}`}>{p.status}</span>
+                </div>
+                <p class="work__desc">{p.desc}</p>
+              </div>
+              <div class={`mock mock--${p.tone}`}>
+                <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">{p.url}</span></div>
+                <div class="mock__body"><img src={p.img} alt={`${p.title} — diseño web Cantabria`} loading="lazy" /></div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .work__head { margin-bottom: var(--s-6); }
+  .work__title { font-size: var(--fs-h2); color: var(--ink); font-weight: 800; }
+  .work__sub { font-family: var(--font-display); font-weight: 600; color: var(--ink-mute); font-size: var(--fs-lead); margin-top: 8px; }
+
+  .work__year { display: grid; grid-template-columns: 1fr; gap: var(--s-4); margin-bottom: var(--s-6); }
+  .work__y { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 4vw, 3rem); color: var(--ink-mute); }
+  .work__dot { width: 16px; height: 16px; border-radius: 50%; border: 4px solid var(--green); }
+
+  .work__list { display: grid; gap: clamp(20px, 3vw, 36px); }
+  .work__item { display: grid; gap: var(--s-4); background: var(--bg-2); border-radius: var(--radius-lg); padding: clamp(22px, 3vw, 36px); transition: transform var(--dur) var(--ease); }
+  .work__item:hover { transform: translateY(-4px); }
+  .work__row { display: flex; align-items: center; gap: 12px; }
+  .work__name { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h3); color: var(--green); }
+  .work__status { font-family: var(--font-body); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: var(--radius-pill); }
+  .work__status--live { background: #d8ebd9; color: #2c6a4f; }
+  .work__status--case { background: var(--lilac); color: var(--lilac-ink); }
+  .work__status--lock { background: #e7e3d8; color: var(--ink-mute); }
+  .work__desc { color: var(--ink-soft); max-width: 50ch; margin-top: 6px; }
+
+  /* Mockup navegador (CSS, sin imágenes) */
+  .mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+  .mock__bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #fff; }
+  .mock__bar i { width: 9px; height: 9px; border-radius: 50%; background: #e0dccf; }
+  .mock__url { margin-left: 12px; font-family: var(--font-body); font-size: 0.78rem; color: var(--ink-mute); }
+  .mock__body { aspect-ratio: 16 / 10; overflow: hidden; }
+  .mock__body img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur) var(--ease); }
+  .work__item:hover .mock__body img { transform: scale(1.04); }
+
+  @media (min-width: 760px) {
+    .work__year { grid-template-columns: 160px 1fr; gap: var(--s-5); align-items: start; }
+    .work__y { position: sticky; top: 92px; align-self: start; }
+    .work__item { grid-template-columns: 1fr 1.1fr; align-items: center; gap: var(--s-5); }
+  }
+</style>

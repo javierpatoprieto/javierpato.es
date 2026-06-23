@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const plans = [
+  { id: 'onepage', name: 'One-page', price: 299, time: '3 días', desc: 'Una sola página, a medida. El gancho perfecto para empezar.', feats: ['Diseño a medida', 'Móvil + velocidad', 'SEO básico', 'Contacto integrado'], pop: false },
+  { id: 'basica', name: 'Básica', price: 549, time: '1 semana', desc: '4 páginas con el contacto integrado. Para negocios que necesitan algo más.', feats: ['4 páginas', 'Diseño a medida', 'SEO local', '1 ronda de cambios'], pop: true },
+  { id: 'pro', name: 'Pro', price: 699, time: '1 semana', desc: '6 páginas. Para cuando quieres contarlo todo bien.', feats: ['6 páginas', 'Diseño a medida', 'SEO local', 'Blog opcional'], pop: false },
+  { id: 'ecommerce', name: 'Ecommerce', price: 999, from: true, time: '2–3 semanas', desc: 'Tienda online. Vende mientras duermes.', feats: ['Catálogo + pagos', 'Diseño a medida', 'SEO local', 'Formación incluida'], pop: false },
+];
+const addons = [
+  { id: 'dominio', name: 'Dominio propio', price: 19.99, unit: '/año', desc: 'Tu .es o .com, gestionado por mí.' },
+  { id: 'hosting', name: 'Alojamiento', price: 49, unit: '/año', desc: 'Hosting rápido y seguro, sin que te preocupes.' },
+  { id: 'manten', name: 'Mantenimiento', price: 190, unit: '/año', desc: 'Cambios, copias y soporte todo el año.' },
+];
+const jsonld = {
+  '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Diseño web',
+  areaServed: 'Cantabria', provider: { '@type': 'Person', name: 'Javier Pato' },
+  offers: plans.map((p) => ({ '@type': 'Offer', name: `Web ${p.name}`, price: p.price, priceCurrency: 'EUR' })),
+};
+---
+<Layout
+  title="Precios de diseño web en Cantabria — desde 299€ | Javier Pato"
+  description="Precios claros de diseño web en Cantabria: one-page desde 299€, 4 páginas 549€, 6 páginas 699€ y ecommerce desde 999€. Entrega en 1 semana o menos."
+  jsonld={jsonld}
+>
+  <section class="section pr-hero">
+    <div class="wrap">
+      <span class="pr-k" data-reveal>Precios · Diseño web Cantabria</span>
+      <h1 class="pr-h1" data-reveal>Precios claros.<br /><span class="pr-a">Cero sustos.</span></h1>
+      <p class="pr-lead" data-reveal>Eliges plan, marcas los extras y ves el total al momento. Sin presupuestos de 12 páginas ni letra pequeña. Entrega en <strong>una semana o menos</strong>.</p>
+    </div>
+  </section>
+
+  <section class="section pr-config">
+    <div class="wrap pr-grid">
+      <div class="pr-main">
+        <h2 class="pr-h2" data-reveal>1 · Elige tu web</h2>
+        <div class="pr-plans" data-stagger>
+          {plans.map((p) => (
+            <label class={`pr-plan ${p.pop ? 'is-pop' : ''}`} data-reveal>
+              <input type="radio" name="plan" value={p.id} data-price={p.price} data-name={p.name} checked={p.id === 'basica'} />
+              <span class="pr-plan__in">
+                {p.pop && <span class="pr-badge">El más elegido</span>}
+                <span class="pr-plan__top">
+                  <span class="pr-plan__name">{p.name}</span>
+                  <span class="pr-plan__price">{p.from ? 'desde ' : ''}{p.price}€</span>
+                </span>
+                <span class="pr-plan__time">Entrega en {p.time}</span>
+                <span class="pr-plan__desc">{p.desc}</span>
+                <span class="pr-plan__feats">{p.feats.map((f) => <span class="pr-feat">{f}</span>)}</span>
+              </span>
+            </label>
+          ))}
+        </div>
+
+        <h2 class="pr-h2 pr-h2--mt" data-reveal>2 · Añade extras</h2>
+        <div class="pr-addons" data-stagger>
+          {addons.map((a) => (
+            <label class="pr-addon" data-reveal>
+              <input type="checkbox" data-price={a.price} data-name={a.name} />
+              <span class="pr-addon__box" aria-hidden="true">✓</span>
+              <span class="pr-addon__txt">
+                <span class="pr-addon__top"><span class="pr-addon__name">{a.name}</span><span class="pr-addon__price">+{a.price.toString().replace('.', ',')}€<small>{a.unit}</small></span></span>
+                <span class="pr-addon__desc">{a.desc}</span>
+              </span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <aside class="pr-summary" data-reveal>
+        <div class="pr-sum-card">
+          <span class="pr-sum-k">Tu presupuesto</span>
+          <div class="pr-sum-total"><span id="pr-total">549€</span></div>
+          <p class="pr-sum-note" id="pr-note">Web Básica · entrega en 1 semana</p>
+          <ul class="pr-sum-list" id="pr-list"></ul>
+          <a href="/contacto" class="btn btn--green pr-sum-cta" id="pr-cta">Reservar esta web →</a>
+          <p class="pr-sum-fine">Precio orientativo. Lo cerramos en una charla de 20 min, sin compromiso.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const fmt = (n) => Number.isInteger(n) ? n + '€' : n.toFixed(2).replace('.', ',') + '€';
+      const totalEl0 = () => document.getElementById('pr-total');
+      function countUp(from, to, isFrom) {
+        const el = totalEl0(); const dur = 450; const t0 = performance.now();
+        const step = (now) => {
+          const k = Math.min(1, (now - t0) / dur);
+          const e = 1 - Math.pow(1 - k, 3);
+          const val = from + (to - from) * e;
+          el.textContent = (isFrom ? 'desde ' : '') + fmt(Math.round(val * 100) / 100);
+          if (k < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+      const planEls = () => document.querySelectorAll('input[name="plan"]');
+      const addonEls = () => document.querySelectorAll('.pr-addon input');
+      const totalEl = document.getElementById('pr-total');
+      const noteEl = document.getElementById('pr-note');
+      const listEl = document.getElementById('pr-list');
+      const ctaEl = document.getElementById('pr-cta');
+      function recalc() {
+        let plan = document.querySelector('input[name="plan"]:checked');
+        let base = plan ? parseFloat(plan.dataset.price) : 0;
+        let pname = plan ? plan.dataset.name : '';
+        let from = plan && plan.value === 'ecommerce';
+        let extras = 0; let rows = [`<li><span>Web ${pname}</span><span>${fmt(base)}</span></li>`];
+        addonEls().forEach((a) => { if (a.checked) { const p = parseFloat(a.dataset.price); extras += p; rows.push(`<li><span>${a.dataset.name}</span><span>+${fmt(p)}/año</span></li>`); } });
+        const total = base + extras;
+        countUp(parseFloat(totalEl.dataset.v || '0'), total, from);
+        totalEl.dataset.v = String(total);
+        noteEl.textContent = `Web ${pname}` + (extras ? ` + ${addonEls().length && [...addonEls()].filter(a=>a.checked).length} extra(s)` : '');
+        listEl.innerHTML = rows.join('');
+        const subject = encodeURIComponent(`Web ${pname} — ${fmt(total)}`);
+        ctaEl.href = `/contacto`;
+        ctaEl.setAttribute('data-mailto', `mailto:javier@javierpato.es?subject=${subject}`);
+      }
+      planEls().forEach((e) => e.addEventListener('change', recalc));
+      addonEls().forEach((e) => e.addEventListener('change', recalc));
+      recalc();
+    })();
+  </script>
+
+  <style>
+    .pr-hero { padding-top: clamp(28px, 4vw, 64px); padding-bottom: var(--s-5); }
+    .pr-k { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .pr-h1 { font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 700; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .pr-a { color: var(--accent-ink); }
+    .pr-lead { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 56ch; line-height: 1.45; }
+    .pr-lead strong { color: var(--ink); }
+
+    .pr-grid { display: grid; grid-template-columns: 1fr; gap: clamp(24px,4vw,40px); align-items: start; }
+    .pr-h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.4rem,2.4vw,1.9rem); margin-bottom: var(--s-4); }
+    .pr-h2--mt { margin-top: var(--s-6); }
+
+    .pr-plans { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .pr-plan { position: relative; cursor: pointer; display: block; }
+    .pr-plan input { position: absolute; opacity: 0; }
+    .pr-plan__in { display: block; background: var(--bg-2); border: 2px solid var(--line); border-radius: var(--radius); padding: clamp(18px,2.4vw,26px); transition: border-color var(--dur) var(--ease-soft), transform var(--dur) var(--ease); }
+    .pr-plan:hover .pr-plan__in { transform: translateY(-3px); }
+    .pr-plan input:checked + .pr-plan__in { border-color: var(--accent); background: var(--card); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent); }
+    .pr-plan input:focus-visible + .pr-plan__in { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .pr-badge { position: absolute; top: -11px; left: 22px; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 600; font-size: 0.72rem; padding: 3px 12px; border-radius: var(--radius-pill); }
+    .pr-plan__top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .pr-plan__name { font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; }
+    .pr-plan__price { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--accent-ink); }
+    .pr-plan__time { display: inline-block; margin-top: 6px; font-size: 0.85rem; color: var(--ink-soft); }
+    .pr-plan__desc { display: block; color: var(--ink-soft); margin: 10px 0 12px; }
+    .pr-plan__feats { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+    .pr-feat { font-size: 0.82rem; color: var(--ink-soft); display: inline-flex; align-items: center; }
+    .pr-feat::before { content: ''; width: 14px; height: 2px; background: var(--accent); margin-right: 8px; border-radius: 2px; }
+
+    .pr-addons { display: grid; gap: 12px; }
+    .pr-addon { cursor: pointer; display: flex; gap: 14px; align-items: flex-start; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(16px,2vw,22px); transition: border-color var(--dur) var(--ease-soft); }
+    .pr-addon input { position: absolute; opacity: 0; }
+    .pr-addon__box { flex: none; width: 26px; height: 26px; border-radius: 8px; border: 2px solid var(--line); display: grid; place-items: center; color: transparent; font-size: 0.85rem; font-weight: 700; transition: all var(--dur) var(--ease-soft); }
+    .pr-addon input:checked + .pr-addon__box { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .pr-addon:has(input:checked) { border-color: var(--accent); }
+    .pr-addon__top { display: flex; justify-content: space-between; gap: 12px; }
+    .pr-addon__name { font-family: var(--font-display); font-weight: 700; }
+    .pr-addon__price { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); white-space: nowrap; }
+    .pr-addon__price small { color: var(--ink-mute); font-weight: 500; }
+    .pr-addon__desc { display: block; color: var(--ink-soft); font-size: 0.9rem; margin-top: 4px; }
+
+    .pr-sum-card { background: var(--panel); color: var(--panel-ink); border-radius: var(--radius-lg); padding: clamp(24px,3vw,36px); position: sticky; top: 90px; }
+    .pr-sum-k { font-family: var(--font-body); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
+    .pr-sum-total { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.8rem,6vw,4rem); color: var(--accent); line-height: 1; margin: 8px 0; }
+    .pr-sum-note { opacity: 0.8; font-size: 0.9rem; }
+    .pr-sum-list { list-style: none; margin: var(--s-4) 0; display: grid; gap: 8px; }
+    .pr-sum-list li { display: flex; justify-content: space-between; gap: 12px; font-size: 0.92rem; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .pr-sum-cta { width: 100%; justify-content: center; margin-top: var(--s-3); }
+    .pr-sum-fine { font-size: 0.78rem; opacity: 0.6; margin-top: 12px; }
+
+    @media (min-width: 920px) {
+      .pr-grid { grid-template-columns: 1.6fr 0.9fr; }
+      .pr-plans { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</Layout>

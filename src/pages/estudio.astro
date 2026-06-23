@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArtiMindArt from '../components/ArtiMindArt.astro';
+import Contact from '../components/Contact.astro';
+
+const career = [
+  { r: 'Agencias de publicidad', c: 'Jesús Vázquez Comunicación · Cappuccino Studio · Informática Laciana', d: 'Donde aprendí a vender con criterio: marca, campañas y a tratar con clientes de verdad.' },
+  { r: 'Marketing', c: 'Mikeli', d: 'Del lado del anunciante: entender el negocio por dentro, no solo el diseño.' },
+  { r: 'Dirijo la marca', c: 'Andrómeda Moda', d: 'Desde hace dos años, al frente de una marca de moda real, con sus números y sus retos.' },
+  { r: 'Project Manager / Dir. comunicación', c: 'Project Discount', d: 'Gestión, estrategia y comunicación de principio a fin.' },
+];
+---
+<Layout
+  title="El estudio — Javier Pato, diseñador y estratega de marca en Cantabria"
+  description="Quién hay detrás: Javier Pato, de Cistierna (León) afincado en Cantabria. Marca, web y dirección visual con IA, con trastienda de agencia y marketing."
+>
+  <section class="section est">
+    <div class="wrap est__grid">
+      <div class="est__text">
+        <span class="est__k" data-reveal>El estudio</span>
+        <h1 class="est__h" data-reveal>No soy una agencia.<br /><span class="est__a">Soy la trastienda<br />de una.</span></h1>
+        <p class="est__l" data-reveal>
+          Soy Javier Pato. De <strong>Cistierna, León</strong> — y eso lo llevo dentro, aunque lleve 25 años en Cantabria.
+        </p>
+        <p class="est__b" data-reveal>
+          He pasado mi carrera entre publicidad, marketing y diseño: agencias, departamento de marca y, ahora, dirigiendo marcas de verdad. Toda esa trastienda es lo que pongo en tu proyecto. No te hago "una web bonita": te hago una <strong>marca que vende</strong>, porque he estado al otro lado del mostrador.
+        </p>
+        <p class="est__b" data-reveal>
+          Trabajo como estudio — una misma mano para marca, web, gráfica, fotografía de producto y vídeo — y uso la IA como herramienta de producción, no como excusa. Por eso entrego en semanas, con criterio y sin precio de agencia.
+        </p>
+        <a href="/contacto" class="btn btn--green est__cta" data-reveal>Cuéntame tu proyecto →</a>
+      </div>
+
+      <figure class="est__photo" data-reveal data-tilt>
+        <div class="est__photo-in"><img src="/img/javier.webp" alt="Javier Pato, diseñador y estratega de marca en Cantabria" /></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section est-career">
+    <div class="wrap">
+      <h2 class="est-career__h" data-reveal>Dónde he<br />aprendido esto</h2>
+      <div class="est-career__list" data-stagger>
+        {career.map((c, i) => (
+          <div class="ccard" data-reveal>
+            <span class="ccard__n">0{i + 1}</span>
+            <div>
+              <span class="ccard__r">{c.r}</span>
+              <h3 class="ccard__c">{c.c}</h3>
+              <p class="ccard__d">{c.d}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ArtiMindArt />
+  <Contact />
+
+  <script is:inline>
+    (function () {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const el = document.querySelector('[data-tilt] .est__photo-in');
+      const fig = document.querySelector('[data-tilt]');
+      if (!el || !fig || reduce) return;
+      const max = 12;
+      function move(e) {
+        const r = fig.getBoundingClientRect();
+        const x = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+        const y = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+        el.style.transform = `perspective(700px) rotateY(${x * max}deg) rotateX(${-y * max}deg) scale(1.02)`;
+      }
+      function reset() { el.style.transform = 'perspective(700px) rotateY(0) rotateX(0) scale(1)'; }
+      window.addEventListener('mousemove', move);
+      fig.addEventListener('mouseleave', reset);
+    })();
+  </script>
+
+  <style>
+    .est { padding-top: clamp(36px, 6vw, 80px); }
+    .est__grid { display: grid; grid-template-columns: 1fr; gap: var(--s-6); align-items: center; }
+    .est__k { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .est__h { font-size: var(--fs-h2); font-weight: 700; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .est__a { color: var(--accent-ink); }
+    .est__l { font-size: var(--fs-lead); color: var(--ink); line-height: 1.4; margin-bottom: var(--s-4); }
+    .est__b { color: var(--ink-soft); line-height: 1.6; margin-bottom: var(--s-4); max-width: 58ch; }
+    .est__cta { margin-top: var(--s-2); }
+    .est__photo { perspective: 700px; }
+    .est__photo-in { border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/5; transition: transform 200ms var(--ease-soft); will-change: transform; box-shadow: 0 30px 60px -30px rgba(0,0,0,0.5); }
+    .est__photo-in img { width: 100%; height: 100%; object-fit: cover; }
+    @media (min-width: 880px) { .est__grid { grid-template-columns: 1.15fr 0.85fr; gap: var(--s-7); } }
+
+    .est-career__h { font-size: var(--fs-h2); font-weight: 700; line-height: 0.98; margin-bottom: var(--s-6); }
+    .est-career__list { display: grid; gap: 14px; }
+    .ccard { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(20px,2.6vw,30px); transition: transform var(--dur) var(--ease); }
+    .ccard:hover { transform: translateY(-4px); }
+    .ccard__n { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); font-size: 1.1rem; }
+    .ccard__r { font-family: var(--font-body); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-mute); }
+    .ccard__c { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-h3); margin: 4px 0 6px; }
+    .ccard__d { color: var(--ink-soft); line-height: 1.5; }
+    @media (min-width: 760px) { .est-career__list { grid-template-columns: 1fr 1fr; } }
+  </style>
+</Layout>

@@ -1,0 +1,42 @@
+---
+const items = [
+  { n: '01', t: 'Branding e identidad', s: 'Naming, logo, sistema visual y guía de marca.' },
+  { n: '02', t: 'Diseño web', s: 'Webs y landings a medida, rápidas y orientadas a convertir.' },
+  { n: '03', t: 'Dirección de arte', s: 'Concepto, estética y coherencia para campañas y contenido.' },
+  { n: '04', t: 'Editorial & packaging', s: 'Catálogos, impresos y packaging con cuidado por el detalle.' },
+];
+---
+<section id="servicios" class="section svc">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow reveal"><span class="n">02 ·</span> Servicios</span>
+      <h2 class="mega split">Qué hago.</h2>
+    </div>
+    <div class="list">
+      {items.map((it) => (
+        <div class="row reveal" data-cursor>
+          <span class="num">{it.n}</span>
+          <h3 class="t">{it.t}</h3>
+          <p class="s serif">{it.s}</p>
+          <span class="ar">↗</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .svc { border-top: 1.5px solid var(--ink); }
+  .head { margin-bottom: clamp(2.5rem, 6vw, 4.5rem); display: flex; flex-direction: column; gap: 1.1rem; }
+  .list { display: flex; flex-direction: column; }
+  .row { display: grid; grid-template-columns: 60px 1.1fr 1.2fr 40px; gap: clamp(1rem, 3vw, 2.5rem); align-items: baseline; padding-block: clamp(1.6rem, 3.5vw, 2.6rem); border-top: 1.5px solid var(--line); transition: padding-left .45s var(--ease); }
+  .row:last-child { border-bottom: 1.5px solid var(--line); }
+  .row:hover { padding-left: 14px; }
+  .num { font-family: var(--display); font-weight: 700; font-size: 0.85rem; color: var(--brand); padding-top: 0.5rem; }
+  .t { font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 3.5vw, 3rem); letter-spacing: -0.02em; transition: color .35s; }
+  .row:hover .t { color: var(--brand); }
+  .s { font-size: 1.05rem; color: var(--ink-2); align-self: center; max-width: 38ch; }
+  .ar { font-family: var(--display); font-size: 1.3rem; color: var(--ink-3); justify-self: end; align-self: center; transition: transform .45s var(--ease), color .35s; }
+  .row:hover .ar { color: var(--brand); transform: translate(4px,-4px); }
+  @media (max-width: 760px) { .row { grid-template-columns: 44px 1fr; } .s { grid-column: 2; } .ar { display: none; } }
+</style>

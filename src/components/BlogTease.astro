@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 3);
+const fmt = (d: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
+---
+<section class="section bt">
+  <div class="wrap">
+    <header class="bt__head" data-reveal>
+      <h2 class="bt__title">Del blog.<br /><span class="bt__a">Lo último.</span></h2>
+      <a href="/blog" class="btn btn--ghost">Ver todo el blog →</a>
+    </header>
+    <div class="bt__grid" data-stagger>
+      {posts.map((p) => (
+        <a class="btcard" href={`/blog/${p.slug}`} data-reveal>
+          <span class="btcard__cover"><img src={p.data.cover} alt={p.data.title} loading="lazy" /></span>
+          <span class="btcard__meta">{p.data.read} · {fmt(p.data.pubDate)}</span>
+          <h3 class="btcard__t">{p.data.title}</h3>
+          <p class="btcard__d">{p.data.description}</p>
+          <span class="btcard__more">Leer más →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .bt__head { display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-end; justify-content: space-between; margin-bottom: var(--s-6); }
+  .bt__title { font-size: var(--fs-h2); font-weight: 700; line-height: 0.98; }
+  .bt__a { color: var(--accent-ink); }
+  .bt__grid { display: grid; grid-template-columns: 1fr; gap: clamp(18px,2.4vw,28px); }
+  .btcard { display: flex; flex-direction: column; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; transition: transform var(--dur) var(--ease); }
+  .btcard:hover { transform: translateY(-5px); }
+  .btcard__cover { aspect-ratio: 16/10; border-radius: 14px; overflow: hidden; margin-bottom: 14px; }
+  .btcard__cover img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur) var(--ease); }
+  .btcard:hover .btcard__cover img { transform: scale(1.05); }
+  .btcard__meta { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-ink); padding: 0 6px; }
+  .btcard__t { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; line-height: 1.1; margin: 8px 6px; }
+  .btcard__d { color: var(--ink-soft); font-size: 0.95rem; margin: 0 6px 10px; flex: 1; }
+  .btcard__more { margin: 0 6px 6px; font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; color: var(--accent-ink); transition: transform var(--dur) var(--ease); }
+  .btcard:hover .btcard__more { transform: translateX(4px); }
+  @media (min-width: 760px) { .bt__grid { grid-template-columns: repeat(3, 1fr); } }
+</style>

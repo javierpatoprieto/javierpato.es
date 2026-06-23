@@ -1,0 +1,36 @@
+---
+// Sobre mí · panel cálido, sin foto de IA (placeholder con avatar hasta tener foto real).
+---
+<section class="section about">
+  <div class="wrap about__card" data-reveal>
+    <div class="about__photo" aria-hidden="true">
+      <span>JP</span>
+      <small>Tu foto real aquí</small>
+    </div>
+    <div class="about__text">
+      <span class="about__tag">Un poco sobre mí</span>
+      <p class="about__lead">
+        Llevo años diseñando marca, web y gráfica para negocios que quieren parecer
+        lo que valen. Trabajo como un estudio, no como un freelance: una misma mano
+        para todo, desde Cantabria.
+      </p>
+      <p class="about__body">
+        Me obsesiona el criterio — la tipografía justa, el espacio que respira. Y uso
+        la IA como herramienta, nunca como estilo: por eso entrego en semanas, no en
+        meses, sin renunciar al acabado.
+      </p>
+      <a href="#contacto" class="btn btn--green">Hablemos de tu proyecto →</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about__card { display: grid; grid-template-columns: 1fr; gap: var(--s-5); background: var(--bg-2); border-radius: var(--radius-lg); padding: clamp(28px, 5vw, 56px); align-items: center; }
+  .about__photo { aspect-ratio: 4 / 5; border-radius: var(--radius); background: var(--peach); display: grid; place-content: center; gap: 10px; text-align: center; }
+  .about__photo span { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 8vw, 5rem); color: var(--peach-ink); }
+  .about__photo small { font-family: var(--font-body); color: var(--peach-ink); opacity: 0.7; font-size: 0.8rem; }
+  .about__tag { font-family: var(--font-body); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-mute); }
+  .about__lead { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-lead); margin: var(--s-3) 0 var(--s-4); line-height: 1.25; color: var(--ink); }
+  .about__body { color: var(--ink-soft); margin-bottom: var(--s-4); max-width: 52ch; line-height: 1.55; }
+  @media (min-width: 820px) { .about__card { grid-template-columns: 0.7fr 1.3fr; gap: var(--s-6); } }
+</style>

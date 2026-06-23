@@ -1,0 +1,114 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  jsonld?: object;
+}
+const { title, description, ogImage = '/img/javier.webp', jsonld } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://javierpato.es').toString();
+
+const baseLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': 'https://javierpato.es/#estudio',
+  name: 'Javier Pato — Diseño web en Cantabria',
+  description,
+  url: 'https://javierpato.es',
+  image: 'https://javierpato.es' + ogImage,
+  areaServed: ['Cantabria', 'Santander', 'Torrelavega', 'España'],
+  priceRange: 'desde 299€',
+  knowsAbout: ['Diseño web', 'Diseño web Cantabria', 'Branding', 'Diseño gráfico', 'Dirección de arte con IA', 'SEO local'],
+  sameAs: ['https://x.com/ArtiMindArt'],
+};
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline>
+      (function () {
+        try {
+          var saved = localStorage.getItem('jp-theme');
+          var h = new Date().getHours();
+          var auto = (h >= 20 || h < 7) ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', saved || auto);
+        } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+      })();
+    </script>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Javier Pato" />
+    <meta name="geo.region" content="ES-CB" />
+    <meta name="geo.placename" content="Cantabria" />
+    <meta name="theme-color" content="#f3eee6" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Javier Pato" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site ?? 'https://javierpato.es').toString()} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@ArtiMindArt" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(baseLd)} />
+    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+  </head>
+  <body>
+    <a href="#main" class="skip">Saltar al contenido</a>
+    <Nav />
+    <main id="main"><slot /></main>
+    <Footer />
+    <CookieBanner />
+
+    <script>
+      const els = document.querySelectorAll('[data-reveal]');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              const el = e.target as HTMLElement;
+              const g = el.closest('[data-stagger]');
+              if (g) el.style.transitionDelay = `${Array.from(g.querySelectorAll('[data-reveal]')).indexOf(el) * 80}ms`;
+              el.classList.add('in'); io.unobserve(el);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+        els.forEach((el) => io.observe(el));
+        const force = () => els.forEach((el) => { if (el.getBoundingClientRect().top < innerHeight * 0.95) el.classList.add('in'); });
+        force(); addEventListener('load', force);
+        setTimeout(() => els.forEach((el) => el.classList.add('in')), 1500);
+      } else { els.forEach((el) => el.classList.add('in')); }
+
+      const nav = document.querySelector('[data-nav]');
+      if (nav) addEventListener('scroll', () => nav.classList.toggle('is-stuck', scrollY > 30), { passive: true });
+
+      const toggle = document.querySelector('[data-theme-toggle]');
+      if (toggle) toggle.addEventListener('click', () => {
+        const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', cur);
+        try { localStorage.setItem('jp-theme', cur); } catch (e) {}
+      });
+
+      document.querySelectorAll('[data-clock]').forEach((c) => {
+        const t = () => c.textContent = 'Santander ' + new Intl.DateTimeFormat('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' }).format(new Date());
+        t(); setInterval(t, 30000);
+      });
+    </script>
+  </body>
+</html>
