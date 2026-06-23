@@ -1,30 +1,29 @@
 ---
 title: "Fisio Mamá"
 client: "Fisio Mamá"
-sector: "Fisioterapia · embarazo y posparto"
+sector: "Salud materno-infantil · embarazo y posparto"
 year: "2026"
 url: "fisiomama.es"
-summary: "Branding y web para una fisioterapeuta especializada en embarazo y posparto: calma, confianza y cita online en un par de clics."
-services: ["Branding", "Identidad", "Diseño web", "Reserva online"]
+summary: "Branding y web para una clínica que acompaña a las mujeres en el embarazo y el posparto. Cuando el cuerpo está en juego, la web tiene una sola obligación: dar paz."
+services: ["Branding", "Identidad visual", "Diseño web", "Reserva online"]
 scope: "branding"
 tone: "peri"
-mockup: "/img/case-fisio.webp"
+shotDesktop: "/img/shot-fisio-d.webp"
+shotMobile: "/img/shot-fisio-m.webp"
 logo: "/img/logo-fisio.webp"
 order: 2
 ---
 
-## El reto
+## La confianza no admite excusas
 
-Fisio Mamá acompaña a mujeres en una etapa delicada —embarazo y posparto—, y eso exige que todo transmita **confianza y calma** desde el primer segundo. La marca tenía que sentirse cercana y profesional a la vez, y la web tenía que quitar barreras para pedir cita.
+Una mujer embarazada que busca a quién confiar su cuerpo no perdona una web fría, ni un teléfono que no contesta. Fisio Mamá acompaña uno de los momentos más delicados de una vida —del embarazo al posparto, del suelo pélvico a la ecografía emocional— y todo, absolutamente todo, tenía que transmitir lo mismo: *estás en buenas manos.*
 
-## Lo que hicimos
+## Lo que montamos
 
-**Branding completo + web.** Construimos una identidad suave, femenina y serena, y una web que respira tranquilidad: clara, cuidada y centrada en una sola cosa importante —que la paciente **reserve su cita online sin llamar**.
+Una **identidad serena y femenina**, sin estridencias, que da calma desde el primer vistazo. Y una web pensada para quitar barreras donde más importan: que la paciente entienda lo que ofrecemos y **reserve su cita sin tener que llamar**, a las once de la noche desde el sofá si hace falta.
 
-- Identidad de marca: logo, paleta cálida y tono cercano.
-- Web a medida con foco en transmitir confianza.
-- Reserva/cita online en un par de clics y SEO local.
+Cercanía y profesionalidad a la vez. Ni folleto de clínica, ni cuenta de Instagram improvisada: una marca que cuida.
 
 ## El resultado
 
-Una marca que da paz nada más verla y una web que convierte la duda en cita. Menos llamadas, más agenda, y una primera impresión a la altura del trato que da Fisio Mamá.
+Una primera impresión a la altura del trato que da Fisio Mamá. Menos llamadas, más agenda, y la tranquilidad —para ellas y para la clínica— de que la web está haciendo su trabajo.

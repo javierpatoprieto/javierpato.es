@@ -1,29 +1,29 @@
 ---
 title: "Click & Cargo"
 client: "Click & Cargo"
-sector: "Logística y transporte"
+sector: "Software transitario · logística"
 year: "2026"
 url: "clickandcargo.com"
-summary: "Web para una plataforma de logística y transporte: técnica, rápida y directa al grano."
-services: ["Diseño web", "UX", "SEO"]
+summary: "Web para el software transitario más intuitivo del mercado. El reto: que un producto técnico se entendiera en un vistazo y no oliera a ERP de los años 2000."
+services: ["Diseño web", "UX / mensaje", "SEO"]
 scope: "web"
 tone: "plum"
-mockup: "/img/case-cargo.webp"
+shotDesktop: "/img/shot-cargo-d.webp"
+shotMobile: "/img/shot-cargo-m.webp"
+logo: "/img/logo-cargo.webp"
 order: 3
 ---
 
-## El reto
+## Vender software sin aburrir a nadie
 
-En logística, la web no tiene que ser bonita por presumir: tiene que **transmitir solvencia y dejar claro el servicio** en segundos. Click & Cargo necesitaba una web a la altura de una plataforma seria, que cargara rápido y se entendiera a la primera, sin marear con tecnicismos.
+El software de logística tiene un problema de imagen: suena a pantallazo gris, manual de 200 páginas y "lo configuramos en seis meses". Click & Cargo es justo lo contrario —un ERP transitario que se pone en marcha en semanas— pero su web tenía que **demostrarlo en un vistazo**, no prometerlo en jerga.
 
-## Lo que hicimos
+## Lo que montamos
 
-**Diseño y desarrollo web.** Una web técnica pero clara: estructura directa, mensajes que se entienden, velocidad y un diseño que da confianza a quien tiene que mover su mercancía.
+Una web **técnica pero humana**: mensajes que se entienden a la primera, estructura directa, y un diseño que transmite solvencia sin disfrazarse de folleto corporativo. Cada bloque responde a una pregunta real de un transitario que está harto de software complicado.
 
-- Diseño a medida, sobrio y profesional.
-- Rápida y optimizada para móvil.
-- Estructura pensada para convertir y para salir en Google.
+Rápida, clara y pensada para convertir: que quien aterriza entienda qué hace el producto y por qué es más fácil que lo que ya sufre.
 
 ## El resultado
 
-Una web que respalda a la marca en vez de restarle: rápida, clara y directa al grano. La primera impresión que necesita un negocio de logística para que confíen en él.
+Una web que vende un software serio **sin ser un tostón**. La prueba de que lo "técnico" también puede ser atractivo, directo y dar ganas de pedir una demo.

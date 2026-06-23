@@ -1,30 +1,29 @@
 ---
 title: "Centro Infantil Periquete"
 client: "Centro Infantil Periquete"
-sector: "Educación infantil"
+sector: "Educación infantil · Cantabria"
 year: "2026"
 url: "centroinfantilperiquete.es"
-summary: "Branding completo y web para un centro infantil: que las familias lo conozcan y reserven plaza sin llamadas ni líos."
-services: ["Branding", "Identidad", "Diseño web", "SEO local"]
+summary: "Branding y web para un centro de educación infantil con método propio. Porque cuando se trata de dejar a tus hijos, la confianza no se improvisa: se diseña."
+services: ["Branding", "Identidad visual", "Diseño web", "SEO local"]
 scope: "branding"
 tone: "rose"
-mockup: "/img/case-periquete.webp"
+shotDesktop: "/img/shot-periquete-d.webp"
+shotMobile: "/img/shot-periquete-m.webp"
 logo: "/img/logo-periquete.webp"
 order: 1
 ---
 
-## El reto
+## Un sí o un no en tres segundos
 
-Periquete es un centro infantil con mucho cariño detrás, pero su presencia online no lo contaba. Las familias que buscaban guardería en la zona no lo encontraban fácil, y las que llegaban tenían que llamar para enterarse de todo: plazas, horarios, proyecto educativo.
+Ningún padre elige guardería con la cabeza fría. La elige con el estómago, en los tres segundos que tarda en intuir si ese sitio es de fiar. Periquete tenía el fondo —método propio, huerto, aulas llenas de luz— pero no lo estaba contando. Y lo que no se cuenta, no se elige.
 
-## Lo que hicimos
+## Lo que montamos
 
-**Branding completo + web.** Creamos una marca cálida y de confianza —tono amable, color alegre, una identidad que transmite cuidado— y la llevamos a una web clara donde una madre o un padre entiende en segundos qué ofrece el centro y puede **pedir plaza sin fricción**.
+Una **marca con la calidez de quien cuida y la seriedad de quien sabe lo que hace**. Símbolo, color, tipografía y tono trabajados para que una madre, al entrar en la web desde el móvil, sienta antes de leer: *aquí mi hijo estaría bien.*
 
-- Identidad de marca: logo, color, tipografía y tono.
-- Web a medida, rápida y perfecta en el móvil.
-- SEO local para aparecer cuando buscan centro infantil en la zona.
+Y una web que no marea: qué ofrece el centro, por qué su método es distinto, y un camino claro para **pedir plaza sin descolgar el teléfono**.
 
 ## El resultado
 
-Una marca que por fin parece lo que es —un sitio de confianza para dejar a tus hijos— y una web que convierte visitas en familias interesadas, sin que el centro tenga que estar al teléfono todo el día.
+Periquete por fin **parece lo que es**: un proyecto educativo con criterio, no una guardería más del montón. La web hace de primera visita —y de mejor comercial— las 24 horas.
