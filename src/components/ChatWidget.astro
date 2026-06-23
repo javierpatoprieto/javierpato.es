@@ -1,0 +1,160 @@
+---
+// Chat con IA: burbuja flotante con la cara de Javier + panel de conversación.
+// Habla con el endpoint /api/chat (Claude). Da credibilidad y capta leads.
+const FACE = '/img/javier.webp';
+const GREETING = '¡Hola! 👋 Soy el asistente de Javier. ¿Te ayudo con tu web, precios o plazos? Cuéntame qué negocio tienes.';
+---
+<div class="cw" data-chat>
+  <button class="cw__fab" data-chat-open aria-label="Abrir chat con Javier">
+    <img src={FACE} alt="Javier Pato" width="56" height="56" loading="lazy" />
+    <span class="cw__dot" aria-hidden="true"></span>
+  </button>
+
+  <div class="cw__panel" data-chat-panel hidden>
+    <header class="cw__head">
+      <img class="cw__avatar" src={FACE} alt="Javier Pato" width="44" height="44" loading="lazy" />
+      <div class="cw__id">
+        <strong>Javier Pato</strong>
+        <span><span class="cw__online"></span> Asistente · responde al momento</span>
+      </div>
+      <button class="cw__close" data-chat-close aria-label="Cerrar chat">✕</button>
+    </header>
+
+    <div class="cw__msgs" data-chat-msgs>
+      <div class="cw__msg cw__msg--bot"><p>{GREETING}</p></div>
+    </div>
+
+    <form class="cw__form" data-chat-form>
+      <input class="cw__input" data-chat-input type="text" autocomplete="off"
+        placeholder="Escribe tu mensaje…" maxlength="2000" aria-label="Tu mensaje" />
+      <button class="cw__send" type="submit" aria-label="Enviar">→</button>
+    </form>
+    <p class="cw__fine">Respuestas automáticas con IA. Para algo concreto:
+      <a href="https://wa.me/34669385624" target="_blank" rel="noopener">WhatsApp</a>.</p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const root = document.querySelector('[data-chat]');
+    if (!root) return;
+    const panel = root.querySelector('[data-chat-panel]');
+    const msgsEl = root.querySelector('[data-chat-msgs]');
+    const form = root.querySelector('[data-chat-form]');
+    const input = root.querySelector('[data-chat-input]');
+    const openBtn = root.querySelector('[data-chat-open]');
+    const closeBtn = root.querySelector('[data-chat-close]');
+
+    const history = [];   // {role, content} para el endpoint
+    let busy = false;
+
+    function toggle(show) {
+      panel.hidden = !show;
+      root.classList.toggle('is-open', show);
+      if (show) setTimeout(() => input && input.focus(), 50);
+    }
+    openBtn.addEventListener('click', () => toggle(panel.hidden));
+    closeBtn.addEventListener('click', () => toggle(false));
+
+    function bubble(text, who) {
+      const el = document.createElement('div');
+      el.className = 'cw__msg cw__msg--' + who;
+      const p = document.createElement('p');
+      p.textContent = text;
+      el.appendChild(p);
+      msgsEl.appendChild(el);
+      msgsEl.scrollTop = msgsEl.scrollHeight;
+      return el;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const text = (input.value || '').trim();
+      if (!text || busy) return;
+      input.value = '';
+      bubble(text, 'user');
+      history.push({ role: 'user', content: text });
+
+      busy = true;
+      const typing = bubble('…', 'bot');
+      typing.classList.add('cw__msg--typing');
+
+      try {
+        const r = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: history }),
+        });
+        const data = await r.json();
+        typing.remove();
+        const reply = data.reply || data.error || 'Ahora mismo no puedo responder.';
+        bubble(reply, 'bot');
+        if (data.reply) history.push({ role: 'assistant', content: data.reply });
+      } catch {
+        typing.remove();
+        bubble('Fallo de conexión. Prueba por WhatsApp: +34 669 385 624.', 'bot');
+      } finally {
+        busy = false;
+        input.focus();
+      }
+    });
+  })();
+</script>
+
+<style>
+  .cw { position: fixed; right: 18px; bottom: 18px; z-index: 75; }
+
+  .cw__fab {
+    width: 64px; height: 64px; border-radius: 50%; padding: 0; position: relative;
+    box-shadow: 0 14px 34px -10px rgba(0,0,0,0.45); border: 2px solid var(--bg-2);
+    background: var(--panel); overflow: visible; transition: transform var(--dur) var(--ease);
+  }
+  .cw__fab:hover { transform: translateY(-3px) scale(1.04); }
+  .cw__fab img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+  .cw__dot {
+    position: absolute; right: 2px; bottom: 2px; width: 15px; height: 15px; border-radius: 50%;
+    background: #21c463; border: 3px solid var(--bg); box-shadow: 0 0 0 2px rgba(33,196,99,0.35);
+  }
+  .cw.is-open .cw__fab { display: none; }
+
+  .cw__panel {
+    position: absolute; right: 0; bottom: 0; width: min(380px, calc(100vw - 36px));
+    height: min(560px, calc(100vh - 36px)); display: flex; flex-direction: column;
+    background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg);
+    box-shadow: 0 30px 70px -24px rgba(0,0,0,0.5); overflow: hidden;
+    animation: cw-in .22s var(--ease);
+  }
+  @keyframes cw-in { from { opacity: 0; transform: translateY(14px) scale(0.98); } to { opacity: 1; transform: none; } }
+
+  .cw__head { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--panel); color: var(--panel-ink); }
+  .cw__avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+  .cw__id { flex: 1; line-height: 1.2; }
+  .cw__id strong { font-family: var(--font-display); font-weight: 700; font-size: 1rem; display: block; }
+  .cw__id span { font-size: 0.76rem; opacity: 0.75; display: flex; align-items: center; gap: 6px; }
+  .cw__online { width: 8px; height: 8px; border-radius: 50%; background: #21c463; display: inline-block; }
+  .cw__close { color: var(--panel-ink); opacity: 0.7; font-size: 1rem; padding: 4px 8px; }
+  .cw__close:hover { opacity: 1; }
+
+  .cw__msgs { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; background: var(--bg); }
+  .cw__msg { max-width: 85%; }
+  .cw__msg p { padding: 10px 14px; border-radius: 16px; font-size: 0.92rem; line-height: 1.45; white-space: pre-wrap; }
+  .cw__msg--bot { align-self: flex-start; }
+  .cw__msg--bot p { background: var(--card); color: var(--ink); border-bottom-left-radius: 5px; border: 1px solid var(--line); }
+  .cw__msg--user { align-self: flex-end; }
+  .cw__msg--user p { background: var(--accent); color: #fff; border-bottom-right-radius: 5px; }
+  .cw__msg--typing p { color: var(--ink-mute); letter-spacing: 2px; }
+
+  .cw__form { display: flex; gap: 8px; padding: 12px; border-top: 1px solid var(--line); background: var(--bg-2); }
+  .cw__input { flex: 1; padding: 11px 14px; border-radius: var(--radius-pill); border: 1px solid var(--line); background: var(--bg); color: var(--ink); font-size: 0.92rem; }
+  .cw__input:focus { outline: none; border-color: var(--accent); }
+  .cw__send { width: 42px; height: 42px; flex: none; border-radius: 50%; background: var(--accent); color: #fff; font-size: 1.1rem; transition: background var(--dur) var(--ease-soft); }
+  .cw__send:hover { background: var(--accent-ink); }
+  .cw__fine { font-size: 0.7rem; color: var(--ink-mute); text-align: center; padding: 0 12px 10px; background: var(--bg-2); margin: 0; }
+  .cw__fine a { color: var(--accent-ink); font-weight: 600; }
+
+  @media (max-width: 640px) {
+    .cw { right: 12px; bottom: 12px; }
+    .cw__panel { width: calc(100vw - 24px); height: min(72vh, 540px); }
+  }
+  @media (prefers-reduced-motion: reduce) { .cw__panel { animation: none; } .cw__fab { transition: none; } }
+</style>
