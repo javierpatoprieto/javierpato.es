@@ -1,80 +1,85 @@
 ---
-// Trabajo · clon benshih: por AÑO con marcador, título verde + descripción + mockup navegador (CSS, sin IA).
-const years = [
-  {
-    year: '2026',
-    items: [
-      { title: 'Centro Infantil Periquete', url: 'centroinfantilperiquete.es', desc: 'Web alegre y clara para que las familias conozcan el centro y reserven plaza sin líos.', tone: 'peach', status: 'Live', img: '/img/proj-periquete.webp' },
-      { title: 'Fisio Mamá', url: 'fisiomama.es', desc: 'Fisioterapia para embarazo y posparto. Calma, confianza y cita online en un par de clics.', tone: 'sky', status: 'Live', img: '/img/proj-andrea.webp' },
-      { title: 'Click & Cargo', url: 'clickandcargo.com', desc: 'Plataforma de logística y transporte. Web técnica, rápida y directa al grano.', tone: 'lilac', status: 'Live', img: '/img/proj-cargo.webp' },
-    ],
-  },
+// Trabajo · escaparate editorial: filas grandes que alternan lado, mockup
+// inclinado y frase de valor honesta + sector por proyecto.
+const items = [
+  { title: 'Centro Infantil Periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Que las familias conozcan el centro y reserven plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete.webp' },
+  { title: 'Fisio Mamá', url: 'fisiomama.es', sector: 'Fisioterapia · embarazo y posparto', value: 'Calma, confianza y cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea.webp' },
+  { title: 'Click & Cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Una web técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo.webp' },
 ];
 ---
 <section id="trabajo" class="section work">
   <div class="wrap">
     <header class="work__head" data-reveal>
-      <h2 class="work__title">Algo de trabajo<br />reciente</h2>
-      <p class="work__sub">(marcas y negocios reales)</p>
+      <span class="work__eyebrow">2026 · Trabajo reciente</span>
+      <h2 class="work__title">Marcas y negocios<br />reales que ya venden</h2>
     </header>
 
-    {years.map((y) => (
-      <div class="work__year">
-        <span class="work__y" data-reveal><span class="work__dot" aria-hidden="true"></span>{y.year}</span>
-        <div class="work__list" data-stagger>
-          {y.items.map((p) => (
-            <a class="work__item" href="#contacto" data-reveal aria-label={`${p.title} — ${p.desc}`}>
-              <div class="work__text">
-                <div class="work__row">
-                  <h3 class="work__name">{p.title}</h3>
-                  <span class={`work__status work__status--${p.status === 'Password' ? 'lock' : p.status === 'Live' ? 'live' : 'case'}`}>{p.status}</span>
-                </div>
-                <p class="work__desc">{p.desc}</p>
-              </div>
-              <div class={`mock mock--${p.tone}`}>
-                <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">{p.url}</span></div>
-                <div class="mock__body"><img src={p.img} alt={`${p.title} — diseño web Cantabria`} loading="lazy" /></div>
-              </div>
-            </a>
-          ))}
-        </div>
-      </div>
-    ))}
+    <div class="work__list">
+      {items.map((p) => (
+        <article class={`work__item work__item--${p.tone}`} data-reveal>
+          <a class="work__media" href="#contacto" aria-label={`${p.title} — ${p.value}`}>
+            <div class="mock">
+              <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">{p.url}</span></div>
+              <div class="mock__body"><img src={p.img} alt={`${p.title} — diseño web en Cantabria`} loading="lazy" /></div>
+            </div>
+          </a>
+          <div class="work__text">
+            <span class="work__sector">{p.sector}</span>
+            <h3 class="work__name">{p.title}</h3>
+            <p class="work__value">{p.value}</p>
+            <div class="work__foot">
+              <span class={`work__status work__status--${p.tone}`}>● {p.status}</span>
+              <a href="#contacto" class="work__cta">Quiero algo así →</a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
   </div>
 </section>
 
 <style>
-  .work__head { margin-bottom: var(--s-6); }
-  .work__title { font-size: var(--fs-h2); color: var(--ink); font-weight: 800; }
-  .work__sub { font-family: var(--font-display); font-weight: 600; color: var(--ink-mute); font-size: var(--fs-lead); margin-top: 8px; }
+  .work { background: var(--t-warm); }
+  .work__head { margin-bottom: var(--s-7); max-width: 60ch; }
+  .work__eyebrow { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+  .work__title { font-size: var(--fs-h2); color: var(--ink); font-weight: 800; line-height: 1.0; margin-top: 12px; }
 
-  .work__year { display: grid; grid-template-columns: 1fr; gap: var(--s-4); margin-bottom: var(--s-6); }
-  .work__y { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 4vw, 3rem); color: var(--ink-mute); }
-  .work__dot { width: 16px; height: 16px; border-radius: 50%; border: 4px solid var(--green); }
+  .work__list { display: grid; gap: clamp(48px, 8vw, 110px); }
+  .work__item { display: grid; grid-template-columns: 1fr; gap: clamp(22px, 4vw, 48px); align-items: center; }
 
-  .work__list { display: grid; gap: clamp(20px, 3vw, 36px); }
-  .work__item { display: grid; gap: var(--s-4); background: var(--bg-2); border-radius: var(--radius-lg); padding: clamp(22px, 3vw, 36px); transition: transform var(--dur) var(--ease); }
-  .work__item:hover { transform: translateY(-4px); }
-  .work__row { display: flex; align-items: center; gap: 12px; }
-  .work__name { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h3); color: var(--green); }
-  .work__status { font-family: var(--font-body); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: var(--radius-pill); }
-  .work__status--live { background: #d8ebd9; color: #2c6a4f; }
-  .work__status--case { background: var(--lilac); color: var(--lilac-ink); }
-  .work__status--lock { background: #e7e3d8; color: var(--ink-mute); }
-  .work__desc { color: var(--ink-soft); max-width: 50ch; margin-top: 6px; }
-
-  /* Mockup navegador (CSS, sin imágenes) */
-  .mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
-  .mock__bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #fff; }
+  /* Mockup navegador inclinado, con glow de color por proyecto */
+  .work__media { display: block; }
+  .mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); transform: rotate(-1.4deg); }
+  .work__item--rose .mock { box-shadow: 0 36px 70px -34px rgba(176,20,95,0.5); }
+  .work__item--peri .mock { box-shadow: 0 36px 70px -34px rgba(156,22,85,0.5); }
+  .work__item--plum .mock { box-shadow: 0 36px 70px -34px rgba(26,16,25,0.6); }
+  .work__media:hover .mock { transform: rotate(0deg) translateY(-6px); }
+  .mock__bar { display: flex; align-items: center; gap: 6px; padding: 11px 14px; background: var(--bg-2); border-bottom: 1px solid var(--line); }
   .mock__bar i { width: 9px; height: 9px; border-radius: 50%; background: #e0dccf; }
-  .mock__url { margin-left: 12px; font-family: var(--font-body); font-size: 0.78rem; color: var(--ink-mute); }
+  .mock__url { margin-left: 12px; font-family: var(--font-body); font-size: 0.8rem; color: var(--ink-mute); }
   .mock__body { aspect-ratio: 16 / 10; overflow: hidden; }
   .mock__body img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur) var(--ease); }
-  .work__item:hover .mock__body img { transform: scale(1.04); }
+  .work__media:hover .mock__body img { transform: scale(1.05); }
 
-  @media (min-width: 760px) {
-    .work__year { grid-template-columns: 160px 1fr; gap: var(--s-5); align-items: start; }
-    .work__y { position: sticky; top: 92px; align-self: start; }
-    .work__item { grid-template-columns: 1fr 1.1fr; align-items: center; gap: var(--s-5); }
+  .work__sector { font-family: var(--font-body); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-mute); }
+  .work__name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.8rem, 3.4vw, 2.8rem); line-height: 1.0; margin: 10px 0 14px; }
+  .work__item--rose .work__name { color: var(--t-warm-ink); }
+  .work__item--peri .work__name { color: var(--t-stone-ink); }
+  .work__item--plum .work__name { color: var(--accent-ink); }
+  .work__value { font-size: var(--fs-lead); color: var(--ink-soft); line-height: 1.4; max-width: 42ch; }
+  .work__foot { display: flex; align-items: center; gap: 18px; margin-top: var(--s-4); flex-wrap: wrap; }
+  .work__status { font-family: var(--font-body); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .work__status--rose { color: var(--t-warm-ink); }
+  .work__status--peri { color: var(--t-stone-ink); }
+  .work__status--plum { color: var(--accent-ink); }
+  .work__cta { font-family: var(--font-display); font-weight: 700; font-size: 0.92rem; color: var(--ink); transition: transform var(--dur) var(--ease); }
+  .work__cta:hover { transform: translateX(4px); }
+
+  @media (min-width: 860px) {
+    .work__item { grid-template-columns: 1.05fr 0.95fr; gap: clamp(40px, 6vw, 80px); }
+    .work__item:nth-child(even) .work__media { order: 2; }
+    .work__item:nth-child(even) .mock { transform: rotate(1.4deg); }
+    .work__item:nth-child(even) .work__media:hover .mock { transform: rotate(0deg) translateY(-6px); }
   }
+  @media (prefers-reduced-motion: reduce) { .mock { transform: none !important; } }
 </style>

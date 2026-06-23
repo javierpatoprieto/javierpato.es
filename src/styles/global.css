@@ -24,7 +24,7 @@
 
   /* superficies tonales (tarjetas) con color */
   --t-warm: #fbdcec;  --t-warm-ink: #b0145f;   /* rosa */
-  --t-stone: #e6e4fb; --t-stone-ink: #4b46a6;  /* periwinkle */
+  --t-stone: #f8cfe2; --t-stone-ink: #9c1655;  /* rosa (2º tono) */
   --t-deep: #1a1019;  --t-deep-ink: #f7f4ee;   /* ciruela oscuro */
   --yellow: #ffe6a0;  --yellow-ink: #8a6310;
 
@@ -76,7 +76,7 @@
   --btn-fg: #181219;
 
   --t-warm: #2c1422;  --t-warm-ink: #ff8cc4;
-  --t-stone: #1c1b30; --t-stone-ink: #bcb9f7;
+  --t-stone: #271320; --t-stone-ink: #ffa3cd;
   --t-deep: #0e0912;  --t-deep-ink: #f6f0f6;
   --yellow: #2f2713;  --yellow-ink: #f0cf78;
 }
