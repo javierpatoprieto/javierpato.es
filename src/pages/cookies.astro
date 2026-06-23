@@ -11,19 +11,25 @@ import LegalPage from '../components/LegalPage.astro';
   <h2>1. ¿Qué son las cookies?</h2>
   <p>Una cookie es un pequeño archivo que se descarga en tu dispositivo al visitar una web y permite, entre otras cosas, recordar tus preferencias. También existen tecnologías equivalentes como el almacenamiento local del navegador (<em>localStorage</em>).</p>
 
-  <h2>2. ¿Qué utiliza esta web?</h2>
-  <p>Esta web es estática y está diseñada para respetar al máximo tu privacidad. Actualmente <strong>no utiliza cookies de seguimiento, analítica ni publicidad</strong>. Solo emplea almacenamiento técnico estrictamente necesario:</p>
+  <h2>2. Cookies técnicas (necesarias)</h2>
+  <p>Estas son imprescindibles para una función solicitada por ti y están <strong>exentas de consentimiento</strong> según la normativa:</p>
   <table>
     <tr><th>Tecnología</th><th>Finalidad</th><th>Tipo</th><th>Duración</th></tr>
     <tr><td><code>jp-theme</code> (localStorage)</td><td>Recordar tu preferencia de tema claro/oscuro</td><td>Técnica / necesaria</td><td>Hasta que la borres</td></tr>
+    <tr><td><code>jp-consent</code> (localStorage)</td><td>Recordar tu decisión sobre las cookies</td><td>Técnica / necesaria</td><td>Hasta que la borres</td></tr>
   </table>
-  <p>Este almacenamiento técnico está <strong>exento de consentimiento</strong> según la normativa, ya que es imprescindible para una función solicitada por ti (recordar tu preferencia visual).</p>
 
-  <h2>3. Servicios de terceros</h2>
+  <h2>3. Cookies analíticas (requieren tu consentimiento)</h2>
+  <p>Usamos <strong>Google Analytics 4</strong> para entender de forma agregada cómo se usa la web (páginas visitadas, dispositivo, procedencia) y mejorarla. Estas cookies <strong>solo se activan si las aceptas</strong> en el banner; mientras no aceptes, permanecen desactivadas (Consent Mode). La IP se trata de forma anonimizada.</p>
+  <table>
+    <tr><th>Cookie</th><th>Proveedor</th><th>Finalidad</th><th>Duración</th></tr>
+    <tr><td><code>_ga</code></td><td>Google</td><td>Distinguir usuarios de forma anónima</td><td>2 años</td></tr>
+    <tr><td><code>_ga_*</code></td><td>Google</td><td>Mantener el estado de la sesión</td><td>2 años</td></tr>
+  </table>
+  <p>Puedes <strong>cambiar o retirar tu consentimiento</strong> en cualquier momento borrando el almacenamiento del navegador (ver punto 5); al volver a entrar se mostrará de nuevo el banner.</p>
+
+  <h2>4. Servicios de terceros</h2>
   <p>La web carga tipografías desde <strong>Google Fonts</strong> para mostrarse correctamente. Esto implica una conexión a servidores de Google, que puede registrar tu dirección IP por motivos técnicos. Google Fonts no instala cookies de seguimiento.</p>
-
-  <h2>4. Cambios futuros</h2>
-  <p>Si en el futuro incorporamos herramientas de medición (como analítica web) o de marketing que requieran cookies no esenciales, <strong>se solicitará tu consentimiento previo</strong> mediante un panel de configuración antes de activarlas, y se actualizará esta política.</p>
 
   <h2>5. ¿Cómo gestionar o eliminar el almacenamiento?</h2>
   <p>Puedes borrar las cookies y el almacenamiento local desde la configuración de tu navegador. Aquí tienes las guías oficiales:</p>

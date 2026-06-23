@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import CookieBanner from '../components/CookieBanner.astro';
+import Analytics from '../components/Analytics.astro';
 
 interface Props {
   title: string;
@@ -85,6 +86,8 @@ const baseLd = {
 
     <script type="application/ld+json" set:html={JSON.stringify(baseLd)} />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+
+    <Analytics />
   </head>
   <body>
     <a href="#main" class="skip">Saltar al contenido</a>

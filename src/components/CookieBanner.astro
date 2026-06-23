@@ -1,27 +1,46 @@
 ---
-// Banner informativo. La web solo usa almacenamiento técnico necesario.
-// Preparado para ampliarse a consentimiento si se añade analítica.
+// Banner de consentimiento (RGPD/AEPD).
+// Cookies técnicas (tema) siempre activas; Google Analytics solo si se acepta.
+// El consentimiento se guarda en localStorage 'jp-consent' = granted | denied
+// y activa/deniega analytics_storage en Consent Mode v2 (ver Analytics.astro).
 ---
 <div class="ck" data-cookie-banner hidden>
   <p class="ck__txt">
-    Esta web solo usa <strong>almacenamiento técnico necesario</strong> (tu preferencia de tema). No usamos cookies de seguimiento.
-    <a href="/cookies">Más info</a>.
+    Usamos cookies propias <strong>técnicas</strong> (tu preferencia de tema) y de
+    <strong>Google Analytics</strong> para entender cómo se usa la web y mejorarla.
+    Puedes aceptarlas o rechazarlas. <a href="/cookies">Más info</a>.
   </p>
-  <button class="ck__btn" data-cookie-ok>Entendido</button>
+  <div class="ck__btns">
+    <button class="ck__btn ck__btn--ghost" data-cookie-reject>Rechazar</button>
+    <button class="ck__btn" data-cookie-accept>Aceptar</button>
+  </div>
 </div>
 
 <script is:inline>
   (function () {
     try {
-      var key = 'jp-cookies-ok';
+      var key = 'jp-consent';
       var el = document.querySelector('[data-cookie-banner]');
       if (!el) return;
-      if (!localStorage.getItem(key)) { el.hidden = false; requestAnimationFrame(function () { el.classList.add('is-in'); }); }
-      var btn = el.querySelector('[data-cookie-ok]');
-      if (btn) btn.addEventListener('click', function () {
-        try { localStorage.setItem(key, '1'); } catch (e) {}
+      if (!localStorage.getItem(key)) {
+        el.hidden = false;
+        requestAnimationFrame(function () { el.classList.add('is-in'); });
+      }
+      function close() {
         el.classList.remove('is-in');
         setTimeout(function () { el.hidden = true; }, 350);
+      }
+      var accept = el.querySelector('[data-cookie-accept]');
+      var reject = el.querySelector('[data-cookie-reject]');
+      if (accept) accept.addEventListener('click', function () {
+        try { localStorage.setItem(key, 'granted'); } catch (e) {}
+        if (window.gtag) window.gtag('consent', 'update', { analytics_storage: 'granted' });
+        close();
+      });
+      if (reject) reject.addEventListener('click', function () {
+        try { localStorage.setItem(key, 'denied'); } catch (e) {}
+        if (window.gtag) window.gtag('consent', 'update', { analytics_storage: 'denied' });
+        close();
       });
     } catch (e) {}
   })();
@@ -41,11 +60,17 @@
   .ck__txt { flex: 1; min-width: 220px; font-size: 0.9rem; line-height: 1.45; }
   .ck__txt strong { color: var(--panel-ink); }
   .ck__txt a { color: var(--accent); font-weight: 700; border-bottom: 1px solid currentColor; }
+  .ck__btns { display: flex; gap: 10px; align-items: center; }
   .ck__btn {
     background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 700;
     font-size: 0.9rem; padding: 11px 20px; border-radius: var(--radius-pill); white-space: nowrap;
     transition: transform var(--dur) var(--ease), background var(--dur) var(--ease-soft);
   }
   .ck__btn:hover { transform: translateY(-2px); background: var(--accent-ink); }
+  .ck__btn--ghost {
+    background: transparent; color: var(--panel-ink);
+    border: 1px solid color-mix(in srgb, var(--panel-ink) 35%, transparent);
+  }
+  .ck__btn--ghost:hover { background: color-mix(in srgb, var(--panel-ink) 10%, transparent); }
   @media (prefers-reduced-motion: reduce) { .ck { transition: none; } }
 </style>

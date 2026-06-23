@@ -1,0 +1,31 @@
+---
+// Google Analytics 4 con Consent Mode v2.
+// Por defecto NO rastrea: analytics_storage queda 'denied' hasta que
+// el visitante acepta en el banner de cookies (RGPD / AEPD).
+const GA_ID = 'G-39MXNFS02E';
+---
+<script is:inline define:vars={{ GA_ID }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  // Estado por defecto: denegado (hasta consentimiento explícito)
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    wait_for_update: 500,
+  });
+
+  // Si el usuario ya aceptó en una visita anterior, concedemos analítica
+  try {
+    if (localStorage.getItem('jp-consent') === 'granted') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+  } catch (e) {}
+
+  gtag('js', new Date());
+  gtag('config', GA_ID, { anonymize_ip: true });
+</script>
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
