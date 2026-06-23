@@ -1,0 +1,125 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Contact from '../../components/Contact.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const items = await getCollection('proyectos');
+  const sorted = items.sort((a, b) => a.data.order - b.data.order);
+  return sorted.map((p, i) => ({
+    params: { slug: p.slug },
+    props: { p, next: sorted[(i + 1) % sorted.length] },
+  }));
+}
+const { p, next } = Astro.props;
+const { Content } = await p.render();
+const d = p.data;
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: `${d.title} — ${d.scope === 'branding' ? 'Branding y web' : 'Diseño web'} | Javier Pato`,
+  about: d.sector,
+  description: d.summary,
+  image: new URL(d.mockup, 'https://javierpato.es').toString(),
+  creator: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
+  url: `https://javierpato.es/proyectos/${p.slug}`,
+};
+---
+<Layout
+  title={`${d.title} — ${d.scope === 'branding' ? 'Branding y diseño web' : 'Diseño web'} en Cantabria | Javier Pato`}
+  description={d.summary}
+  jsonld={jsonld}
+>
+  <article class={`pc pc--${d.tone}`}>
+    <section class="section pc-hero">
+      <div class="wrap">
+        <nav class="pc-bc" aria-label="Migas"><a href="/proyectos">Proyectos</a> <span aria-hidden="true">/</span> <span>{d.title}</span></nav>
+        <span class="pc-eyebrow" data-reveal>{d.sector} · {d.year}</span>
+        <h1 class="pc-h1" data-reveal>{d.title}</h1>
+        <p class="pc-summary" data-reveal>{d.summary}</p>
+        <div class="pc-meta" data-reveal>
+          <ul class="pc-services">{d.services.map((s) => <li>{s}</li>)}</ul>
+          <a class="pc-url" href={`https://${d.url}`} target="_blank" rel="noopener">{d.url} ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pc-mock-wrap">
+      <div class="wrap">
+        <figure class="pc-mock" data-reveal>
+          <img src={d.mockup} alt={`${d.title} — web en MacBook y iPhone`} fetchpriority="high" />
+        </figure>
+      </div>
+    </section>
+
+    {d.scope === 'branding' && d.logo && (
+      <section class="section pc-brand">
+        <div class="wrap pc-brand__grid">
+          <div class="pc-brand__logo" data-reveal>
+            <img src={d.logo} alt={`Logo de ${d.title}`} loading="lazy" />
+            <span class="pc-brand__name">{d.title}</span>
+          </div>
+          <div class="pc-brand__txt" data-reveal>
+            <span class="pc-eyebrow">Identidad de marca</span>
+            <h2 class="pc-h2">No solo una web.<br />Una marca entera.</h2>
+            <p>Para {d.title} hicimos branding completo: símbolo, color, tipografía y tono. La web es la punta del iceberg — debajo hay una identidad coherente que funciona en cualquier sitio donde aparezca la marca.</p>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="section pc-body">
+      <div class="wrap pc-body__wrap">
+        <Content />
+      </div>
+    </section>
+
+    <section class="section pc-next">
+      <div class="wrap">
+        <a class="pc-next__card" href={`/proyectos/${next.slug}`}>
+          <span class="pc-eyebrow">Siguiente proyecto</span>
+          <span class="pc-next__title">{next.data.title} →</span>
+        </a>
+      </div>
+    </section>
+  </article>
+
+  <Contact />
+
+  <style>
+    .pc-hero { padding-top: clamp(36px, 6vw, 72px); padding-bottom: clamp(20px,3vw,32px); }
+    .pc-bc { font-family: var(--font-mono, monospace); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-mute); margin-bottom: var(--s-4); }
+    .pc-bc a { color: var(--accent-ink); }
+    .pc-eyebrow { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .pc-h1 { font-family: var(--font-display); font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 800; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .pc-summary { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 56ch; line-height: 1.4; }
+    .pc-meta { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; margin-top: var(--s-5); }
+    .pc-services { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
+    .pc-services li { font-size: 0.8rem; font-weight: 600; background: var(--bg-2); border: 1px solid var(--line); padding: 6px 14px; border-radius: var(--radius-pill, 100px); }
+    .pc-url { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); }
+
+    .pc-mock-wrap { padding-bottom: clamp(32px,5vw,64px); }
+    .pc-mock { border-radius: var(--radius-lg, 28px); overflow: hidden; background: var(--bg-2); }
+    .pc-mock img { width: 100%; display: block; }
+
+    .pc-brand__grid { display: grid; grid-template-columns: 1fr; gap: clamp(24px,4vw,48px); align-items: center; }
+    .pc-brand__logo { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg, 28px); padding: clamp(32px,6vw,64px); display: grid; place-items: center; gap: 18px; text-align: center; }
+    .pc-brand__logo img { width: clamp(120px, 24vw, 200px); height: auto; }
+    .pc-brand__name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem,3vw,2.4rem); letter-spacing: -0.02em; color: var(--accent-ink); }
+    .pc-h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h2); line-height: 1.0; margin: var(--s-3) 0 var(--s-4); }
+    .pc-brand__txt p { color: var(--ink-soft); line-height: 1.6; max-width: 48ch; }
+    @media (min-width: 820px) { .pc-brand__grid { grid-template-columns: 0.9fr 1.1fr; } }
+
+    .pc-body__wrap { max-width: 720px; font-size: 1.0625rem; line-height: 1.75; color: var(--ink); }
+    .pc-body__wrap :global(h2) { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem,3vw,2rem); margin: var(--s-6) 0 var(--s-3); color: var(--accent-ink); }
+    .pc-body__wrap :global(p) { margin-bottom: var(--s-4); }
+    .pc-body__wrap :global(ul) { margin: 0 0 var(--s-4) 1.2em; display: grid; gap: 8px; }
+    .pc-body__wrap :global(strong) { color: var(--ink); font-weight: 700; }
+
+    .pc-next__card { display: flex; flex-direction: column; gap: 8px; background: var(--panel); color: var(--panel-ink); border-radius: var(--radius-lg, 28px); padding: clamp(28px,4vw,48px); transition: transform var(--dur,.4s) ease; }
+    .pc-next__card:hover { transform: translateY(-4px); }
+    .pc-next__card .pc-eyebrow { color: var(--accent); }
+    .pc-next__title { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.8rem,4vw,3rem); line-height: 1.0; }
+  </style>
+</Layout>
