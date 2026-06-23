@@ -11,19 +11,35 @@ const { Content } = await post.render();
 const d = post.data;
 const fmt = (date: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
 
-const jsonld = {
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: d.title,
-  description: d.description,
-  datePublished: d.pubDate.toISOString(),
-  keywords: d.keyword,
-  author: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
-  publisher: { '@type': 'Person', name: 'Javier Pato' },
-  mainEntityOfPage: `https://javierpato.es/blog/${post.slug}`,
-};
+const postUrl = `https://javierpato.es/blog/${post.slug}`;
+const coverUrl = new URL(d.cover, 'https://javierpato.es').toString();
+
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: d.title,
+    description: d.description,
+    image: coverUrl,
+    datePublished: d.pubDate.toISOString(),
+    dateModified: d.pubDate.toISOString(),
+    keywords: d.keyword,
+    author: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
+    publisher: { '@type': 'Person', name: 'Javier Pato' },
+    mainEntityOfPage: postUrl,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://javierpato.es/blog' },
+      { '@type': 'ListItem', position: 3, name: d.title, item: postUrl },
+    ],
+  },
+];
 ---
-<Layout title={`${d.title} | Javier Pato`} description={d.description} jsonld={jsonld}>
+<Layout title={`${d.title} | Javier Pato`} description={d.description} ogImage={d.cover} jsonld={jsonld}>
   <article class="section post">
     <div class="wrap post__wrap">
       <nav class="post__bc" aria-label="Migas"><a href="/blog">Blog</a> <span aria-hidden="true">/</span> <span>{d.tags[0] ?? 'Artículo'}</span></nav>
