@@ -11,6 +11,8 @@ tone: "peri"
 shotDesktop: "/img/shot-fisio-d.webp"
 shotMobile: "/img/shot-fisio-m.webp"
 logo: "/img/logo-fisio.webp"
+brandingTitle: "Una marca que abraza."
+brandingText: "En salud, la identidad no decora: tranquiliza. Diseñamos un símbolo y una paleta suaves, femeninos y serenos, con un tono que acompaña en vez de vender. La misma calma en la web, en la consulta y en cada mensaje — para que la confianza empiece antes de la primera cita."
 order: 2
 ---
 

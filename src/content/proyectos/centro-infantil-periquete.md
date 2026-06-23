@@ -11,6 +11,8 @@ tone: "rose"
 shotDesktop: "/img/shot-periquete-d.webp"
 shotMobile: "/img/shot-periquete-m.webp"
 logo: "/img/logo-periquete.webp"
+brandingTitle: "El logo es lo de menos."
+brandingText: "Lo que de verdad tranquiliza a una familia es la coherencia: que el color, la tipografía y el tono digan lo mismo en la web, en la puerta del centro y en cada cartel. Construimos ese sistema para Periquete — una marca que se reconoce y que da confianza esté donde esté."
 order: 1
 ---
 

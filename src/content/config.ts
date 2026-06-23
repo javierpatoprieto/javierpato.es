@@ -30,6 +30,8 @@ const proyectos = defineCollection({
     shotDesktop: z.string(),
     shotMobile: z.string(),
     logo: z.string().optional(),
+    brandingTitle: z.string().optional(),
+    brandingText: z.string().optional(),
     order: z.number().default(0),
   }),
 });
