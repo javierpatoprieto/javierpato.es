@@ -20,11 +20,23 @@ const baseLd = {
   name: 'Javier Pato — Diseño web en Cantabria',
   description,
   url: 'https://javierpato.es',
-  image: 'https://javierpato.es' + ogImage,
+  image: 'https://javierpato.es/og.jpg',
+  telephone: '+34669385624',
+  email: 'javier@javierpato.es',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Santander',
+    addressRegion: 'Cantabria',
+    addressCountry: 'ES',
+  },
+  geo: { '@type': 'GeoCoordinates', latitude: 43.4623, longitude: -3.8099 },
   areaServed: ['Cantabria', 'Santander', 'Torrelavega', 'España'],
   priceRange: 'desde 299€',
   knowsAbout: ['Diseño web', 'Diseño web Cantabria', 'Branding', 'Diseño gráfico', 'Dirección de arte con IA', 'SEO local'],
-  sameAs: ['https://x.com/ArtiMindArt'],
+  sameAs: [
+    'https://instagram.com/javierpato',
+    'https://x.com/ArtiMindArt',
+  ],
 };
 ---
 <!doctype html>
