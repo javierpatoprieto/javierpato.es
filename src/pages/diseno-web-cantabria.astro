@@ -37,6 +37,7 @@ const planes = [
   jsonld={jsonld}
 >
   <section class="section lp-hero">
+    <div class="lp-aura" aria-hidden="true"></div>
     <div class="wrap lp-hero__grid">
       <div class="lp-hero__text">
         <span class="lp-kicker" data-reveal>Diseño web · Cantabria</span>
@@ -126,7 +127,14 @@ const planes = [
   </section>
 
   <style>
-    .lp-hero { padding-top: clamp(24px, 4vw, 56px); }
+    .lp-hero { padding-top: clamp(24px, 4vw, 56px); position: relative; overflow: clip; isolation: isolate; }
+    .lp-aura {
+      position: absolute; inset: -12% -6% auto -6%; height: 78%; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(42% 52% at 80% 16%, color-mix(in srgb, var(--accent) 42%, transparent), transparent 70%),
+        radial-gradient(40% 48% at 10% 34%, color-mix(in srgb, var(--t-stone-ink) 30%, transparent), transparent 72%);
+      filter: blur(34px); opacity: 0.85;
+    }
     .lp-hero__grid { display: grid; grid-template-columns: 1fr; gap: clamp(24px,4vw,48px); align-items: center; margin-bottom: var(--s-6); }
     .lp-kicker { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
     .lp-h1 { font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 800; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
@@ -135,8 +143,10 @@ const planes = [
     .lp-lead strong { color: var(--ink); }
     .lp-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--s-5); }
     /* Mockup de navegador */
-    .lp-mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--card); box-shadow: 0 30px 60px -30px rgba(0,0,0,0.45); transform: rotate(1.2deg); transition: transform var(--dur) var(--ease); }
-    .lp-mock:hover { transform: rotate(0deg) translateY(-4px); }
+    .lp-mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--card); box-shadow: 0 40px 80px -34px rgba(230,25,127,0.45), 0 18px 40px -28px rgba(0,0,0,0.5); transform: rotate(1.2deg); animation: lp-float 6.5s var(--ease-soft) infinite; }
+    .lp-mock:hover { animation-play-state: paused; }
+    @keyframes lp-float { 0%, 100% { transform: rotate(1.2deg) translateY(0); } 50% { transform: rotate(1.2deg) translateY(-12px); } }
+    @media (prefers-reduced-motion: reduce) { .lp-mock { animation: none; } }
     .lp-mock__bar { display: flex; align-items: center; gap: 7px; padding: 11px 14px; background: var(--bg-2); border-bottom: 1px solid var(--line); }
     .lp-mock__bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
     .lp-mock__bar em { margin-left: 14px; font-style: normal; font-size: 0.78rem; color: var(--ink-mute); font-family: var(--font-body); }
@@ -161,7 +171,8 @@ const planes = [
     .lp-stat__n { display: block; font-family: var(--font-display); font-weight: 900; font-size: clamp(1.8rem,4vw,2.8rem); color: var(--accent); line-height: 1; }
     .lp-stat__l { font-size: 0.85rem; opacity: 0.8; }
 
-    .lp-h2 { font-size: var(--fs-h2); font-weight: 800; margin-bottom: var(--s-6); }
+    .lp-h2 { font-size: var(--fs-h2); font-weight: 800; margin-bottom: var(--s-6); position: relative; }
+    .lp-h2::before { content: ''; display: block; width: 46px; height: 4px; border-radius: 4px; background: var(--accent); margin-bottom: 20px; }
     .lp-grid { display: grid; grid-template-columns: 1fr; gap: clamp(14px,2vw,20px); }
     .lp-card { border-radius: var(--radius); padding: clamp(24px,3vw,36px); transition: transform var(--dur) var(--ease); }
     .lp-card:hover { transform: translateY(-5px); }
@@ -184,8 +195,18 @@ const planes = [
     .lp-card-d { color: inherit; opacity: 0.85; line-height: 1.5; }
 
     .lp-steps { display: grid; gap: clamp(14px,2vw,20px); }
-    .lp-step { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(20px,2.6vw,30px); }
+    .lp-step { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(20px,2.6vw,30px); transition: transform var(--dur) var(--ease); }
+    .lp-step:hover { transform: translateY(-5px); }
     .lp-step-n { width: 48px; height: 48px; border-radius: 50%; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 800; display: grid; place-items: center; font-size: 1.3rem; }
+
+    /* Bandas de sección — dan ritmo y "escaparate" */
+    .lp-process { background: var(--panel); color: var(--panel-ink); }
+    .lp-process .lp-h2 { color: var(--panel-ink); }
+    .lp-process .lp-step { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.14); }
+    .lp-process .lp-card-t { color: #fff; }
+    .lp-process .lp-card-d { color: rgba(255,255,255,0.78); }
+    .lp-precios { background: var(--t-stone); }
+    .lp-card:hover, .lp-plan:hover, .lp-step:hover { box-shadow: 0 26px 50px -28px rgba(230,25,127,0.4); }
 
     .lp-faq { display: grid; gap: 12px; }
     .lp-q { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(18px,2.4vw,26px); }
