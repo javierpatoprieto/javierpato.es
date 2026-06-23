@@ -12,11 +12,24 @@ const addons = [
   { id: 'hosting', name: 'Alojamiento', price: 49, unit: '/año', desc: 'Hosting rápido y seguro, sin que te preocupes.' },
   { id: 'manten', name: 'Mantenimiento', price: 190, unit: '/año', desc: 'Cambios, copias y soporte todo el año.' },
 ];
-const jsonld = {
-  '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Diseño web',
-  areaServed: 'Cantabria', provider: { '@type': 'Person', name: 'Javier Pato' },
-  offers: plans.map((p) => ({ '@type': 'Offer', name: `Web ${p.name}`, price: p.price, priceCurrency: 'EUR' })),
-};
+const faqs = [
+  { q: '¿Cuánto cuesta una página web en Cantabria?', a: 'Desde 299€ la one-page (a medida, entregada en 3 días). La Básica de 4 páginas son 549€, la Pro de 6 páginas 699€ y una tienda online desde 999€. Precios cerrados, sin presupuestos sorpresa.' },
+  { q: '¿El precio incluye dominio y alojamiento?', a: 'El diseño y desarrollo van en el precio del plan. El dominio propio (19,99€/año) y el alojamiento (49€/año) son extras opcionales que puedo gestionar yo para que no te preocupes de nada.' },
+  { q: '¿Cuánto tardas en entregar la web?', a: 'La one-page en 3 días, la Básica y la Pro en una semana, y la tienda online entre 2 y 3 semanas. Rápido, pero a medida: nada de plantillas.' },
+  { q: '¿Hay cuotas mensuales o pagos ocultos?', a: 'No. Pagas la web una vez y es tuya. Lo único recurrente, y solo si lo quieres, son dominio, alojamiento o el mantenimiento anual (190€/año) para cambios, copias y soporte.' },
+  { q: '¿Qué pasa si necesito cambios después?', a: 'Cada plan incluye una ronda de cambios. Si más adelante quieres seguir evolucionando la web, el plan de mantenimiento anual cubre ajustes y soporte durante todo el año.' },
+];
+const jsonld = [
+  {
+    '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Diseño web',
+    areaServed: 'Cantabria', provider: { '@type': 'Person', name: 'Javier Pato' },
+    offers: plans.map((p) => ({ '@type': 'Offer', name: `Web ${p.name}`, price: p.price, priceCurrency: 'EUR' })),
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
 ---
 <Layout
   title="Precios de diseño web en Cantabria — desde 299€ | Javier Pato"
@@ -78,6 +91,17 @@ const jsonld = {
           <p class="pr-sum-fine">Precio orientativo. Lo cerramos en una charla de 20 min, sin compromiso.</p>
         </div>
       </aside>
+    </div>
+  </section>
+
+  <section class="section pr-faq-sec">
+    <div class="wrap">
+      <h2 class="pr-h2" data-reveal>Preguntas sobre precios</h2>
+      <div class="pr-faq" data-stagger>
+        {faqs.map((f) => (
+          <details class="pr-q" data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -173,6 +197,15 @@ const jsonld = {
     .pr-sum-list li { display: flex; justify-content: space-between; gap: 12px; font-size: 0.92rem; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.12); }
     .pr-sum-cta { width: 100%; justify-content: center; margin-top: var(--s-3); }
     .pr-sum-fine { font-size: 0.78rem; opacity: 0.6; margin-top: 12px; }
+
+    .pr-faq-sec { padding-top: 0; }
+    .pr-faq { display: grid; gap: 12px; max-width: 760px; }
+    .pr-q { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(16px,2vw,22px) clamp(18px,2.4vw,26px); }
+    .pr-q summary { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+    .pr-q summary::-webkit-details-marker { display: none; }
+    .pr-q summary::after { content: '+'; color: var(--accent-ink); font-size: 1.4rem; line-height: 1; flex: none; transition: transform var(--dur) var(--ease-soft); }
+    .pr-q[open] summary::after { transform: rotate(45deg); }
+    .pr-q p { color: var(--ink-soft); line-height: 1.6; margin-top: 12px; }
 
     @media (min-width: 920px) {
       .pr-grid { grid-template-columns: 1.6fr 0.9fr; }
