@@ -15,4 +15,25 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const proyectos = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    client: z.string(),
+    sector: z.string(),
+    year: z.string().default('2026'),
+    url: z.string(),
+    summary: z.string(),
+    services: z.array(z.string()).default([]),
+    scope: z.enum(['branding', 'web']).default('web'),
+    tone: z.enum(['rose', 'peri', 'plum']).default('rose'),
+    shotDesktop: z.string(),
+    shotMobile: z.string(),
+    logo: z.string().optional(),
+    brandingTitle: z.string().optional(),
+    brandingText: z.string().optional(),
+    order: z.number().default(0),
+  }),
+});
+
+export const collections = { blog, proyectos };

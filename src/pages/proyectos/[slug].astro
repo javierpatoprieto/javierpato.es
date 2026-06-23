@@ -1,0 +1,148 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Contact from '../../components/Contact.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const items = await getCollection('proyectos');
+  const sorted = items.sort((a, b) => a.data.order - b.data.order);
+  return sorted.map((p, i) => ({
+    params: { slug: p.slug },
+    props: { p, next: sorted[(i + 1) % sorted.length] },
+  }));
+}
+const { p, next } = Astro.props;
+const { Content } = await p.render();
+const d = p.data;
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: `${d.title} — ${d.scope === 'branding' ? 'Branding y web' : 'Diseño web'} | Javier Pato`,
+  about: d.sector,
+  description: d.summary,
+  image: new URL(d.shotDesktop, 'https://javierpato.es').toString(),
+  creator: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
+  url: `https://javierpato.es/proyectos/${p.slug}`,
+};
+---
+<Layout
+  title={`${d.title} — ${d.scope === 'branding' ? 'Branding y diseño web' : 'Diseño web'} en Cantabria | Javier Pato`}
+  description={d.summary}
+  jsonld={jsonld}
+>
+  <article class={`pc pc--${d.tone}`}>
+    <section class="section pc-hero">
+      <div class="wrap">
+        <nav class="pc-bc" aria-label="Migas"><a href="/proyectos">Proyectos</a> <span aria-hidden="true">/</span> <span>{d.title}</span></nav>
+        <span class="pc-eyebrow" data-reveal>{d.sector} · {d.year}</span>
+        <h1 class="pc-h1" data-reveal>{d.title}</h1>
+        <p class="pc-summary" data-reveal>{d.summary}</p>
+        <div class="pc-meta" data-reveal>
+          <ul class="pc-services">{d.services.map((s) => <li>{s}</li>)}</ul>
+          <a class="pc-url" href={`https://${d.url}`} target="_blank" rel="noopener">{d.url} ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pc-mock-wrap">
+      <div class="wrap">
+        <div class="pc-stage" data-reveal>
+          <div class="pc-stage__devices">
+            <div class="mac">
+              <div class="mac__screen"><img src={d.shotDesktop} alt={`${d.title} — web en escritorio`} fetchpriority="high" /><span class="mac__gloss"></span></div>
+              <div class="mac__base"><span class="mac__notch"></span></div>
+              <span class="mac__shadow"></span>
+            </div>
+            <div class="phone">
+              <span class="phone__island"></span>
+              <div class="phone__screen"><img src={d.shotMobile} alt={`${d.title} — web en móvil`} loading="lazy" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {d.scope === 'branding' && d.logo && (
+      <section class="section pc-brand">
+        <div class="wrap pc-brand__grid">
+          <div class="pc-brand__logo" data-reveal>
+            <img src={d.logo} alt={`Logo de ${d.title}`} loading="lazy" />
+            <span class="pc-brand__name">{d.title}</span>
+          </div>
+          <div class="pc-brand__txt" data-reveal>
+            <span class="pc-eyebrow">Identidad de marca</span>
+            <h2 class="pc-h2" set:html={(d.brandingTitle ?? 'Una marca entera.')} />
+            <p>{d.brandingText ?? `Para ${d.title} hicimos branding completo: símbolo, color, tipografía y tono.`}</p>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="section pc-body">
+      <div class="wrap pc-body__wrap">
+        <Content />
+      </div>
+    </section>
+
+    <section class="section pc-next">
+      <div class="wrap">
+        <a class="pc-next__card" href={`/proyectos/${next.slug}`}>
+          <span class="pc-eyebrow">Siguiente proyecto</span>
+          <span class="pc-next__title">{next.data.title} →</span>
+        </a>
+      </div>
+    </section>
+  </article>
+
+  <Contact />
+
+  <style>
+    .pc-hero { padding-top: clamp(36px, 6vw, 72px); padding-bottom: clamp(20px,3vw,32px); }
+    .pc-bc { font-family: var(--font-mono, monospace); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-mute); margin-bottom: var(--s-4); }
+    .pc-bc a { color: var(--accent-ink); }
+    .pc-eyebrow { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .pc-h1 { font-family: var(--font-display); font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 800; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .pc-summary { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 56ch; line-height: 1.4; }
+    .pc-meta { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; margin-top: var(--s-5); }
+    .pc-services { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
+    .pc-services li { font-size: 0.8rem; font-weight: 600; background: var(--bg-2); border: 1px solid var(--line); padding: 6px 14px; border-radius: var(--radius-pill, 100px); }
+    .pc-url { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); }
+
+    /* Escena: escritorio de diseño + dispositivos con capturas reales */
+    .pc-mock-wrap { padding-bottom: clamp(40px,6vw,80px); }
+    .pc-stage { position: relative; border-radius: var(--radius-lg, 28px); overflow: hidden; background: #cdb79c url('/img/desk.webp') center 35% / cover no-repeat; aspect-ratio: 16 / 9; box-shadow: 0 50px 90px -45px rgba(0,0,0,0.5); }
+    .pc-stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.16)); }
+    .pc-stage__devices { position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center; padding: 0 6% clamp(6%, 9%, 12%); z-index: 2; }
+    .mac { position: relative; width: clamp(58%, 60%, 62%); }
+    .mac__screen { position: relative; background: #0b0a0d; border: 2px solid #232026; border-radius: 14px 14px 0 0; padding: 8px 8px 6px; box-shadow: 0 18px 40px -14px rgba(0,0,0,0.45); }
+    .mac__screen img { width: 100%; display: block; border-radius: 5px; aspect-ratio: 16/10; object-fit: cover; object-position: top; }
+    .mac__gloss { position: absolute; inset: 8px; border-radius: 5px; pointer-events: none; background: linear-gradient(115deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 32%); }
+    .mac__base { position: relative; height: clamp(8px, 1.4vw, 16px); background: linear-gradient(#e6e2e8, #b4afbb); border-radius: 0 0 8px 8px; margin: 0 -3%; box-shadow: 0 8px 14px -6px rgba(0,0,0,0.4); }
+    .mac__notch { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: clamp(60px,8vw,110px); height: 38%; background: #9b96a3; border-radius: 0 0 8px 8px; }
+    .mac__shadow { position: absolute; left: 4%; right: 4%; bottom: -7%; height: 14%; background: rgba(0,0,0,0.45); filter: blur(26px); border-radius: 50%; z-index: -1; }
+    .phone { position: absolute; right: 5%; bottom: 0; width: clamp(64px, 8.5vw, 116px); background: #0b0a0d; border: 3px solid #232026; border-radius: clamp(14px,2vw,22px); padding: 4px; box-shadow: -10px 24px 44px -16px rgba(0,0,0,0.55); z-index: 3; }
+    .phone__island { position: absolute; top: 9px; left: 50%; transform: translateX(-50%); width: 30%; height: clamp(6px,0.9vw,9px); background: #0b0a0d; border-radius: 10px; z-index: 2; }
+    .phone__screen { border-radius: clamp(11px,1.6vw,18px); overflow: hidden; }
+    .phone__screen img { width: 100%; display: block; aspect-ratio: 9/19; object-fit: cover; object-position: top; }
+
+    .pc-brand__grid { display: grid; grid-template-columns: 1fr; gap: clamp(24px,4vw,48px); align-items: center; }
+    .pc-brand__logo { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg, 28px); padding: clamp(32px,6vw,64px); display: grid; place-items: center; gap: 18px; text-align: center; }
+    .pc-brand__logo img { width: clamp(120px, 24vw, 200px); height: auto; }
+    .pc-brand__name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem,3vw,2.4rem); letter-spacing: -0.02em; color: var(--accent-ink); }
+    .pc-h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h2); line-height: 1.0; margin: var(--s-3) 0 var(--s-4); }
+    .pc-brand__txt p { color: var(--ink-soft); line-height: 1.6; max-width: 48ch; }
+    @media (min-width: 820px) { .pc-brand__grid { grid-template-columns: 0.9fr 1.1fr; } }
+
+    .pc-body__wrap { max-width: 720px; font-size: 1.0625rem; line-height: 1.75; color: var(--ink); }
+    .pc-body__wrap :global(h2) { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem,3vw,2rem); margin: var(--s-6) 0 var(--s-3); color: var(--accent-ink); }
+    .pc-body__wrap :global(p) { margin-bottom: var(--s-4); }
+    .pc-body__wrap :global(ul) { margin: 0 0 var(--s-4) 1.2em; display: grid; gap: 8px; }
+    .pc-body__wrap :global(strong) { color: var(--ink); font-weight: 700; }
+
+    .pc-next__card { display: flex; flex-direction: column; gap: 8px; background: var(--panel); color: var(--panel-ink); border-radius: var(--radius-lg, 28px); padding: clamp(28px,4vw,48px); transition: transform var(--dur,.4s) ease; }
+    .pc-next__card:hover { transform: translateY(-4px); }
+    .pc-next__card .pc-eyebrow { color: var(--accent); }
+    .pc-next__title { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.8rem,4vw,3rem); line-height: 1.0; }
+  </style>
+</Layout>

@@ -2,9 +2,9 @@
 // Trabajo · escaparate editorial: filas grandes que alternan lado, mockup
 // inclinado y frase de valor honesta + sector por proyecto.
 const items = [
-  { title: 'Centro Infantil Periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Que las familias conozcan el centro y reserven plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete.webp' },
-  { title: 'Fisio Mamá', url: 'fisiomama.es', sector: 'Fisioterapia · embarazo y posparto', value: 'Calma, confianza y cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea.webp' },
-  { title: 'Click & Cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Una web técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo.webp' },
+  { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Que las familias conozcan el centro y reserven plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete.webp' },
+  { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia · embarazo y posparto', value: 'Calma, confianza y cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea.webp' },
+  { title: 'Click & Cargo', slug: 'click-and-cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Una web técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo.webp' },
 ];
 ---
 <section id="trabajo" class="section work">
@@ -17,11 +17,8 @@ const items = [
     <div class="work__list">
       {items.map((p) => (
         <article class={`work__item work__item--${p.tone}`} data-reveal>
-          <a class="work__media" href="#contacto" aria-label={`${p.title} — ${p.value}`}>
-            <div class="mock">
-              <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">{p.url}</span></div>
-              <div class="mock__body"><img src={p.img} alt={`${p.title} — diseño web en Cantabria`} loading="lazy" /></div>
-            </div>
+          <a class="work__media" href={`/proyectos/${p.slug}`} aria-label={`${p.title} — ${p.value}`}>
+            <img class="work__shot" src={p.img} alt={`${p.title} — diseño web en Cantabria, mostrado en pantalla`} loading="lazy" width="1600" height="1096" />
           </a>
           <div class="work__text">
             <span class="work__sector">{p.sector}</span>
@@ -29,7 +26,7 @@ const items = [
             <p class="work__value">{p.value}</p>
             <div class="work__foot">
               <span class={`work__status work__status--${p.tone}`}>● {p.status}</span>
-              <a href="#contacto" class="work__cta">Quiero algo así →</a>
+              <a href={`/proyectos/${p.slug}`} class="work__cta">Ver el caso →</a>
             </div>
           </div>
         </article>
@@ -47,19 +44,13 @@ const items = [
   .work__list { display: grid; gap: clamp(48px, 8vw, 110px); }
   .work__item { display: grid; grid-template-columns: 1fr; gap: clamp(22px, 4vw, 48px); align-items: center; }
 
-  /* Mockup navegador inclinado, con glow de color por proyecto */
+  /* Mockup de dispositivo real (la foto ya incluye el ordenador), con glow de color */
   .work__media { display: block; }
-  .mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); transform: rotate(-1.4deg); }
-  .work__item--rose .mock { box-shadow: 0 36px 70px -34px rgba(176,20,95,0.5); }
-  .work__item--peri .mock { box-shadow: 0 36px 70px -34px rgba(156,22,85,0.5); }
-  .work__item--plum .mock { box-shadow: 0 36px 70px -34px rgba(26,16,25,0.6); }
-  .work__media:hover .mock { transform: rotate(0deg) translateY(-6px); }
-  .mock__bar { display: flex; align-items: center; gap: 6px; padding: 11px 14px; background: var(--bg-2); border-bottom: 1px solid var(--line); }
-  .mock__bar i { width: 9px; height: 9px; border-radius: 50%; background: #e0dccf; }
-  .mock__url { margin-left: 12px; font-family: var(--font-body); font-size: 0.8rem; color: var(--ink-mute); }
-  .mock__body { aspect-ratio: 16 / 10; overflow: hidden; }
-  .mock__body img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur) var(--ease); }
-  .work__media:hover .mock__body img { transform: scale(1.05); }
+  .work__shot { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 14px; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); transform: rotate(-1.2deg); }
+  .work__item--rose .work__shot { box-shadow: 0 40px 80px -38px rgba(176,20,95,0.5); }
+  .work__item--peri .work__shot { box-shadow: 0 40px 80px -38px rgba(156,22,85,0.5); }
+  .work__item--plum .work__shot { box-shadow: 0 40px 80px -38px rgba(26,16,25,0.55); }
+  .work__media:hover .work__shot { transform: rotate(0deg) translateY(-6px) scale(1.01); }
 
   .work__sector { font-family: var(--font-body); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-mute); }
   .work__name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.8rem, 3.4vw, 2.8rem); line-height: 1.0; margin: 10px 0 14px; }
@@ -78,8 +69,8 @@ const items = [
   @media (min-width: 860px) {
     .work__item { grid-template-columns: 1.05fr 0.95fr; gap: clamp(40px, 6vw, 80px); }
     .work__item:nth-child(even) .work__media { order: 2; }
-    .work__item:nth-child(even) .mock { transform: rotate(1.4deg); }
-    .work__item:nth-child(even) .work__media:hover .mock { transform: rotate(0deg) translateY(-6px); }
+    .work__item:nth-child(even) .work__shot { transform: rotate(1.2deg); }
+    .work__item:nth-child(even) .work__media:hover .work__shot { transform: rotate(0deg) translateY(-6px) scale(1.01); }
   }
-  @media (prefers-reduced-motion: reduce) { .mock { transform: none !important; } }
+  @media (prefers-reduced-motion: reduce) { .work__shot { transform: none !important; } }
 </style>
