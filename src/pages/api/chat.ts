@@ -39,10 +39,41 @@ REGLAS:
 
 const MODEL = 'claude-haiku-4-5-20251001';
 
-export const POST: APIRoute = async ({ request }) => {
+// --- Rate limit en memoria (best-effort, por instancia serverless) ---
+// Frena que alguien use el chat como API gratis de Claude. Para algo más
+// robusto y compartido entre instancias se usaría un KV (Upstash/Vercel KV).
+const HITS = new Map<string, number[]>();
+const PER_MINUTE = 6;     // ráfaga máx. por IP en 60s
+const PER_HOUR = 40;      // tope por IP en 1h
+const HOUR = 3_600_000;
+
+function rateLimit(ip: string): { ok: boolean; retryAfter?: number } {
+  const now = Date.now();
+  const arr = (HITS.get(ip) ?? []).filter((t) => now - t < HOUR);
+  const lastMin = arr.filter((t) => now - t < 60_000).length;
+  if (lastMin >= PER_MINUTE) return { ok: false, retryAfter: 60 };
+  if (arr.length >= PER_HOUR) return { ok: false, retryAfter: 1800 };
+  arr.push(now);
+  HITS.set(ip, arr);
+  // limpieza ocasional para no crecer sin fin
+  if (HITS.size > 5000) for (const [k, v] of HITS) if (!v.some((t) => now - t < HOUR)) HITS.delete(k);
+  return { ok: true };
+}
+
+export const POST: APIRoute = async ({ request, clientAddress }) => {
   const apiKey = import.meta.env.ANTHROPIC_API_KEY ?? process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     return json({ error: 'Servicio no configurado.' }, 500);
+  }
+
+  const ip = (request.headers.get('x-forwarded-for') ?? clientAddress ?? 'unknown').split(',')[0].trim();
+  const rl = rateLimit(ip);
+  if (!rl.ok) {
+    return json(
+      { error: 'Has escrito mucho en poco rato 😅 Dame un momento o escríbeme por WhatsApp al +34 669 385 624.' },
+      429,
+      { 'Retry-After': String(rl.retryAfter ?? 60) },
+    );
   }
 
   let body: any;
@@ -83,9 +114,9 @@ export const POST: APIRoute = async ({ request }) => {
   }
 };
 
-function json(data: unknown, status = 200) {
+function json(data: unknown, status = 200, headers: Record<string, string> = {}) {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', ...headers },
   });
 }
