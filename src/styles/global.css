@@ -122,6 +122,32 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; letter-spacing:
   border-block: 1px solid var(--line);
 }
 
+/* ---- Sistema visual reutilizable (bandas de tono, aura, acento) ---- */
+/* Bandas de sección a sangre completa para dar ritmo entre secciones */
+.tone-rose  { background: var(--t-warm); }
+.tone-stone { background: var(--t-stone); }
+.tone-white { background: var(--bg-2); border-block: 1px solid var(--line); }
+.tone-dark  { background: var(--panel); color: var(--panel-ink); }
+.tone-dark :where(h1,h2,h3) { color: #fff; }
+
+/* Aura de color difuminada para heros/intros */
+.has-aura { position: relative; overflow: clip; isolation: isolate; }
+.has-aura::before {
+  content: ''; position: absolute; inset: -14% -6% auto -6%; height: 80%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(42% 52% at 80% 16%, color-mix(in srgb, var(--accent) 40%, transparent), transparent 70%),
+    radial-gradient(40% 48% at 10% 34%, color-mix(in srgb, var(--t-stone-ink) 28%, transparent), transparent 72%);
+  filter: blur(34px); opacity: 0.8;
+}
+
+/* Barra de acento fucsia sobre un título */
+.tbar { position: relative; }
+.tbar::before { content: ''; display: block; width: 46px; height: 4px; border-radius: 4px; background: var(--accent); margin-bottom: 20px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .tone-rose, .tone-stone { transition: background var(--dur) var(--ease-soft); }
+}
+
 .btn {
   display: inline-flex; align-items: center; gap: 0.55ch;
   font-family: var(--font-display); font-weight: 600; font-size: 1rem;
