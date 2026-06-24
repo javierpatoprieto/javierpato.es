@@ -1,0 +1,112 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Contact from '../../../components/Contact.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../../lib/slug';
+
+export async function getStaticPaths() {
+  const items = await getCollection('proyectos');
+  const map = new Map();
+  for (const p of items) {
+    for (const s of p.data.services) {
+      const sl = slugify(s);
+      if (!map.has(sl)) map.set(sl, { label: s, items: [] });
+      map.get(sl).items.push(p);
+    }
+  }
+  return [...map.entries()].map(([service, v]) => ({
+    params: { service },
+    props: { label: v.label, items: v.items.sort((a, b) => a.data.order - b.data.order) },
+  }));
+}
+
+const { label, items } = Astro.props;
+const lower = label.toLowerCase();
+
+// Imágenes "de ambiente" de la home por proyecto (fallback al shot del caso)
+const homeShots = {
+  'centro-infantil-periquete': '/img/proj-periquete.webp',
+  'fisio-mama': '/img/proj-andrea.webp',
+  'click-and-cargo': '/img/proj-cargo.webp',
+};
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `${label} en Cantabria — Proyectos de Javier Pato`,
+  description: `Proyectos de ${lower} para negocios de Cantabria diseñados por Javier Pato.`,
+  url: `https://javierpato.es/proyectos/servicio/${slugify(label)}`,
+  hasPart: items.map((p) => ({
+    '@type': 'CreativeWork',
+    name: p.data.title,
+    url: `https://javierpato.es/proyectos/${p.slug}`,
+  })),
+};
+---
+<Layout
+  title={`${label} en Cantabria — Proyectos | Javier Pato`}
+  description={`Proyectos de ${lower} para negocios de Cantabria: ${items.map((p) => p.data.title).join(', ')}. Diseño con criterio de estudio por Javier Pato.`}
+  jsonld={jsonld}
+>
+  <section class="section sv-hero has-aura">
+    <div class="wrap">
+      <nav class="sv-bc" aria-label="Migas"><a href="/proyectos">Proyectos</a> <span aria-hidden="true">/</span> <span>{label}</span></nav>
+      <span class="sv-eyebrow" data-reveal>Servicio · Cantabria</span>
+      <h1 class="sv-h1 tbar" data-reveal>{label} en Cantabria</h1>
+      <p class="sv-lead" data-reveal>
+        {items.length === 1 ? 'Un proyecto' : `${items.length} proyectos`} donde el {lower} fue clave para que el negocio
+        parezca lo que vale y venda más. Trabajo real para negocios de Cantabria.
+      </p>
+    </div>
+  </section>
+
+  <section class="section sv-list">
+    <div class="wrap">
+      <div class="sv-grid" data-stagger>
+        {items.map((p) => (
+          <a class={`sv-card sv-card--${p.data.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
+            <div class="sv-cover">
+              <img src={homeShots[p.slug] ?? p.data.shotDesktop} alt={`${p.data.title} — ${lower} en Cantabria`} loading="lazy" width="1600" height="1096" />
+            </div>
+            <div class="sv-body">
+              <span class="sv-sector">{p.data.sector}</span>
+              <h2 class="sv-name">{p.data.title}</h2>
+              <p class="sv-sum">{p.data.summary}</p>
+              <span class="sv-go">Ver el caso →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <p class="sv-back" data-reveal><a href="/proyectos" class="btn btn--ghost">← Todos los proyectos</a></p>
+    </div>
+  </section>
+
+  <Contact />
+
+  <style>
+    .sv-hero { padding-top: clamp(36px, 6vw, 72px); padding-bottom: clamp(8px,2vw,20px); }
+    .sv-bc { font-family: var(--font-mono, monospace); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-mute); margin-bottom: var(--s-4); }
+    .sv-bc a { color: var(--accent-ink); }
+    .sv-eyebrow { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .sv-h1 { font-family: var(--font-display); font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 800; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .sv-lead { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 56ch; line-height: 1.45; }
+
+    .sv-grid { display: grid; grid-template-columns: 1fr; gap: clamp(20px,2.4vw,28px); }
+    .sv-card { display: flex; flex-direction: column; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+    .sv-card:hover { transform: translateY(-6px); box-shadow: 0 30px 55px -28px rgba(176,20,95,0.45); }
+    .sv-cover { aspect-ratio: 3 / 2; overflow: hidden; }
+    .sv-cover img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+    .sv-card:hover .sv-cover img { transform: scale(1.06); }
+    .sv-body { padding: clamp(18px,2vw,26px); }
+    .sv-sector { font-family: var(--font-body); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-mute); }
+    .sv-name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.4rem,2.4vw,1.9rem); line-height: 1.05; margin: 8px 0 8px; color: var(--accent-ink); }
+    .sv-sum { color: var(--ink-soft); line-height: 1.5; }
+    .sv-go { display: inline-block; margin-top: 14px; font-family: var(--font-display); font-weight: 700; font-size: 0.92rem; color: var(--ink); }
+    .sv-back { margin-top: var(--s-6); }
+
+    @media (min-width: 760px) {
+      .sv-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</Layout>

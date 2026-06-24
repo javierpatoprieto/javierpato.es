@@ -1,6 +1,6 @@
 ---
 title: "Web para autónomos y pequeños negocios en Cantabria"
-description: "Si eres autónomo o tienes un negocio pequeño en Cantabria, esta es la web que necesitas: barata, rápida y pensada para conseguir clientes, no para presumir."
+description: "Si eres autónomo o tienes un negocio pequeño en Cantabria, esta es la web que necesitas: ajustada de precio, rápida y pensada para conseguir clientes, no para presumir."
 pubDate: 2026-05-30
 keyword: "web para autónomos Cantabria"
 tags: ["Diseño web", "Autónomos"]

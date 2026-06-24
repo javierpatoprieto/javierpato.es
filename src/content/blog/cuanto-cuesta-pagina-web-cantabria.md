@@ -27,9 +27,9 @@ Puedes ver el desglose completo y configurar tu presupuesto en la [página de pr
 
 Una agencia tradicional te cobra el doble (o el triple) porque pagas estructura: comerciales, gestores de cuenta, reuniones. Yo trabajo como **estudio**: una misma mano para todo, y la IA me ayuda con lo repetitivo. Resultado: precio de estudio, acabado de estudio, **entrega en una semana o menos**.
 
-## Cuidado con lo "barato de verdad"
+## Cuidado con lo "low cost de verdad"
 
-Una web de 99€ hecha con plantilla suele salir cara: no carga rápido, no sale en Google y transmite justo lo contrario de lo que quieres. En diseño web, **barato y rápido casi nunca conviven con bueno**. Lo que sí puedes tener es *justo* y *con criterio*, que es distinto.
+Una web de 99€ hecha con plantilla suele salir cara: no carga rápido, no sale en Google y transmite justo lo contrario de lo que quieres. En diseño web, **lo tirado de precio y lo rápido casi nunca conviven con lo bueno**. Lo que sí puedes tener es *justo* y *con criterio*, que es distinto.
 
 ## Qué debería incluir siempre el precio
 

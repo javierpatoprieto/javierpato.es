@@ -42,6 +42,6 @@ No hace falta hacerlo todo de golpe. Hace falta empezar con criterio y crecer co
 
 ## El error más caro
 
-El error que más sale caro es ir parcheando: un logo de Fiverr, una carta hecha en Word, unas redes de otro estilo… El conjunto transmite "barato", aunque cada pieza por separado no esté mal. La marca se construye en el **todo**, no en las partes.
+El error que más sale caro es ir parcheando: un logo de Fiverr, una carta hecha en Word, unas redes de otro estilo… El conjunto transmite "de andar por casa", aunque cada pieza por separado no esté mal. La marca se construye en el **todo**, no en las partes.
 
 ¿Quieres una imagen coherente para tu negocio en Cantabria? Cuéntame qué tienes y por dónde empezarías. [Hablamos](/contacto).

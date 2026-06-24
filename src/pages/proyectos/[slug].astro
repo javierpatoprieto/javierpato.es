@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Contact from '../../components/Contact.astro';
 import { getCollection } from 'astro:content';
+import { slugify } from '../../lib/slug';
 
 export async function getStaticPaths() {
   const items = await getCollection('proyectos');
@@ -35,7 +36,7 @@ const jsonld = {
 };
 ---
 <Layout
-  title={`${d.title} — ${d.scope === 'branding' ? 'Branding y diseño web' : 'Diseño web'} en Cantabria | Javier Pato`}
+  title={d.seoTitle ?? `${d.title} — ${d.scope === 'branding' ? 'Branding y diseño web' : 'Diseño web'} en Cantabria | Javier Pato`}
   description={d.summary}
   jsonld={jsonld}
 >
@@ -47,7 +48,7 @@ const jsonld = {
         <h1 class="pc-h1" data-reveal>{d.title}</h1>
         <p class="pc-summary" data-reveal>{d.summary}</p>
         <div class="pc-meta" data-reveal>
-          <ul class="pc-services">{d.services.map((s) => <li>{s}</li>)}</ul>
+          <ul class="pc-services">{d.services.map((s) => <li><a href={`/proyectos/servicio/${slugify(s)}`}>{s}</a></li>)}</ul>
           <a class="pc-url" href={`https://${d.url}`} target="_blank" rel="noopener">{d.url} ↗</a>
         </div>
       </div>
@@ -102,7 +103,10 @@ const jsonld = {
     .pc-summary { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 56ch; line-height: 1.4; }
     .pc-meta { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; margin-top: var(--s-5); }
     .pc-services { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
-    .pc-services li { font-size: 0.8rem; font-weight: 600; background: var(--bg-2); border: 1px solid var(--line); padding: 6px 14px; border-radius: var(--radius-pill, 100px); }
+    .pc-services li { font-size: 0.8rem; font-weight: 600; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-pill, 100px); transition: border-color var(--dur,.4s) ease, background var(--dur,.4s) ease; }
+    .pc-services a { display: inline-block; padding: 6px 14px; color: var(--ink); }
+    .pc-services li:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--bg-2)); }
+    .pc-services li:hover a { color: var(--accent-ink); }
     .pc-url { font-family: var(--font-display); font-weight: 700; color: var(--accent-ink); }
 
     /* Mockup de dispositivo (misma imagen que la home) */
