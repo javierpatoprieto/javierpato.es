@@ -1,19 +1,25 @@
 ---
+<<<<<<< Updated upstream
 // Trabajo · escaparate editorial: filas grandes que alternan lado, mockup
 // inclinado y frase de valor honesta + sector por proyecto.
+=======
+// Trabajo · grid de 3 cards con hover (zoom + overlay "Ver el caso") y
+// botón a más proyectos. Limpio y directo.
+>>>>>>> Stashed changes
 const items = [
-  { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Que las familias conozcan el centro y reserven plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete.webp' },
-  { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia · embarazo y posparto', value: 'Calma, confianza y cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea.webp' },
-  { title: 'Click & Cargo', slug: 'click-and-cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Una web técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo.webp' },
+  { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Reservar plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete.webp' },
+  { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia', value: 'Cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea.webp' },
+  { title: 'Click & Cargo', slug: 'click-and-cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo.webp' },
 ];
 ---
 <section id="trabajo" class="section work">
   <div class="wrap">
     <header class="work__head" data-reveal>
       <span class="work__eyebrow">2026 · Trabajo reciente</span>
-      <h2 class="work__title">Marcas y negocios<br />reales que ya venden</h2>
+      <h2 class="work__title">Marcas y negocios reales que ya venden</h2>
     </header>
 
+<<<<<<< Updated upstream
     <div class="work__list">
       {items.map((p) => (
         <article class={`work__item work__item--${p.tone}`} data-reveal>
@@ -31,6 +37,27 @@ const items = [
           </div>
         </article>
       ))}
+=======
+    <div class="work__grid" data-stagger>
+      {items.map((p) => (
+        <a class={`work__card work__card--${p.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
+          <div class="work__cover">
+            <img src={p.img} alt={`${p.title} — diseño web en Cantabria`} loading="lazy" width="1600" height="1096" />
+            <span class="work__status">● {p.status}</span>
+            <span class="work__overlay"><span class="work__see">Ver el caso →</span></span>
+          </div>
+          <div class="work__body">
+            <span class="work__sector">{p.sector}</span>
+            <h3 class="work__name">{p.title}</h3>
+            <p class="work__value">{p.value}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="work__more" data-reveal>
+      <a href="/proyectos" class="btn btn--green">Ver más proyectos →</a>
+>>>>>>> Stashed changes
     </div>
   </div>
 </section>
@@ -41,6 +68,7 @@ const items = [
   .work__eyebrow { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
   .work__title { font-size: var(--fs-h2); color: var(--ink); font-weight: 800; line-height: 1.0; margin-top: 12px; }
 
+<<<<<<< Updated upstream
   .work__list { display: grid; gap: clamp(48px, 8vw, 110px); }
   .work__item { display: grid; grid-template-columns: 1fr; gap: clamp(22px, 4vw, 48px); align-items: center; }
 
@@ -71,6 +99,42 @@ const items = [
     .work__item:nth-child(even) .work__media { order: 2; }
     .work__item:nth-child(even) .work__shot { transform: rotate(1.2deg); }
     .work__item:nth-child(even) .work__media:hover .work__shot { transform: rotate(0deg) translateY(-6px) scale(1.01); }
+=======
+  .work__grid { display: grid; grid-template-columns: 1fr; gap: clamp(20px, 2.4vw, 28px); }
+
+  .work__card { display: flex; flex-direction: column; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+  .work__card:hover { transform: translateY(-6px); }
+  .work__card--rose:hover { box-shadow: 0 30px 55px -28px rgba(176,20,95,0.5); }
+  .work__card--peri:hover { box-shadow: 0 30px 55px -28px rgba(156,22,85,0.5); }
+  .work__card--plum:hover { box-shadow: 0 30px 55px -28px rgba(26,16,25,0.55); }
+
+  .work__cover { position: relative; aspect-ratio: 3 / 2; overflow: hidden; }
+  .work__cover img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+  .work__card:hover .work__cover img { transform: scale(1.07); }
+
+  .work__status { position: absolute; top: 12px; left: 12px; z-index: 2; display: inline-flex; align-items: center; gap: 5px; background: #fff; color: var(--accent-ink); font-family: var(--font-body); font-weight: 600; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 5px 11px; border-radius: var(--radius-pill); box-shadow: 0 8px 18px -8px rgba(0,0,0,0.35); }
+
+  .work__overlay { position: absolute; inset: 0; display: grid; place-items: center; opacity: 0; transition: opacity 0.35s var(--ease-soft); }
+  .work__card--rose .work__overlay { background: color-mix(in srgb, var(--accent) 78%, transparent); }
+  .work__card--peri .work__overlay { background: color-mix(in srgb, var(--t-stone-ink) 80%, transparent); }
+  .work__card--plum .work__overlay { background: color-mix(in srgb, var(--panel) 80%, transparent); }
+  .work__card:hover .work__overlay { opacity: 1; }
+  .work__see { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; color: #fff; border: 2px solid rgba(255,255,255,0.85); padding: 11px 20px; border-radius: var(--radius-pill); transform: translateY(10px); transition: transform 0.35s var(--ease); }
+  .work__card:hover .work__see { transform: translateY(0); }
+
+  .work__body { padding: clamp(18px, 2vw, 24px); }
+  .work__sector { font-family: var(--font-body); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-mute); }
+  .work__name { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; line-height: 1.05; margin: 8px 0 6px; }
+  .work__card--rose .work__name { color: var(--t-warm-ink); }
+  .work__card--peri .work__name { color: var(--t-stone-ink); }
+  .work__card--plum .work__name { color: var(--accent-ink); }
+  .work__value { color: var(--ink-soft); font-size: 0.95rem; line-height: 1.4; }
+
+  .work__more { text-align: center; margin-top: clamp(32px, 5vw, 56px); }
+
+  @media (min-width: 760px) {
+    .work__grid { grid-template-columns: repeat(3, 1fr); }
+>>>>>>> Stashed changes
   }
   @media (prefers-reduced-motion: reduce) { .work__shot { transform: none !important; } }
 </style>
