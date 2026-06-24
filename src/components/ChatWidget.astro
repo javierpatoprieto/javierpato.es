@@ -47,11 +47,16 @@ const GREETING = '¡Hola! Soy Javi 👋 Cuéntame qué negocio tienes y qué te 
 
     const history = [];   // {role, content} para el endpoint
     let busy = false;
+    let opened = false, firstMsg = false;
+    const ev = (name, params) => { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); };
 
     function toggle(show) {
       panel.hidden = !show;
       root.classList.toggle('is-open', show);
-      if (show) setTimeout(() => input && input.focus(), 50);
+      if (show) {
+        if (!opened) { opened = true; ev('chat_open', { location: 'chat_widget' }); }
+        setTimeout(() => input && input.focus(), 50);
+      }
     }
     openBtn.addEventListener('click', () => toggle(panel.hidden));
     closeBtn.addEventListener('click', () => toggle(false));
@@ -74,6 +79,8 @@ const GREETING = '¡Hola! Soy Javi 👋 Cuéntame qué negocio tienes y qué te 
       input.value = '';
       bubble(text, 'user');
       history.push({ role: 'user', content: text });
+      ev('chat_message', { count: history.filter((m) => m.role === 'user').length });
+      if (!firstMsg) { firstMsg = true; ev('generate_lead', { method: 'chat' }); }
 
       busy = true;
       const typing = bubble('…', 'bot');

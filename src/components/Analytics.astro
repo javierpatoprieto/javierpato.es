@@ -29,3 +29,27 @@ const GA_ID = 'G-39MXNFS02E';
   gtag('config', GA_ID, { anonymize_ip: true });
 </script>
 <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+
+<script is:inline>
+  // Auto-tracking de conversiones: clics en WhatsApp, email y teléfono en toda la web.
+  (function () {
+    function track(name, params) {
+      if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+    }
+    window.jpTrack = track;
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (/^https?:\/\/(wa\.me|api\.whatsapp\.com)/i.test(href)) {
+        track('whatsapp_click', { method: 'whatsapp', location: a.dataset.loc || document.title });
+        track('generate_lead', { method: 'whatsapp' });
+      } else if (/^mailto:/i.test(href)) {
+        track('email_click', { method: 'email' });
+        track('generate_lead', { method: 'email' });
+      } else if (/^tel:/i.test(href)) {
+        track('phone_click', { method: 'phone' });
+      }
+    }, { passive: true });
+  })();
+</script>

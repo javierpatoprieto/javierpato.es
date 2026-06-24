@@ -106,14 +106,20 @@ import Contact from '../components/Contact.astro';
           '• Contacto: ' + v('q-cont'),
         ].join('\n');
       }
+      function ev(name, params) { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); }
       form.addEventListener('submit', function (e) {
         e.preventDefault();
+        if (!form.reportValidity()) return;
+        ev('generate_lead', { method: 'whatsapp', form: 'contacto', value: ((document.getElementById('q-serv') || {}).value || '') });
+        ev('form_submit_contacto', { method: 'whatsapp' });
         window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(build()), '_blank');
       });
       const mail = document.getElementById('qz-mail');
       if (mail) mail.addEventListener('click', function (e) {
         e.preventDefault();
         if (!form.reportValidity()) return;
+        ev('generate_lead', { method: 'email', form: 'contacto' });
+        ev('form_submit_contacto', { method: 'email' });
         window.location.href = 'mailto:javier@javierpato.es?subject=' + encodeURIComponent('Proyecto desde la web') + '&body=' + encodeURIComponent(build());
       });
     })();
