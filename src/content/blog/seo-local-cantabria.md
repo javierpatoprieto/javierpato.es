@@ -41,7 +41,7 @@ Escribir guías que respondan a lo que busca tu cliente —como esta— te posic
 ## Lo que NO funciona
 
 - Llenar la web de "Cantabria, Cantabria, Cantabria" a lo bestia. Google lo penaliza.
-- Comprar enlaces baratos. Riesgo alto, beneficio nulo.
+- Comprar enlaces de tres al cuarto. Riesgo alto, beneficio nulo.
 - Esperar resultados en una semana. El SEO local es de **meses**, pero compone como el interés.
 
 ## Un plan realista para empezar

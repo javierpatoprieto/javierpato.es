@@ -19,6 +19,7 @@ const proyectos = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     client: z.string(),
     sector: z.string(),
     year: z.string().default('2026'),

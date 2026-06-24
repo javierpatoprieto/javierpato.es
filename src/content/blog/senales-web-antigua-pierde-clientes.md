@@ -37,7 +37,7 @@ Esta es la más honesta. Si cuando un cliente potencial te pide la web sientes u
 - Más visitas que se quedan (velocidad + móvil).
 - Mejor posición en Google con el tiempo.
 - Una imagen que **te hace parecer lo que vales**.
-- Menos competir por precio: cuando pareces serio, no eres el más barato, eres el que da confianza.
+- Menos competir por precio: cuando pareces serio, dejas de competir por quién cobra menos y pasas a competir por quién da más confianza.
 
 Un rediseño no tiene por qué ser caro ni eterno: muchas veces se resuelve [desde 299€](/precios) y en una semana.
 
