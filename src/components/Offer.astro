@@ -1,5 +1,5 @@
 ---
-const includes = ['Web de una página, a medida', 'Móvil, velocidad y Google', 'Sistema visual propio', 'Entrega en 3 días'];
+const includes = ['Una página a medida que va al grano y convierte', 'Rápida, responsive y optimizada para Google', 'Tu sistema visual propio, no una plantilla', 'Online en 3 días, sin esperas eternas'];
 ---
 <section id="oferta" class="section offer">
   <div class="wrap">
@@ -9,6 +9,7 @@ const includes = ['Web de una página, a medida', 'Móvil, velocidad y Google', 
       <h2 class="offer__title">Web de estudio,<br />sin precio de estudio.</h2>
       <p class="offer__price"><span class="offer__from">desde</span><span class="offer__num">299€</span></p>
     </div>
+    <p class="offer__sub">La web de lanzamiento para empezar a vender ya: una sola página, a medida, rápida y pensada para que en Cantabria te encuentren y te escriban. Sin cuotas raras ni letra pequeña —la pagas una vez y es tuya.</p>
     <ul class="offer__inc">
       {includes.map((i) => <li>{i}</li>)}
     </ul>
@@ -25,6 +26,7 @@ const includes = ['Web de una página, a medida', 'Móvil, velocidad y Google', 
   .offer__price { display: flex; align-items: baseline; gap: 10px; }
   .offer__from { font-family: var(--font-display); font-weight: 600; opacity: 0.7; }
   .offer__num { font-family: var(--font-display); font-weight: 900; font-size: clamp(3.4rem, 10vw, 7rem); letter-spacing: -0.04em; color: var(--accent); line-height: 0.85; }
+  .offer__sub { color: rgba(255,255,255,0.82); font-size: 1.05rem; line-height: 1.55; max-width: 60ch; margin-bottom: var(--s-5); }
   .offer__inc { list-style: none; display: grid; gap: 0; margin-bottom: var(--s-5); }
   .offer__inc li { padding: 13px 0; border-top: 1px solid rgba(255,255,255,0.18); font-size: 1.05rem; }
   .offer__cta { background: var(--yellow); color: var(--yellow-ink); }

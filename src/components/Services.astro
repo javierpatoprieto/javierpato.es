@@ -1,19 +1,19 @@
 ---
 // Estudio de marca + IA. Cada servicio con su botón.
 const services = [
-  { k: 'Branding', d: 'Identidad, logo, sistema visual y voz. La base de todo lo demás.', c: 'warm', cta: 'Hablar de marca', href: '/contacto' },
-  { k: 'Diseño web', d: 'Webs a medida que venden y salen en Google. Desde 299€.', c: 'stone', cta: 'Ver diseño web', href: '/diseno-web-cantabria' },
-  { k: 'Diseño gráfico', d: 'Cartas, redes, campañas, packaging. Tu imagen del día a día.', c: 'deep', cta: 'Saber más', href: '/blog/diseno-grafico-cantabria' },
-  { k: 'Fotografía de producto', d: 'Imágenes de tu producto con IA, sin estudio de fotos carísimo.', c: 'stone', cta: 'Lo quiero', href: '/contacto' },
-  { k: 'Vídeo corporativo', d: 'Piezas de vídeo para tu marca, generadas con IA y dirigidas con criterio.', c: 'warm', cta: 'Hablar de vídeo', href: '/contacto' },
-  { k: 'Reportajes & contenido', d: 'Contenido visual para tu negocio: lo que necesites, con IA como herramienta.', c: 'deep', cta: 'Cuéntame', href: '/contacto' },
+  { k: 'Branding', d: 'Logo, identidad visual, sistema y voz de marca. No un dibujito bonito: la base con la que tu negocio deja de parecer aficionado y empieza a cobrar lo que vale, en Cantabria y donde haga falta.', c: 'warm', cta: 'Hablar de marca', href: '/contacto' },
+  { k: 'Diseño web', d: 'Webs a medida en Cantabria que cargan en un parpadeo, salen en Google con SEO local y convierten visitas en clientes. Nada de plantillas recicladas. Desde 299€ y online en días, no en meses.', c: 'stone', cta: 'Ver diseño web', href: '/diseno-web-cantabria' },
+  { k: 'Diseño gráfico', d: 'Cartas, redes, packaging, campañas, cartelería… La imagen del día a día de tu negocio, coherente y con criterio, para que todo lo que tocas parezca de marca seria y no de apaño de última hora.', c: 'deep', cta: 'Saber más', href: '/blog/diseno-grafico-cantabria' },
+  { k: 'Fotografía de producto', d: 'Imágenes de producto que dan ganas de comprar, generadas y dirigidas con IA. La calidad de un plató sin alquilar plató ni vaciarte la cuenta. Ideal para tu web, tu tienda online y tus redes.', c: 'stone', cta: 'Lo quiero', href: '/contacto' },
+  { k: 'Vídeo corporativo', d: 'Vídeo de marca que se ve caro sin costar como una productora. Generado con IA y dirigido con ojo de director de arte, para reels, web o campañas que de verdad se vean.', c: 'warm', cta: 'Hablar de vídeo', href: '/contacto' },
+  { k: 'Reportajes & contenido', d: 'El contenido visual que tu negocio necesita para no parar de publicar y no morir en el intento. Tú me cuentas, yo lo dirijo y lo produzco con criterio. Constancia sin volverte loco.', c: 'deep', cta: 'Cuéntame', href: '/contacto' },
 ];
 ---
 <section id="estudio" class="section services">
   <div class="wrap">
     <header class="services__head" data-reveal>
       <h2 class="services__title">No solo webs.<br /><span class="services__a">Un estudio de marca.</span></h2>
-      <p class="services__lead">Marca, web, gráfica, fotografía de producto, vídeo… Lo que tu negocio necesite, con criterio de estudio y la IA como herramienta — no como excusa.</p>
+      <p class="services__lead">Marca, diseño web, gráfica, fotografía de producto, vídeo… Una sola mano y un solo criterio para toda la imagen de tu negocio. Con la IA como herramienta de producción —para entregar más rápido y más barato—, nunca como excusa para entregar de cualquier manera.</p>
     </header>
     <div class="services__grid" data-stagger>
       {services.map((s, i) => (
