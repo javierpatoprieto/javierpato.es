@@ -1,11 +1,6 @@
 ---
-<<<<<<< Updated upstream
-// Trabajo · escaparate editorial: filas grandes que alternan lado, mockup
-// inclinado y frase de valor honesta + sector por proyecto.
-=======
 // Trabajo · grid de 3 cards con hover (zoom + overlay "Ver el caso") y
 // botón a más proyectos. Limpio y directo.
->>>>>>> Stashed changes
 const items = [
   { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Reservar plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete.webp' },
   { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia', value: 'Cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea.webp' },
@@ -19,25 +14,6 @@ const items = [
       <h2 class="work__title">Marcas y negocios reales que ya venden</h2>
     </header>
 
-<<<<<<< Updated upstream
-    <div class="work__list">
-      {items.map((p) => (
-        <article class={`work__item work__item--${p.tone}`} data-reveal>
-          <a class="work__media" href={`/proyectos/${p.slug}`} aria-label={`${p.title} — ${p.value}`}>
-            <img class="work__shot" src={p.img} alt={`${p.title} — diseño web en Cantabria, mostrado en pantalla`} loading="lazy" width="1600" height="1096" />
-          </a>
-          <div class="work__text">
-            <span class="work__sector">{p.sector}</span>
-            <h3 class="work__name">{p.title}</h3>
-            <p class="work__value">{p.value}</p>
-            <div class="work__foot">
-              <span class={`work__status work__status--${p.tone}`}>● {p.status}</span>
-              <a href={`/proyectos/${p.slug}`} class="work__cta">Ver el caso →</a>
-            </div>
-          </div>
-        </article>
-      ))}
-=======
     <div class="work__grid" data-stagger>
       {items.map((p) => (
         <a class={`work__card work__card--${p.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
@@ -57,49 +33,16 @@ const items = [
 
     <div class="work__more" data-reveal>
       <a href="/proyectos" class="btn btn--green">Ver más proyectos →</a>
->>>>>>> Stashed changes
     </div>
   </div>
 </section>
 
 <style>
   .work { background: var(--t-warm); }
-  .work__head { margin-bottom: var(--s-7); max-width: 60ch; }
+  .work__head { margin-bottom: var(--s-6); max-width: 60ch; }
   .work__eyebrow { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
   .work__title { font-size: var(--fs-h2); color: var(--ink); font-weight: 800; line-height: 1.0; margin-top: 12px; }
 
-<<<<<<< Updated upstream
-  .work__list { display: grid; gap: clamp(48px, 8vw, 110px); }
-  .work__item { display: grid; grid-template-columns: 1fr; gap: clamp(22px, 4vw, 48px); align-items: center; }
-
-  /* Mockup de dispositivo real (la foto ya incluye el ordenador), con glow de color */
-  .work__media { display: block; }
-  .work__shot { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 14px; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); transform: rotate(-1.2deg); }
-  .work__item--rose .work__shot { box-shadow: 0 40px 80px -38px rgba(176,20,95,0.5); }
-  .work__item--peri .work__shot { box-shadow: 0 40px 80px -38px rgba(156,22,85,0.5); }
-  .work__item--plum .work__shot { box-shadow: 0 40px 80px -38px rgba(26,16,25,0.55); }
-  .work__media:hover .work__shot { transform: rotate(0deg) translateY(-6px) scale(1.01); }
-
-  .work__sector { font-family: var(--font-body); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-mute); }
-  .work__name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.8rem, 3.4vw, 2.8rem); line-height: 1.0; margin: 10px 0 14px; }
-  .work__item--rose .work__name { color: var(--t-warm-ink); }
-  .work__item--peri .work__name { color: var(--t-stone-ink); }
-  .work__item--plum .work__name { color: var(--accent-ink); }
-  .work__value { font-size: var(--fs-lead); color: var(--ink-soft); line-height: 1.4; max-width: 42ch; }
-  .work__foot { display: flex; align-items: center; gap: 18px; margin-top: var(--s-4); flex-wrap: wrap; }
-  .work__status { font-family: var(--font-body); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
-  .work__status--rose { color: var(--t-warm-ink); }
-  .work__status--peri { color: var(--t-stone-ink); }
-  .work__status--plum { color: var(--accent-ink); }
-  .work__cta { font-family: var(--font-display); font-weight: 700; font-size: 0.92rem; color: var(--ink); transition: transform var(--dur) var(--ease); }
-  .work__cta:hover { transform: translateX(4px); }
-
-  @media (min-width: 860px) {
-    .work__item { grid-template-columns: 1.05fr 0.95fr; gap: clamp(40px, 6vw, 80px); }
-    .work__item:nth-child(even) .work__media { order: 2; }
-    .work__item:nth-child(even) .work__shot { transform: rotate(1.2deg); }
-    .work__item:nth-child(even) .work__media:hover .work__shot { transform: rotate(0deg) translateY(-6px) scale(1.01); }
-=======
   .work__grid { display: grid; grid-template-columns: 1fr; gap: clamp(20px, 2.4vw, 28px); }
 
   .work__card { display: flex; flex-direction: column; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
@@ -134,7 +77,5 @@ const items = [
 
   @media (min-width: 760px) {
     .work__grid { grid-template-columns: repeat(3, 1fr); }
->>>>>>> Stashed changes
   }
-  @media (prefers-reduced-motion: reduce) { .work__shot { transform: none !important; } }
 </style>
