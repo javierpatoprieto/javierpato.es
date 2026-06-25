@@ -39,9 +39,11 @@ const services = [
   .scard--warm { background: var(--t-warm); color: var(--t-warm-ink); }
   .scard--stone { background: var(--t-stone); color: var(--t-stone-ink); }
   .scard--deep { background: var(--t-deep); color: var(--t-deep-ink); }
-  .scard__n { font-family: var(--font-display); font-weight: 700; opacity: 0.55; font-size: 0.85rem; }
+  .scard__n { font-family: var(--font-display); font-weight: 700; opacity: 0.72; font-size: 0.85rem; }
+  .scard--warm .scard__n, .scard--stone .scard__n { opacity: 1; }
   .scard__k { font-family: var(--font-display); font-weight: 700; font-size: var(--fs-h3); margin: 8px 0; color: inherit; }
-  .scard__d { color: inherit; opacity: 0.85; line-height: 1.4; flex: 1; margin-bottom: var(--s-4); }
+  .scard__d { color: inherit; line-height: 1.4; flex: 1; margin-bottom: var(--s-4); }
+  .scard--deep .scard__d { opacity: 0.9; }
   .scard__btn { align-self: flex-start; display: inline-flex; background: color-mix(in srgb, currentColor 12%, transparent); color: inherit; font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; padding: 9px 16px; border-radius: var(--radius-pill); transition: background var(--dur) var(--ease-soft), transform var(--dur) var(--ease); }
   .scard__btn:hover { background: var(--accent); color: #fff; transform: translateX(3px); }
   @media (min-width: 700px) { .services__grid { grid-template-columns: repeat(2, 1fr); } }
