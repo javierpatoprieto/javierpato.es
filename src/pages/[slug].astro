@@ -1,0 +1,150 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const landings = await getCollection('landings');
+  const proyectos = await getCollection('proyectos');
+  return landings.map((p) => ({
+    params: { slug: p.slug },
+    props: { p, proyectos },
+  }));
+}
+
+const { p, proyectos } = Astro.props;
+const d = p.data;
+const { Content } = await p.render();
+
+const shots = {
+  'centro-infantil-periquete': '/img/proj-periquete-sm.webp',
+  'fisio-mama': '/img/proj-andrea-sm.webp',
+  'click-and-cargo': '/img/proj-cargo-sm.webp',
+};
+const related = d.related
+  .map((slug) => proyectos.find((x) => x.slug === slug))
+  .filter(Boolean);
+
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: d.keyword,
+    areaServed: 'Cantabria',
+    provider: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
+    description: d.description,
+    url: `https://javierpato.es/${p.slug}`,
+  },
+  ...(d.faqs.length
+    ? [{
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        mainEntity: d.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+      }]
+    : []),
+];
+---
+<Layout title={d.title} description={d.description} jsonld={jsonld}>
+  <section class="section ld-hero has-aura">
+    <div class="wrap">
+      <span class="ld-kicker" data-reveal>{d.kicker}</span>
+      <h1 class="ld-h1" data-reveal set:html={d.h1} />
+      <p class="ld-lead" data-reveal>{d.lead}</p>
+      <div class="ld-cta" data-reveal>
+        <a href="/contacto" class="btn btn--green">Pide presupuesto →</a>
+        <a href="/precios" class="btn btn--ghost">Ver precios</a>
+      </div>
+      {d.stats.length > 0 && (
+        <div class="ld-stats" data-stagger>
+          {d.stats.map(([n, l]) => (<div class="ld-stat" data-reveal><span class="ld-stat__n">{n}</span><span class="ld-stat__l">{l}</span></div>))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="section ld-body">
+    <div class="wrap ld-prose">
+      <Content />
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section ld-rel tone-rose">
+      <div class="wrap">
+        <h2 class="tbar ld-h2" data-reveal>Trabajo que respalda esto</h2>
+        <div class="ld-grid" data-stagger>
+          {related.map((r) => (
+            <a class="ld-card" href={`/proyectos/${r.slug}`} data-reveal>
+              <div class="ld-cover"><img src={shots[r.slug] ?? r.data.shotDesktop} alt={`${r.data.title} — ${d.keyword}`} loading="lazy" width="1600" height="1096" /></div>
+              <div class="ld-cardbody">
+                <span class="ld-sector">{r.data.sector}</span>
+                <h3 class="ld-name">{r.data.title}</h3>
+                <span class="ld-go">Ver el caso →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {d.faqs.length > 0 && (
+    <section class="section ld-faq-sec">
+      <div class="wrap">
+        <h2 class="tbar ld-h2" data-reveal>Preguntas frecuentes</h2>
+        <div class="ld-faq" data-stagger>
+          {d.faqs.map((f) => (
+            <details class="ld-q" data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <Contact />
+
+  <style>
+    .ld-hero { padding-top: clamp(36px, 6vw, 72px); padding-bottom: clamp(12px,2vw,24px); }
+    .ld-kicker { font-family: var(--font-body); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .ld-h1 { font-family: var(--font-display); font-size: clamp(2.6rem, 6vw, 4.8rem); font-weight: 800; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
+    .ld-h1 :global(span) { color: var(--accent-ink); }
+    .ld-lead { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 60ch; line-height: 1.45; }
+    .ld-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--s-5); }
+    .ld-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: var(--s-6); }
+    .ld-stat { background: var(--panel); color: var(--panel-ink); border-radius: var(--radius); padding: clamp(18px,2.4vw,26px); }
+    .ld-stat__n { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem,3.4vw,2.4rem); color: var(--accent); line-height: 1; }
+    .ld-stat__l { font-size: 0.85rem; opacity: 0.85; }
+
+    .ld-prose { max-width: 760px; font-size: 1.0625rem; line-height: 1.75; color: var(--ink); }
+    .ld-prose :global(h2) { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem,3vw,2rem); margin: var(--s-6) 0 var(--s-3); }
+    .ld-prose :global(h3) { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; margin: var(--s-5) 0 var(--s-2); }
+    .ld-prose :global(p) { margin-bottom: var(--s-4); }
+    .ld-prose :global(ul) { margin: 0 0 var(--s-4) 1.2em; display: grid; gap: 8px; }
+    .ld-prose :global(strong) { color: var(--ink); font-weight: 700; }
+    .ld-prose :global(a) { color: var(--accent-ink); font-weight: 600; border-bottom: 1px solid currentColor; }
+
+    .ld-h2 { font-family: var(--font-display); font-size: var(--fs-h2); font-weight: 800; margin-bottom: var(--s-6); }
+    .ld-grid { display: grid; grid-template-columns: 1fr; gap: clamp(18px,2.4vw,26px); }
+    .ld-card { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
+    .ld-card:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -28px rgba(176,20,95,0.4); }
+    .ld-cover { aspect-ratio: 3/2; overflow: hidden; }
+    .ld-cover img { width: 100%; height: 100%; object-fit: cover; }
+    .ld-cardbody { padding: clamp(16px,2vw,22px); }
+    .ld-sector { font-family: var(--font-body); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-mute); }
+    .ld-name { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; margin: 6px 0; color: var(--accent-ink); }
+    .ld-go { font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; color: var(--ink); }
+
+    .ld-faq-sec { padding-top: 0; }
+    .ld-faq { display: grid; gap: 12px; max-width: 800px; }
+    .ld-q { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(16px,2vw,22px) clamp(18px,2.4vw,26px); }
+    .ld-q summary { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+    .ld-q summary::-webkit-details-marker { display: none; }
+    .ld-q summary::after { content: '+'; color: var(--accent-ink); font-size: 1.4rem; flex: none; transition: transform var(--dur) var(--ease-soft); }
+    .ld-q[open] summary::after { transform: rotate(45deg); }
+    .ld-q p { color: var(--ink-soft); line-height: 1.6; margin-top: 12px; }
+
+    @media (min-width: 760px) {
+      .ld-stats { grid-template-columns: repeat(4,1fr); }
+      .ld-grid { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</Layout>
