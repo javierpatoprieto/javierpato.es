@@ -37,4 +37,21 @@ const proyectos = defineCollection({
   }),
 });
 
-export const collections = { blog, proyectos };
+const landings = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),            // meta title (SEO)
+    description: z.string(),      // meta description
+    kicker: z.string(),          // eyebrow
+    h1: z.string(),
+    lead: z.string(),
+    keyword: z.string(),
+    intent: z.enum(['ciudad', 'sector']).default('sector'),
+    stats: z.array(z.tuple([z.string(), z.string()])).default([]),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    related: z.array(z.string()).default([]),  // slugs de proyectos a destacar
+    order: z.number().default(0),
+  }),
+});
+
+export const collections = { blog, proyectos, landings };
