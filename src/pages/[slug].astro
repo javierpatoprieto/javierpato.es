@@ -8,11 +8,14 @@ export async function getStaticPaths() {
   const proyectos = await getCollection('proyectos');
   return landings.map((p) => ({
     params: { slug: p.slug },
-    props: { p, proyectos },
+    props: { p, proyectos, landings },
   }));
 }
 
-const { p, proyectos } = Astro.props;
+const { p, proyectos, landings } = Astro.props;
+const otras = landings
+  .filter((x) => x.slug !== p.slug)
+  .sort((a, b) => a.data.order - b.data.order);
 const d = p.data;
 const { Content } = await p.render();
 
@@ -100,10 +103,27 @@ const jsonld = [
     </section>
   )}
 
+  {otras.length > 0 && (
+    <section class="section ld-otras">
+      <div class="wrap">
+        <h2 class="tbar ld-h2" data-reveal>También diseño web para…</h2>
+        <ul class="ld-otras__list" data-stagger>
+          {otras.map((o) => (
+            <li data-reveal><a href={`/${o.slug}`}>{o.data.kicker.replace('Diseño web · ', '')}<span aria-hidden="true"> →</span></a></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
   <Contact />
 
   <style>
     .ld-hero { padding-top: clamp(36px, 6vw, 72px); padding-bottom: clamp(12px,2vw,24px); }
+    .ld-otras__list { list-style: none; display: grid; grid-template-columns: 1fr; gap: 10px; margin: 0; padding: 0; max-width: 800px; }
+    .ld-otras__list a { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--ink); display: inline-flex; align-items: center; gap: 4px; }
+    .ld-otras__list a:hover { color: var(--accent-ink); }
+    @media (min-width: 640px) { .ld-otras__list { grid-template-columns: 1fr 1fr; } }
     .ld-kicker { font-family: var(--font-body); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
     .ld-h1 { font-family: var(--font-display); font-size: clamp(2.6rem, 6vw, 4.8rem); font-weight: 800; line-height: 0.98; margin: var(--s-3) 0 var(--s-4); }
     .ld-h1 :global(span) { color: var(--accent-ink); }
