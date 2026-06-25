@@ -5,6 +5,8 @@ import Footer from '../components/Footer.astro';
 import CookieBanner from '../components/CookieBanner.astro';
 import Analytics from '../components/Analytics.astro';
 import ChatWidget from '../components/ChatWidget.astro';
+import '@fontsource-variable/plus-jakarta-sans';
+import '@fontsource-variable/hanken-grotesk';
 
 interface Props {
   title: string;
@@ -81,9 +83,6 @@ const baseLd = {
     <meta name="twitter:creator" content="@ArtiMindArt" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <script type="application/ld+json" set:html={JSON.stringify(baseLd)} />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}

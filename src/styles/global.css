@@ -10,11 +10,11 @@
   --card: #ffffff;
   --ink: #181219;
   --ink-soft: #5f5660;
-  --ink-mute: #9c93a0;
+  --ink-mute: #6f6676;      /* gris medio (AA sobre blanco) */
   --line: #ece6e3;
   --dot: rgba(24,18,25,0.06);
 
-  --accent: #e6197f;        /* fucsia */
+  --accent: #de157b;        /* fucsia (AA con texto blanco) */
   --accent-ink: #bd0f63;    /* fucsia oscuro para texto/AA sobre claro */
   --panel: #1a1019;         /* panel ciruela-carbón */
   --panel-ink: #f7f4ee;
@@ -23,10 +23,10 @@
   --btn-fg: #f7f4ee;
 
   /* superficies tonales (tarjetas) con color */
-  --t-warm: #fbdcec;  --t-warm-ink: #b0145f;   /* rosa */
-  --t-stone: #f8cfe2; --t-stone-ink: #9c1655;  /* rosa (2º tono) */
+  --t-warm: #fbdcec;  --t-warm-ink: #a01254;   /* rosa */
+  --t-stone: #f8cfe2; --t-stone-ink: #8c1349;  /* rosa (2º tono) */
   --t-deep: #1a1019;  --t-deep-ink: #f7f4ee;   /* ciruela oscuro */
-  --yellow: #ffe6a0;  --yellow-ink: #8a6310;
+  --yellow: #ffe6a0;  --yellow-ink: #785708;
 
   /* ---- alias legacy → semántico ---- */
   --green: var(--accent-ink);
@@ -36,8 +36,8 @@
   --lilac: var(--t-stone);  --lilac-ink: var(--t-stone-ink);
   --sky: var(--t-deep);     --sky-ink: var(--t-deep-ink);
 
-  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-body: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Hanken Grotesk Variable', 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --fs-hero: clamp(2.8rem, 7vw, 6rem);
   --fs-h2: clamp(2.2rem, 5vw, 4rem);
