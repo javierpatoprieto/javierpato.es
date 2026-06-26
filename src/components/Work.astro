@@ -5,6 +5,7 @@ const items = [
   { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Reservar plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete-sm.webp' },
   { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia', value: 'Cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea-sm.webp' },
   { title: 'Click & Cargo', slug: 'click-and-cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo-sm.webp' },
+  { title: 'ArtiMindArt', slug: 'artimindart', url: 'artimind.art', sector: 'Estudio creativo con IA', value: 'Imágenes y vídeo de moda que venden, sin photoshoot.', status: 'Live', tone: 'rose', img: '/img/proj-artimind-sm.webp' },
 ];
 ---
 <section id="trabajo" class="section work">
@@ -75,7 +76,10 @@ const items = [
 
   .work__more { text-align: center; margin-top: clamp(32px, 5vw, 56px); }
 
-  @media (min-width: 760px) {
-    .work__grid { grid-template-columns: repeat(3, 1fr); }
+  @media (min-width: 600px) {
+    .work__grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .work__grid { grid-template-columns: repeat(4, 1fr); }
   }
 </style>
