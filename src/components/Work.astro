@@ -1,12 +1,15 @@
 ---
 // Trabajo · grid de 3 cards con hover (zoom + overlay "Ver el caso") y
 // botón a más proyectos. Limpio y directo.
-const items = [
+const { limit = 4, cols = 4 } = Astro.props;
+const all = [
+  { title: 'Explora Siam', slug: 'explora-siam', url: 'explorasiam.com', sector: 'Viajes en grupo · Tailandia', value: 'Un viaje contado en una página que acaba en WhatsApp.', status: 'Live', tone: 'peri', img: '/img/proj-explora-sm.webp' },
   { title: 'ArtiMindArt', slug: 'artimindart', url: 'artimind.art', sector: 'Estudio creativo con IA', value: 'Imágenes y vídeo de moda que venden, sin photoshoot.', status: 'Live', tone: 'rose', img: '/img/proj-artimind-sm.webp' },
   { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia', value: 'Cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea-sm.webp' },
   { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Reservar plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete-sm.webp' },
   { title: 'Click & Cargo', slug: 'click-and-cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo-sm.webp' },
 ];
+const items = all.slice(0, limit);
 ---
 <section id="trabajo" class="section work">
   <div class="wrap">
@@ -15,7 +18,7 @@ const items = [
       <h2 class="work__title">El trabajo habla solo.</h2>
     </header>
 
-    <div class="work__grid" data-stagger>
+    <div class="work__grid" data-stagger style={`--work-cols:${cols}`}>
       {items.map((p) => (
         <a class={`work__card work__card--${p.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
           <div class="work__cover">
@@ -80,6 +83,6 @@ const items = [
     .work__grid { grid-template-columns: repeat(2, 1fr); }
   }
   @media (min-width: 1024px) {
-    .work__grid { grid-template-columns: repeat(4, 1fr); }
+    .work__grid { grid-template-columns: repeat(var(--work-cols, 4), 1fr); }
   }
 </style>

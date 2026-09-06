@@ -11,7 +11,8 @@ stats:
   - ["Reserva", "Directa"]
   - ["Galería", "Incluida"]
   - ["SEO", "Local"]
-related: []
+related:
+  - "explora-siam"
 faqs:
   - q: "¿Puedo recibir reservas directas sin pagar comisión?"
     a: "Esa es la idea. Monto reserva directa o contacto por WhatsApp/email para que el huésped reserve contigo sin pasar por Booking. Cada reserva directa es comisión que te ahorras y un cliente que ya es tuyo."

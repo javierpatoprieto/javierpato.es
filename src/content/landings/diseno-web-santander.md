@@ -12,6 +12,7 @@ stats:
   - ["SEO", "Local incluido"]
   - ["100%", "A medida"]
 related:
+  - "explora-siam"
   - "fisio-mama"
   - "centro-infantil-periquete"
 faqs:

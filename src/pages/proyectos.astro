@@ -5,16 +5,16 @@ import Contact from '../components/Contact.astro';
 ---
 <Layout
   title="Proyectos — Diseño web y marca en Cantabria | Javier Pato"
-  description="Marcas y webs reales que he diseñado para negocios de Cantabria: hostelería, bienestar, servicios. Mira el trabajo y juzga tú."
+  description="Marcas y webs reales que he diseñado para negocios de Cantabria: hostelería, bienestar, servicios, viajes. Mira el trabajo y juzga tú."
 >
   <section class="section pintro has-aura">
     <div class="wrap">
       <span class="pintro__k" data-reveal>Trabajo seleccionado</span>
       <h1 class="pintro__h" data-reveal>Echa un vistazo<br />al trabajo.</h1>
-      <p class="pintro__l" data-reveal>Marcas y webs reales para negocios reales de Cantabria —hostelería, salud, servicios, logística—. Nada de maquetas bonitas que nunca salieron a producción: lo que ves está vivo, en Google y trabajando. Mira el trabajo y juzga tú.</p>
+      <p class="pintro__l" data-reveal>Marcas y webs reales para negocios reales de Cantabria —hostelería, salud, servicios, logística, viajes—. Nada de maquetas bonitas que nunca salieron a producción: lo que ves está vivo, en Google y trabajando. Mira el trabajo y juzga tú.</p>
     </div>
   </section>
-  <Work />
+  <Work limit={12} cols={3} />
   <Contact />
   <style>
     .pintro { padding-top: clamp(36px, 6vw, 80px); padding-bottom: var(--s-6); }
