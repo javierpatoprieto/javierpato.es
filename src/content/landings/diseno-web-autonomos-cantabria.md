@@ -12,6 +12,7 @@ stats:
   - ["SEO", "Local"]
   - ["0", "Tecnicismos"]
 related:
+  - "cantabriamascerca"
   - "fisio-mama"
   - "centro-infantil-periquete"
 faqs:

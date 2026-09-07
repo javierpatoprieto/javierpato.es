@@ -12,6 +12,7 @@ stats:
   - ["SEO", "Local incluido"]
   - ["100%", "A medida"]
 related:
+  - "cantabriamascerca"
   - "centro-infantil-periquete"
 faqs:
   - q: "¿Trabajas con negocios de Torrelavega?"

@@ -11,7 +11,7 @@ tone: "peri"
 shotDesktop: "/img/proj-explora.webp"
 shotMobile: "/img/shot-explora-m.webp"
 seoTitle: "Diseño web para vender un viaje en grupo — Explora Siam | Javier Pato"
-order: 0
+order: 0.5
 ---
 
 ## Vender un viaje a desconocidos
