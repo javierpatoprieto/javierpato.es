@@ -1,7 +1,9 @@
 ---
-// Trabajo · grid de 3 cards con hover (zoom + overlay "Ver el caso") y
-// botón a más proyectos. Limpio y directo.
-const { limit = 4, cols = 4 } = Astro.props;
+// Trabajo · casos con hover (zoom + overlay "Ver el caso") y botón a más
+// proyectos. En modo `carousel` (la home) es un carril con scroll-snap y
+// flechas, para que quepan todos sin dejar ninguno fuera; en modo normal
+// (/proyectos) sigue siendo una rejilla.
+const { limit = 99, cols = 4, carousel = false } = Astro.props;
 const all = [
   { title: 'Explora Siam', slug: 'explora-siam', url: 'explorasiam.com', sector: 'Viajes en grupo · Tailandia', value: 'Un viaje contado en una página que acaba en WhatsApp.', status: 'Live', tone: 'peri', img: '/img/proj-explora-sm.webp' },
   { title: 'ArtiMindArt', slug: 'artimindart', url: 'artimind.art', sector: 'Estudio creativo con IA', value: 'Imágenes y vídeo de moda que venden, sin photoshoot.', status: 'Live', tone: 'rose', img: '/img/proj-artimind-sm.webp' },
@@ -14,11 +16,23 @@ const items = all.slice(0, limit);
 <section id="trabajo" class="section work">
   <div class="wrap">
     <header class="work__head" data-reveal>
-      <span class="work__eyebrow">2026 · Trabajo reciente</span>
-      <h2 class="work__title">El trabajo habla solo.</h2>
+      <div class="work__headtxt">
+        <span class="work__eyebrow">2026 · Trabajo reciente</span>
+        <h2 class="work__title">El trabajo habla solo.</h2>
+      </div>
+      {carousel && (
+        <div class="work__nav" data-work-nav hidden>
+          <button type="button" class="work__arrow" data-work-prev aria-label="Proyecto anterior" aria-controls="work-track">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="work__arrow" data-work-next aria-label="Proyecto siguiente" aria-controls="work-track">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      )}
     </header>
 
-    <div class="work__grid" data-stagger style={`--work-cols:${cols}`}>
+    <div class={carousel ? 'work__grid work__grid--carousel' : 'work__grid'} id={carousel ? 'work-track' : undefined} data-work-track={carousel ? '' : undefined} data-stagger style={`--work-cols:${cols}`}>
       {items.map((p) => (
         <a class={`work__card work__card--${p.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
           <div class="work__cover">
@@ -43,11 +57,34 @@ const items = all.slice(0, limit);
 
 <style>
   .work { background: var(--t-warm); }
-  .work__head { margin-bottom: var(--s-6); max-width: 60ch; }
+  .work__head { margin-bottom: var(--s-6); display: flex; align-items: flex-end; justify-content: space-between; gap: var(--s-4); }
+  .work__headtxt { max-width: 60ch; }
+
+  .work__nav { display: none; gap: 10px; flex: 0 0 auto; padding-bottom: 4px; }
+  .work__arrow { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); background: var(--bg-2); color: var(--ink); cursor: pointer; transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease), opacity var(--dur) var(--ease); }
+  .work__arrow svg { width: 20px; height: 20px; }
+  .work__arrow:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .work__arrow:disabled { opacity: 0.32; cursor: default; }
   .work__eyebrow { font-family: var(--font-body); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
   .work__title { font-size: var(--fs-h2); color: var(--ink); font-weight: 800; line-height: 1.0; margin-top: 12px; }
 
   .work__grid { display: grid; grid-template-columns: 1fr; gap: clamp(20px, 2.4vw, 28px); }
+
+  /* Carril horizontal con snap. El padding vertical deja sitio al
+     levantamiento y la sombra del hover, que si no quedarían recortados. */
+  .work__grid--carousel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 10px 0 28px;
+    margin: -10px 0 -28px;
+  }
+  .work__grid--carousel::-webkit-scrollbar { display: none; }
+  .work__grid--carousel .work__card { flex: 0 0 84%; scroll-snap-align: start; }
+  @media (prefers-reduced-motion: reduce) { .work__grid--carousel { scroll-behavior: auto; } }
 
   .work__card { display: flex; flex-direction: column; background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
   .work__card:hover { transform: translateY(-6px); }
@@ -81,8 +118,41 @@ const items = all.slice(0, limit);
 
   @media (min-width: 600px) {
     .work__grid { grid-template-columns: repeat(2, 1fr); }
+    .work__grid--carousel .work__card { flex-basis: calc((100% - clamp(20px, 2.4vw, 28px)) / 2); }
+    .work__nav { display: flex; }
   }
   @media (min-width: 1024px) {
     .work__grid { grid-template-columns: repeat(var(--work-cols, 4), 1fr); }
+    .work__grid--carousel .work__card { flex-basis: calc((100% - 2 * clamp(20px, 2.4vw, 28px)) / 3); }
   }
 </style>
+
+<script>
+  const track = document.querySelector<HTMLElement>('[data-work-track]');
+  const nav = document.querySelector<HTMLElement>('[data-work-nav]');
+  const prev = document.querySelector<HTMLButtonElement>('[data-work-prev]');
+  const next = document.querySelector<HTMLButtonElement>('[data-work-next]');
+
+  if (track && nav && prev && next) {
+    // Las flechas solo aparecen si de verdad hay algo que desplazar.
+    const desbordado = () => track.scrollWidth - track.clientWidth > 8;
+    const paso = () => {
+      const card = track.querySelector<HTMLElement>('.work__card');
+      if (!card) return track.clientWidth;
+      const gap = parseFloat(getComputedStyle(track).columnGap || '24') || 24;
+      return card.offsetWidth + gap;
+    };
+    const sincronizar = () => {
+      nav.hidden = !desbordado();
+      const max = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max - 2;
+    };
+
+    prev.addEventListener('click', () => track.scrollBy({ left: -paso() }));
+    next.addEventListener('click', () => track.scrollBy({ left: paso() }));
+    track.addEventListener('scroll', sincronizar, { passive: true });
+    addEventListener('resize', sincronizar);
+    sincronizar();
+  }
+</script>
