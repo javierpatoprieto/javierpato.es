@@ -56,6 +56,7 @@ const jsonld = [
         <a href="/contacto" class="btn btn--green">Pide presupuesto →</a>
         <a href="/precios" class="btn btn--ghost">Ver precios</a>
       </div>
+      <p class="ld-iva" data-reveal>Todos los precios con IVA incluido.</p>
       {d.stats.length > 0 && (
         <div class="ld-stats" data-stagger>
           {d.stats.map(([n, l]) => (<div class="ld-stat" data-reveal><span class="ld-stat__n">{n}</span><span class="ld-stat__l">{l}</span></div>))}
@@ -129,6 +130,7 @@ const jsonld = [
     .ld-h1 :global(span) { color: var(--accent-ink); }
     .ld-lead { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 60ch; line-height: 1.45; }
     .ld-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--s-5); }
+    .ld-iva { margin-top: 12px; font-size: 0.85rem; color: var(--ink-mute); }
     .ld-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: var(--s-6); }
     .ld-stat { background: var(--panel); color: var(--panel-ink); border-radius: var(--radius); padding: clamp(18px,2.4vw,26px); }
     .ld-stat__n { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem,3.4vw,2.4rem); color: var(--accent); line-height: 1; }

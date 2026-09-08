@@ -13,8 +13,8 @@ const addons = [
   { id: 'manten', name: 'Mantenimiento', price: 190, unit: '/año', desc: 'Cambios, copias y soporte todo el año.' },
 ];
 const faqs = [
-  { q: '¿Cuánto cuesta una página web en Cantabria?', a: 'Desde 299€ la one-page (a medida, entregada en 3 días). La Básica de 4 páginas son 549€, la Pro de 6 páginas 699€ y una tienda online desde 999€. Precios cerrados, sin presupuestos sorpresa.' },
-  { q: '¿El precio incluye dominio y alojamiento?', a: 'El diseño y desarrollo van en el precio del plan. El dominio propio (19,99€/año) y el alojamiento (49€/año) son extras opcionales que puedo gestionar yo para que no te preocupes de nada.' },
+  { q: '¿Cuánto cuesta una página web en Cantabria?', a: 'Desde 299€ la one-page (a medida, entregada en 3 días). La Básica de 4 páginas son 549€, la Pro de 6 páginas 699€ y una tienda online desde 999€. Todos con el IVA incluido. Precios cerrados, sin presupuestos sorpresa.' },
+  { q: '¿El precio incluye dominio y alojamiento?', a: 'El diseño y desarrollo van en el precio del plan. El dominio propio (19,99€/año) y el alojamiento (49€/año), también con IVA incluido, son extras opcionales que puedo gestionar yo para que no te preocupes de nada.' },
   { q: '¿Cuánto tardas en entregar la web?', a: 'La one-page en 3 días, la Básica y la Pro en una semana, y la tienda online entre 2 y 3 semanas. Rápido, pero a medida: nada de plantillas.' },
   { q: '¿Hay cuotas mensuales o pagos ocultos?', a: 'No. Pagas la web una vez y es tuya. Lo único recurrente, y solo si lo quieres, son dominio, alojamiento o el mantenimiento anual (190€/año) para cambios, copias y soporte.' },
   { q: '¿Qué pasa si necesito cambios después?', a: 'Cada plan incluye una ronda de cambios. Si más adelante quieres seguir evolucionando la web, el plan de mantenimiento anual cubre ajustes y soporte durante todo el año.' },
@@ -23,7 +23,13 @@ const jsonld = [
   {
     '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Diseño web',
     areaServed: 'Cantabria', provider: { '@type': 'Person', name: 'Javier Pato' },
-    offers: plans.map((p) => ({ '@type': 'Offer', name: `Web ${p.name}`, price: p.price, priceCurrency: 'EUR' })),
+    offers: plans.map((p) => ({
+      '@type': 'Offer',
+      name: `Web ${p.name}`,
+      price: p.price,
+      priceCurrency: 'EUR',
+      priceSpecification: { '@type': 'PriceSpecification', price: p.price, priceCurrency: 'EUR', valueAddedTaxIncluded: true },
+    })),
   },
   {
     '@context': 'https://schema.org', '@type': 'FAQPage',
@@ -33,14 +39,14 @@ const jsonld = [
 ---
 <Layout
   title="Precios de diseño web en Cantabria — desde 299€ | Javier Pato"
-  description="Precios claros de diseño web en Cantabria: one-page desde 299€, 4 páginas 549€, 6 páginas 699€ y ecommerce desde 999€. Entrega en 1 semana o menos."
+  description="Precios claros de diseño web en Cantabria con IVA incluido: one-page desde 299€, 4 páginas 549€, 6 páginas 699€ y ecommerce desde 999€. Entrega en 1 semana o menos."
   jsonld={jsonld}
 >
   <section class="section pr-hero has-aura">
     <div class="wrap">
       <span class="pr-k" data-reveal>Precios · Diseño web Cantabria</span>
       <h1 class="pr-h1" data-reveal>Precios claros.<br /><span class="pr-a">Cero sustos.</span></h1>
-      <p class="pr-lead" data-reveal>Aquí no hay "depende" ni presupuestos de 12 páginas. Eliges plan, marcas los extras y ves el total al momento —lo que cuesta tu web en Cantabria, claro y a la cara. Entrega en <strong>una semana o menos</strong> y precio cerrado antes de empezar.</p>
+      <p class="pr-lead" data-reveal>Aquí no hay "depende" ni presupuestos de 12 páginas. Eliges plan, marcas los extras y ves el total al momento —lo que cuesta tu web en Cantabria, claro y a la cara. Entrega en <strong>una semana o menos</strong> y precio cerrado antes de empezar. <strong>Todos los precios llevan el IVA incluido</strong>: lo que ves es lo que pagas.</p>
       <p class="pr-cross" data-reveal><a href="/diseno-web-cantabria" class="tlink">¿Primero quieres ver cómo trabajo? Mira el servicio de diseño web en Cantabria →</a></p>
     </div>
   </section>
@@ -89,7 +95,7 @@ const jsonld = [
           <p class="pr-sum-note" id="pr-note">Web Básica · entrega en 1 semana</p>
           <ul class="pr-sum-list" id="pr-list"></ul>
           <a href="/contacto" class="btn btn--green pr-sum-cta" id="pr-cta">Reservar esta web →</a>
-          <p class="pr-sum-fine">Precio orientativo. Lo cerramos en una charla de 20 min, sin compromiso.</p>
+          <p class="pr-sum-fine">Precio orientativo, IVA incluido. Lo cerramos en una charla de 20 min, sin compromiso.</p>
         </div>
       </aside>
     </div>
