@@ -1,5 +1,5 @@
 ---
-title: "Web en varios idiomas para negocios turísticos en Cantabria"
+title: "Web multilingüe para turismo en Cantabria"
 description: "Si tu cliente viene de fuera, una web solo en español deja dinero en la mesa. Cómo hago webs multilingües para turismo y hostelería en Cantabria."
 pubDate: 2026-08-05
 keyword: "web multilingüe Cantabria"
@@ -34,4 +34,4 @@ Cambie el idioma que cambie, la web tiene que seguir siendo tú: misma [marca](/
 
 Podemos arrancar con dos idiomas (español + inglés) y añadir más según de dónde te venga el cliente. Se monta sobre una [web bien hecha](/precios) desde el principio, sin parches.
 
-¿Tienes un negocio turístico en Cantabria y tu web solo habla español? Te hago una versión multilingüe que capte al turista que hoy se te escapa. [Hablamos](/contacto).
+¿Tienes un negocio turístico en Cantabria y tu web solo habla español? Si además das de comer, mira cómo hago el [diseño web para hostelería en Cantabria](/diseno-web-hosteleria-cantabria), carta incluida. Y si quieres presupuesto del segundo idioma, [escríbeme](/contacto).

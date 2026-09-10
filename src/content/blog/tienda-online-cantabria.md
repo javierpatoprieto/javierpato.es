@@ -1,8 +1,8 @@
 ---
-title: "Tienda online en Cantabria: cómo empezar a vender por internet"
-description: "Guía para montar una tienda online siendo un negocio de Cantabria: qué necesitas, cuánto cuesta y los errores que arruinan las ventas."
+title: "Tienda online en Cantabria: cómo empezar"
+description: "Guía para montar una tienda online siendo un negocio de Cantabria: qué necesitas, cuánto cuesta desde 999€ y los errores que arruinan las ventas."
 pubDate: 2026-06-12
-keyword: "tienda online Cantabria"
+keyword: "cómo empezar a vender por internet"
 tags: ["Ecommerce", "Diseño web"]
 tone: "stone"
 emoji: "🛒"
@@ -47,4 +47,4 @@ Para la mayoría de negocios de Cantabria, una tienda bien hecha y rápida es m�
 
 No hace falta lanzar con 500 productos. Empieza con los que mejor se venden, mira qué funciona y crece con datos. Una tienda enfocada vende más que una gigante y caótica.
 
-¿Tienes producto y quieres venderlo online? Cuéntame qué vendes y vemos si te compensa. [Hablamos](/contacto).
+¿Tienes producto y quieres venderlo online? Mira cómo monto una [tienda online en Cantabria](/tienda-online-cantabria): qué incluye, plazos y desde cuánto sale.

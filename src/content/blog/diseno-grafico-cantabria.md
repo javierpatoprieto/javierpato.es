@@ -1,8 +1,8 @@
 ---
-title: "Diseño gráfico en Cantabria: qué necesita de verdad tu negocio"
-description: "Logotipo, identidad, cartas, redes, packaging… Qué piezas de diseño gráfico necesita un negocio en Cantabria y por dónde empezar sin gastar de más."
+title: "Diseño gráfico en Cantabria: qué necesitas"
+description: "Logotipo, identidad, cartas, redes, packaging: qué piezas de diseño gráfico necesita de verdad un negocio de Cantabria y en qué orden conviene hacerlas."
 pubDate: 2026-06-16
-keyword: "diseño gráfico Cantabria"
+keyword: "qué piezas de diseño gráfico necesita un negocio"
 tags: ["Diseño gráfico", "Branding"]
 tone: "warm"
 emoji: "🎨"
@@ -26,7 +26,7 @@ Dependiendo de tu negocio, esto es lo que suele tener más impacto:
 
 ## Diseño gráfico y web van de la mano
 
-Aquí está la clave que muchos pasan por alto: tu [diseño web en Cantabria](/diseno-web-cantabria) y tu diseño gráfico deberían salir de la **misma mano**. Si la web dice una cosa y la carta dice otra, el cliente nota que algo no encaja, aunque no sepa explicar qué.
+Aquí está la clave que muchos pasan por alto: tu [diseño web en Cantabria](/diseno-web-cantabria) y tu [diseño gráfico](/diseno-grafico-cantabria) deberían salir de la **misma mano**. Si la web dice una cosa y la carta dice otra, el cliente nota que algo no encaja, aunque no sepa explicar qué.
 
 Por eso trabajo marca, web y gráfica juntas: un solo criterio para todo.
 
@@ -44,4 +44,4 @@ No hace falta hacerlo todo de golpe. Hace falta empezar con criterio y crecer co
 
 El error que más sale caro es ir parcheando: un logo de Fiverr, una carta hecha en Word, unas redes de otro estilo… El conjunto transmite "de andar por casa", aunque cada pieza por separado no esté mal. La marca se construye en el **todo**, no en las partes.
 
-¿Quieres una imagen coherente para tu negocio en Cantabria? Cuéntame qué tienes y por dónde empezarías. [Hablamos](/contacto).
+¿Quieres una imagen coherente para tu negocio en Cantabria? Mira qué incluye el [servicio de diseño gráfico en Cantabria](/diseno-grafico-cantabria) —dossier, catálogo, cartas, packaging— con precios orientativos y plazos. O cuéntame qué tienes entre manos y te digo por dónde empezaría.

@@ -2,16 +2,224 @@
 import Layout from '../layouts/Layout.astro';
 
 const faqs = [
-  { q: '¿Cuánto cuesta una web en Cantabria?', a: 'Mi web de lanzamiento empieza en 299€ (una página, a medida, entregada en 2 semanas). Webs más completas, multipágina o con tienda, se presupuestan aparte — pero siempre con precio de estudio, no de agencia.' },
-  { q: '¿Cuánto tardas en entregar la web?', a: 'La web de lanzamiento, 2 semanas. Proyectos de marca + web completa, entre 3 y 5 semanas. Rápido no significa plantilla: uso IA para lo repetitivo y pongo el criterio yo.' },
-  { q: '¿Trabajas con negocios de toda Cantabria?', a: 'Sí. Santander, Torrelavega, Castro, Laredo, los valles… donde estés. Soy de aquí y entiendo a tu cliente local.' },
-  { q: '¿La web aparecerá en Google?', a: 'Sí. Toda web sale optimizada para SEO local desde el día uno: velocidad, estructura, datos de tu negocio y las palabras por las que te buscan en Cantabria.' },
-  { q: '¿Qué necesitas de mí para empezar?', a: 'Una conversación de 20 minutos y lo que tengas (logo, fotos, textos). Si no tienes, lo resolvemos — incluso generamos imágenes con dirección de arte.' },
+  {
+    q: '¿Con qué está hecha la web? ¿Es WordPress?',
+    a: 'Por defecto no. Monto webs ligeras y bien construidas, sin una pila de plugins peleándose entre ellos ni actualizaciones que un martes te rompen la home. Eso se traduce en menos cosas que se estropean solas y en una web que carga rápido de verdad, no solo el día que la entrego. Si tu equipo ya trabaja con WordPress y hay una razón real para seguir ahí, lo hablamos en la primera llamada y lo decidimos con criterio, no por costumbre.',
+  },
+  {
+    q: '¿Por qué una web son 299€ y otra 699€ si las haces tú igual?',
+    a: 'Porque lo que cambia no es quién la hace, sino cuánto hay que construir. Una one-page es una sola pieza y una sola decisión de mensaje. Seis páginas son seis estructuras distintas, seis títulos para Google, seis maneras de que el visitante llegue y seis maneras de que se pierda. El diseño y el criterio son los mismos en todos los planes; lo que sube es el volumen de trabajo. Por eso te digo el precio antes de empezar y no después.',
+  },
+  {
+    q: '¿Qué diferencia hay entre esto y hacérmela yo con una plantilla o con una IA?',
+    a: 'Que una plantilla y un generador te resuelven el continente y te dejan solo con el contenido, que es la parte difícil. Sabrán ponerte tres columnas bonitas, pero no saben qué tienes que contar primero para que alguien de aquí te llame, ni qué objeción hay que desmontar antes de que llegue al botón. Si tu negocio es sencillo y tienes tiempo y buen ojo, una plantilla puede sacarte del apuro. Si lo que quieres es que la web trabaje, lo que estás pagando es el criterio, no el maquetado.',
+  },
+  {
+    q: '¿Escribes tú los textos?',
+    a: 'Escribo la estructura: decido qué va en cada página, en qué orden y con qué titular, y reescribo lo que me des para que suene a ti pero se entienda a la primera. Lo que no entra en el precio es redactar seis páginas desde una hoja en blanco. Si no tienes nada escrito, te paso un guion con preguntas concretas para que sueltes el contenido en un rato, o presupuestamos la redacción aparte. Te lo digo antes de empezar, nunca a mitad.',
+  },
+  {
+    q: '¿Me hace falta blog?',
+    a: 'Solo si vas a mantenerlo. Un blog con tres entradas de hace dos años dice de tu negocio exactamente lo mismo que una persiana medio bajada, y a Google tampoco le impresiona. El blog tiene sentido cuando tu cliente busca cosas antes de decidirse y tú puedes contestarlas mejor que nadie, y cuando tienes la constancia real de publicar. Si no la tienes, mejor cuatro páginas impecables que seis con una sección muerta.',
+  },
+  {
+    q: '¿Y si a mitad del proyecto quiero cambiar de plan?',
+    a: 'Subir se puede casi siempre. Si a mitad decides que de cuatro páginas te quedas corto, ajustamos el presupuesto con la diferencia entre planes y movemos el plazo lo que haga falta, sin recargos raros. Bajar es más complicado cuando el diseño ya está hecho, porque el trabajo ya está puesto. Por eso dedico la primera llamada a acertar con el tamaño: es la decisión que más dinero te ahorra o te cuesta.',
+  },
+  {
+    q: '¿Qué pasa si algún día dejas de dedicarte a esto?',
+    a: 'Tu web sigue funcionando igual, y esa es una decisión de diseño, no una casualidad. No la monto sobre un panel propio ni sobre nada que solo yo pueda tocar: está construida con herramientas estándar, los accesos están a tu nombre y cualquier profesional del oficio puede cogerla y seguir. Te lo cuento porque el susto más habitual que me llega es justo el contrario: gente atada a alguien que dejó de contestar.',
+  },
+  {
+    q: '¿Qué necesitas de mí para empezar?',
+    a: 'Una conversación de 20 minutos y lo que ya tengas: logo, fotos, textos sueltos, los datos fiscales para las páginas legales y el acceso al dominio si lo tienes contratado. Si no tienes casi nada, tampoco pasa nada: se resuelve con dirección de arte y con un guion de preguntas. Lo único que de verdad necesito de ti es que me cuentes a quién le vendes y qué te preguntan siempre tus clientes antes de decidirse.',
+  },
 ];
-const jsonld = {
-  '@context': 'https://schema.org', '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-};
+
+const incluye = [
+  ['Diseño a medida, no plantilla', 'Empiezo de cero sobre tu contenido: ni tema comprado ni maqueta reciclada de otro cliente al que le cambio el logo. Es la razón por la que tu web no se parece a la del negocio de al lado.'],
+  ['Estructura del mensaje', 'Decido qué va primero, qué va después y qué sobra en cada página. La mayoría de webs no fallan por feas, fallan por contar las cosas en el orden equivocado y perder a la gente en el primer scroll.'],
+  ['Móvil de verdad', 'Reviso la web en pantallas pequeñas reales, no estirando la ventana del ordenador. Tu cliente te va a mirar desde el móvil, con una mano, andando y con prisa. Ese es el examen que hay que aprobar.'],
+  ['Velocidad', 'Webs ligeras, sin diez plugins cargando cosas que nadie ve. Que aparezca antes de que a nadie le dé tiempo a arrepentirse y volver a los resultados de Google.'],
+  ['SEO local técnico', 'Título y descripción escritos a mano en cada página, encabezados ordenados, los datos de tu negocio marcados para que Google los lea sin adivinar, sitemap y enlaces internos entre páginas.'],
+  ['Contacto por donde tú vendes', 'Formulario que te llega al correo, botón de WhatsApp o teléfono a un toque. Lo que tenga sentido para tu negocio, no los tres a la vez amontonados en una esquina.'],
+  ['Páginas legales base', 'Aviso legal, privacidad y cookies montados y enlazados como toca. No es un extra ni un lujo: es lo mínimo para no llevarte un susto evitable.'],
+  ['Una ronda de cambios', 'Sobre el diseño ya aprobado. Junta tus comentarios y los aplico de una tanda, que es como salen bien y como esto no se convierte en un ir y venir de seis semanas.'],
+  ['Puesta online y traspaso', 'Publico, conecto el dominio, dejo el certificado funcionando y te enseño en veinte minutos a cambiar un texto o una foto sin tener que llamarme.'],
+];
+
+const noIncluye = [
+  ['Redacción ilimitada', 'Ordeno, recorto y afino lo que me des. Si hay que escribir seis páginas desde cero, es un trabajo aparte y te lo digo antes de empezar, no cuando llega la factura.'],
+  ['Campañas de pago', 'No llevo Google Ads ni anuncios en redes. Si quieres pagar por visitas, te oriento sobre si te conviene, pero la gestión no la hago yo y no te la voy a facturar.'],
+  ['Redes sociales', 'Ni calendario de publicaciones ni contestar mensajes por ti. Diseño la casa y te doy las llaves; vivir en ella todos los días te toca a ti.'],
+  ['Fotografía con cámara', 'No voy a tu local con equipo de fotografía. Sí hago dirección de arte y puedo generar imágenes cuando el proyecto lo pide, pero eso se decide antes de arrancar, no sobre la marcha.'],
+  ['Primeros puestos garantizados', 'Nadie puede prometerte el número uno en Google. Quien te lo prometa, o no sabe cómo funciona o cuenta con que tú no lo sabes. Yo dejo la web en las mejores condiciones; el orden lo decide Google.'],
+  ['Cambios infinitos', 'Va incluida una ronda. Después, o entras en el mantenimiento anual de 190€ o presupuestamos los cambios cuando los pidas. Sin dramas, pero sin barra libre.'],
+  ['Integraciones a medida', 'Conectar tu TPV, tu programa de gestión o el sistema de citas que ya usas se estudia caso por caso. No va de serie en ningún plan y puede cambiar el presupuesto.'],
+  ['Segundo idioma', 'Las webs salen en un idioma. Si vives del turismo y necesitas inglés, se puede hacer, pero es el doble de contenido y se presupuesta como lo que es.'],
+];
+
+const decidir = [
+  {
+    n: 'One-page',
+    p: '299€',
+    para: 'Un solo servicio, una sola oferta o un lanzamiento concreto.',
+    si: 'Si al escribir el menú de tu web no te salen cuatro apartados con contenido real detrás, no necesitas cuatro páginas: necesitas una buena. Es el caso del entrenador personal, el instalador, el fotógrafo o el producto único. Un ejemplo real: la landing de Explora Siam vende un viaje concreto y termina en un WhatsApp, y con eso basta.',
+    no: 'Se te queda corta en cuanto quieras que te encuentren por varias cosas distintas. Una sola página compite por un puñado de búsquedas, no por diez: cada tema que quieras posicionar pide su propio sitio.',
+  },
+  {
+    n: 'Básica · 4 páginas',
+    p: '549€',
+    para: 'El negocio local con dos, tres o cuatro servicios que se venden a públicos distintos.',
+    si: 'La señal más clara es esta: si cuando te preguntan qué haces tardas más de un minuto en explicarlo, no cabe en una página. Peluquerías, talleres, asesorías, consultas pequeñas. Inicio, servicios, quién eres y contacto cubren a la mayoría de los negocios de Cantabria sin marear a nadie.',
+    no: 'Se queda escasa cuando dos de tus servicios son tan distintos que compiten dentro de la misma página y acaban explicándose mal los dos.',
+  },
+  {
+    n: 'Pro · 6 páginas',
+    p: '699€',
+    para: 'Cuando cada servicio da para su propia página y además quieres blog.',
+    si: 'Seis páginas son seis puertas de entrada desde Google en vez de una. Tiene sentido en clínicas con varias especialidades, empresas con líneas de negocio separadas o alojamientos que trabajan temporadas muy distintas. También es el plan si vas a publicar contenido con cierta constancia y quieres el blog montado desde el principio.',
+    no: 'No es tu plan si lo que de verdad quieres es cobrar en la web. Seis páginas preciosas no cobran una tarjeta.',
+  },
+  {
+    n: 'Ecommerce',
+    p: 'desde 999€',
+    para: 'Cuando el cliente paga en tu web, no cuando te escribe para preguntar el precio.',
+    si: 'Si tus precios o tu stock cambian cada semana, si hoy vendes en un marketplace que se lleva un pellizco de cada pedido, o si te pasas el día contestando el mismo mensaje de disponibilidad, necesitas tienda. Ahí el catálogo, los pagos y los envíos dejan de ser un extra y pasan a ser el producto.',
+    no: 'No hace falta si vendes cuatro cosas que se piden por WhatsApp y siempre acabas hablando con el cliente. Eso lo aguanta una Básica con su catálogo bien contado, y te ahorras la mitad.',
+  },
+];
+
+const seoSi = [
+  'Un título y una descripción escritos a mano para cada página, pensados para la búsqueda concreta que persigue esa página y no generados en serie.',
+  'Encabezados ordenados de arriba abajo, para que Google entienda de qué va cada página sin tener que adivinarlo.',
+  'Los datos de tu negocio marcados en el código: nombre, teléfono, dirección, horario y zona en la que trabajas.',
+  'Velocidad y comportamiento en móvil cuidados, que llevan años siendo parte de cómo Google decide a quién enseña.',
+  'Enlaces internos entre tus páginas, para que ni Google ni tu visitante lleguen a un callejón sin salida.',
+  'Sitemap generado y la web dada de alta en Search Console, con acceso también para ti.',
+];
+
+const seoNo = [
+  'No es una garantía de salir el primero. No existe. Yo pongo las condiciones; el orden lo decide Google.',
+  'No es publicar artículos cada mes. El contenido continuado es otro trabajo, y si te hace falta te lo digo claro.',
+  'No es conseguir enlaces desde otras webs. Ni compro enlaces ni te los vendo.',
+  'No es llevarte la ficha de Google cada semana: fotos, reseñas y publicaciones. Te la dejo enlazada y te explico qué hacer, pero mantenerla viva es tuyo.',
+  'No es instantáneo. Una web nueva tarda en asentarse y no te voy a poner una fecha, porque quien la pone se la está inventando.',
+];
+
+const fases = [
+  ['Encaje', 'Te pregunto por tu negocio, por tu cliente y por tu competencia real. Salgo de ahí con un plan, un plazo y un precio cerrado.', 'Media hora y sinceridad sobre lo que funciona y lo que no en tu negocio.'],
+  ['Contenido', 'Monto la estructura: qué páginas hay, qué cuenta cada una y qué imagen va en cada sitio.', 'Logo si lo tienes, fotos, textos sueltos, datos fiscales y accesos al dominio.'],
+  ['Dirección visual', 'Te enseño una propuesta con tipografía, color y tono antes de tocar el detalle.', 'Aprobar, o decirme qué no encaja. En una sola tanda, no en cinco correos.'],
+  ['Maquetación', 'Construyo el resto de páginas, ajusto el móvil, aprieto la velocidad y dejo hecho el SEO técnico.', 'Nada. Responder alguna duda suelta si aparece.'],
+  ['Revisión', 'Te paso un enlace de prueba con la web entera funcionando.', 'Tu ronda de cambios, junta en un documento o en una llamada.'],
+  ['Publicación', 'Conecto el dominio, dejo el certificado, envío el sitemap y compruebo que los formularios llegan.', 'Los accesos al dominio si lo tienes contratado por tu cuenta.'],
+  ['Traspaso', 'Te enseño a cambiar textos y fotos, y te dejo los accesos a tu nombre.', 'Guardar bien esas claves. En serio.'],
+];
+
+const despues = [
+  ['La web es tuya desde el minuto uno', 'Dominio a tu nombre y archivos tuyos. No hay panel mío del que dependa tu negocio ni cuota obligatoria que te ate. Si mañana quieres llevártela a otro sitio, te la llevas.'],
+  ['Lo recurrente es opcional y está a la vista', 'Dominio 19,99€ al año y alojamiento 49€ al año si prefieres que lo gestione yo. Si te lo montas por tu cuenta, también vale. No hay letra pequeña escondida en ningún lado.'],
+  ['Mantenimiento solo si lo quieres', '190€ al año cubren los cambios del año, copias de seguridad y soporte. Sin contratarlo, los cambios sueltos se presupuestan cuando los pidas y se acabó.'],
+  ['Los primeros días conviene mirar dos cosas', 'Que los formularios lleguen a tu correo y que el teléfono abra la llamada en el móvil. Te digo exactamente qué comprobar y te dejo Search Console para que veas por qué búsquedas empiezas a aparecer.'],
+  ['Crecer no es rehacerla', 'Pasar de cuatro a seis páginas, añadir un blog o montar la tienda más adelante no obliga a empezar otra vez. La web se amplía por donde toca y se presupuesta solo lo nuevo.'],
+];
+
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': 'https://javierpato.es/diseno-web-cantabria#servicio',
+    name: 'Diseño web en Cantabria',
+    serviceType: 'Diseño y desarrollo de páginas web',
+    url: 'https://javierpato.es/diseno-web-cantabria',
+    description:
+      'Diseño y desarrollo de páginas web a medida para negocios de Cantabria, con SEO local técnico incluido, precio cerrado y entrega en una semana o menos. One-page desde 299€, 4 páginas 549€, 6 páginas 699€ y tienda online desde 999€.',
+    provider: { '@id': 'https://javierpato.es/#estudio' },
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Cantabria' },
+      { '@type': 'City', name: 'Santander' },
+      { '@type': 'City', name: 'Torrelavega' },
+      { '@type': 'City', name: 'Castro Urdiales' },
+      { '@type': 'City', name: 'Camargo' },
+      { '@type': 'City', name: 'Laredo' },
+      { '@type': 'City', name: 'El Astillero' },
+      { '@type': 'City', name: 'Piélagos' },
+      { '@type': 'City', name: 'Reinosa' },
+    ],
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: 'https://javierpato.es/contacto',
+      availableLanguage: { '@type': 'Language', name: 'Español' },
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Planes de diseño web en Cantabria',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          name: 'Web one-page',
+          description: 'Una sola página a medida, entregada en 3 días.',
+          price: '299',
+          priceCurrency: 'EUR',
+          url: 'https://javierpato.es/precios',
+          itemOffered: { '@type': 'Service', name: 'Diseño web one-page', serviceType: 'Diseño web' },
+        },
+        {
+          '@type': 'Offer',
+          name: 'Web Básica de 4 páginas',
+          description: 'Cuatro páginas a medida con SEO local, entregadas en 1 semana.',
+          price: '549',
+          priceCurrency: 'EUR',
+          url: 'https://javierpato.es/precios',
+          itemOffered: { '@type': 'Service', name: 'Diseño web de 4 páginas', serviceType: 'Diseño web' },
+        },
+        {
+          '@type': 'Offer',
+          name: 'Web Pro de 6 páginas',
+          description: 'Seis páginas a medida con SEO local y blog opcional, entregadas en 1 semana.',
+          price: '699',
+          priceCurrency: 'EUR',
+          url: 'https://javierpato.es/precios',
+          itemOffered: { '@type': 'Service', name: 'Diseño web de 6 páginas', serviceType: 'Diseño web' },
+        },
+        {
+          '@type': 'Offer',
+          name: 'Tienda online',
+          description: 'Ecommerce con catálogo, pagos y envíos, entregado en 2 o 3 semanas.',
+          price: '999',
+          priceCurrency: 'EUR',
+          url: 'https://javierpato.es/tienda-online-cantabria',
+          priceSpecification: {
+            '@type': 'PriceSpecification',
+            priceCurrency: 'EUR',
+            minPrice: '999',
+            valueAddedTaxIncluded: false,
+          },
+          itemOffered: { '@type': 'Service', name: 'Tienda online', serviceType: 'Ecommerce' },
+        },
+      ],
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
+      { '@type': 'ListItem', position: 2, name: 'Diseño web en Cantabria', item: 'https://javierpato.es/diseno-web-cantabria' },
+    ],
+  },
+];
+
 const stats = [['299€', 'Desde'], ['2 sem', 'Entrega'], ['100%', 'A medida'], ['SEO', 'Incluido']];
 const props = [
   { t: 'Hecha para vender', d: 'No decoro: diseño para que tu web convierta visitas en clientes y llamadas. Cada bloque, cada botón y cada palabra tienen un porqué y empujan hacia el mismo sitio —que te escriban.', c: 'warm', e: '💸' },
@@ -80,20 +288,54 @@ const planes = [
           </div>
         ))}
       </div>
+      <p class="lp-zonas" data-reveal>
+        ¿No estás en Santander? Lo que necesita tu web cambia bastante según dónde tengas el negocio.
+        Te lo cuento zona por zona en <a href="/diseno-web-cantabria/zonas" class="tlink">diseño web en Cantabria por municipios</a> —Camargo,
+        El Astillero, Piélagos, Laredo, Castro Urdiales y Reinosa—, más peluquerías y turismo rural.
+      </p>
     </div>
   </section>
 
-  <section class="section lp-process">
+  <section class="section lp-sec">
     <div class="wrap">
-      <h2 class="lp-h2" data-reveal>De la charla<br />a tu web, en 3 pasos</h2>
-      <div class="lp-steps" data-stagger>
-        {steps.map(([t, d], i) => (
-          <div class="lp-step" data-reveal>
-            <span class="lp-step-n">{i + 1}</span>
-            <div><h3 class="lp-card-t">{t}</h3><p class="lp-card-d">{d}</p></div>
-          </div>
+      <h2 class="lp-h2" data-reveal>Qué te llevas exactamente<br />y qué no</h2>
+      <p class="lp-p" data-reveal>Casi todos los presupuestos de diseño web dicen lo mismo: "web profesional, diseño moderno, adaptada a móvil". Con eso no puedes comparar nada, porque no dice nada. Así que aquí tienes la lista completa, punto por punto, de lo que hay dentro del precio y de lo que se queda fuera. Si algo de la segunda columna resulta ser imprescindible para ti, mejor que lo sepas ahora y no cuando ya me hayas pagado.</p>
+      <div class="lp-two" data-stagger>
+        <div class="lp-panel lp-panel--yes" data-reveal>
+          <h3 class="lp-panel-t">Va incluido en el precio</h3>
+          <ul class="lp-ul">
+            {incluye.map(([t, d]) => (<li class="lp-li"><b>{t}.</b> {d}</li>))}
+          </ul>
+        </div>
+        <div class="lp-panel lp-panel--no" data-reveal>
+          <h3 class="lp-panel-t">No va incluido</h3>
+          <ul class="lp-ul lp-ul--no">
+            {noIncluye.map(([t, d]) => (<li class="lp-li"><b>{t}.</b> {d}</li>))}
+          </ul>
+          <p class="lp-note">Nada de esto es un "no" definitivo: casi todo se puede hacer, o se puede derivar a quien lo haga bien. Simplemente no está metido en el precio de una web, y prefiero decirlo aquí que en la tercera reunión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section lp-decidir">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>Una página, cuatro, seis<br />o tienda: cómo se decide</h2>
+      <p class="lp-p" data-reveal>El error más caro que veo no es elegir mal el diseño, es elegir mal el tamaño. Gente pagando por seis páginas medio vacías porque alguien le dijo que cuantas más, mejor para Google; y gente intentando meter tres negocios distintos en una sola página porque era lo barato. Estos son los criterios con los que lo decido yo cuando me lo preguntas por teléfono.</p>
+      <div class="lp-decide" data-stagger>
+        {decidir.map((d) => (
+          <article class="lp-dec" data-reveal>
+            <header class="lp-dec__h">
+              <span class="lp-dec__n">{d.n}</span>
+              <span class="lp-dec__p">{d.p}</span>
+            </header>
+            <p class="lp-dec__para">{d.para}</p>
+            <p class="lp-dec__si"><b>Es lo tuyo si…</b> {d.si}</p>
+            <p class="lp-dec__no"><b>Se te queda corto cuando…</b> {d.no}</p>
+          </article>
         ))}
       </div>
+      <p class="lp-p lp-p--mt" data-reveal>Si tu caso es una consulta, un gabinete o un centro sanitario, el criterio cambia bastante por el asunto de las citas y los datos: lo tengo desarrollado en <a href="/diseno-web-clinicas-cantabria" class="tlink">diseño web para clínicas</a>. Si vives de la carta y de las reservas, mira <a href="/diseno-web-hosteleria-cantabria" class="tlink">webs para hostelería</a>. Si estás empezando tú solo y lo que te frena es el presupuesto, la conversación es otra y la tienes en <a href="/diseno-web-autonomos-cantabria" class="tlink">webs para autónomos</a>. Y para vender y cobrar online, todo lo específico está en <a href="/tienda-online-cantabria" class="tlink">tienda online en Cantabria</a>.</p>
     </div>
   </section>
 
@@ -115,6 +357,100 @@ const planes = [
     </div>
   </section>
 
+  <section class="section lp-seo">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>Qué es el SEO local<br />que va incluido</h2>
+      <p class="lp-p" data-reveal>"SEO incluido" es de las frases más manoseadas del sector y significa cosas muy distintas según quién la diga. Cuando yo digo que va incluido me refiero a esto en concreto: dejar tu web en las mejores condiciones técnicas y de contenido para que Google entienda quién eres, qué haces y dónde lo haces. Esa es la parte que depende de mí y va en el precio. Lo que no depende de mí, tampoco te lo voy a cobrar.</p>
+      <div class="lp-two" data-stagger>
+        <div class="lp-panel lp-panel--yes" data-reveal>
+          <h3 class="lp-panel-t">Esto sí</h3>
+          <ul class="lp-ul">{seoSi.map((s) => (<li class="lp-li">{s}</li>))}</ul>
+        </div>
+        <div class="lp-panel lp-panel--no" data-reveal>
+          <h3 class="lp-panel-t">Esto no</h3>
+          <ul class="lp-ul lp-ul--no">{seoNo.map((s) => (<li class="lp-li">{s}</li>))}</ul>
+        </div>
+      </div>
+      <p class="lp-p lp-p--mt" data-reveal>Y una cosa más, por si te la ha vendido alguien: posicionar en Cantabria no va de repetir "diseño web Santander" cuarenta veces en la portada. Va de que cada página responda a una búsqueda concreta y lo haga mejor que las demás. Por eso trabajo el servicio separado por zonas y por sectores en vez de amontonarlo todo aquí: si tu negocio está en la capital, mira <a href="/diseno-web-santander" class="tlink">diseño web en Santander</a>; si estás en el Besaya, <a href="/diseno-web-torrelavega" class="tlink">diseño web en Torrelavega</a>.</p>
+    </div>
+  </section>
+
+  <section class="section lp-process">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>De la charla<br />a tu web, en 3 pasos</h2>
+      <div class="lp-steps" data-stagger>
+        {steps.map(([t, d], i) => (
+          <div class="lp-step" data-reveal>
+            <span class="lp-step-n">{i + 1}</span>
+            <div><h3 class="lp-card-t">{t}</h3><p class="lp-card-d">{d}</p></div>
+          </div>
+        ))}
+      </div>
+      <h3 class="lp-sub" data-reveal>Y por dentro, quién hace qué</h3>
+      <p class="lp-p lp-p--inv" data-reveal>Tres pasos es la versión corta. La versión larga es esta tabla, y existe por un motivo muy concreto: los proyectos que se eternizan casi nunca se atascan en el diseño, se atascan esperando fotos, textos o una respuesta. Si sabes desde el principio qué te toca a ti y cuándo, tu web sale en el plazo que te he dicho.</p>
+      <div class="lp-fases" data-stagger>
+        <div class="lp-fase lp-fase--head" aria-hidden="true">
+          <span>Fase</span><span>Lo hago yo</span><span>Lo necesito de ti</span>
+        </div>
+        {fases.map(([f, yo, tu], i) => (
+          <div class="lp-fase" data-reveal>
+            <span class="lp-fase__n"><i>{i + 1}</i>{f}</span>
+            <span class="lp-fase__c"><b class="lp-fase__lb">Lo hago yo:</b> {yo}</span>
+            <span class="lp-fase__c"><b class="lp-fase__lb">De ti:</b> {tu}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section lp-sec">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>Qué pasa el día<br />después de entregar</h2>
+      <p class="lp-p" data-reveal>Esta es la parte que casi nadie te cuenta antes de firmar, y es justo donde a mucha gente le han dado el disgusto: cuotas que aparecen de la nada, dominios que resulta que estaban a nombre del que hizo la web, y un teléfono que deja de contestar. Así funciona conmigo.</p>
+      <div class="lp-after" data-stagger>
+        {despues.map(([t, d]) => (
+          <div class="lp-aft" data-reveal>
+            <h3 class="lp-card-t">{t}</h3>
+            <p class="lp-card-d">{d}</p>
+          </div>
+        ))}
+      </div>
+      <p class="lp-p lp-p--mt" data-reveal>Si quieres ver cómo queda todo esto en proyectos reales —una clínica, un software de logística, un negocio montado desde cero en el Besaya— están en <a href="/proyectos" class="tlink">el portfolio</a>, con lo que se decidió en cada uno y por qué.</p>
+    </div>
+  </section>
+
+  <section class="section lp-mapa">
+    <div class="wrap">
+      <h2 class="lp-h2" data-reveal>Por dónde seguir</h2>
+      <div class="lp-mapa__grid" data-stagger>
+        <div class="lp-mg" data-reveal>
+          <h3 class="lp-mg__t">Por zona</h3>
+          <p class="lp-mg__d">Cada municipio tiene su tipo de cliente y su competencia. Empieza por <a href="/diseno-web-santander" class="tlink">Santander</a> o <a href="/diseno-web-torrelavega" class="tlink">Torrelavega</a>, o mira <a href="/diseno-web-cantabria/zonas" class="tlink">el listado completo de zonas</a> si estás en la costa oriental, en Camargo o en los valles.</p>
+        </div>
+        <div class="lp-mg" data-reveal>
+          <h3 class="lp-mg__t">Por sector</h3>
+          <p class="lp-mg__d">Lo que necesita una <a href="/diseno-web-clinicas-cantabria" class="tlink">clínica</a> no se parece en nada a lo que necesita un <a href="/diseno-web-hosteleria-cantabria" class="tlink">bar o un restaurante</a>, ni a lo que le sirve a un <a href="/diseno-web-autonomos-cantabria" class="tlink">autónomo</a> que empieza. Cada uno tiene su página con sus propias objeciones.</p>
+        </div>
+        <div class="lp-mg" data-reveal>
+          <h3 class="lp-mg__t">Si además vendes</h3>
+          <p class="lp-mg__d">Cobrar online cambia el proyecto entero: catálogo, pagos, envíos y devoluciones. Todo lo específico, en <a href="/tienda-online-cantabria" class="tlink">tienda online en Cantabria</a>.</p>
+        </div>
+        <div class="lp-mg" data-reveal>
+          <h3 class="lp-mg__t">Si el problema es la marca</h3>
+          <p class="lp-mg__d">A veces la web no es lo primero. Si tu logo lo hizo un cuñado en 2014 o no tienes ni colores propios, se empieza por <a href="/branding-cantabria" class="tlink">branding</a>. Y si lo que te faltan son piezas —dossier, cartelería, catálogo—, eso es <a href="/diseno-grafico-cantabria" class="tlink">diseño gráfico</a>.</p>
+        </div>
+        <div class="lp-mg" data-reveal>
+          <h3 class="lp-mg__t">Si solo quieres el número</h3>
+          <p class="lp-mg__d">Elige plan, marca extras y ve el total al momento en <a href="/precios" class="tlink">precios</a>. Sin formulario de por medio ni "consúltanos sin compromiso".</p>
+        </div>
+        <div class="lp-mg" data-reveal>
+          <h3 class="lp-mg__t">Si ya lo tienes claro</h3>
+          <p class="lp-mg__d">Cuéntame qué negocio tienes y qué te está fallando hoy en <a href="/contacto" class="tlink">contacto</a>. Veinte minutos y sales con un plan y un precio, contrates o no.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="wrap">
       <h2 class="lp-h2" data-reveal>Preguntas que<br />me hacen siempre</h2>
@@ -123,6 +459,7 @@ const planes = [
           <details class="lp-q" data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
         ))}
       </div>
+      <p class="lp-p lp-p--mt" data-reveal>¿Te queda alguna que no esté aquí? Escríbemela y te contesto yo, no un formulario automático: <a href="/contacto" class="tlink">ir a contacto →</a></p>
     </div>
   </section>
 
@@ -179,6 +516,37 @@ const planes = [
     .lp-card--warm { background: var(--t-warm); color: var(--t-warm-ink); }
     .lp-card--stone { background: var(--t-stone); color: var(--t-stone-ink); }
     .lp-num { font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; opacity: 0.6; }
+    .lp-zonas { margin-top: var(--s-5); max-width: 72ch; color: var(--ink-soft); line-height: 1.6; }
+
+    /* Párrafos de fondo */
+    .lp-p { color: var(--ink-soft); line-height: 1.65; max-width: 68ch; font-size: 1.02rem; margin-top: calc(var(--s-6) * -0.45); margin-bottom: var(--s-5); }
+    .lp-p--mt { margin-top: var(--s-5); margin-bottom: 0; }
+
+    /* Dos columnas: sí / no */
+    .lp-two { display: grid; grid-template-columns: 1fr; gap: clamp(14px,2vw,20px); align-items: start; }
+    .lp-panel { border-radius: var(--radius); padding: clamp(22px,2.8vw,34px); border: 1px solid var(--line); background: var(--bg-2); }
+    .lp-panel--yes { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+    .lp-panel-t { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h3); margin-bottom: var(--s-4); }
+    .lp-ul { list-style: none; display: grid; gap: 14px; margin: 0; padding: 0; }
+    .lp-li { position: relative; padding-left: 30px; color: var(--ink-soft); line-height: 1.55; }
+    .lp-li b { color: var(--ink); font-family: var(--font-display); font-weight: 700; }
+    .lp-li::before { content: '✓'; position: absolute; left: 0; top: 0; color: var(--accent-ink); font-weight: 700; }
+    .lp-ul--no .lp-li::before { content: '✕'; color: var(--ink-mute); }
+    .lp-note { margin-top: var(--s-4); padding-top: var(--s-4); border-top: 1px solid var(--line); color: var(--ink-mute); font-size: 0.92rem; line-height: 1.6; }
+
+    /* Cómo elegir plan */
+    .lp-decidir { background: var(--bg-2); }
+    .lp-decide { display: grid; grid-template-columns: 1fr; gap: clamp(14px,2vw,20px); }
+    .lp-dec { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(22px,2.8vw,32px); transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease-soft); }
+    .lp-dec:hover { transform: translateY(-5px); border-color: var(--accent); }
+    .lp-dec__h { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding-bottom: 12px; margin-bottom: 14px; border-bottom: 1px solid var(--line); }
+    .lp-dec__n { font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; }
+    .lp-dec__p { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--accent-ink); white-space: nowrap; }
+    .lp-dec__para { font-family: var(--font-display); font-weight: 600; color: var(--ink); line-height: 1.5; margin-bottom: 14px; }
+    .lp-dec__si, .lp-dec__no { color: var(--ink-soft); line-height: 1.6; margin-bottom: 12px; font-size: 0.97rem; }
+    .lp-dec__si b { color: var(--accent-ink); }
+    .lp-dec__no { margin-bottom: 0; }
+    .lp-dec__no b { color: var(--ink-mute); }
 
     /* Tarjetas de precio → /precios */
     .lp-planes { display: grid; grid-template-columns: 1fr; gap: 14px; }
@@ -199,19 +567,53 @@ const planes = [
     .lp-step:hover { transform: translateY(-5px); }
     .lp-step-n { width: 48px; height: 48px; border-radius: 50%; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 800; display: grid; place-items: center; font-size: 1.3rem; }
 
+    /* Tabla de fases: quién hace qué */
+    .lp-sub { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-h3); margin: var(--s-7) 0 var(--s-4); }
+    .lp-fases { display: grid; gap: 10px; }
+    .lp-fase { display: grid; grid-template-columns: 1fr; gap: 8px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); padding: clamp(18px,2.2vw,24px); }
+    .lp-fase--head { display: none; }
+    .lp-fase__n { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; display: flex; align-items: center; gap: 12px; }
+    .lp-fase__n i { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; font-style: normal; font-size: 0.85rem; font-weight: 700; display: grid; place-items: center; }
+    .lp-fase__c { line-height: 1.55; font-size: 0.95rem; }
+    .lp-fase__lb { font-family: var(--font-display); font-weight: 700; }
+
+    /* Después de entregar */
+    .lp-after { display: grid; grid-template-columns: 1fr; gap: clamp(14px,2vw,20px); }
+    .lp-aft { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(22px,2.6vw,30px); transition: transform var(--dur) var(--ease); }
+    .lp-aft:hover { transform: translateY(-5px); }
+    .lp-aft .lp-card-t { margin-top: 0; }
+    .lp-aft .lp-card-d { color: var(--ink-soft); opacity: 1; }
+
+    /* Mapa de enlaces */
+    .lp-mapa { background: var(--bg-2); }
+    .lp-mapa__grid { display: grid; grid-template-columns: 1fr; gap: clamp(14px,2vw,20px); }
+    .lp-mg { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(20px,2.4vw,28px); }
+    .lp-mg__t { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; margin-bottom: 10px; }
+    .lp-mg__d { color: var(--ink-soft); line-height: 1.6; font-size: 0.96rem; }
+
     /* Bandas de sección — dan ritmo y "escaparate" */
     .lp-process { background: var(--panel); color: var(--panel-ink); }
     .lp-process .lp-h2 { color: var(--panel-ink); }
     .lp-process .lp-step { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.14); }
     .lp-process .lp-card-t { color: #fff; }
     .lp-process .lp-card-d { color: rgba(255,255,255,0.78); }
+    .lp-process .lp-sub { color: #fff; }
+    .lp-p--inv { color: rgba(255,255,255,0.78); }
+    .lp-process .lp-fase__c { color: rgba(255,255,255,0.78); }
+    .lp-process .lp-fase__lb, .lp-process .lp-fase__n { color: #fff; }
+    .lp-seo { background: var(--t-stone); color: var(--t-stone-ink); }
+    .lp-seo .lp-h2, .lp-seo .lp-panel-t, .lp-seo .lp-li b { color: var(--t-stone-ink); }
+    .lp-seo .lp-p, .lp-seo .lp-li { color: color-mix(in srgb, var(--t-stone-ink) 82%, transparent); }
+    .lp-seo .lp-panel { background: color-mix(in srgb, var(--t-stone-ink) 7%, transparent); border-color: color-mix(in srgb, var(--t-stone-ink) 18%, transparent); }
+    .lp-seo .lp-ul--no .lp-li::before { color: color-mix(in srgb, var(--t-stone-ink) 55%, transparent); }
     .lp-precios { background: var(--t-warm); }
-    .lp-card:hover, .lp-plan:hover, .lp-step:hover { box-shadow: 0 26px 50px -28px rgba(230,25,127,0.4); }
+    .lp-card:hover, .lp-plan:hover, .lp-step:hover, .lp-dec:hover, .lp-aft:hover { box-shadow: 0 26px 50px -28px rgba(230,25,127,0.4); }
 
     .lp-faq { display: grid; gap: 12px; }
     .lp-q { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(18px,2.4vw,26px); }
     .lp-q summary { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-    .lp-q summary::after { content: '+'; color: var(--accent-ink); font-size: 1.4rem; line-height: 1; }
+    .lp-q summary::-webkit-details-marker { display: none; }
+    .lp-q summary::after { content: '+'; color: var(--accent-ink); font-size: 1.4rem; line-height: 1; flex: none; }
     .lp-q[open] summary::after { content: '–'; }
     .lp-q p { color: var(--ink-soft); margin-top: 14px; line-height: 1.6; max-width: 70ch; }
 
@@ -221,6 +623,14 @@ const planes = [
       .lp-grid { grid-template-columns: 1fr 1fr; }
       .lp-steps { grid-template-columns: repeat(3,1fr); }
       .lp-planes { grid-template-columns: repeat(4,1fr); }
+      .lp-two { grid-template-columns: 1fr 1fr; }
+      .lp-decide { grid-template-columns: 1fr 1fr; }
+      .lp-after { grid-template-columns: 1fr 1fr; }
+      .lp-mapa__grid { grid-template-columns: repeat(3,1fr); }
+      .lp-fase { grid-template-columns: 0.8fr 1.3fr 1.1fr; gap: 20px; align-items: start; }
+      .lp-fase--head { display: grid; padding: 0 clamp(18px,2.2vw,24px) 6px; background: none; border: 0; border-radius: 0; }
+      .lp-fase--head span { font-family: var(--font-body); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.55; }
+      .lp-fase__lb { display: none; }
     }
   </style>
 </Layout>

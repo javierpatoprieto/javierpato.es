@@ -1,11 +1,12 @@
 ---
 title: "ArtiMindArt"
-seoTitle: "ArtiMindArt — mi estudio creativo con IA para moda y producto | Javier Pato"
+seoTitle: "ArtiMindArt — moda y producto con IA | Javier Pato"
 client: "Proyecto propio · ArtiMindArt"
 sector: "Estudio creativo con IA · Moda y producto"
 year: "2026"
 url: "artimind.art"
 summary: "Mi estudio de IA: imágenes y vídeo de moda y producto con calidad de gran producción, sin photoshoot. La prueba, en mi propia piel, de hasta dónde llevo la dirección con inteligencia artificial."
+seoDescription: "Mi estudio de IA: imágenes y vídeo de moda y producto con calidad de gran producción y sin photoshoot. Hasta dónde llevo la dirección de arte con IA."
 services: ["Branding", "Diseño web", "Dirección de arte con IA", "Imagen y vídeo con IA"]
 scope: "branding"
 tone: "plum"

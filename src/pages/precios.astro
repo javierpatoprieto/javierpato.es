@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 const plans = [
   { id: 'onepage', name: 'One-page', price: 299, time: '3 días', desc: 'Una sola página, a medida, que lo cuenta todo de un vistazo y empuja a que te escriban. El arranque perfecto si necesitas presencia ya y sin complicarte.', feats: ['Diseño a medida', 'Móvil + velocidad', 'SEO básico', 'Contacto integrado'], pop: false },
-  { id: 'basica', name: 'Básica', price: 549, time: '1 semana', desc: '4 páginas para contar quién eres, qué haces y por qué tú. El equilibrio justo para la mayoría de negocios de Cantabria que quieren algo serio.', feats: ['4 páginas', 'Diseño a medida', 'SEO local', '1 ronda de cambios'], pop: true },
+  { id: 'basica', name: 'Básica', price: 549, time: '1 semana', desc: '4 páginas para contar quién eres, qué haces y por qué tú. El equilibrio justo para la mayoría de negocios de Cantabria que quieren algo serio.', feats: ['4 páginas', 'Diseño a medida', 'SEO local', '1 ronda de cambios'], pop: true, why: 'Cuatro páginas es donde la web deja de quedarse corta: inicio, servicios, sobre mí y contacto. Con una sola te aprietas en cuanto tienes más de un servicio que explicar; con seis acabas rellenando dos que no aportan nada. Empieza por aquí y muévete arriba o abajo.' },
   { id: 'pro', name: 'Pro', price: 699, time: '1 semana', desc: '6 páginas para desplegar todo tu negocio con holgura: servicios, proyectos, blog… Cuando quieres contarlo bien y posicionar por más palabras en Google.', feats: ['6 páginas', 'Diseño a medida', 'SEO local', 'Blog opcional'], pop: false },
   { id: 'ecommerce', name: 'Ecommerce', price: 999, from: true, time: '2–3 semanas', desc: 'Tu tienda online lista para cobrar mientras duermes: catálogo, pagos y envíos. Vender por internet desde Cantabria sin depender de marketplaces que se llevan tu margen.', feats: ['Catálogo + pagos', 'Diseño a medida', 'SEO local', 'Formación incluida'], pop: false },
 ];
@@ -12,6 +12,31 @@ const addons = [
   { id: 'hosting', name: 'Alojamiento', price: 49, unit: '/año', desc: 'Hosting rápido y seguro, sin que te preocupes.' },
   { id: 'manten', name: 'Mantenimiento', price: 190, unit: '/año', desc: 'Cambios, copias y soporte todo el año.' },
 ];
+// Tabla comparativa: cada fila tiene un valor por plan, en el mismo orden que `plans`.
+// true = incluido, false = no va, string = matiz.
+const compare = [
+  { label: 'Páginas',                    vals: ['1', '4', '6', 'Catálogo + páginas fijas'] },
+  { label: 'Entrega',                    vals: ['3 días', '1 semana', '1 semana', '2–3 semanas'] },
+  { label: 'Diseño a medida (sin plantilla)', vals: [true, true, true, true] },
+  { label: 'Móvil y velocidad',          vals: [true, true, true, true] },
+  { label: 'Formulario de contacto',     vals: [true, true, true, true] },
+  { label: 'SEO',                        vals: ['Básico', 'Local', 'Local', 'Local'] },
+  { label: 'Ronda de cambios incluida',  vals: ['1', '1', '1', '1'] },
+  { label: 'Blog o sección de noticias', vals: [false, false, 'Opcional', false] },
+  { label: 'Catálogo, pagos y envíos',   vals: [false, false, false, true] },
+  { label: 'Formación para gestionarla', vals: [false, false, false, true] },
+  { label: 'Precio',                     vals: ['299€', '549€', '699€', 'desde 999€'], strong: true },
+];
+const noIncluye = [
+  { t: 'Escribirte los textos de cero (y reescribirlos cinco veces)', d: 'Te doy la estructura de cada página y afino lo que me pases. Si llegas con el folio en blanco, dímelo en la primera charla: se puede resolver, pero se habla antes de empezar, no a mitad.' },
+  { t: 'Campañas de pago', d: 'Google Ads y Meta Ads no van dentro. La web queda lista para recibir ese tráfico y para medirlo, pero ni gestiono la campaña ni pongo el presupuesto de anuncios.' },
+  { t: 'Gestión de redes sociales', d: 'No publico por ti ni llevo tu Instagram.' },
+  { t: 'Fotografía y vídeo', d: 'Si tienes fotos, las recorto, las optimizo y las coloco. Si no tienes ninguna, hay que resolverlo antes de maquetar: una web bonita con fotos malas sigue siendo una web con fotos malas.' },
+  { t: 'Logotipo y marca', d: 'Si llegas sin logo, sin colores y sin tipografías, la web se queda coja. Eso es otro trabajo: <a href="/branding-cantabria" class="tlink">branding en Cantabria</a>.' },
+  { t: 'Piezas gráficas', d: 'Dossier, flyers, cartas, rótulos o etiquetas no entran en un plan de web. Van por su lado: <a href="/diseno-grafico-cantabria" class="tlink">diseño gráfico en Cantabria</a>.' },
+  { t: 'Dar de alta tus productos uno a uno', d: 'En el plan de ecommerce monto la tienda, dejo el catálogo funcionando y te enseño a usarlo. Meter 300 referencias a mano es otra faena: lo vemos en <a href="/tienda-online-cantabria" class="tlink">tienda online</a>.' },
+  { t: 'Contenido nuevo cada mes', d: 'El mantenimiento (190€/año) cubre cambios, copias de seguridad y soporte. No cubre escribirte un artículo al mes ni rehacer secciones enteras.' },
+];
 const faqs = [
   { q: '¿Cuánto cuesta una página web en Cantabria?', a: 'Desde 299€ la one-page (a medida, entregada en 3 días). La Básica de 4 páginas son 549€, la Pro de 6 páginas 699€ y una tienda online desde 999€. Precios cerrados, sin presupuestos sorpresa.' },
   { q: '¿El precio incluye dominio y alojamiento?', a: 'El diseño y desarrollo van en el precio del plan. El dominio propio (19,99€/año) y el alojamiento (49€/año) son extras opcionales que puedo gestionar yo para que no te preocupes de nada.' },
@@ -19,20 +44,52 @@ const faqs = [
   { q: '¿Hay cuotas mensuales o pagos ocultos?', a: 'No. Pagas la web una vez y es tuya. Lo único recurrente, y solo si lo quieres, son dominio, alojamiento o el mantenimiento anual (190€/año) para cambios, copias y soporte.' },
   { q: '¿Qué pasa si necesito cambios después?', a: 'Cada plan incluye una ronda de cambios. Si más adelante quieres seguir evolucionando la web, el plan de mantenimiento anual cubre ajustes y soporte durante todo el año.' },
 ];
+const offers = [
+  ...plans.map((p) => ({
+    '@type': 'Offer',
+    name: `Web ${p.name}`,
+    description: p.desc,
+    price: p.price,
+    priceCurrency: 'EUR',
+    url: 'https://javierpato.es/contacto',
+    availability: 'https://schema.org/InStock',
+    areaServed: 'Cantabria',
+  })),
+  ...addons.map((a) => ({
+    '@type': 'Offer',
+    name: a.name,
+    description: a.desc,
+    price: a.price,
+    priceCurrency: 'EUR',
+    url: 'https://javierpato.es/contacto',
+    availability: 'https://schema.org/InStock',
+    areaServed: 'Cantabria',
+  })),
+];
 const jsonld = [
   {
     '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Diseño web',
-    areaServed: 'Cantabria', provider: { '@type': 'Person', name: 'Javier Pato' },
-    offers: plans.map((p) => ({ '@type': 'Offer', name: `Web ${p.name}`, price: p.price, priceCurrency: 'EUR' })),
+    name: 'Diseño web en Cantabria',
+    areaServed: 'Cantabria',
+    provider: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
+    url: 'https://javierpato.es/precios',
+    offers,
   },
   {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
   },
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
+      { '@type': 'ListItem', position: 2, name: 'Precios', item: 'https://javierpato.es/precios' },
+    ],
+  },
 ];
 ---
 <Layout
-  title="Precios de diseño web en Cantabria — desde 299€ | Javier Pato"
+  title="Precios de diseño web en Cantabria desde 299€ | Javier Pato"
   description="Precios claros de diseño web en Cantabria: one-page desde 299€, 4 páginas 549€, 6 páginas 699€ y ecommerce desde 999€. Entrega en 1 semana o menos."
   jsonld={jsonld}
 >
@@ -54,13 +111,14 @@ const jsonld = [
             <label class={`pr-plan ${p.pop ? 'is-pop' : ''}`} data-reveal>
               <input type="radio" name="plan" value={p.id} data-price={p.price} data-name={p.name} checked={p.id === 'basica'} />
               <span class="pr-plan__in">
-                {p.pop && <span class="pr-badge">El más elegido</span>}
+                {p.pop && <span class="pr-badge">El más elegido · empieza por aquí</span>}
                 <span class="pr-plan__top">
                   <span class="pr-plan__name">{p.name}</span>
                   <span class="pr-plan__price">{p.from ? 'desde ' : ''}{p.price}€</span>
                 </span>
                 <span class="pr-plan__time">Entrega en {p.time}</span>
                 <span class="pr-plan__desc">{p.desc}</span>
+                {p.why && <span class="pr-plan__why">{p.why}</span>}
                 <span class="pr-plan__feats">{p.feats.map((f) => <span class="pr-feat">{f}</span>)}</span>
               </span>
             </label>
@@ -92,6 +150,60 @@ const jsonld = [
           <p class="pr-sum-fine">Precio orientativo. Lo cerramos en una charla de 20 min, sin compromiso.</p>
         </div>
       </aside>
+    </div>
+  </section>
+
+  <section class="section pr-cmp-sec">
+    <div class="wrap">
+      <h2 class="pr-h2 tbar" data-reveal>Qué lleva cada plan, sin letra pequeña</h2>
+      <p class="pr-cmp-lead" data-reveal>La diferencia entre planes no es la calidad del diseño —eso no lo bajo por 250€ menos—, es <strong>cuánto sitio tienes para contarte</strong>. Lee la tabla por la columna de la Básica y decide desde ahí: si te sobra sitio, bajas; si se te queda pequeña, subes.</p>
+      <div class="pr-table-wrap" data-reveal>
+        <table class="pr-table">
+          <caption class="pr-table__cap">Comparativa de planes de diseño web en Cantabria</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="pr-table__rowh">&nbsp;</th>
+              {plans.map((p) => (
+                <th scope="col" class={p.pop ? 'is-pop' : ''}>
+                  {p.name}
+                  {p.pop && <span class="pr-table__tag">Recomendado</span>}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {compare.map((row) => (
+              <tr class={row.strong ? 'is-strong' : ''}>
+                <th scope="row" class="pr-table__rowh">{row.label}</th>
+                {row.vals.map((v, i) => (
+                  <td class={plans[i].pop ? 'is-pop' : ''}>
+                    {v === true && <span class="pr-yes" aria-label="Incluido">✓</span>}
+                    {v === false && <span class="pr-no" aria-label="No incluido">—</span>}
+                    {typeof v === 'string' && <span>{v}</span>}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="pr-table__foot" data-reveal>Dominio (19,99€/año), alojamiento (49€/año) y mantenimiento (190€/año) son extras opcionales en los cuatro planes. Si lo tuyo es vender online y quieres ver cómo monto una tienda antes de decidir, pásate por <a href="/tienda-online-cantabria" class="tlink">tienda online en Cantabria</a>.</p>
+    </div>
+  </section>
+
+  <section class="section pr-nope-sec">
+    <div class="wrap">
+      <h2 class="pr-h2 tbar" data-reveal>Lo que NO va incluido</h2>
+      <p class="pr-nope-lead" data-reveal>Prefiero decirlo ahora que discutirlo a mitad del proyecto. Nada de esto entra en el precio de un plan:</p>
+      <ul class="pr-nope" data-stagger>
+        {noIncluye.map((n) => (
+          <li class="pr-nope__item" data-reveal>
+            <span class="pr-nope__t">{n.t}</span>
+            <span class="pr-nope__d" set:html={n.d} />
+          </li>
+        ))}
+      </ul>
+      <p class="pr-nope__end" data-reveal>Tampoco va la web en dos idiomas: duplicar todo en inglés es duplicar páginas y trabajo, así que se habla antes de empezar. Si algo de esto lo necesitas, se dice en la primera charla y se pone en el presupuesto. Lo que no va a pasar es que aparezca en la factura sin avisar. <a href="/contacto" class="tlink">Cuéntame qué necesitas →</a></p>
     </div>
   </section>
 
@@ -169,7 +281,14 @@ const jsonld = [
     .pr-plan:hover .pr-plan__in { transform: translateY(-3px); }
     .pr-plan input:checked + .pr-plan__in { border-color: var(--accent); background: var(--card); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent); }
     .pr-plan input:focus-visible + .pr-plan__in { outline: 2px solid var(--accent); outline-offset: 2px; }
-    .pr-badge { position: absolute; top: -11px; left: 22px; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 600; font-size: 0.72rem; padding: 3px 12px; border-radius: var(--radius-pill); }
+    .pr-badge { position: absolute; top: -11px; left: 22px; z-index: 2; background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 600; font-size: 0.72rem; padding: 3px 12px; border-radius: var(--radius-pill); }
+
+    /* Plan ancla: manda aunque no esté seleccionado */
+    .pr-plan.is-pop .pr-plan__in { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, var(--card, var(--bg-2))); box-shadow: 0 22px 45px -30px color-mix(in srgb, var(--accent) 70%, transparent); }
+    .pr-plan.is-pop .pr-plan__name { font-size: 1.7rem; }
+    .pr-plan.is-pop .pr-plan__price { font-size: 2.1rem; }
+    .pr-plan.is-pop input:checked + .pr-plan__in { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent), 0 22px 45px -30px color-mix(in srgb, var(--accent) 70%, transparent); }
+    .pr-plan__why { display: block; color: var(--ink); font-size: 0.92rem; line-height: 1.5; margin: 0 0 12px; padding-left: 12px; border-left: 3px solid var(--accent); }
     .pr-plan__top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
     .pr-plan__name { font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; }
     .pr-plan__price { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--accent-ink); }
@@ -200,6 +319,37 @@ const jsonld = [
     .pr-sum-cta { width: 100%; justify-content: center; margin-top: var(--s-3); }
     .pr-sum-fine { font-size: 0.78rem; opacity: 0.6; margin-top: 12px; }
 
+    /* Comparativa */
+    .pr-cmp-sec { padding-top: var(--s-7); }
+    .pr-cmp-lead { color: var(--ink-soft); max-width: 62ch; line-height: 1.55; margin: calc(-1 * var(--s-3)) 0 var(--s-5); }
+    .pr-cmp-lead strong { color: var(--ink); }
+    .pr-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--bg-2); -webkit-overflow-scrolling: touch; }
+    .pr-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 0.94rem; }
+    .pr-table__cap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .pr-table th, .pr-table td { padding: 14px 16px; text-align: center; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    .pr-table thead th { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; background: var(--bg-2); }
+    .pr-table__rowh { text-align: left; font-family: var(--font-body); font-weight: 600; color: var(--ink-soft); white-space: nowrap; }
+    .pr-table tbody tr:last-child th, .pr-table tbody tr:last-child td { border-bottom: 0; }
+    .pr-table tbody tr:nth-child(even) { background: color-mix(in srgb, var(--line) 22%, transparent); }
+    .pr-table td.is-pop, .pr-table thead th.is-pop { background: color-mix(in srgb, var(--accent) 8%, transparent); box-shadow: inset 1px 0 0 var(--accent), inset -1px 0 0 var(--accent); }
+    .pr-table thead th.is-pop { color: var(--accent-ink); box-shadow: inset 1px 0 0 var(--accent), inset -1px 0 0 var(--accent), inset 0 3px 0 var(--accent); }
+    .pr-table__tag { display: block; font-family: var(--font-body); font-weight: 600; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-ink); margin-top: 3px; }
+    .pr-table tr.is-strong th, .pr-table tr.is-strong td { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--ink); }
+    .pr-table tr.is-strong td.is-pop { color: var(--accent-ink); }
+    .pr-yes { color: var(--accent-ink); font-weight: 700; }
+    .pr-no { color: var(--ink-mute); }
+    .pr-table__foot { margin-top: var(--s-4); font-size: 0.9rem; color: var(--ink-soft); max-width: 68ch; line-height: 1.55; }
+
+    /* Lo que no va incluido */
+    .pr-nope-sec { padding-top: var(--s-6); }
+    .pr-nope-lead { color: var(--ink-soft); max-width: 60ch; margin: calc(-1 * var(--s-3)) 0 var(--s-5); }
+    .pr-nope { list-style: none; display: grid; gap: 14px; margin: 0; padding: 0; }
+    .pr-nope__item { border-left: 3px solid var(--line); padding: 2px 0 2px 16px; }
+    .pr-nope__t { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; }
+    .pr-nope__t::before { content: '✗'; color: var(--ink-mute); font-weight: 700; margin-right: 8px; }
+    .pr-nope__d { display: block; color: var(--ink-soft); line-height: 1.55; margin-top: 4px; font-size: 0.94rem; }
+    .pr-nope__end { margin-top: var(--s-5); color: var(--ink-soft); max-width: 66ch; line-height: 1.6; }
+
     .pr-faq-sec { padding-top: var(--s-7); }
     .pr-faq { display: grid; gap: 12px; max-width: 760px; }
     .pr-q { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(16px,2vw,22px) clamp(18px,2.4vw,26px); }
@@ -212,6 +362,7 @@ const jsonld = [
     @media (min-width: 920px) {
       .pr-grid { grid-template-columns: 1.6fr 0.9fr; }
       .pr-plans { grid-template-columns: 1fr 1fr; }
+      .pr-nope { grid-template-columns: 1fr 1fr; gap: 18px 32px; }
     }
   </style>
 </Layout>

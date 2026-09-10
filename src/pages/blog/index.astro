@@ -4,6 +4,9 @@ import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const fmt = (d: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
+// Mismo criterio que en BlogTease: las portadas vienen del frontmatter con
+// proporciones dispares y el contenedor las recorta a 16/10 (object-fit: cover).
+// El width/height describe la caja renderizada, que es lo que evita el CLS.
 ---
 <Layout
   title="Blog de diseño web y marca en Cantabria | Javier Pato"
@@ -19,7 +22,7 @@ const fmt = (d: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', mont
       <div class="blg__grid" data-stagger>
         {posts.map((p) => (
           <a class="bcard" href={`/blog/${p.slug}`} data-reveal>
-            <span class="bcard__cover"><img src={p.data.cover} alt={p.data.title} loading="lazy" /></span>
+            <span class="bcard__cover"><img src={p.data.cover} alt="" loading="lazy" decoding="async" width="1600" height="1000" /></span>
             <span class="bcard__meta">{p.data.read} · {fmt(p.data.pubDate)}</span>
             <h2 class="bcard__title">{p.data.title}</h2>
             <p class="bcard__desc">{p.data.description}</p>

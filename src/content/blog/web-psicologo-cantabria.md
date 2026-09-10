@@ -1,6 +1,6 @@
 ---
-title: "Página web para psicólogos y terapeutas en Cantabria"
-description: "Web para psicólogos en Cantabria: cómo transmitir cercanía y profesionalidad, cuidar la privacidad y conseguir que la primera sesión sea fácil de reservar."
+title: "Web para psicólogos y terapeutas en Cantabria"
+description: "Web para psicólogos en Cantabria: cómo transmitir cercanía y rigor, cuidar la privacidad del paciente y que reservar la primera sesión sea fácil."
 pubDate: 2026-06-22
 keyword: "página web psicólogo Cantabria"
 tags: ["Diseño web", "Salud"]
@@ -42,4 +42,4 @@ Cuando alguien busca *"psicólogo en Santander"* o *"terapia de pareja Cantabria
 
 Una [web cuidada desde 299€](/precios) que transmita calma y facilite el contacto ya marca la diferencia para una consulta. Después se crece: un blog que ayude de verdad posiciona y, de paso, demuestra tu criterio.
 
-¿Eres psicólogo o terapeuta en Cantabria? Te hago una web y una marca que transmitan exactamente la cercanía y el rigor con los que trabajas. [Cuéntame](/contacto).
+¿Eres psicólogo o terapeuta en Cantabria? Así hago las [webs para clínicas y consultas en Cantabria](/diseno-web-clinicas-cantabria): calma, privacidad cuidada y primera cita a un clic. Si quieres contármelo antes, [cuéntame tu caso](/contacto).

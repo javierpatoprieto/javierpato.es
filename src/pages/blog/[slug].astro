@@ -46,7 +46,11 @@ const jsonld = [
       <span class="post__meta">{d.read} de lectura · {fmt(d.pubDate)}</span>
       <h1 class="post__h1">{d.title}</h1>
       <p class="post__intro">{d.description}</p>
-      <figure class="post__cover"><img src={d.cover} alt={d.title} fetchpriority="high" /></figure>
+      {/* LCP del artículo: nunca lazy. width/height = la caja renderizada (16/9,
+          la portada se recorta con object-fit: cover), así no hay salto de layout.
+          alt vacío a propósito: la portada es decorativa y el h1 de justo encima
+          ya dice lo mismo — repetirlo solo molesta a quien usa lector de pantalla. */}
+      <figure class="post__cover"><img src={d.cover} alt="" fetchpriority="high" decoding="async" width="1600" height="900" /></figure>
       <div class="post__body">
         <Content />
       </div>

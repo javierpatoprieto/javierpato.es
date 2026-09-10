@@ -1,5 +1,5 @@
 ---
-title: "Página web para arquitectos y estudios de diseño en Cantabria"
+title: "Página web para arquitectos en Cantabria"
 description: "Web y portfolio para arquitectos, interioristas y estudios en Cantabria: enseña tus proyectos con el nivel que merecen y atrae al cliente que buscas."
 pubDate: 2026-07-09
 keyword: "página web arquitecto Cantabria"
@@ -38,4 +38,4 @@ Aquí tienes una ventaja: yo también soy diseñador. Entiendo por qué te impor
 
 Un buen portfolio no tiene por qué costar una fortuna. Desde una [web bien resuelta](/precios) que ponga tus proyectos donde brillan, se construye la presencia que tu trabajo merece.
 
-¿Tienes un estudio en Cantabria y tu web no está a la altura de lo que proyectas? Te hago una web con el criterio que tú aplicas a tus espacios. [Hablamos](/contacto).
+¿Tienes un estudio en Cantabria y tu web no está a la altura de lo que proyectas? Aquí tienes el detalle de cómo hago [diseño web en Cantabria](/diseno-web-cantabria), con el mismo criterio que tú aplicas a tus espacios. Si quieres enseñarme tus proyectos primero, [escríbeme](/contacto).

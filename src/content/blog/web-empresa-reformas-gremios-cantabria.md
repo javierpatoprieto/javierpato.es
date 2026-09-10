@@ -1,6 +1,6 @@
 ---
-title: "Web para empresas de reformas y gremios en Cantabria: que te llamen los que sí"
-description: "Fontaneros, electricistas, reformas, pintores: cómo tiene que ser tu web para que te encuentren en Google, vean tu trabajo y te pidan presupuesto sin marearte. Desde 299€."
+title: "Web para reformas y gremios en Cantabria"
+description: "Fontaneros, electricistas, reformas, pintores: cómo tiene que ser tu web para que te encuentren en Google, vean tu trabajo y te pidan presupuesto. Desde 299€."
 pubDate: 2026-08-24
 keyword: "diseño web reformas Cantabria"
 tags: ["Sectores", "Diseño web"]
@@ -46,4 +46,4 @@ Ni tienda online, ni blog, ni "área de cliente". Una web de una página bien he
 
 Muchos gremios pierden trabajos por estar en una obra con las manos ocupadas. La llamada que no se coge se va al siguiente de la lista. Para eso existen recepcionistas con IA que atienden la llamada, apuntan qué necesita el cliente y te lo pasan por WhatsApp. Si es tu caso, cuéntamelo y lo montamos junto con la web.
 
-¿Tienes una empresa de reformas o un oficio en Cantabria y te da pereza lo de la web? A mí no. En días la tienes online. [Hablamos](/contacto).
+¿Tienes una empresa de reformas o un oficio en Cantabria y te da pereza lo de la web? A mí no: mira cómo monto [webs para autónomos y pequeños negocios en Cantabria](/diseno-web-autonomos-cantabria) y en días la tienes online. Si tienes dudas, [escríbeme](/contacto).

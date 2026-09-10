@@ -25,6 +25,10 @@ const proyectos = defineCollection({
     year: z.string().default('2026'),
     url: z.string(),
     summary: z.string(),
+    // `summary` es el texto visible de la ficha y de la rejilla de /proyectos.
+    // Cuando pasa de 160 caracteres Google la corta en los resultados, así que
+    // la meta description se escribe aparte en vez de recortar la copy.
+    seoDescription: z.string().optional(),
     services: z.array(z.string()).default([]),
     scope: z.enum(['branding', 'web']).default('web'),
     tone: z.enum(['rose', 'peri', 'plum']).default('rose'),

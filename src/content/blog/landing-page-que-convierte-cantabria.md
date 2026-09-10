@@ -1,6 +1,6 @@
 ---
 title: "Landing page: la página que existe para vender"
-description: "Qué es una landing page, en qué se diferencia de una web normal y cuándo tu negocio en Cantabria necesita una para convertir campañas en clientes."
+description: "Qué es una landing page, en qué se diferencia de una web normal y cuándo te compensa hacer una para que tu inversión en anuncios no se evapore."
 pubDate: 2026-07-23
 keyword: "landing page Cantabria"
 tags: ["Diseño web", "Conversión"]
@@ -37,6 +37,6 @@ Si vas a invertir en anuncios, la landing es lo que decide si ese dinero se conv
 
 ## Empezar es sencillo
 
-Cuéntame qué quieres promocionar y a quién, y te monto una landing pensada para convertir, lista para enchufar a tus anuncios. Puede ser [one page desde 299€](/precios) o parte de una web mayor.
+Cuéntame qué quieres promocionar y a quién, y te monto una landing pensada para convertir, lista para enchufar a tus anuncios. Puede ser [one page desde 299€](/precios) o parte de un proyecto de [diseño web en Cantabria](/diseno-web-cantabria) más grande.
 
-¿Vas a invertir en publicidad para tu negocio en Cantabria y no quieres malgastarla? Te hago la landing que convierta ese tráfico en clientes. [Hablamos](/contacto).
+¿Vas a invertir en publicidad y no quieres malgastarla? Mira cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria) o [dime qué vas a promocionar](/contacto) y te digo si te compensa una landing aparte.

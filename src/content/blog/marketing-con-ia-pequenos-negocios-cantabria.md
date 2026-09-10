@@ -1,6 +1,6 @@
 ---
-title: "Marketing con IA para pequeños negocios en Cantabria"
-description: "La IA no es solo para grandes empresas. Cómo uso la inteligencia artificial para hacerte imágenes, vídeo y contenido de nivel a precio de negocio pequeño."
+title: "Marketing con IA en Cantabria para tu negocio"
+description: "La IA no es un botón mágico: es una herramienta de producción. Cómo la uso para hacerte imágenes, vídeo y contenido de nivel sin presupuesto de agencia."
 pubDate: 2026-08-03
 keyword: "marketing con IA Cantabria"
 tags: ["IA", "Marketing"]
@@ -29,10 +29,10 @@ Todo esto no es teoría: llevo [ArtiMindArt](/proyectos), mi estudio creativo co
 
 ## La IA no sustituye a la marca
 
-Ojo: la IA produce, pero sin una [marca](/blog/branding-cantabria) coherente detrás, es ruido bonito. La estrategia, el color, el tono y el mensaje siguen mandando. La IA solo hace que producir todo eso sea más rápido y barato para ti.
+Ojo: la IA produce, pero sin una [marca](/blog/branding-cantabria) coherente detrás, es ruido bonito. La estrategia, el color, el tono y el mensaje siguen mandando, y eso se define antes: es lo que hago en el [branding en Cantabria](/branding-cantabria). La IA solo hace que producir todo eso sea más rápido y barato para ti.
 
 ## Empezar es sencillo
 
 Cuéntame qué necesitas —imágenes, vídeo, contenido para redes— y te propongo cómo sacarle partido a la IA para tu negocio, con criterio y sin que parezca hecho por una máquina. Va de la mano de tu [web](/precios) y tu marca.
 
-¿Tienes un negocio en Cantabria y quieres marketing de nivel sin presupuesto de multinacional? Te enseño lo que la IA puede hacer por ti. [Hablamos](/contacto).
+¿Tienes un negocio en Cantabria y quieres marketing de nivel sin presupuesto de multinacional? Empieza por lo que sostiene todo lo demás: el [diseño gráfico y de marca en Cantabria](/diseno-grafico-cantabria). Luego la IA multiplica. [Cuéntame qué necesitas](/contacto).

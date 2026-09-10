@@ -1,6 +1,6 @@
 ---
 title: "Diseño web en Cantabria: guía para elegir bien"
-description: "Cómo elegir quién te hace la web en Cantabria sin tirar el dinero. Qué mirar, qué preguntar y las señales de alarma antes de contratar."
+description: "Cómo elegir quién te hace la web en Cantabria sin tirar el dinero: qué mirar, qué preguntar y las cuatro señales de alarma antes de firmar nada."
 pubDate: 2026-06-18
 keyword: "diseño web Cantabria"
 tags: ["Diseño web", "Guía"]
@@ -43,10 +43,10 @@ Una plantilla puede valer para salir del paso, pero te limita y se parece a otra
 
 ## Local importa
 
-Trabajar con alguien de Cantabria tiene ventaja: entiende a tu cliente, conoce el mercado de Santander, Torrelavega o los valles, y puedes tratar con una persona, no con un ticket de soporte.
+Trabajar con alguien de Cantabria tiene ventaja: entiende a tu cliente, conoce el mercado de [Santander](/diseno-web-santander), [Torrelavega](/diseno-web-torrelavega) o los valles, y puedes tratar con una persona, no con un ticket de soporte.
 
 ## La pregunta clave para filtrar
 
 Cuando pidas presupuesto, pregunta: *"¿Cómo va a ayudar esta web a que entren más clientes?"*. Si la respuesta es concreta (SEO local, textos que convierten, velocidad), vas bien. Si es vaga, sigue buscando.
 
-¿Quieres una opinión honesta sobre tu caso? Cuéntame qué haces y te digo qué necesitas, sin venderte de más. [Hablamos](/contacto).
+¿Quieres una opinión honesta sobre tu caso? Empieza por ver cómo respondo yo a esa pregunta en [diseño web en Cantabria](/diseno-web-cantabria): qué incluyo, cómo trabajo y en cuánto entrego. Y si te encaja, [cuéntame qué haces](/contacto) y te digo qué necesitas, sin venderte de más.

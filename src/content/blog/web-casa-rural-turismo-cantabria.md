@@ -1,5 +1,5 @@
 ---
-title: "Página web para casas rurales y turismo en Cantabria"
+title: "Página web para casas rurales en Cantabria"
 description: "Web y reservas directas para casas rurales, hoteles y apartamentos en Cantabria: llena temporada y deja de regalar comisiones a Booking y Airbnb."
 pubDate: 2026-07-04
 keyword: "página web casa rural Cantabria"
@@ -36,4 +36,4 @@ Buena parte del turismo de Cantabria viene de fuera. Una [web en varios idiomas]
 
 Una [web desde 299€](/precios) con tus fotos, tus tarifas y un botón de reserva o contacto directo ya empieza a quitarte dependencia de los portales. Luego se crece: motor de reservas, calendario, ofertas de temporada.
 
-¿Tienes alojamiento en Cantabria y vives colgado de las comisiones? Te hago una web que llene temporada por tu cuenta. [Hablamos](/contacto).
+¿Tienes alojamiento en Cantabria y vives colgado de las comisiones? Aquí te cuento cómo hago webs de [turismo rural en Cantabria](/diseno-web-cantabria/zonas#turismo-rural) con reserva directa. Si quieres que mire la tuya antes, [escríbeme](/contacto).

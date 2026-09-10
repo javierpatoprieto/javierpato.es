@@ -44,6 +44,14 @@ const jsonld = [
         mainEntity: d.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
       }]
     : []),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
+      { '@type': 'ListItem', position: 2, name: d.kicker, item: `https://javierpato.es/${p.slug}` },
+    ],
+  },
 ];
 ---
 <Layout title={d.title} description={d.description} jsonld={jsonld}>
@@ -106,10 +114,10 @@ const jsonld = [
   {otras.length > 0 && (
     <section class="section ld-otras">
       <div class="wrap">
-        <h2 class="tbar ld-h2" data-reveal>También diseño web para…</h2>
+        <h2 class="tbar ld-h2" data-reveal>También trabajo…</h2>
         <ul class="ld-otras__list" data-stagger>
           {otras.map((o) => (
-            <li data-reveal><a href={`/${o.slug}`}>{o.data.kicker.replace('Diseño web · ', '')}<span aria-hidden="true"> →</span></a></li>
+            <li data-reveal><a href={`/${o.slug}`}>{o.data.kicker.replace(' · ', ' en ')}<span aria-hidden="true"> →</span></a></li>
           ))}
         </ul>
       </div>

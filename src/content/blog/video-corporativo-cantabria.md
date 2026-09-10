@@ -35,4 +35,4 @@ Un vídeo funciona mejor cuando forma parte de un conjunto: tu [web](/precios), 
 
 Cuéntame qué quieres contar y para qué canal, y te propongo una pieza a tu medida y a tu presupuesto.
 
-¿Tienes un negocio en Cantabria que se explicaría mejor en vídeo que en texto? Te ayudo a contarlo para que enganche. [Hablamos](/contacto).
+¿Tienes un negocio en Cantabria que se explicaría mejor en vídeo que en texto? El vídeo entra dentro de lo que hago en [diseño gráfico en Cantabria](/diseno-grafico-cantabria), junto a la fotografía y las piezas para redes. Cuéntame qué quieres contar y te propongo una pieza: [escríbeme](/contacto).

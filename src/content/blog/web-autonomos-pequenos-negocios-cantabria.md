@@ -1,6 +1,6 @@
 ---
-title: "Web para autónomos y pequeños negocios en Cantabria"
-description: "Si eres autónomo o tienes un negocio pequeño en Cantabria, esta es la web que necesitas: ajustada de precio, rápida y pensada para conseguir clientes, no para presumir."
+title: "Web para autónomos en Cantabria desde 299€"
+description: "Si eres autónomo o tienes un negocio pequeño en Cantabria, esta es la web que necesitas: ajustada de precio, rápida y hecha para traer clientes."
 pubDate: 2026-05-30
 keyword: "web para autónomos Cantabria"
 tags: ["Diseño web", "Autónomos"]
@@ -40,4 +40,4 @@ Una web para autónomo en Cantabria arranca en 299€, más el dominio y el aloj
 
 La tentación de montarte algo gratis en una tarde es real, pero el resultado suele transmitir justo lo que no quieres. Una web con criterio te hace [parecer lo que vales](/blog/branding-cantabria) — y eso, siendo pequeño, es tu mayor ventaja.
 
-¿Eres autónomo en Cantabria y aún no tienes web (o tienes una que da pena)? Te monto una sencilla y efectiva en días. [Hablamos](/contacto).
+¿Eres autónomo en Cantabria y aún no tienes web (o tienes una que da pena)? Mira qué incluye una [web para autónomos en Cantabria](/diseno-web-autonomos-cantabria) y con qué plazos trabajo. Si tienes dudas antes de decidir, [escríbeme](/contacto).

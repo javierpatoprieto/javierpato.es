@@ -4,15 +4,26 @@
 // flechas, para que quepan todos sin dejar ninguno fuera; en modo normal
 // (/proyectos) sigue siendo una rejilla.
 const { limit = 99, cols = 4, carousel = false } = Astro.props;
+// De cada proyecto hay dos ficheros ya subidos: el `-sm` (760px) y el grande
+// (1600px), con la misma proporción. `w`/`h` son las dimensiones reales leídas
+// de la cabecera del .webp, no un número puesto a ojo. Con las dos versiones en
+// el srcset, el móvil se descarga la pequeña y una pantalla retina deja de ver
+// la de 760 estirada, que es lo que pasaba hasta ahora.
 const all = [
-  { title: 'CantabriaMásCerca', slug: 'cantabriamascerca', url: 'cantabriamascerca.com', sector: 'Servicios a domicilio · Besaya', value: 'Un negocio nuevo, contado claro y listo para Google.', status: 'Live', tone: 'rose', img: '/img/proj-cantabriamascerca-sm.webp' },
-  { title: 'Explora Siam', slug: 'explora-siam', url: 'explorasiam.com', sector: 'Viajes en grupo · Tailandia', value: 'Un viaje contado en una página que acaba en WhatsApp.', status: 'Live', tone: 'peri', img: '/img/proj-explora-sm.webp' },
-  { title: 'ArtiMindArt', slug: 'artimindart', url: 'artimind.art', sector: 'Estudio creativo con IA', value: 'Imágenes y vídeo de moda que venden, sin photoshoot.', status: 'Live', tone: 'rose', img: '/img/proj-artimind-sm.webp' },
-  { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia', value: 'Cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea-sm.webp' },
-  { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Reservar plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete-sm.webp' },
-  { title: 'Click & Cargo', slug: 'click-and-cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo-sm.webp' },
+  { title: 'CantabriaMásCerca', slug: 'cantabriamascerca', url: 'cantabriamascerca.com', sector: 'Servicios a domicilio · Besaya', value: 'Un negocio nuevo, contado claro y listo para Google.', status: 'Live', tone: 'rose', img: '/img/proj-cantabriamascerca-sm.webp', big: '/img/proj-cantabriamascerca.webp', w: 760, h: 507 },
+  { title: 'Explora Siam', slug: 'explora-siam', url: 'explorasiam.com', sector: 'Viajes en grupo · Tailandia', value: 'Un viaje contado en una página que acaba en WhatsApp.', status: 'Live', tone: 'peri', img: '/img/proj-explora-sm.webp', big: '/img/proj-explora.webp', w: 760, h: 507 },
+  { title: 'ArtiMindArt', slug: 'artimindart', url: 'artimind.art', sector: 'Estudio creativo con IA', value: 'Imágenes y vídeo de moda que venden, sin photoshoot.', status: 'Live', tone: 'rose', img: '/img/proj-artimind-sm.webp', big: '/img/proj-artimind.webp', w: 760, h: 507 },
+  { title: 'Fisio Mamá', slug: 'fisio-mama', url: 'fisiomama.es', sector: 'Fisioterapia', value: 'Cita online en un par de clics.', status: 'Live', tone: 'peri', img: '/img/proj-andrea-sm.webp', big: '/img/proj-andrea.webp', w: 760, h: 521 },
+  { title: 'Centro Infantil Periquete', slug: 'centro-infantil-periquete', url: 'centroinfantilperiquete.es', sector: 'Educación infantil', value: 'Reservar plaza sin llamadas ni líos.', status: 'Live', tone: 'rose', img: '/img/proj-periquete-sm.webp', big: '/img/proj-periquete.webp', w: 760, h: 521 },
+  { title: 'Click & Cargo', slug: 'click-and-cargo', url: 'clickandcargo.com', sector: 'Logística y transporte', value: 'Técnica, rápida y directa al grano.', status: 'Live', tone: 'plum', img: '/img/proj-cargo-sm.webp', big: '/img/proj-cargo.webp', w: 760, h: 521 },
 ];
 const items = all.slice(0, limit);
+
+// El hueco que ocupa cada tarjeta cambia según se pinte el carril de la home
+// (84% / 2 por fila / 3 por fila) o la rejilla de /proyectos (`cols`).
+const sizes = carousel
+  ? '(min-width: 1024px) 33vw, (min-width: 600px) 50vw, 84vw'
+  : `(min-width: 1024px) ${Math.round(100 / cols)}vw, (min-width: 600px) 50vw, 92vw`;
 ---
 <section id="trabajo" class="section work">
   <div class="wrap">
@@ -37,7 +48,16 @@ const items = all.slice(0, limit);
       {items.map((p) => (
         <a class={`work__card work__card--${p.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
           <div class="work__cover">
-            <img src={p.img} alt={`${p.title} — diseño web en Cantabria`} loading="lazy" width="1600" height="1096" />
+            <img
+              src={p.img}
+              srcset={`${p.img} 760w, ${p.big} 1600w`}
+              sizes={sizes}
+              alt={`Captura de la web de ${p.title}`}
+              loading="lazy"
+              decoding="async"
+              width={p.w}
+              height={p.h}
+            />
             <span class="work__status">● {p.status}</span>
             <span class="work__overlay"><span class="work__see">Ver el caso →</span></span>
           </div>

@@ -1,5 +1,5 @@
 ---
-title: "Página web para nutricionistas y dietistas en Cantabria"
+title: "Web para nutricionistas en Cantabria"
 description: "Web para nutricionistas en Cantabria: cómo demostrar resultados, vender consultas online y presenciales, y construir una marca de salud que genere confianza."
 pubDate: 2026-06-19
 keyword: "página web nutricionista Cantabria"
@@ -42,4 +42,4 @@ Reservar la primera cita tiene que ser de un par de clics: formulario simple, Wh
 
 Una [web profesional desde 299€](/precios) que transmita rigor y facilite la reserva ya te coloca por delante de la mayoría. Después se crece con blog, más prueba social y packs.
 
-¿Eres nutricionista o dietista en Cantabria (o trabajas online)? Te hago una web y una marca que dejen claro tu criterio y llenen tu agenda. [Hablamos](/contacto).
+¿Eres nutricionista o dietista en Cantabria (o trabajas online)? Aquí tienes cómo hago las [webs para clínicas y consultas en Cantabria](/diseno-web-clinicas-cantabria), con la reserva y lo legal atados. Si quieres comentar tu caso, [escríbeme](/contacto).

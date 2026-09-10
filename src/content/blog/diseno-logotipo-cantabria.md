@@ -1,8 +1,8 @@
 ---
-title: "Diseño de logotipo en Cantabria: mucho más que un dibujo bonito"
-description: "Qué es (y qué no) un buen logotipo, cuánto cuesta y por qué un logo bien hecho es la mejor inversión de imagen para tu negocio en Cantabria."
+title: "Diseño de logotipo en Cantabria: qué pedir"
+description: "Qué hace bueno a un logotipo, por qué el de 30€ acaba saliendo caro y qué te tienen que entregar: versiones, formatos y normas de uso de tu marca."
 pubDate: 2026-07-11
-keyword: "diseño de logotipo Cantabria"
+keyword: "qué es un buen logotipo"
 tags: ["Branding", "Diseño gráfico"]
 tone: "warm"
 emoji: "✳️"
@@ -33,6 +33,6 @@ Nada de mandarte 40 propuestas al azar. Primero entiendo tu negocio y a quién t
 
 ## Empezar es sencillo
 
-Un logo bien hecho, con su sistema básico de marca, es una inversión que te acompaña años. Si además necesitas [web](/precios), lo montamos todo coherente de una vez.
+Un logo bien hecho, con su sistema básico de marca, es una inversión que te acompaña años. Si además necesitas [web](/diseno-web-cantabria), lo montamos todo coherente de una vez.
 
-¿Tienes un negocio en Cantabria con un logo que ya no te representa —o sin logo directamente? Te diseño una marca con la que dé gusto que te vean. [Hablamos](/contacto).
+¿Tienes un negocio en Cantabria con un logo que ya no te representa —o sin logo directamente? Mira qué incluye el [diseño de logotipo y marca en Cantabria](/branding-cantabria): qué te entrego, cuántas propuestas entran y cuánto cuesta.

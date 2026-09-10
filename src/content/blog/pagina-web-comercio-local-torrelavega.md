@@ -1,5 +1,5 @@
 ---
-title: "Página web para comercios y negocios en Torrelavega"
+title: "Página web para comercios en Torrelavega"
 description: "Web para tiendas, comercios y negocios de Torrelavega: cómo competir con las grandes superficies y el online usando lo que ellas no tienen, la cercanía."
 pubDate: 2026-08-04
 keyword: "página web Torrelavega"
@@ -35,4 +35,4 @@ Una web con personalidad, con tu marca y tu tono, comunica lo que una gran caden
 
 Una [web desde 299€](/precios) que te ponga en el mapa de Torrelavega ya te separa del comercio que no sale ni en Google. 
 
-¿Tienes un negocio en Torrelavega y sientes que solo te encuentran los de siempre? Te hago una web que traiga clientes nuevos a tu puerta. [Hablamos](/contacto).
+¿Tienes una tienda en Torrelavega y sientes que solo te encuentran los de siempre? Aquí te cuento cómo trabajo el [diseño web para negocios de Torrelavega](/diseno-web-torrelavega), y si prefieres contármelo por escrito, [escríbeme](/contacto).

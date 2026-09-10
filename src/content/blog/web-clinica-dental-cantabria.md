@@ -1,5 +1,5 @@
 ---
-title: "Página web para clínicas dentales en Cantabria"
+title: "Web para clínicas dentales en Cantabria"
 description: "Web para clínicas dentales en Cantabria: cómo transmitir confianza, diferenciarte de la franquicia de al lado y conseguir más primeras visitas."
 pubDate: 2026-06-23
 keyword: "página web clínica dental Cantabria"
@@ -44,4 +44,4 @@ Una web de salud necesita aviso legal, política de privacidad y un tratamiento 
 
 Para la mayoría de clínicas, una [web bien resuelta desde 299€](/precios) que transmita confianza y facilite la cita ya marca diferencia. Luego se crece: casos antes/después, blog de salud bucodental, más prueba social.
 
-¿Tienes una clínica dental en Cantabria y tu web no está a la altura de tu trabajo? Te hago una web y una marca que transmitan la confianza que ya das en consulta. [Hablamos](/contacto).
+¿Tienes una clínica dental en Cantabria y tu web no está a la altura de tu trabajo? Aquí tienes el detalle de cómo hago [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria), con la cita y lo legal resueltos. Si prefieres que mire la tuya primero, [escríbeme](/contacto).

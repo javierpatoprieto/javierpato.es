@@ -34,4 +34,4 @@ Cada lead que entra por tu web es un lead que no has pagado a un portal. No se t
 
 Para empezar, una [web bien resuelta desde 299€](/precios) con tus inmuebles destacados, captación de propietarios y contacto directo ya te diferencia. Luego se crece: buscador de propiedades, sincronización con tu CRM, blog de zona.
 
-¿Tienes una inmobiliaria en Cantabria y tu web no está a la altura de las casas que vendes? Te hago una web que capte propietarios y dé ganas de llamarte. [Hablamos](/contacto).
+¿Tienes una inmobiliaria en Cantabria y tu web no está a la altura de las casas que vendes? Aquí te cuento cómo hago el [diseño web en Cantabria](/diseno-web-cantabria) y qué entra en cada pack. Si quieres que revise la tuya primero, [escríbeme](/contacto).

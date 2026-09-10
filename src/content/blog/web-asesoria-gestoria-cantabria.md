@@ -1,6 +1,6 @@
 ---
-title: "Web para asesorías y gestorías en Cantabria: confianza antes de la primera llamada"
-description: "Cómo debe ser la web de una asesoría fiscal, laboral o contable en Cantabria para captar autónomos y pymes: claridad, cercanía y una forma fácil de pedir cita. Desde 299€."
+title: "Web para asesorías y gestorías en Cantabria"
+description: "Cómo debe ser la web de una asesoría fiscal o laboral en Cantabria para captar autónomos y pymes: claridad, caras visibles y pedir cita en un clic."
 pubDate: 2026-09-02
 keyword: "diseño web asesoría Cantabria"
 tags: ["Sectores", "Diseño web"]
@@ -50,4 +50,4 @@ Un artículo al trimestre respondiendo lo que te preguntan siempre ("¿qué gast
 
 Una web de asesoría bien hecha, con servicios, equipo, contacto y base de SEO, entra en el [pack web desde 299€](/precios), y en menos de dos semanas está online. Si además quieres renovar la imagen, mira [rebranding: cuándo renovar tu marca](/blog/rebranding-cuando-renovar-tu-marca).
 
-¿Tienes una asesoría o gestoría en Cantabria y tu web no te trae clientes? Le doy la vuelta. [Hablamos](/contacto).
+¿Tienes una asesoría o gestoría en Cantabria y tu web no te trae clientes? Le doy la vuelta: mira cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria) y qué incluye cada pack. Si quieres que revise la tuya antes, [escríbeme](/contacto).

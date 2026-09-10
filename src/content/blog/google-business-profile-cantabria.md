@@ -1,6 +1,6 @@
 ---
-title: "Google Business Profile para negocios de Cantabria: guía rápida"
-description: "Cómo crear y optimizar tu ficha de Google (Business Profile) para que tu negocio de Cantabria salga en el mapa y te traiga clientes locales."
+title: "Google Business Profile en Cantabria: guía"
+description: "Cómo crear y optimizar tu ficha de Google Business Profile para que tu negocio de Cantabria salga en el mapa: categoría, fotos, reseñas y novedades."
 pubDate: 2026-06-02
 keyword: "Google Business Profile Cantabria"
 tags: ["SEO", "Negocio local"]
@@ -50,4 +50,4 @@ La ficha te da visibilidad inmediata; la web te da credibilidad y conversión. J
 2. Rellénala **entera** y con buenas fotos.
 3. Consigue **reseñas** y mantenla viva.
 
-¿Quieres que tu negocio salga en el mapa y en Google? Te ayudo a montar la ficha y la web a juego. [Cuéntame](/contacto).
+¿Quieres que tu negocio salga en el mapa y en Google? Te monto la ficha y la web a juego: aquí tienes cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria), con el SEO local incluido. Si prefieres contármelo primero, [escríbeme](/contacto).

@@ -1,6 +1,6 @@
 ---
-title: "Rebranding: cuándo (y cuándo no) renovar tu marca"
-description: "Señales de que tu marca se ha quedado atrás, qué implica un rebranding y cómo hacerlo sin perder a los clientes que ya te conocen. Guía para negocios en Cantabria."
+title: "Rebranding en Cantabria: cuándo hacerlo"
+description: "Señales de que tu marca se ha quedado atrás, qué implica un rebranding y cómo renovarla sin perder a los clientes de siempre. Guía para Cantabria."
 pubDate: 2026-07-18
 keyword: "rebranding Cantabria"
 tags: ["Branding", "Rediseño"]
@@ -35,4 +35,4 @@ Si estás rehaciendo la web, es el momento perfecto para revisar también la mar
 
 Cuéntame cómo te ves hoy y a dónde quieres llegar, y te digo con sinceridad si necesitas un rebranding entero o solo poner orden.
 
-¿Sientes que tu marca en Cantabria ya no te representa? Te ayudo a renovarla sin perder a quien ya te quiere. [Hablamos](/contacto).
+¿Sientes que tu marca ya no te representa? Así trabajo el [branding en Cantabria](/branding-cantabria), de la idea al manual de uso. Si quieres una opinión antes de decidir, [escríbeme](/contacto).

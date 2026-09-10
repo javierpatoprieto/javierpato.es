@@ -1,5 +1,5 @@
 ---
-title: "Página web para peluquerías y barberías en Cantabria"
+title: "Web para peluquerías y barberías en Cantabria"
 description: "Web y reserva online para peluquerías y barberías en Cantabria: llena la agenda, reduce huecos y deja de gestionar citas por WhatsApp a deshora."
 pubDate: 2026-06-30
 keyword: "página web peluquería Cantabria"
@@ -32,4 +32,4 @@ Cuando alguien nuevo en el barrio busca *"barbería cerca de mí"* o *"peluquer�
 
 Una [web one page desde 299€](/precios) con tus servicios, tus fotos y un botón de reserva ya te cambia la semana. Nada de plataformas caras: algo tuyo, bonito y que llene la agenda.
 
-¿Tienes una peluquería o barbería en Cantabria y sigues peleándote con el WhatsApp? Te monto una web con reserva online que trabaje por ti mientras tú cortas. [Hablamos](/contacto).
+¿Tienes una peluquería o barbería en Cantabria y sigues peleándote con el WhatsApp? Mira cómo trabajo las [webs para peluquerías y centros de estética](/diseno-web-cantabria/zonas#peluquerias-estetica): fotos, reserva y marca en el mismo paquete. Si prefieres preguntarme antes, [escríbeme](/contacto).

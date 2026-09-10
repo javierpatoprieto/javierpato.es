@@ -11,7 +11,7 @@ const career = [
 ];
 ---
 <Layout
-  title="El estudio — Javier Pato, diseñador y estratega de marca en Cantabria"
+  title="Javier Pato — diseñador y estratega de marca en Cantabria"
   description="Quién hay detrás: Javier Pato, de Cistierna (León) afincado en Cantabria. Marca, web y dirección visual con IA, con trastienda de agencia y marketing."
 >
   <section class="section est">
@@ -34,7 +34,20 @@ const career = [
       </div>
 
       <figure class="est__photo" data-reveal data-tilt>
-        <div class="est__photo-in"><img src="/img/javier.webp" alt="Javier Pato, diseñador y estratega de marca en Cantabria" /></div>
+        {/* Sin lazy: en escritorio esta foto está junto al h1 y es la candidata a
+            LCP de la página. Existen ya dos versiones del retrato (560 y 1200),
+            así que el srcset evita mandar la de 1200 a un móvil normal. */}
+        <div class="est__photo-in">
+          <img
+            src="/img/javier.webp"
+            srcset="/img/javier-sm.webp 560w, /img/javier.webp 1200w"
+            sizes="(min-width: 880px) 40vw, 92vw"
+            alt="Retrato de Javier Pato, diseñador de marca y web"
+            decoding="async"
+            width="1200"
+            height="1200"
+          />
+        </div>
       </figure>
     </div>
   </section>

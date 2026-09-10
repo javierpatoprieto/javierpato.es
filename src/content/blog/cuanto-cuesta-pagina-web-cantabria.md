@@ -1,6 +1,6 @@
 ---
-title: "Cuánto cuesta una página web en Cantabria en 2026"
-description: "Precios reales de una web en Cantabria, qué incluye cada plan y cómo no pagar de más. Guía clara para negocios de Santander, Torrelavega y toda la región."
+title: "Cuánto cuesta una página web en Cantabria"
+description: "Precios reales de una web en Cantabria: 299€ la one-page, 549€ la de 4 páginas, 999€ la tienda. Qué entra en cada plan y cómo no pagar de más."
 pubDate: 2026-06-20
 keyword: "cuánto cuesta una página web en Cantabria"
 tags: ["Diseño web", "Precios"]
@@ -19,9 +19,9 @@ En la práctica, para un negocio local en Cantabria te vas a mover en estos rang
 - **Web de una página (one-page): desde 299€.** Perfecta para empezar: presentas el negocio, los servicios y el contacto en una sola página bien resuelta.
 - **Web de 4 páginas: alrededor de 549€.** Cuando necesitas separar servicios, sobre mí y contacto con algo más de recorrido.
 - **Web de 6 páginas: alrededor de 699€.** Para contarlo todo bien, con espacio para blog o casos.
-- **Tienda online: desde 999€.** Catálogo, pagos y la base para vender por internet.
+- **Tienda online: desde 999€.** Catálogo, pagos y la base para [vender por internet](/tienda-online-cantabria).
 
-Puedes ver el desglose completo y configurar tu presupuesto en la [página de precios](/precios).
+Puedes ver el desglose completo y configurar tu presupuesto en la [página de precios](/precios), y qué entra exactamente en cada plan lo detallo en [diseño web en Cantabria](/diseno-web-cantabria).
 
 ## ¿Por qué hay tanta diferencia con una agencia?
 
@@ -48,4 +48,4 @@ Aparte del diseño, hay dos costes anuales pequeños: el **dominio** (tu .es o .
 
 Una web profesional en Cantabria para un negocio local arranca en **299€** y sube según páginas y funciones. Lo importante no es el número, sino que cada euro esté trabajando para que tu negocio **parezca lo que vale y venda más**.
 
-Si quieres saber exactamente cuánto costaría la tuya, dime qué haces y lo vemos en una [charla de 20 minutos](/contacto). Sin compromiso.
+Si quieres saber exactamente cuánto costaría la tuya, empieza por ver cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria). Y si lo tienes claro, dime qué haces y lo vemos en una [charla de 20 minutos](/contacto). Sin compromiso.

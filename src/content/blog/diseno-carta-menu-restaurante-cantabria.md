@@ -1,6 +1,6 @@
 ---
-title: "Diseño de carta y menú para restaurantes en Cantabria"
-description: "Una buena carta vende los platos que a ti te interesan. Cómo diseño cartas, menús y QR para bares y restaurantes en Cantabria que dan hambre y suben el ticket."
+title: "Diseño de carta de restaurante en Cantabria"
+description: "Una carta bien diseñada ordena por rentabilidad y sube el ticket medio. Cómo hago cartas, menús QR y cartelería para bares y restaurantes de Cantabria."
 pubDate: 2026-07-21
 keyword: "diseño carta restaurante Cantabria"
 tags: ["Diseño gráfico", "Hostelería"]
@@ -25,7 +25,7 @@ Colocar bien los platos estrella, quitar el símbolo del euro, agrupar con crite
 
 ## Carta física, QR y web, en la misma línea
 
-Hoy conviven la carta de papel, el menú QR y la [web del restaurante](/blog/web-hosteleria-cantabria). Lo suyo es que hablen el mismo idioma: mismos colores, misma tipografía, mismas fotos. Eso es tener una [identidad de marca](/blog/branding-cantabria) coherente, y da sensación de sitio serio.
+Hoy conviven la carta de papel, el menú QR y la [web del restaurante](/blog/web-hosteleria-cantabria). Lo suyo es que hablen el mismo idioma: mismos colores, misma tipografía, mismas fotos. Eso es tener una [identidad de marca](/blog/branding-cantabria) coherente, y da sensación de sitio serio. Si además vas a renovar la web, mira cómo planteo el [diseño web para hostelería en Cantabria](/diseno-web-hosteleria-cantabria).
 
 ## Las fotos, con cabeza
 
@@ -35,4 +35,4 @@ Si pones fotos de los platos, que sean buenas: una foto mala quita el hambre. Aq
 
 Tanto si tienes bar, cafetería o restaurante, te diseño una carta que se lea con gusto y venda por ti. Y si quieres, la enlazo con tu [web](/precios) y tu menú QR.
 
-¿Tienes un restaurante en Cantabria con una carta que no le hace justicia a tu cocina? Te la rediseño para que dé hambre y suba el ticket. [Hablamos](/contacto).
+¿Tienes un restaurante en Cantabria con una carta que no le hace justicia a tu cocina? Te la rediseño para que dé hambre y suba el ticket: aquí está el [servicio de diseño gráfico en Cantabria](/diseno-grafico-cantabria) con cartas, cartelería y packaging. O [escríbeme](/contacto) y me mandas una foto de la carta que tienes ahora.

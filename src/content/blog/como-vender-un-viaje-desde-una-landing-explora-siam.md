@@ -1,6 +1,6 @@
 ---
-title: "Cómo vender un viaje (o cualquier experiencia) desde una sola página: el caso Explora Siam"
-description: "Lo que aprendí diseñando la web de un viaje en moto por Tailandia: precio sin letra pequeña, WhatsApp con nombre y una página que responde las dudas antes de que las hagan. Vale para cualquier experiencia."
+title: "Vender un viaje con una landing: Explora Siam"
+description: "Cómo diseñé la landing de Explora Siam para vender un viaje en moto por Tailandia: precio sin letra pequeña, dudas resueltas y WhatsApp con nombre."
 pubDate: 2026-09-06
 keyword: "web para vender viajes y experiencias"
 tags: ["Casos", "Conversión"]
@@ -44,4 +44,4 @@ No reserva ni cobra. "Escribir no reserva nada. Solo empieza la conversación". 
 
 Si vendes una experiencia (un curso, una escapada, un retiro, una cata en Cantabria), esto aplica igual: una sola página, datos claros arriba, precio honesto, preguntas respondidas, tu cara y una forma de contacto humana. Nada de esto es tecnología: es criterio. Y se puede tener online en días, dentro de la [web one page desde 299€](/precios).
 
-¿Vendes una experiencia y tu web no la cuenta bien? Te la monto como la de Explora Siam. [Hablamos](/contacto).
+¿Vendes una experiencia y tu web no la cuenta bien? Te la monto con este mismo criterio: así trabajo el [diseño web en Cantabria](/diseno-web-cantabria). Y si quieres contármela antes, [escríbeme](/contacto).

@@ -2,6 +2,10 @@
 import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 3);
 const fmt = (d: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d);
+// Las portadas del blog llegan como cadena desde el frontmatter y tienen
+// proporciones distintas (1400x781, 1200x822, 1600x1067...). El contenedor las
+// recorta a 16/10 con object-fit: cover, así que el width/height del <img> es
+// el de la caja renderizada: reserva el hueco exacto y el CLS se queda en cero.
 ---
 <section class="section bt">
   <div class="wrap">
@@ -12,7 +16,7 @@ const fmt = (d: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', mont
     <div class="bt__grid" data-stagger>
       {posts.map((p) => (
         <a class="btcard" href={`/blog/${p.slug}`} data-reveal>
-          <span class="btcard__cover"><img src={p.data.cover} alt={p.data.title} loading="lazy" /></span>
+          <span class="btcard__cover"><img src={p.data.cover} alt="" loading="lazy" decoding="async" width="1600" height="1000" /></span>
           <span class="btcard__meta">{p.data.read} · {fmt(p.data.pubDate)}</span>
           <h3 class="btcard__t">{p.data.title}</h3>
           <p class="btcard__d">{p.data.description}</p>

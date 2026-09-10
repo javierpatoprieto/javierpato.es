@@ -24,6 +24,30 @@ const homeShots = {
 };
 const heroShot = homeShots[p.slug] ?? d.shotDesktop;
 
+// De estas capturas hay una versión de 760px ya subida, la misma que usa la
+// rejilla de la home. Solo listo los pares que existen de verdad: si mañana
+// alguien mete un shotDesktop sin `-sm`, el srcset se queda vacío y el <img>
+// sigue funcionando con su src de siempre.
+const shotSmall: Record<string, string> = {
+  '/img/proj-cantabriamascerca.webp': '/img/proj-cantabriamascerca-sm.webp',
+  '/img/proj-explora.webp': '/img/proj-explora-sm.webp',
+  '/img/proj-artimind.webp': '/img/proj-artimind-sm.webp',
+  '/img/proj-andrea.webp': '/img/proj-andrea-sm.webp',
+  '/img/proj-periquete.webp': '/img/proj-periquete-sm.webp',
+  '/img/proj-cargo.webp': '/img/proj-cargo-sm.webp',
+};
+const heroSmall = shotSmall[heroShot];
+
+// El logo se pinta con `width: clamp(...)` y `height: auto`, así que sin
+// width/height el navegador no reserva nada y la sección salta al cargar.
+// Dimensiones reales leídas de la cabecera de cada .webp.
+const logoSize: Record<string, { w: number; h: number }> = {
+  '/img/logo-periquete.webp': { w: 600, h: 200 },
+  '/img/logo-cargo.webp': { w: 600, h: 199 },
+  '/img/logo-fisio.webp': { w: 140, h: 83 },
+};
+const logoDims = d.logo ? logoSize[d.logo] : undefined;
+
 const jsonld = {
   '@context': 'https://schema.org',
   '@type': 'CreativeWork',
@@ -37,7 +61,7 @@ const jsonld = {
 ---
 <Layout
   title={d.seoTitle ?? `${d.title} — ${d.scope === 'branding' ? 'Branding y diseño web' : 'Diseño web'} en Cantabria | Javier Pato`}
-  description={d.summary}
+  description={d.seoDescription ?? d.summary}
   jsonld={jsonld}
 >
   <article class={`pc pc--${d.tone}`}>
@@ -56,7 +80,20 @@ const jsonld = {
 
     <section class="pc-mock-wrap">
       <div class="wrap">
-        <img class="pc-shot" src={heroShot} alt={`${d.title} — diseño web en Cantabria, mostrado en pantalla`} fetchpriority="high" width="1600" height="1096" data-reveal />
+        {/* LCP de la ficha: sin lazy. El CSS recorta a 3/2 con object-fit: cover,
+            así que width/height describen esa caja y no la imagen original. */}
+        <img
+          class="pc-shot"
+          src={heroShot}
+          srcset={heroSmall ? `${heroSmall} 760w, ${heroShot} 1600w` : undefined}
+          sizes="(min-width: 1240px) 1096px, 90vw"
+          alt={`Captura de la web de ${d.title} en pantalla de escritorio`}
+          fetchpriority="high"
+          decoding="async"
+          width="1500"
+          height="1000"
+          data-reveal
+        />
       </div>
     </section>
 
@@ -64,7 +101,7 @@ const jsonld = {
       <section class="section pc-brand">
         <div class="wrap pc-brand__grid">
           <div class="pc-brand__logo" data-reveal>
-            <img src={d.logo} alt={`Logo de ${d.title}`} loading="lazy" />
+            <img src={d.logo} alt={`Logotipo de ${d.title}`} loading="lazy" decoding="async" width={logoDims?.w} height={logoDims?.h} />
             <span class="pc-brand__name">{d.title}</span>
           </div>
           <div class="pc-brand__txt" data-reveal>

@@ -1,6 +1,6 @@
 ---
-title: "7 errores de diseño web que te están espantando clientes"
-description: "Los fallos más comunes que hacen que la gente se vaya de una web sin comprar ni llamar. Revísalos en tu web de Cantabria antes de perder más ventas."
+title: "7 errores de diseño web que espantan clientes"
+description: "Los siete fallos que hacen que la gente se vaya de tu web sin llamar ni comprar: velocidad, móvil, fotos de banco, contacto escondido. Y cómo se arreglan."
 pubDate: 2026-07-30
 keyword: "errores diseño web"
 tags: ["Diseño web", "Conversión"]
@@ -46,6 +46,6 @@ Cada error por separado parece menor. Juntos hacen que una web "esté ahí" pero
 
 ## Empezar es sencillo
 
-Si te has reconocido en varios de estos puntos, tu web te está costando clientes ahora mismo. Una [web bien hecha desde 299€](/precios) los corrige de raíz.
+Si te has reconocido en varios de estos puntos, tu web te está costando clientes ahora mismo. Los siete se corrigen de raíz rehaciéndola con criterio: así planteo el [diseño web en Cantabria](/diseno-web-cantabria), y el punto de partida son [299€](/precios).
 
-¿Quieres saber cuántos de estos errores tiene tu web en Cantabria? Te la reviso y te digo qué está frenando tus ventas. [Hablamos](/contacto).
+¿Quieres saber cuántos de estos errores tiene tu web? Aquí tienes cómo los resuelvo en el [diseño web en Cantabria](/diseno-web-cantabria), o [mándamela](/contacto) y te digo cuál te está costando más caro.

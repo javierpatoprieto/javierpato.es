@@ -1,6 +1,6 @@
 ---
-title: "Cómo elegir los colores de tu marca (y no equivocarte)"
-description: "Los colores de tu marca no son cuestión de gusto: comunican y venden. Guía práctica para elegir bien la paleta de tu negocio en Cantabria."
+title: "Colores de marca: cómo elegirlos y acertar"
+description: "Los colores de marca no son cuestión de gusto: comunican antes que las palabras. Errores típicos y cómo montar una paleta corta que te distinga."
 pubDate: 2026-07-28
 keyword: "colores de marca"
 tags: ["Branding", "Diseño"]
@@ -29,10 +29,10 @@ Una buena paleta tiene un color principal, uno o dos de apoyo, y neutros para el
 
 ## Del color a todo lo demás
 
-El color es una pieza del puzzle, junto con el [logo](/blog/diseno-logotipo-cantabria) y la tipografía. Cuando encajan, tu negocio se reconoce de un vistazo. Cuando van sueltos, la gente no te retiene. Ese conjunto es lo que trabajo como [estudio](/estudio).
+El color es una pieza del puzzle, junto con el [logo](/blog/diseno-logotipo-cantabria) y la tipografía. Cuando encajan, tu negocio se reconoce de un vistazo. Cuando van sueltos, la gente no te retiene. Ese conjunto —color, logo y tipografía— es justo lo que entrego en el [servicio de branding en Cantabria](/branding-cantabria), y forma parte de cómo trabajo como [estudio](/estudio).
 
 ## Empezar es sencillo
 
 Si estás lanzando o renovando tu negocio, elegir bien la paleta desde el principio te ahorra rehacerlo todo más tarde. Y si ya tienes [web](/precios), la afinamos para que trabaje a tu favor.
 
-¿Estás montando o renovando una marca en Cantabria y no sabes por dónde empezar con el color? Te ayudo a elegir una paleta que te distinga y venda. [Hablamos](/contacto).
+¿Estás montando o renovando una marca en Cantabria y no sabes por dónde empezar con el color? Mira qué incluye el [diseño de marca y logotipo](/branding-cantabria) —paleta, tipografía y normas de uso— o [cuéntamelo](/contacto) y te digo por dónde tirar.

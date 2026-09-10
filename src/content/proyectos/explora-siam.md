@@ -5,12 +5,13 @@ sector: "Viajes en grupo · Rutas en moto por Tailandia"
 year: "2026"
 url: "explorasiam.com"
 summary: "Landing para un viaje en grupo en moto por el norte de Tailandia. Una sola página que cuenta la ruta, enseña el precio sin letra pequeña y termina en un WhatsApp al que contesta Dani, no un bot."
+seoDescription: "Landing de un viaje en moto por el norte de Tailandia: cuenta la ruta, enseña el precio sin letra pequeña y termina en un WhatsApp que contesta Dani."
 services: ["Diseño web", "UX / mensaje", "SEO"]
 scope: "web"
 tone: "peri"
 shotDesktop: "/img/proj-explora.webp"
 shotMobile: "/img/shot-explora-m.webp"
-seoTitle: "Diseño web para vender un viaje en grupo — Explora Siam | Javier Pato"
+seoTitle: "Explora Siam — landing para vender un viaje | Javier Pato"
 order: 0.5
 ---
 

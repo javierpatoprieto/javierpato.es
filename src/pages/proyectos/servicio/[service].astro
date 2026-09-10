@@ -23,12 +23,33 @@ export async function getStaticPaths() {
 const { label, items } = Astro.props;
 const lower = label.toLowerCase();
 
+// Taxonomías con un solo proyecto: página fina. No merece estar en el índice,
+// pero sí que Google siga los enlaces hacia el caso real. Layout.astro acepta
+// la prop `robots`, así que la directiva sale en el <head> y no hay dos metas
+// en conflicto.
+const thin = items.length < 2;
+
 // Imágenes "de ambiente" de la home por proyecto (fallback al shot del caso)
 const homeShots = {
   'centro-infantil-periquete': '/img/proj-periquete-sm.webp',
   'fisio-mama': '/img/proj-andrea-sm.webp',
   'click-and-cargo': '/img/proj-cargo-sm.webp',
 };
+
+// Title y description dentro de lo que Google enseña sin cortar (60 / 160).
+// Las taxonomías con nombre largo ("Dirección de arte con IA") se quedaban
+// fuera, y la de diseño web listaba los seis proyectos y llegaba a 199.
+const titleLargo = `${label} en Cantabria — Proyectos | Javier Pato`;
+const seoTitle = titleLargo.length > 60 ? `${label} en Cantabria | Javier Pato` : titleLargo;
+
+const nombres = items.map((p) => p.data.title);
+const describir = (n: number) => {
+  const listado = n < nombres.length ? `${nombres.slice(0, n).join(', ')} y más` : nombres.join(', ');
+  return `Proyectos de ${lower} para negocios de Cantabria: ${listado}. Diseño con criterio de estudio por Javier Pato.`;
+};
+// Bajo el número de nombres hasta que la description entre en los 160.
+let seoDescription = describir(nombres.length);
+for (let n = nombres.length - 1; n >= 1 && seoDescription.length > 160; n--) seoDescription = describir(n);
 
 const jsonld = {
   '@context': 'https://schema.org',
@@ -44,8 +65,9 @@ const jsonld = {
 };
 ---
 <Layout
-  title={`${label} en Cantabria — Proyectos | Javier Pato`}
-  description={`Proyectos de ${lower} para negocios de Cantabria: ${items.map((p) => p.data.title).join(', ')}. Diseño con criterio de estudio por Javier Pato.`}
+  title={seoTitle}
+  description={seoDescription}
+  robots={thin ? 'noindex, follow' : undefined}
   jsonld={jsonld}
 >
   <section class="section sv-hero has-aura">

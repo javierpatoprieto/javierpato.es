@@ -1,6 +1,6 @@
 ---
-title: "Wix, Canva o un diseñador: qué te compensa de verdad"
-description: "Hacerte la web tú mismo con Wix o Canva sale 'gratis'... hasta que sumas horas, plantilla, SEO y lo que dejas de vender. Comparativa honesta para negocios pequeños de Cantabria."
+title: "Wix, Canva o diseñador: qué te compensa"
+description: "Hacerte la web tú mismo con Wix o Canva sale gratis hasta que sumas horas, plantilla y SEO. Comparativa honesta para negocios pequeños de Cantabria."
 pubDate: 2026-08-31
 keyword: "wix o diseñador web"
 tags: ["Precios", "Diseño web"]
@@ -43,4 +43,4 @@ Una [web one page](/precios) hecha por mí en tres días, con tu dominio y sin c
 
 No es "¿cuánto cuesta la web?", sino "¿cuánto me cuesta cada cliente que no llega?". Si un solo cliente al mes te paga la web, la decisión está tomada. Si no, quizá con Wix te vale. Te lo digo sin compromiso.
 
-¿Dudas entre hacerla tú o encargarla? Cuéntame tu caso y te digo, con sinceridad, qué te compensa. [Hablamos](/contacto).
+¿Dudas entre hacerla tú o encargarla? Compara con lo que incluye mi [diseño web en Cantabria](/diseno-web-cantabria) y saca cuentas. Si sigues sin verlo claro, cuéntame tu caso y te digo con sinceridad qué te compensa: [escríbeme](/contacto).

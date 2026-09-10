@@ -1,6 +1,6 @@
 ---
-title: "Mantenimiento web: por qué una web no se hace y se olvida"
-description: "Qué incluye el mantenimiento de una web, por qué importa para la seguridad y el SEO, y cómo lo gestiono para negocios en Cantabria sin sustos ni sorpresas."
+title: "Mantenimiento web en Cantabria: qué incluye"
+description: "Copias, actualizaciones, cambios pequeños y vigilancia: qué incluye el mantenimiento web, por qué afecta al SEO y cuánto cuesta al año en Cantabria."
 pubDate: 2026-07-25
 keyword: "mantenimiento web Cantabria"
 tags: ["Diseño web", "Mantenimiento"]
@@ -36,6 +36,6 @@ Si la web la hago yo, el mantenimiento es natural: conozco cada pieza y los camb
 
 ## Empezar es sencillo
 
-Tanto si ya tienes web como si te hago una [nueva](/precios), te ofrezco un mantenimiento claro y sin letra pequeña, para que tú te ocupes de tu negocio y de la web me ocupo yo.
+Tanto si ya tienes web como si te hago una [nueva](/precios), el mantenimiento es claro y sin letra pequeña: 190€/año, para que tú te ocupes de tu negocio y de la web me ocupe yo.
 
-¿Tienes una web en Cantabria que nadie toca desde hace años? Te la reviso y te la mantengo al día, sin sustos. [Hablamos](/contacto).
+¿Tienes una web en Cantabria que nadie toca desde hace años? Si está para revisión, la mantengo; si ya no da más de sí, mejor mirar un [diseño web en Cantabria](/diseno-web-cantabria) nuevo. [Enséñamela](/contacto) y te digo cuál de las dos es.

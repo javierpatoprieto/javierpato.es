@@ -1,5 +1,5 @@
 ---
-title: "Página web para gimnasios y entrenadores en Cantabria"
+title: "Página web para gimnasios en Cantabria"
 description: "Web para gimnasios, centros de fitness y entrenadores personales en Cantabria: capta socios, vende bonos y llena clases sin depender solo de Instagram."
 pubDate: 2026-07-07
 keyword: "página web gimnasio Cantabria"
@@ -35,4 +35,4 @@ Este sector entra por el ojo: energía, ambiente, gente real. Un poco de [vídeo
 
 Una [web desde 299€](/precios) con tus servicios, precios y un contacto directo ya te separa del gimnasio que solo tiene un Instagram. Luego se crece: reserva de clases, venta de bonos, área de socios.
 
-¿Tienes un gimnasio o entrenas en Cantabria y todo tu escaparate es Instagram? Te hago una web que capte socios y venda por ti. [Hablamos](/contacto).
+¿Tienes un gimnasio o entrenas en Cantabria y todo tu escaparate es Instagram? Aquí tienes cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria) para que la web capte socios y venda bonos por ti. Si quieres comentarlo antes, [escríbeme](/contacto).

@@ -1,14 +1,15 @@
 ---
 const { path = Astro.url.pathname } = Astro.props;
 const links = [
-  { href: '/', label: 'Inicio' },
   { href: '/diseno-web-cantabria', label: 'Diseño web' },
+  { href: '/branding-cantabria', label: 'Marca' },
+  { href: '/diseno-grafico-cantabria', label: 'Gráfica' },
   { href: '/precios', label: 'Precios' },
   { href: '/proyectos', label: 'Proyectos' },
   { href: '/blog', label: 'Blog' },
   { href: '/estudio', label: 'Estudio' },
-  { href: '/contacto', label: 'Contacto' },
 ];
+const PHONE = '+34669385624';
 const active = (h: string) => h === '/' ? path === '/' : path.startsWith(h);
 ---
 <header class="nav" data-nav>
@@ -31,14 +32,18 @@ const active = (h: string) => h === '/' ? path === '/' : path.startsWith(h);
 
     <div class="nav__actions">
       <button class="nav__icon" data-theme-toggle aria-label="Cambiar tema claro/oscuro"><span class="nav__toggle" aria-hidden="true"></span></button>
-      <a href="/contacto" class="nav__btn">Saluda</a>
+      <a href={`tel:${PHONE}`} class="nav__icon nav__tel" aria-label="Llamar a Javier Pato" data-loc="nav">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a href="/contacto" class="nav__btn">Pide presupuesto</a>
       <button class="nav__burger" data-burger aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
     </div>
   </div>
 
   <nav class="nav__mobile" data-mobile aria-label="Menú móvil">
     {links.map((l) => <a href={l.href} class={`nav__mlink ${active(l.href) ? 'is-active' : ''}`}>{l.label}</a>)}
-    <a href="/contacto" class="btn btn--green nav__mcta">Saluda →</a>
+    <a href={`tel:${PHONE}`} class="nav__mlink" data-loc="nav-movil">Llámame · 669 385 624</a>
+    <a href="/contacto" class="btn btn--green nav__mcta">Pide presupuesto →</a>
   </nav>
 </header>
 
@@ -72,6 +77,9 @@ const active = (h: string) => h === '/' ? path === '/' : path.startsWith(h);
   .nav__actions { display: flex; gap: 8px; align-items: center; }
   .nav__icon { width: 46px; height: 46px; border-radius: 14px; background: var(--bg-2); border: 1px solid var(--line); display: grid; place-items: center; transition: transform var(--dur) var(--ease); }
   .nav__icon:hover { transform: translateY(-2px); }
+  .nav__tel { color: var(--ink); }
+  .nav__tel:hover { color: var(--accent-ink); border-color: var(--accent); }
+  @media (max-width: 900px) { .nav__tel { display: none; } }
   .nav__toggle { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--ink); background: linear-gradient(90deg, var(--ink) 50%, transparent 50%); transition: transform var(--dur) var(--ease); }
   [data-theme="dark"] .nav__toggle { transform: rotate(180deg); }
   .nav__btn { display: inline-flex; align-items: center; background: var(--btn-bg); color: var(--btn-fg); font-family: var(--font-display); font-weight: 600; font-size: 0.95rem; padding: 12px 18px; border-radius: 14px; transition: transform var(--dur) var(--ease); }

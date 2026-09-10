@@ -1,6 +1,6 @@
 ---
-title: "Fotografía de producto en Cantabria (con ayuda de IA)"
-description: "Buenas fotos de producto venden más. Cómo consigo imágenes de catálogo, packaging y producto para tu tienda o web en Cantabria, con o sin estudio."
+title: "Fotografía de producto en Cantabria con IA"
+description: "En internet el cliente no toca ni huele: solo ve. Cómo consigo fotos de catálogo, packaging y producto para tu tienda o web sin montar un plató caro."
 pubDate: 2026-07-14
 keyword: "fotografía de producto Cantabria"
 tags: ["Fotografía", "Diseño gráfico"]
@@ -24,7 +24,7 @@ Aquí tengo una ventaja: uso la IA como herramienta de producción. ¿Qué signi
 
 ## Para tienda online, imprescindible
 
-Si tienes o vas a tener [tienda online](/blog/tienda-online-cantabria), las fotos son la mitad de la venta. Fichas con imágenes buenas, coherentes y desde varios ángulos reducen dudas y devoluciones. La web solo tiene que presentarlas bien.
+Si tienes o vas a tener [tienda online](/blog/tienda-online-cantabria), las fotos son la mitad de la venta. Fichas con imágenes buenas, coherentes y desde varios ángulos reducen dudas y devoluciones. La web solo tiene que presentarlas bien, y eso es parte de lo que monto al hacer una [tienda online en Cantabria](/tienda-online-cantabria).
 
 ## No solo producto
 
@@ -34,4 +34,4 @@ Lo mismo vale para carta de restaurante, catálogo de servicios, inmuebles o el 
 
 Cuéntame qué vendes y para qué canal (web, redes, catálogo) y montamos un set de imágenes coherente con tu marca. Si además necesitas [web](/precios) o [gráfica](/blog/diseno-grafico-cantabria), lo dejamos todo en la misma línea.
 
-¿Tienes un producto en Cantabria que merece mejores fotos que las que tienes? Te ayudo a que se vea tan bien como es. [Hablamos](/contacto).
+¿Tienes un producto en Cantabria que merece mejores fotos que las que tienes? La sesión de imagen entra dentro del [servicio de diseño gráfico en Cantabria](/diseno-grafico-cantabria), junto con catálogo y packaging. [Cuéntame qué vendes](/contacto) y lo vemos.

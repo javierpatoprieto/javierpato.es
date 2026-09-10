@@ -1,5 +1,5 @@
 ---
-title: "Página web para talleres mecánicos en Cantabria"
+title: "Web para talleres mecánicos en Cantabria"
 description: "Web para talleres mecánicos y de neumáticos en Cantabria: gánate la confianza de quien no entiende de coches y consigue que te pidan cita online."
 pubDate: 2026-07-02
 keyword: "página web taller mecánico Cantabria"
@@ -35,4 +35,4 @@ Una web ordenada, con fotos reales y un tono claro, transmite lo mismo que un ta
 
 Una [web desde 299€](/precios) con tus servicios, tu zona y un contacto fácil ya te pone por delante de los talleres que ni salen en Google. 
 
-¿Tienes un taller en Cantabria y quieres que te encuentren los clientes que hoy van a otro? Te hago una web que transmita confianza y traiga citas. [Hablamos](/contacto).
+¿Tienes un taller en Cantabria y quieres que te encuentren los clientes que hoy van a otro? Aquí te cuento cómo hago el [diseño web en Cantabria](/diseno-web-cantabria), con la zona y los servicios bien marcados. Si quieres preguntarme algo antes, [escríbeme](/contacto).

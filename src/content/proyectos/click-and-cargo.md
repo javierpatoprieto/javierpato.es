@@ -11,7 +11,7 @@ tone: "plum"
 shotDesktop: "/img/shot-cargo-d.webp"
 shotMobile: "/img/shot-cargo-m.webp"
 logo: "/img/logo-cargo.webp"
-seoTitle: "Diseño web para software de logística y transporte — Click & Cargo | Javier Pato"
+seoTitle: "Click & Cargo — web para software logístico | Javier Pato"
 order: 3
 ---
 

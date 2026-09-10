@@ -77,9 +77,13 @@ import Contact from '../components/Contact.astro';
             <input id="q-cont" type="text" placeholder="Para responderte" required />
           </div>
         </div>
+        <label class="qz__consent" for="q-rgpd">
+          <input id="q-rgpd" type="checkbox" required />
+          <span>He leído y acepto la <a href="/privacidad" target="_blank" rel="noopener">política de privacidad</a>.</span>
+        </label>
         <button type="submit" class="qz__send">Enviar por WhatsApp →</button>
         <p class="qz__alt">¿Prefieres email? <a href="#" id="qz-mail" class="tlink">Enviar por correo</a></p>
-        <p class="qz__fine">Al enviar se abre WhatsApp con tu mensaje listo. Tú solo le das a enviar.</p>
+        <p class="qz__fine">Al enviar se abre WhatsApp con tu mensaje listo. Tú solo le das a enviar. Me llega una copia por correo para poder responderte aunque se te cierre la ventana.</p>
       </form>
     </div>
   </section>
@@ -107,9 +111,54 @@ import Contact from '../components/Contact.astro';
         ].join('\n');
       }
       function ev(name, params) { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); }
+
+      // form_start: solo la primera vez que el usuario toca algo.
+      let started = false;
+      function start() {
+        if (started) return;
+        started = true;
+        ev('form_start', { form: 'contacto' });
+      }
+      form.addEventListener('input', start, { once: false });
+      form.addEventListener('change', start, { once: false });
+
+      // Guarda el lead en el servidor ANTES de abrir WhatsApp o el correo.
+      // Sin await: el popup tiene que salir en el mismo gesto del usuario o
+      // el navegador lo bloquea. Si esto falla, da igual, el usuario sigue.
+      let lastSent = '';
+      function save(method) {
+        const v = (id) => (document.getElementById(id) || {}).value || '';
+        const payload = JSON.stringify({
+          servicio: v('q-serv'),
+          negocio: v('q-neg'),
+          webActual: ((document.querySelector('input[name="web"]:checked') || {}).value || ''),
+          presupuesto: v('q-pres'),
+          plazo: v('q-cuando'),
+          nombre: v('q-nombre'),
+          contacto: v('q-cont'),
+          origen: 'contacto-' + method,
+        });
+        // Si vuelve a pulsar con los mismos datos, no duplicamos el aviso.
+        if (payload === lastSent) return;
+        lastSent = payload;
+        try {
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon('/api/lead', new Blob([payload], { type: 'application/json' }));
+          } else {
+            fetch('/api/lead', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: payload,
+              keepalive: true,
+            }).catch(function () {});
+          }
+        } catch (err) { /* el lead se pierde, el usuario no */ }
+      }
+
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (!form.reportValidity()) return;
+        save('whatsapp');
         ev('generate_lead', { method: 'whatsapp', form: 'contacto', value: ((document.getElementById('q-serv') || {}).value || '') });
         ev('form_submit_contacto', { method: 'whatsapp' });
         window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(build()), '_blank');
@@ -118,6 +167,7 @@ import Contact from '../components/Contact.astro';
       if (mail) mail.addEventListener('click', function (e) {
         e.preventDefault();
         if (!form.reportValidity()) return;
+        save('email');
         ev('generate_lead', { method: 'email', form: 'contacto' });
         ev('form_submit_contacto', { method: 'email' });
         window.location.href = 'mailto:javier@javierpato.es?subject=' + encodeURIComponent('Proyecto desde la web') + '&body=' + encodeURIComponent(build());
@@ -145,6 +195,10 @@ import Contact from '../components/Contact.astro';
     .qz input[type="text"]:focus, .qz select:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
     .qz__radios { display: grid; gap: 8px; }
     .qz__radios label { display: flex; align-items: center; gap: 8px; font-weight: 400; font-family: var(--font-body); color: var(--ink-soft); cursor: pointer; }
+    .qz label.qz__consent { display: flex; align-items: flex-start; gap: 10px; font-family: var(--font-body); font-weight: 400; font-size: 0.88rem; line-height: 1.4; color: var(--ink-soft); cursor: pointer; }
+    .qz__consent input[type="checkbox"] { flex: none; width: 18px; height: 18px; margin-top: 1px; accent-color: var(--accent); cursor: pointer; }
+    .qz__consent input[type="checkbox"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .qz__consent a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 2px; }
     .qz__send { background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; padding: 15px; border-radius: var(--radius-pill); transition: transform var(--dur) var(--ease), background var(--dur) var(--ease-soft); }
     .qz__send:hover { transform: translateY(-2px); background: var(--accent-ink); }
     .qz__alt { font-size: 0.9rem; color: var(--ink-soft); text-align: center; }

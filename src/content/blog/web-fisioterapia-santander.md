@@ -1,6 +1,6 @@
 ---
-title: "Página web para fisioterapeutas y clínicas en Santander"
-description: "Web para fisioterapeutas y clínicas en Santander y Cantabria: cómo transmitir confianza, salir en Google y conseguir más citas online."
+title: "Web para fisioterapeutas en Santander"
+description: "Web para fisioterapeutas y clínicas en Santander y Cantabria: cómo transmitir confianza, salir en Google cuando duele algo y llenar la agenda de citas."
 pubDate: 2026-06-06
 keyword: "página web fisioterapeuta Santander"
 tags: ["Diseño web", "Salud"]
@@ -40,4 +40,4 @@ Una web de salud debe tener su aviso legal, política de privacidad y el tratami
 
 Para muchas clínicas pequeñas, una [web bien resuelta desde 299€](/precios) que transmita confianza y facilite la cita ya marca la diferencia. Luego se crece: blog de consejos, más servicios, más prueba social.
 
-¿Eres fisioterapeuta o tienes una clínica en Cantabria? Te hago una web que transmita confianza y llene la agenda. [Cuéntame](/contacto).
+¿Eres fisioterapeuta o tienes una clínica en Cantabria? Mira cómo hago [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria) y, si trabajas en la capital, la página de [diseño web en Santander](/diseno-web-santander). Para lo demás, [cuéntame tu caso](/contacto).

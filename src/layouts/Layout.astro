@@ -7,14 +7,25 @@ import Analytics from '../components/Analytics.astro';
 import ChatWidget from '../components/ChatWidget.astro';
 import '@fontsource-variable/plus-jakarta-sans';
 import '@fontsource-variable/hanken-grotesk';
+// URL con hash del woff2 latino de la fuente de display (--font-display).
+// Vite la emite en /_astro/ y así podemos precargarla para mejorar el LCP.
+import jakartaLatinWoff2 from '@fontsource-variable/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2?url';
 
 interface Props {
   title: string;
   description: string;
   ogImage?: string;
   jsonld?: object;
+  /** Directiva robots. Solo hay que pasarla para desindexar (p. ej. 'noindex, follow'). */
+  robots?: string;
 }
-const { title, description, ogImage = '/og.jpg', jsonld } = Astro.props;
+const {
+  title,
+  description,
+  ogImage = '/og.jpg',
+  jsonld,
+  robots = 'index, follow, max-image-preview:large',
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://javierpato.es').toString();
 
 const baseLd = {
@@ -33,10 +44,134 @@ const baseLd = {
     addressRegion: 'Cantabria',
     addressCountry: 'ES',
   },
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://javierpato.es/favicon.svg',
+    contentUrl: 'https://javierpato.es/favicon.svg',
+  },
   geo: { '@type': 'GeoCoordinates', latitude: 43.4623, longitude: -3.8099 },
-  areaServed: ['Cantabria', 'Santander', 'Torrelavega', 'España'],
-  priceRange: 'desde 299€',
+  areaServed: [
+    { '@type': 'City', name: 'Santander' },
+    { '@type': 'City', name: 'Torrelavega' },
+    { '@type': 'AdministrativeArea', name: 'Cantabria' },
+  ],
+  priceRange: '€€',
+  currenciesAccepted: 'EUR',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '19:00',
+    },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Servicios de diseño',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        name: 'Diseño web',
+        url: 'https://javierpato.es/diseno-web-cantabria',
+        priceCurrency: 'EUR',
+        price: '299',
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          priceCurrency: 'EUR',
+          minPrice: '299',
+          valueAddedTaxIncluded: false,
+        },
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Diseño y desarrollo de páginas web',
+          serviceType: 'Diseño web',
+          areaServed: { '@type': 'AdministrativeArea', name: 'Cantabria' },
+          provider: { '@id': 'https://javierpato.es/#estudio' },
+        },
+      },
+      {
+        '@type': 'Offer',
+        name: 'Tienda online',
+        url: 'https://javierpato.es/tienda-online-cantabria',
+        priceCurrency: 'EUR',
+        price: '999',
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          priceCurrency: 'EUR',
+          minPrice: '999',
+          valueAddedTaxIncluded: false,
+        },
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Diseño de tienda online',
+          serviceType: 'Comercio electrónico',
+          areaServed: { '@type': 'AdministrativeArea', name: 'Cantabria' },
+          provider: { '@id': 'https://javierpato.es/#estudio' },
+        },
+      },
+      {
+        '@type': 'Offer',
+        name: 'Branding',
+        url: 'https://javierpato.es/branding-cantabria',
+        priceCurrency: 'EUR',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Identidad de marca y naming',
+          serviceType: 'Branding',
+          areaServed: { '@type': 'AdministrativeArea', name: 'Cantabria' },
+          provider: { '@id': 'https://javierpato.es/#estudio' },
+        },
+      },
+      {
+        '@type': 'Offer',
+        name: 'Diseño gráfico',
+        url: 'https://javierpato.es/diseno-grafico-cantabria',
+        priceCurrency: 'EUR',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Diseño gráfico: dosieres, logotipos, cartelería y papelería',
+          serviceType: 'Diseño gráfico',
+          areaServed: { '@type': 'AdministrativeArea', name: 'Cantabria' },
+          provider: { '@id': 'https://javierpato.es/#estudio' },
+        },
+      },
+    ],
+  },
   knowsAbout: ['Diseño web', 'Diseño web Cantabria', 'Branding', 'Diseño gráfico', 'Dirección de arte con IA', 'SEO local'],
+  founder: { '@id': 'https://javierpato.es/#javier' },
+  sameAs: [
+    'https://instagram.com/javierpato',
+    'https://x.com/ArtiMindArt',
+  ],
+};
+
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': 'https://javierpato.es/#javier',
+  name: 'Javier Pato',
+  jobTitle: 'Diseñador web y de marca',
+  url: 'https://javierpato.es/estudio',
+  image: 'https://javierpato.es/img/javier.webp',
+  email: 'javier@javierpato.es',
+  telephone: '+34669385624',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Santander',
+    addressRegion: 'Cantabria',
+    addressCountry: 'ES',
+  },
+  worksFor: { '@id': 'https://javierpato.es/#estudio' },
+  knowsAbout: [
+    'Diseño web',
+    'Astro',
+    'Branding',
+    'Diseño gráfico',
+    'Dirección de arte con IA',
+    'SEO local',
+    'Diseño de tiendas online',
+  ],
+  knowsLanguage: ['es', 'en'],
   sameAs: [
     'https://instagram.com/javierpato',
     'https://x.com/ArtiMindArt',
@@ -58,11 +193,13 @@ const baseLd = {
         } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
       })();
     </script>
+    <link rel="preload" as="font" type="font/woff2" href={jakartaLatinWoff2} crossorigin />
+
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta name="google-site-verification" content="celvGrPsozKtBpMmTXXF39LFyiwQp8R5Rb9yLJ-K4rM" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="robots" content={robots} />
     <meta name="author" content="Javier Pato" />
     <meta name="geo.region" content="ES-CB" />
     <meta name="geo.placename" content="Cantabria" />
@@ -85,6 +222,7 @@ const baseLd = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <script type="application/ld+json" set:html={JSON.stringify(baseLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
 
     <Analytics />
@@ -99,7 +237,10 @@ const baseLd = {
 
     <script>
       const els = document.querySelectorAll('[data-reveal]');
-      if ('IntersectionObserver' in window) {
+      const reduceMotion = typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduceMotion) {
+        els.forEach((el) => el.classList.add('in'));
+      } else if ('IntersectionObserver' in window) {
         const io = new IntersectionObserver((entries) => {
           entries.forEach((e) => {
             if (e.isIntersecting) {

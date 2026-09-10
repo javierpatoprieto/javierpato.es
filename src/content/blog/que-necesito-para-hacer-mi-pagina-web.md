@@ -1,6 +1,6 @@
 ---
-title: "Qué necesitas tener listo antes de encargar tu web (y qué no)"
-description: "La lista de lo que te voy a pedir para hacer tu página web: textos, fotos, logo, dominio... y lo que no hace falta que tengas. Con esto la web sale en días, no en meses."
+title: "Qué necesitas para encargar tu página web"
+description: "La lista de lo que te pido para hacer tu página web: textos, fotos, logo y dominio. Y lo que no hace falta tener. Así la web sale en días, no en meses."
 pubDate: 2026-08-10
 keyword: "qué necesito para hacer una página web"
 tags: ["Diseño web", "Proceso"]
@@ -49,4 +49,4 @@ Dirección, horario, teléfono, email, redes y tu ficha de Google si la tienes (
 
 Primero hablamos. Luego me pasas lo que tengas, aunque esté a medias, y yo hago el resto. Si falta algo, te lo pido concreto y lo resolvemos sobre la marcha. Lo importante es no dejar la web parada esperando una foto.
 
-¿Tienes parte de esto y no sabes por dónde empezar? Mándame lo que tengas y te digo qué falta. [Hablamos](/contacto).
+¿Tienes parte de esto y no sabes por dónde empezar? Mira cómo funciona el [diseño web en Cantabria](/diseno-web-cantabria) paso a paso, y si ya quieres empezar, mándame lo que tengas y te digo qué falta: [escríbeme](/contacto).

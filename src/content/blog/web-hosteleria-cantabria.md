@@ -1,6 +1,6 @@
 ---
-title: "Página web para hostelería en Cantabria: lo que tu restaurante necesita"
-description: "Web para restaurantes, bares y cafeterías en Cantabria: qué tiene que tener para llenar mesas, salir en Google y facilitar reservas."
+title: "Página web para restaurantes en Cantabria"
+description: "Web para restaurantes, bares y cafeterías en Cantabria: qué tiene que tener para llenar mesas, salir en Google y que reservar cueste un solo clic."
 pubDate: 2026-06-08
 keyword: "página web restaurante Cantabria"
 tags: ["Diseño web", "Hostelería"]
@@ -47,4 +47,4 @@ Una web de restaurante no tiene que ser complicada — tiene que **abrir el apet
 
 Tu web y tu carta, tus redes y tu cartelería deberían hablar el mismo idioma. Esa coherencia es lo que convierte un bar majo en una **marca** que la gente recomienda. Es lo mismo que cuento en [branding para negocios de Cantabria](/blog/branding-cantabria).
 
-¿Tienes un restaurante, bar o cafetería en Cantabria? Te monto una web que llene mesas. [Hablamos](/contacto).
+¿Tienes un restaurante, bar o cafetería en Cantabria? Mira qué incluye mi [diseño web para hostelería en Cantabria](/diseno-web-hosteleria-cantabria): carta actualizable, reserva y fotos que abren el apetito. Si prefieres contármelo tú, [escríbeme](/contacto).

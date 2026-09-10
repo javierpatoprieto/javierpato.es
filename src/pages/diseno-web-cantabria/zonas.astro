@@ -1,0 +1,331 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Contact from '../../components/Contact.astro';
+
+const title = 'Diseño web en Cantabria: zonas y municipios | Javier Pato';
+const description =
+  'Diseño web en Cantabria municipio a municipio: Camargo, El Astillero, Piélagos, Laredo, Castro Urdiales y Reinosa. Qué necesita la web de tu zona.';
+
+const indice = [
+  { id: 'astillero', n: 'El Astillero' },
+  { id: 'camargo', n: 'Camargo' },
+  { id: 'pielagos', n: 'Piélagos' },
+  { id: 'reinosa', n: 'Reinosa y Campoo' },
+  { id: 'laredo', n: 'Laredo' },
+  { id: 'castro-urdiales', n: 'Castro Urdiales' },
+  { id: 'peluquerias-estetica', n: 'Peluquerías y estética' },
+  { id: 'turismo-rural', n: 'Turismo rural' },
+];
+
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Diseño web en Cantabria por municipios',
+    name: 'Diseño web en Cantabria — zonas y municipios',
+    description,
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Cantabria' },
+      { '@type': 'City', name: 'El Astillero' },
+      { '@type': 'City', name: 'Camargo' },
+      { '@type': 'City', name: 'Piélagos' },
+      { '@type': 'City', name: 'Reinosa' },
+      { '@type': 'City', name: 'Laredo' },
+      { '@type': 'City', name: 'Castro Urdiales' },
+    ],
+    provider: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
+    url: 'https://javierpato.es/diseno-web-cantabria/zonas',
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'EUR',
+      price: '299',
+      url: 'https://javierpato.es/precios',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
+      { '@type': 'ListItem', position: 2, name: 'Diseño web en Cantabria', item: 'https://javierpato.es/diseno-web-cantabria' },
+      { '@type': 'ListItem', position: 3, name: 'Zonas', item: 'https://javierpato.es/diseno-web-cantabria/zonas' },
+    ],
+  },
+];
+---
+<Layout title={title} description={description} jsonld={jsonld}>
+  <section class="section zn-hero has-aura">
+    <div class="wrap">
+      <nav class="zn-crumbs" aria-label="Migas de pan">
+        <a href="/">Inicio</a> <span aria-hidden="true">/</span>
+        <a href="/diseno-web-cantabria">Diseño web en Cantabria</a> <span aria-hidden="true">/</span>
+        <span>Zonas</span>
+      </nav>
+      <span class="zn-kicker" data-reveal>Diseño web · Cantabria por zonas</span>
+      <h1 class="zn-h1" data-reveal>Diseño web en Cantabria,<br />municipio a <span>municipio</span>.</h1>
+      <p class="zn-lead" data-reveal>
+        No se vende igual en un polígono de Camargo que en el paseo de Laredo en agosto. Cambia quién te busca,
+        desde dónde y con cuánta prisa. Aquí te cuento qué tiene que resolver tu web según dónde tengas el negocio,
+        sin repetirte el mismo folleto con el nombre del pueblo cambiado. Webs desde <strong>299€</strong>.
+      </p>
+      <div class="zn-cta" data-reveal>
+        <a href="/contacto" class="btn btn--green">Pide presupuesto →</a>
+        <a href="/precios" class="btn btn--ghost">Ver precios</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section zn-idx-sec tone-white">
+    <div class="wrap">
+      <h2 class="zn-idx-t">Ve directo a tu zona</h2>
+      <ul class="zn-idx" data-stagger>
+        {indice.map((z) => (
+          <li data-reveal><a href={`#${z.id}`}>{z.n}<span aria-hidden="true"> ↓</span></a></li>
+        ))}
+      </ul>
+      <p class="zn-idx-note">
+        Santander y Torrelavega tienen página propia: <a href="/diseno-web-santander" class="tlink">diseño web en Santander</a>
+        y <a href="/diseno-web-torrelavega" class="tlink">diseño web en Torrelavega</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap zn-zonas">
+
+      <article class="zn-zona" id="astillero">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web en El Astillero y Guarnizo</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            En El Astillero el cliente que decide casi nunca es el vecino: es un jefe de compras o un responsable de
+            mantenimiento que necesita un proveedor y no quiere jugársela. Ese señor te busca en Google antes de
+            meterte en su lista. Si lo que encuentra es una página de Facebook parada desde hace años, sigue mirando.
+          </p>
+          <p>
+            La web de una empresa de aquí no necesita eslóganes, necesita datos. Qué haces exactamente, con qué
+            maquinaria, qué volúmenes o medidas manejas, a qué sectores has servido y a quién llamar un martes a las
+            ocho de la mañana. Un formulario que acepte adjuntos vale más que cualquier frase bonita, porque el
+            presupuesto llega con un plano o una lista de referencias.
+          </p>
+          <p>
+            Lo que suelo montar en Guarnizo y el polígono: página de capacidades por proceso, fichas de trabajos hechos
+            —aunque sea sin nombrar al cliente—, certificaciones si las tienes y contacto directo con la persona que
+            responde. Ni carrusel ni blog. Mira <a href="/proyectos/click-and-cargo">Click &amp; Cargo</a>: producto
+            técnico contado para que lo entienda cualquiera.
+          </p>
+        </div>
+      </article>
+
+      <article class="zn-zona" id="camargo">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web en Camargo: Maliaño, Muriedas, Revilla</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            Camargo es Maliaño, Muriedas, Revilla, Cacicedo, Escobedo… y una colección de polígonos donde encontrar una
+            nave concreta es un deporte de riesgo. Ese es el problema real que resuelve una web aquí: que el cliente
+            llegue. Dirección con número de nave, enlace a Maps que abra bien desde el móvil, una referencia visual
+            del tipo «enfrente de», si hay sitio para dejar el coche y por dónde entra un camión.
+          </p>
+          <p>
+            Lo segundo es el horario, y en Camargo el horario manda. Hay negocios que viven del turno de mediodía de la
+            gente del polígono y otros del vecino de Muriedas a las siete de la tarde. Si tu web no deja clarísimo
+            cuándo abres, pierdes los dos públicos a la vez.
+          </p>
+          <p>
+            Y está la mezcla: aquí conviven talleres que facturan a empresas con comercio de barrio que cobra al
+            vecino. No se escriben igual. Al primero le hablas de plazos, capacidad y quién firma el albarán; al
+            segundo, de que estás cerca y de que te atiende quien lleva el negocio.
+          </p>
+        </div>
+      </article>
+
+      <article class="zn-zona" id="pielagos">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web en Piélagos: Renedo, Liencres, Boo</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            Piélagos no es un pueblo, son muchos: Renedo, Liencres, Boo, Mortera, Vioño, Arce, Zurita. Y sigue llegando
+            gente que se muda desde Santander sin ninguna referencia de la zona. Ese vecino nuevo no pregunta en el
+            bar: busca en el móvil y se queda con el primero que le convenza.
+          </p>
+          <p>
+            Eso cambia lo que tiene que decir tu web. Lo primero, en qué núcleo estás, porque «Piélagos» no le dice
+            nada a quien acaba de llegar y lo que necesita saber es si le pilla de camino al colegio o al trabajo. Lo
+            segundo, si atiendes sin cita o hay que pedirla: el que no te conoce no se atreve a presentarse a ver qué
+            pasa.
+          </p>
+          <p>
+            Liencres juega aparte. Con las dunas y las playas al lado entra visitante de fin de semana, y para ese la
+            web tiene que cargar rápido y resolver en dos toques dónde estás y si te queda sitio. Un negocio de
+            proximidad bien contado, por ejemplo, es
+            <a href="/proyectos/centro-infantil-periquete">Centro Infantil Periquete</a>.
+          </p>
+        </div>
+      </article>
+
+      <article class="zn-zona" id="reinosa">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web en Reinosa y Campoo</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            Reinosa funciona como cabecera: la gente de los valles baja a comprar y a resolver. Pero baja después de
+            mirar el móvil, muchas veces con una cobertura irregular de camino. Por eso aquí una web pesada es un
+            problema de verdad y no una manía de diseñador: si tarda cinco segundos en abrir, se cierra antes.
+          </p>
+          <p>
+            Lo que de verdad se consulta antes de coger el coche son dos cosas: si estás abierto y si tienes lo que
+            busca. Horario visible sin hacer scroll, festivos incluidos, y un teléfono que se marque de un toque. Suena
+            poco glamuroso, pero es exactamente lo que evita el viaje en balde y la reseña de una estrella.
+          </p>
+          <p>
+            Campoo tiene además la estacionalidad al revés que la costa: cuando la playa se vacía, aquí aparece el
+            visitante de Alto Campoo y de la nieve. Si tu negocio toca ese público, la web tiene que saber hablarle a
+            él en invierno y al vecino de la comarca el resto del año. Son dos mensajes, no uno.
+          </p>
+        </div>
+      </article>
+
+      <article class="zn-zona" id="laredo">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web en Laredo</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            En Laredo tu web se lee con una mano, de pie, con la red saturada y con hambre. No hay margen: si en unos
+            segundos no aparecen la carta, el horario y cómo llegar, se cierra y se abre la siguiente. Tu historia, el
+            equipo y la galería de treinta fotos sobran en ese momento exacto.
+          </p>
+          <p>
+            Mi consejo aquí es incómodo: pon los precios. El que veranea compara tres sitios seguidos y descarta al que
+            le obliga a llamar para saber cuánto cuesta el menú. Enseñar precio no espanta clientes, filtra a los que
+            no iban a entrar igualmente.
+          </p>
+          <p>
+            Y luego está el otro Laredo, el de octubre a junio, que es donde se decide si el año sale o no. Ese cliente
+            es del pueblo, ya sabe quién eres y lo que necesita es una razón para volver: menú actualizado, si abres
+            entre semana, qué tienes esta semana que no tenías la anterior. Una web que solo habla del verano se queda
+            muda ocho meses.
+          </p>
+        </div>
+      </article>
+
+      <article class="zn-zona" id="castro-urdiales">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web en Castro Urdiales</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            Castro tiene una peculiaridad que no comparte ninguna otra zona de Cantabria: buena parte de su clientela
+            busca desde Bizkaia. Gente que trabaja en Bilbao y vive aquí, y gente que se acerca el domingo. Tu web se
+            lee desde fuera de la región, por alguien que no conoce las calles y que está comparando en paralelo con
+            opciones del otro lado del límite.
+          </p>
+          <p>
+            Traducido a decisiones concretas: la dirección tiene que ir acompañada de dónde aparcar, porque lo primero
+            que teme el que viene de fuera es dar vueltas media hora. Y conviene situarte respecto a algo reconocible
+            —el puerto, el castillo, la playa— y no solo con el nombre de una calle que no le suena de nada.
+          </p>
+          <p>
+            Como llega comparando, la web se juega los primeros segundos: fotos reales del sitio y no de banco de
+            imágenes, y una forma de reservar o preguntar que funcione un domingo por la mañana, cuando en tu negocio
+            no hay nadie libre para coger el teléfono.
+          </p>
+        </div>
+      </article>
+
+      <article class="zn-zona" id="peluquerias-estetica">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web para peluquerías y centros de estética</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            El problema de este sector no es no tener web: es haberlo apostado todo a Instagram. Instagram enseña tu
+            trabajo, sí, pero no sale cuando alguien busca «peluquería» más el nombre de su barrio, no deja reservar
+            sin pasar por un mensaje privado y, sobre todo, no es tuyo. Si mañana te bloquean la cuenta, pierdes el
+            escaparate y la agenda el mismo día.
+          </p>
+          <p>
+            Lo que sí cambia el día a día es la reserva online. La mayoría de las peticiones de cita llegan cuando tú
+            tienes las manos dentro de una cabeza o la persiana bajada. Un botón de reserva que funcione a las once de
+            la noche recupera citas que hoy se pierden en llamadas sin contestar.
+          </p>
+          <p>
+            Después, la galería: ordenada por lo que la clienta busca —color, mechas, uñas, tratamientos— y no por
+            orden de subida. Y los precios por servicio, aunque sea una horquilla. El miedo a preguntar cuánto cuesta
+            hace perder más clientas que el precio en sí.
+          </p>
+        </div>
+      </article>
+
+      <article class="zn-zona" id="turismo-rural">
+        <h2 class="tbar zn-h2" data-reveal>Diseño web para casas rurales y turismo rural</h2>
+        <div class="zn-prose" data-reveal>
+          <p>
+            Aquí la conversación acaba siempre en lo mismo: la comisión. Si todas tus reservas entran por una
+            plataforma, pagas un porcentaje por cada noche y además no tienes el correo del huésped, así que no puedes
+            escribirle el año que viene para que repita.
+          </p>
+          <p>
+            La web no sustituye a las plataformas, las aprovecha. Mucha gente te descubre en una y después busca el
+            nombre de tu casa en Google para ver si reservando directo le sale mejor. Si ahí no encuentra nada, vuelve
+            a la plataforma y acabas pagando comisión por un cliente que ya era tuyo.
+          </p>
+          <p>
+            Para que eso funcione la web necesita tres cosas: fotos que enseñen el entorno y no solo las habitaciones
+            —nadie viene a Cantabria por un cabecero—, la información honesta que el huésped rural pregunta siempre
+            (si hay cobertura, si se llega en coche normal, qué se puede hacer si llueve tres días) y una manera de
+            reservar o preguntar que no sea un formulario de siete campos. Contar bien una experiencia también es esto:
+            <a href="/proyectos/explora-siam">Explora Siam</a>.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section tone-rose">
+    <div class="wrap zn-final">
+      <h2 class="tbar zn-h2" data-reveal>¿Y si tu municipio no está en la lista?</h2>
+      <p class="zn-prose" data-reveal>
+        Trabajo con toda Cantabria y en remoto, así que da igual dónde tengas el negocio: lo que cambia es a quién le
+        hablas. Si estás en la capital o en la comarca del Besaya, tienes páginas dedicadas en
+        <a href="/diseno-web-santander">diseño web en Santander</a> y
+        <a href="/diseno-web-torrelavega">diseño web en Torrelavega</a>. Y si prefieres empezar por el precio, en
+        <a href="/precios">precios</a> están los planes con todo cerrado: one-page 299€, básica de 4 páginas 549€, pro
+        de 6 páginas 699€ y tienda online desde 999€.
+      </p>
+      <div class="zn-cta" data-reveal>
+        <a href="/contacto" class="btn btn--green">Cuéntame tu caso →</a>
+        <a href="/proyectos" class="btn btn--ghost">Ver trabajos</a>
+      </div>
+    </div>
+  </section>
+
+  <Contact />
+
+  <style>
+    .zn-hero { padding-top: clamp(28px, 5vw, 64px); padding-bottom: clamp(16px, 2.6vw, 32px); }
+    .zn-crumbs { font-size: 0.82rem; color: var(--ink-mute); display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--s-4); }
+    .zn-crumbs a { color: var(--ink-mute); }
+    .zn-crumbs a:hover { color: var(--accent-ink); }
+    .zn-kicker { font-family: var(--font-body); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-ink); }
+    .zn-h1 { font-family: var(--font-display); font-size: clamp(2.4rem, 5.6vw, 4.6rem); font-weight: 800; line-height: 1; margin: var(--s-3) 0 var(--s-4); }
+    .zn-h1 span { color: var(--accent-ink); }
+    .zn-lead { font-size: var(--fs-lead); color: var(--ink-soft); max-width: 62ch; line-height: 1.5; }
+    .zn-lead strong { color: var(--ink); }
+    .zn-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--s-5); }
+
+    .zn-idx-sec { padding-block: clamp(28px, 4vw, 48px); }
+    .zn-idx-t { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-mute); margin-bottom: var(--s-4); }
+    .zn-idx { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 10px; }
+    .zn-idx a { font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; color: var(--ink); display: inline-flex; align-items: center; gap: 4px; }
+    .zn-idx a:hover { color: var(--accent-ink); }
+    .zn-idx-note { margin-top: var(--s-5); color: var(--ink-soft); max-width: 70ch; }
+
+    .zn-zonas { display: grid; gap: clamp(40px, 6vw, 72px); max-width: 820px; }
+    .zn-zona { scroll-margin-top: 96px; }
+    .zn-h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3.2vw, 2.1rem); font-weight: 800; margin-bottom: var(--s-4); line-height: 1.1; }
+    .zn-prose { font-size: 1.0625rem; line-height: 1.75; color: var(--ink-soft); }
+    .zn-prose p { margin-bottom: var(--s-4); }
+    .zn-prose p:last-child { margin-bottom: 0; }
+    .zn-prose strong { color: var(--ink); font-weight: 700; }
+    .zn-prose a { color: var(--accent-ink); font-weight: 600; border-bottom: 1px solid currentColor; }
+
+    .zn-final { max-width: 820px; }
+    .zn-final .zn-prose { color: var(--ink); }
+
+    @media (min-width: 640px) { .zn-idx { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 980px) { .zn-idx { grid-template-columns: repeat(4, 1fr); } }
+  </style>
+</Layout>

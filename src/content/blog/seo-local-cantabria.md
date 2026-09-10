@@ -1,5 +1,5 @@
 ---
-title: "Cómo salir en Google con tu negocio en Cantabria (SEO local)"
+title: "SEO local en Cantabria: cómo salir en Google"
 description: "Guía práctica de SEO local para negocios de Cantabria: cómo aparecer en Google cuando alguien busca lo que ofreces en Santander, Torrelavega o tu pueblo."
 pubDate: 2026-06-14
 keyword: "SEO local Cantabria"
@@ -52,4 +52,4 @@ Escribir guías que respondan a lo que busca tu cliente —como esta— te posic
 4. Publica **contenido** poco a poco.
 5. Sé **constante**. Quien aguanta, sube.
 
-¿Tu web es lenta o no sale en Google? Le echo un vistazo y te digo qué falla. [Cuéntame tu caso](/contacto).
+¿Tu web es lenta o no sale en Google? Empieza por la base: así hago el [diseño web en Cantabria](/diseno-web-cantabria), rápido y con la zona bien marcada. Si prefieres que le eche un vistazo a la que ya tienes, [cuéntame tu caso](/contacto).

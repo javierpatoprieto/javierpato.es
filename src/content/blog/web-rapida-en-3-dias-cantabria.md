@@ -1,6 +1,6 @@
 ---
-title: "Cómo hago una web en 3 días (sin que se note el prisa)"
-description: "Sí, se puede tener una web profesional en días, no en meses. Te cuento mi proceso para negocios de Cantabria que necesitan estar online ya."
+title: "Web en 3 días en Cantabria: cómo lo hago"
+description: "Sí, se puede tener una web profesional en días, no en meses. Te cuento mi proceso, paso a paso, para negocios de Cantabria que necesitan estar online ya."
 pubDate: 2026-08-01
 keyword: "web rápida Cantabria"
 tags: ["Diseño web", "Proceso"]
@@ -34,4 +34,4 @@ Para autónomos y negocios que necesitan estar online **ya**: acabas de abrir, t
 
 Si me pasas el contenido a tiempo, en tres días estás online. Así de simple.
 
-¿Necesitas una web ya para tu negocio en Cantabria y no quieres esperar medio año? Te la hago en días, sin que se note la prisa. [Hablamos](/contacto).
+¿Necesitas una web ya para tu negocio en Cantabria y no quieres esperar medio año? Mira qué incluye el [diseño web en Cantabria](/diseno-web-cantabria) y elige pack; con el contenido a tiempo, en tres días estás online. Dudas, por [aquí](/contacto).

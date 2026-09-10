@@ -1,6 +1,6 @@
 ---
-title: "Página web para abogados y despachos en Cantabria"
-description: "Web para abogados y despachos en Cantabria: cómo transmitir solvencia, generar confianza antes de la primera llamada y captar clientes que ya te buscan en Google."
+title: "Página web para abogados en Cantabria"
+description: "Web para abogados y despachos en Cantabria: cómo transmitir solvencia, dar confianza antes de la primera llamada y captar a quien ya te busca en Google."
 pubDate: 2026-06-26
 keyword: "página web abogado Cantabria"
 tags: ["Diseño web", "Servicios profesionales"]
@@ -39,4 +39,4 @@ Una web de servicios jurídicos con formularios necesita aviso legal, política 
 
 Para la mayoría de despachos, una [web bien resuelta desde 299€](/precios) que transmita solvencia y facilite el contacto ya marca la diferencia frente al despacho de al lado. Luego se crece: áreas de práctica, blog jurídico, casos.
 
-¿Tienes un despacho en Cantabria y tu web no está a la altura de tu trabajo? Te hago una web y una marca que transmitan la seguridad que ya das en consulta. [Hablamos](/contacto).
+¿Tienes un despacho en Cantabria y tu web no está a la altura de tu trabajo? Así planteo el [diseño web en Cantabria](/diseno-web-cantabria) para negocios de servicios como el tuyo, y si prefieres contármelo antes, [escríbeme](/contacto).

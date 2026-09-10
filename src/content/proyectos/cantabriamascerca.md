@@ -5,12 +5,13 @@ sector: "Cuidado de segundas residencias y recados · Besaya y Cantabria"
 year: "2026"
 url: "cantabriamascerca.com"
 summary: "Un negocio nuevo desde cero: cuidado de segundas residencias, recados y gestiones en el valle del Besaya. Ayudé a aterrizar la idea, diseñé la web y la dejé preparada para salir en Google en su zona."
+seoDescription: "Un negocio nuevo desde cero en el valle del Besaya: aterricé la idea, diseñé la web y la dejé preparada para salir en Google en su zona."
 services: ["Diseño web", "Concepto de negocio", "SEO local"]
 scope: "web"
 tone: "rose"
 shotDesktop: "/img/proj-cantabriamascerca.webp"
 shotMobile: "/img/shot-cantabriamascerca-m.webp"
-seoTitle: "Diseño web y SEO local para un negocio de servicios en Torrelavega — CantabriaMásCerca | Javier Pato"
+seoTitle: "CantabriaMásCerca — web y SEO en Torrelavega | Javier Pato"
 order: 0
 ---
 

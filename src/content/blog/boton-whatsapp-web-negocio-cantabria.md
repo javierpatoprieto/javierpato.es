@@ -1,6 +1,6 @@
 ---
-title: "El botón de WhatsApp en tu web: el que más clientes trae, si lo haces bien"
-description: "En Cantabria la gente no rellena formularios: escribe por WhatsApp. Cómo poner el botón en tu web para que te lleguen mensajes de verdad, y los errores que lo estropean."
+title: "Botón de WhatsApp en tu web: cómo ponerlo bien"
+description: "Tus clientes no rellenan formularios: escriben por WhatsApp. Dónde colocar el botón, qué mensaje precargar y los cuatro errores que lo estropean."
 pubDate: 2026-08-17
 keyword: "botón WhatsApp página web"
 tags: ["Conversión", "Diseño web"]
@@ -49,4 +49,4 @@ Cada clic en el botón se registra como evento. Así sabes cuántos contactos tr
 
 Hay negocios, sobre todo gremios, donde el problema es el contrario: no llegan a coger el teléfono porque están trabajando. Para eso hay soluciones con IA que atienden la llamada y te pasan el aviso por WhatsApp. Lo cuento en [marketing con IA para pequeños negocios](/blog/marketing-con-ia-pequenos-negocios-cantabria).
 
-¿Tu web tiene botón de WhatsApp o solo un formulario que nadie rellena? Lo revisamos en una charla. [Hablamos](/contacto).
+¿Tu web tiene botón de WhatsApp o solo un formulario que nadie rellena? Esto lo dejo montado y medido en cada [diseño web en Cantabria](/diseno-web-cantabria) que hago. Si prefieres contármelo antes, [escríbeme](/contacto).

@@ -1,6 +1,6 @@
 ---
-title: "5 señales de que tu web vieja te está costando clientes"
-description: "Cómo saber si tu web está espantando clientes en vez de atraerlos. 5 señales claras de que toca un rediseño y qué ganarías con uno."
+title: "Rediseño web: 5 señales de que tu web resta"
+description: "Cómo saber si tu web está espantando clientes en vez de atraerlos: 5 señales de que toca un rediseño web y qué ganarías con uno, desde 299€."
 pubDate: 2026-06-04
 keyword: "rediseño web Cantabria"
 tags: ["Diseño web", "Rediseño"]
@@ -41,4 +41,4 @@ Esta es la más honesta. Si cuando un cliente potencial te pide la web sientes u
 
 Un rediseño no tiene por qué ser caro ni eterno: muchas veces se resuelve [desde 299€](/precios) y en una semana.
 
-¿Tu web da más vergüenza que clientes? Le echo un vistazo gratis y te digo qué cambiaría. [Hablamos](/contacto).
+¿Tu web da más vergüenza que clientes? Mira qué incluye un [rediseño de web en Cantabria](/diseno-web-cantabria) y, si quieres que le eche un vistazo antes, [cuéntame tu caso](/contacto).

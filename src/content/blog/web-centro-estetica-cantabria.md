@@ -1,6 +1,6 @@
 ---
-title: "Página web para centros de estética y peluquerías en Cantabria"
-description: "Web para centros de estética, belleza y peluquerías en Cantabria: cómo enseñar tu trabajo, llenar la agenda con reservas online y construir una marca que se recuerde."
+title: "Web para centros de estética en Cantabria"
+description: "Web para centros de estética y belleza en Cantabria: cómo enseñar tu trabajo, llenar la agenda con reserva online y construir una marca que se recuerde."
 pubDate: 2026-06-21
 keyword: "página web centro de estética Cantabria"
 tags: ["Diseño web", "Branding"]
@@ -42,4 +42,4 @@ Muchos centros viven en Instagram, y está bien. Pero la web es **tu casa**: lo 
 
 Una [web bonita y funcional desde 299€](/precios), con buenas fotos y reserva online, ya transforma cómo te ve quien aún no te conoce.
 
-¿Tienes un centro de estética, un salón de belleza o una peluquería en Cantabria? Te hago una marca y una web tan cuidadas como tu trabajo. [Hablamos](/contacto).
+¿Tienes un centro de estética, un salón de belleza o una peluquería en Cantabria? Mira cómo trabajo las [webs para peluquerías y centros de estética](/diseno-web-cantabria/zonas#peluquerias-estetica): fotos, reserva y marca en el mismo paquete. Si prefieres preguntarme antes, [escríbeme](/contacto).
