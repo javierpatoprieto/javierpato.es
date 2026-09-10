@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: '¿Por qué una web son 299€ y otra 699€ si las haces tú igual?',
-    a: 'Porque lo que cambia no es quién la hace, sino cuánto hay que construir. Una one-page es una sola pieza y una sola decisión de mensaje. Seis páginas son seis estructuras distintas, seis títulos para Google, seis maneras de que el visitante llegue y seis maneras de que se pierda. El diseño y el criterio son los mismos en todos los planes; lo que sube es el volumen de trabajo. Por eso te digo el precio antes de empezar y no después.',
+    a: 'Antes que nada: los dos precios llevan el IVA incluido, así que lo que ves es lo que pagas. Y lo que cambia no es quién la hace, sino cuánto hay que construir. Una one-page es una sola pieza y una sola decisión de mensaje. Seis páginas son seis estructuras distintas, seis títulos para Google, seis maneras de que el visitante llegue y seis maneras de que se pierda. El diseño y el criterio son los mismos en todos los planes; lo que sube es el volumen de trabajo. Por eso te digo el precio antes de empezar y no después.',
   },
   {
     q: '¿Qué diferencia hay entre esto y hacérmela yo con una plantilla o con una IA?',
@@ -194,7 +194,7 @@ const jsonld = [
             '@type': 'PriceSpecification',
             priceCurrency: 'EUR',
             minPrice: '999',
-            valueAddedTaxIncluded: false,
+            valueAddedTaxIncluded: true,
           },
           itemOffered: { '@type': 'Service', name: 'Tienda online', serviceType: 'Ecommerce' },
         },
@@ -241,7 +241,7 @@ const planes = [
 ---
 <Layout
   title="Diseño web en Cantabria desde 299€ | Javier Pato"
-  description="¿Buscas diseño web en Cantabria? Webs a medida que venden, con SEO local y entrega rápida. Desde 299€. Para negocios de Santander, Torrelavega y toda la región."
+  description="Webs a medida en Cantabria que venden, con SEO local y entrega rápida. Desde 299€ con IVA incluido, para negocios de Santander, Torrelavega y toda la región."
   jsonld={jsonld}
 >
   <section class="section lp-hero">
@@ -250,7 +250,7 @@ const planes = [
       <div class="lp-hero__text">
         <span class="lp-kicker" data-reveal>Diseño web · Cantabria</span>
         <h1 class="lp-h1" data-reveal>Diseño web en Cantabria<br />para negocios <span class="lp-accent">hartos de su web.</span></h1>
-        <p class="lp-lead" data-reveal>Si tu web parece de 2012, te está costando clientes cada día —y ni te enteras. Diseño <strong>webs a medida en Cantabria</strong> que cargan en un parpadeo, salen en Google con SEO local y convierten al visitante en cliente, no en alguien que cierra la pestaña. Para negocios de Santander, Torrelavega y toda la región. Desde <strong>299€</strong> y online en días, no en meses.</p>
+        <p class="lp-lead" data-reveal>Si tu web parece de 2012, te está costando clientes cada día —y ni te enteras. Diseño <strong>webs a medida en Cantabria</strong> que cargan en un parpadeo, salen en Google con SEO local y convierten al visitante en cliente, no en alguien que cierra la pestaña. Para negocios de Santander, Torrelavega y toda la región. Desde <strong>299€ con IVA incluido</strong> y online en días, no en meses.</p>
         <div class="lp-cta" data-reveal>
           <a href="/contacto" class="btn btn--green">Pide presupuesto →</a>
           <a href="/proyectos" class="btn btn--ghost">Ver trabajos</a>
@@ -342,6 +342,7 @@ const planes = [
   <section class="section lp-precios">
     <div class="wrap">
       <h2 class="lp-h2" data-reveal>Precios claros,<br />sin sorpresas</h2>
+      <p class="lp-iva" data-reveal>Todos con el IVA incluido: lo que ves es lo que pagas.</p>
       <div class="lp-planes" data-stagger>
         {planes.map((p) => (
           <a href="/precios" class={`lp-plan ${p.pop ? 'is-pop' : ''}`} data-reveal>
@@ -549,7 +550,8 @@ const planes = [
     .lp-dec__no b { color: var(--ink-mute); }
 
     /* Tarjetas de precio → /precios */
-    .lp-planes { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .lp-iva { margin-top: 10px; color: var(--ink-mute); font-size: 0.9rem; }
+  .lp-planes { display: grid; grid-template-columns: 1fr; gap: 14px; }
     .lp-plan { position: relative; display: flex; flex-direction: column; gap: 4px; background: var(--bg-2); border: 2px solid var(--line); border-radius: var(--radius); padding: clamp(20px,2.4vw,28px); transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease-soft); }
     .lp-plan:hover { transform: translateY(-5px); border-color: var(--accent); }
     .lp-plan.is-pop { border-color: var(--accent); }
