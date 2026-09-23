@@ -1,10 +1,10 @@
 ---
-title: "Diseño de logotipo y marca en Cantabria | Javier Pato"
-description: "Diseño de logotipo e identidad de marca para negocios de Cantabria: logo, colores, tipografía y manual de uso. Desde 150€, entrega en 2 semanas."
+title: "Branding en Cantabria | Logo e identidad"
+description: "Branding Cantabria: logo, identidad o pack marca+web. Logo desde 150€; identidad desde 350€; marca+web desde 790€. IVA incluido."
 kicker: "Branding · Cantabria"
-h1: "Diseño de logotipo y marca<br />para negocios de <span>Cantabria</span>."
-lead: "Un logotipo no es un dibujo bonito: es el resumen de tu negocio en un símbolo que la gente tiene que reconocer y asociar contigo. Diseño identidades completas —logo, color, tipografía y cómo usarlo todo— para que tu negocio deje de parecer aficionado. Desde 150€."
-keyword: "diseño de logotipo Cantabria"
+h1: "Branding en Cantabria:<br />logo, identidad y marca<br />que se <span>defiende</span>."
+lead: "Un logotipo no es un dibujo bonito: es el resumen de tu negocio. Diseño sistemas —logo, color, tipografía y reglas de uso— para que dejes de parecer cinco marcas distintas."
+keyword: "branding Cantabria"
 intent: "sector"
 stats:
   - ["150€", "Desde"]
@@ -13,7 +13,6 @@ stats:
   - ["Manual", "Incluido"]
 related:
   - "centro-infantil-periquete"
-  - "artimindart"
   - "fisio-mama"
 order: 21
 faqs:
@@ -29,83 +28,61 @@ faqs:
     a: "Depende de si el problema es el logo o su uso. Muchas veces el logo aguanta y lo que falla es que no hay sistema detrás: cada pieza usa un color distinto. En la primera llamada te digo honestamente si te compensa un rediseño completo o basta con ordenar lo que ya tienes."
 ---
 
-## El logo es la punta del iceberg
+## Branding Cantabria: de qué hablamos de verdad
 
-Todo el mundo pide «un logo». Pocos saben lo que están pidiendo. Un logotipo suelto, sin nada detrás, sirve de poco: en cuanto tienes que hacer una carta, un rótulo, una publicación de Instagram y una web, alguien tiene que decidir qué color, qué tipografía y qué tono. Si esas decisiones no están tomadas, **las toma cada proveedor por su cuenta** y tu marca acaba siendo cinco marcas distintas.
+«Branding» no es un manual de 80 páginas que nadie abre. Es decidir, a propósito, qué idea construyes en la cabeza de quien te ve —web, tarjeta, rótulo, Instagram— y dejarlo escrito para que cualquiera lo aplique igual.
 
-Lo que construye una marca reconocible no es el símbolo. Es la **coherencia**.
+El [artículo del blog](/blog/branding-cantabria) explica el concepto; **esta URL es el servicio**.
 
-## Qué incluye una identidad de verdad
+## Diseño de logotipo Cantabria vs identidad completa
 
-- **Logotipo** en sus versiones: principal, horizontal, reducida e icono para redes.
-- **Paleta de color** con códigos para pantalla e imprenta, y reglas de cuándo usar cada uno.
-- **Tipografía**: una o dos familias, con licencia resuelta, y la jerarquía de titulares y textos.
-- **Aplicaciones**: cómo se ve en tarjeta, rótulo, redes, packaging o uniforme, según tu negocio.
-- **Manual de uso** corto y práctico: seis u ocho páginas que cualquiera pueda seguir, no un tocho de cincuenta que nadie abre.
+| Encargo | Qué te llevas | Desde (IVA incl.) |
+|---------|---------------|-------------------|
+| **Logotipo** | 3 propuestas, 2 rondas, archivos vectoriales y PNG, versiones claro/oscuro/reducida | 150€ |
+| **Identidad completa** | Logo + paleta + tipografía con licencia + aplicaciones + manual corto | 350€ |
+| **Marca + Web** | Identidad + web de 4 páginas (misma estrategia, un solo encaje) | 790€ |
+| **Rediseño** | Según qué haya que conservar | Presupuesto |
 
-## Qué hace que un logotipo aguante
+El logo suelto sirve para arrancar. La identidad evita que el rotulista, el community y el de la web improvisen cada uno su versión de tu marca.
 
-Un logo no se juzga en la presentación, en grande y sobre fondo blanco. Ahí todos quedan bien. Se juzga en los sitios feos, que es donde va a pasar casi toda su vida. Estas son las pruebas que le hago a cualquier propuesta antes de enseñártela:
+## Por qué el pack marca + web suele salir a cuenta
 
-- **A tamaño de uña.** Si a 32 píxeles, que es el icono de tu perfil, se convierte en una mancha, no vale. Por eso diseño siempre una versión reducida, no encojo la grande.
-- **En un solo color.** Un sello, una bolsa serigrafiada, un bordado en un polo o un rótulo de vinilo no admiten degradados. Si el logo depende del degradado para entenderse, se cae en cuanto sales de la pantalla.
-- **En negativo.** Sobre fondo oscuro, sobre una foto y sobre el color de tu marca. Hay logos preciosos que desaparecen en cuanto los sacas del blanco.
-- **De lejos y de refilón.** Un rótulo se lee desde el coche. Si tiene cuatro elementos y una tipografía fina, no se lee.
-- **Sin el nombre al lado.** Si quitas el texto y no queda nada reconocible, no tienes símbolo: tienes una palabra decorada. Puede valer, pero conviene saberlo.
+Si haces la web antes que la marca, acabas pagando dos veces: colores que no aguantan, tipografías sin licencia web, logo que no se lee a 32 px. Cuando la identidad va primero (o a la vez), la [web](/diseno-web-cantabria) sale del mismo sistema. Una sola conversación de estrategia alimenta las dos piezas.
 
-Ninguna de estas pruebas va de gusto. Van de que la marca funcione el día que la necesitas en una furgoneta, en una etiqueta de 4 centímetros y en la foto de perfil de WhatsApp Business.
+## Qué pruebas pasa cualquier logo antes de enseñártelo
 
-## Lo que falla en los logos hechos de cualquier manera
+- A tamaño de uña (icono de perfil).
+- En un solo color (serigrafía, vinilo, bordado).
+- En negativo y sobre foto.
+- De lejos (rótulo).
+- Sin el nombre al lado (¿queda símbolo o solo tipografía decorada?).
 
-Cada vez me llegan más negocios con un logo sacado de un generador, de una plantilla o de un prompt. No los desprecio: sirven para arrancar. El problema aparece siempre en los mismos tres puntos.
+## Cuándo merece la pena rehacer (y cuándo no)
 
-El primero es que **no hay archivo vectorial**. Tienes un PNG de 800 píxeles y el día que quieres un rótulo, una lona o un sello, la imprenta te pide un vectorial y no lo tienes. Se acaba redibujando, y redibujar cuesta más que haberlo hecho bien.
+**Sí, miremos rediseño si:** cobras más de lo que tu imagen sugiere; cada pieza parece de una empresa distinta; el logo no se lee en móvil ni en rótulo; te da pereza enseñar la web.
 
-El segundo es que **el símbolo no es tuyo**. Las plantillas se venden muchas veces, así que puedes acabar con el mismo icono que otro negocio de la misma provincia, y si algún día quieres registrar la marca te encuentras con que no puedes.
+**No hace falta si:** el logo aguanta y lo que falla es el sistema (colores y tipografías sin reglas). En la primera llamada te lo digo claro.
 
-El tercero, y el más caro, es que **no hay sistema detrás**. Tienes un logo, pero nadie ha decidido el color secundario, la tipografía de los textos largos, cómo se ve sobre una foto o qué haces cuando el logo no cabe. Y esas decisiones se acaban tomando igual: las toma el rotulista, luego el de las redes y luego el que te hace la web, cada uno a su manera. Ahí es donde una marca se convierte en cinco.
+## Cómo se entrega
 
-## El color y la tipografía no se eligen por gusto
+Archivos tuyos para siempre: vectorial para imprenta, PNG transparentes, versiones de uso, paleta con códigos, tipografías con licencia resuelta y un PDF corto de uso. Sin cuotas. Registro en OEPM: te dejo listo lo que pide la oficina; el trámite lo haces tú o tu gestoría.
 
-El color es lo primero que registra alguien que te ve, antes de leer tu nombre. Y en un negocio local tiene una función muy concreta: distinguirte de los que están a tu lado. Si las cinco clínicas de tu calle son azules, el azul es la peor decisión posible, por mucho que el azul transmita confianza. Lo que se busca es un territorio que puedas ocupar tú y defender durante años. Lo desarrollo entero en [cómo elegir los colores de tu marca](/blog/como-elegir-colores-de-marca).
+## Para quién
 
-Con la tipografía pasa parecido y se decide con criterios menos románticos: si tu marca va a tener textos largos, necesita una familia con pesos suficientes y buena lectura en pantalla pequeña. Si va a vivir en rótulos y packaging, manda el carácter. Y hay una parte aburrida que hay que resolver antes y casi nadie mira: **la licencia**. Una tipografía de escritorio no siempre se puede incrustar en una web ni usar en un producto que vendes. Yo te la dejo resuelta y por escrito, para que no te llegue un aviso dentro de dos años.
+- Negocios de Cantabria que ya no se parecen a su marca.
+- Quien llega a pedir web y aún no tiene logo, colores ni tipografías (mejor resolver marca antes o en pack).
+- Centros y servicios locales que necesitan coherencia puerta–web–circular (ver Periquete abajo).
+- Quien solo necesita logo suelto para salir del paso —existe, y está cotizado; no te vendo identidad si no la necesitas.
 
-## Un ejemplo de sistema, no de logo
+## Prueba social (solo proyectos reales)
 
-En [Centro Infantil Periquete](/proyectos/centro-infantil-periquete) el encargo no era un logo: era que una familia sintiera lo mismo entrando por la puerta del centro que abriendo la web desde el móvil. La identidad tenía que sostener dos cosas a la vez —la calidez de quien cuida niños y la seriedad de quien tiene un método— y funcionar igual en un cartel de la puerta, en una circular para los padres y en una pantalla.
+- **[Centro Infantil Periquete](/proyectos/centro-infantil-periquete)** — Caso de sistema, no de «logo bonito»: la identidad tenía que sostener calidez y método a la vez, y funcionar igual en cartel, circular y pantalla. Reserva de plaza sin líos.
+- **[Fisio Mamá](/proyectos/fisio-mama)** — Marca + web a la vez: tono sereno para un momento vulnerable, sin cursilería ni promesa fácil.
 
-Ese es el trabajo de verdad: no acertar con un dibujo, sino dejar tomadas las decisiones que van a aplicar durante años personas que no son yo.
+Más trabajo: [/proyectos/](/proyectos).
 
-## Antes de dibujar, preguntar
+## Pedir presupuesto
 
-La parte que más cambia el resultado no es la de diseñar: es la de entender. A quién le vendes, qué alternativa tiene, qué quieres que piense de ti cuando te vea por primera vez, y a qué **no** quieres parecerte.
+Cuéntame qué vendes, a quién, y si el problema es el logo, el sistema entero o solo ordenar lo que ya tienes. Te digo qué necesitas —logo, identidad o pack marca + web— con precio cerrado.
 
-He trabajado en agencias de publicidad, en un departamento de marketing y ahora dirijo una marca de moda con sus números y sus problemas reales. Esa trastienda es lo que pongo en tu identidad: no te hago un logo bonito, te hago una marca que puedas defender con tus precios.
-
-## Cuándo merece la pena rehacer tu marca
-
-- Cobras más de lo que tu imagen sugiere y tienes que justificarte en cada presupuesto.
-- Has cambiado de servicios o de público y la marca se quedó en lo que eras hace cinco años.
-- Cada pieza tuya parece de una empresa distinta.
-- Tu logo no se lee en el móvil ni funciona en un rótulo.
-- Te da pereza enseñar tu web o tu tarjeta.
-
-Si no te pasa nada de esto, probablemente no necesites rebranding y te lo diré.
-
-## Marca y web, en el mismo movimiento
-
-El orden importa: si haces la web antes que la marca, acabas pagando dos veces. Cuando defines la identidad primero, la [web](/diseno-web-cantabria) y toda tu [gráfica](/diseno-grafico-cantabria) salen del mismo sistema, y cada pieza nueva es más rápida y más barata que la anterior.
-
-Por eso el pack de **Marca + Web** es el que mejor sale a cuenta: una sola conversación de estrategia sirve para las dos cosas.
-
-## Precios
-
-- **Logotipo** (3 propuestas, 2 rondas, archivos completos): desde 150€
-- **Identidad completa** (logo + sistema + manual): desde 350€
-- **Marca + Web** (identidad + web de 4 páginas): desde 790€
-- **Rediseño de marca existente**: presupuesto según lo que haya que conservar
-
-Precio cerrado antes de empezar, entrega en dos semanas y los archivos son tuyos para siempre.
-
-¿Tienes un negocio en Cantabria que ya no se parece a su marca? Cuéntame qué vendes y a quién, y te digo si necesitas un logo, un sistema entero o simplemente ordenar lo que ya tienes.
+**[Pedir presupuesto →](/contacto)** · Rangos también en esta página y coherentes con [/precios/](/precios) (web) + branding publicado.

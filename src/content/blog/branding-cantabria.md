@@ -1,5 +1,5 @@
 ---
-title: "Branding en Cantabria: qué es y por qué vende"
+title: "Branding en Cantabria: qué es (guía)"
 description: "Qué es el branding, por qué un negocio de Cantabria con la marca cuidada puede cobrar más y las cuatro señales de que la tuya necesita una vuelta."
 pubDate: 2026-06-10
 keyword: "por qué importa el branding en un negocio local"

@@ -1,5 +1,5 @@
 ---
-title: "Diseño web en Cantabria: guía para elegir bien"
+title: "Guía: cómo elegir diseño web en Cantabria"
 description: "Cómo elegir quién te hace la web en Cantabria sin tirar el dinero: qué mirar, qué preguntar y las cuatro señales de alarma antes de firmar nada."
 pubDate: 2026-06-18
 keyword: "diseño web Cantabria"

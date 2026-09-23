@@ -1,5 +1,5 @@
 ---
-title: "Página web para restaurantes en Cantabria"
+title: "Guía: página web para restaurantes en Cantabria"
 description: "Web para restaurantes, bares y cafeterías en Cantabria: qué tiene que tener para llenar mesas, salir en Google y que reservar cueste un solo clic."
 pubDate: 2026-06-08
 keyword: "página web restaurante Cantabria"

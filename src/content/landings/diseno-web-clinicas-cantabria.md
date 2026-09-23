@@ -1,9 +1,9 @@
 ---
-title: "Diseño web para clínicas en Cantabria | Javier Pato"
-description: "Webs para fisioterapia, dental, psicología o veterinaria en Cantabria: cita en tu propia web, formularios que respetan el RGPD y fichas de colegiado."
+title: "Diseño web clínicas Cantabria | Javier Pato"
+description: "Diseño web clínicas Cantabria: dental, fisio, psico y más. Cita en tu web, publicidad sanitaria cuidada y formularios RGPD. IVA incluido."
 kicker: "Diseño web · Clínicas de Cantabria"
 h1: "Diseño web para clínicas<br />y consultas en <span>Cantabria</span>."
-lead: "Fisioterapia, dental, psicología, nutrición, podología o veterinaria: aquí te eligen antes de conocerte, desde el móvil y muchas veces con dolor o con prisa. Una clínica además juega con reglas que ningún otro negocio tiene: qué puedes publicar, qué puedes preguntar en un formulario y quién se queda la cita. Diseño webs que respetan esas reglas y aun así te traen pacientes."
+lead: "Fisioterapia, dental, psicología, nutrición, podología o veterinaria: te eligen desde el móvil, a menudo con prisa o con miedo. Diseño webs que respetan las reglas del sector y aun así traen pacientes."
 keyword: "diseño web clínicas Cantabria"
 intent: "sector"
 stats:
@@ -26,58 +26,65 @@ faqs:
     a: "Con cuidado. Una reseña que cuenta lo bien que la atendieron es una cosa; un testimonio que promete que se curó de algo es publicidad de resultados, y ahí la normativa aprieta. Lo sensato: cuidar tu ficha de Google, pedir reseña al terminar el tratamiento y llevar a la web una selección que hable del trato, la puntualidad o la explicación, no del milagro. Inventarse reseñas no lo hago ni te lo recomiendo."
 ---
 
-## Un paciente con dolor no navega por tu web: la escanea
+## Diseño web clínicas Cantabria: el paciente escanea, no lee
 
-Piensa en cómo llega la gente a una clínica. Una madre con el niño llorando busca dentista de urgencia un sábado. Alguien que lleva tres semanas sin girar el cuello busca fisio en Santander a las once de la noche. Una persona que por fin se ha decidido a pedir cita con un psicólogo entra en tu web y necesita, en diez segundos, saber si le vas a juzgar.
+En diez segundos necesita saber: si tratas lo suyo, si hay hueco, cómo es la primera visita y cómo pide cita sin explicar su vida en voz alta. La web típica —foto de camilla, lista de quince tratamientos y teléfono que solo coge en horario— es un paciente que se va al siguiente resultado.
 
-Ninguno de los tres lee tu web. La **escanea** buscando cuatro respuestas: si tratas lo suyo, si te cogen esta semana, cuánto tarda y cómo se pide cita sin tener que llamar y explicar por teléfono, delante de sus compañeros de trabajo, lo que le pasa.
+Esta es la URL de servicio. Los posts de tipología (dental, fisio, psico…) apoyan; no compiten.
 
-Ahí es donde se cae la web típica de clínica: una home preciosa con una foto de camilla, un apartado "Servicios" con quince tratamientos en una lista sin explicar, un teléfono que sólo se coge en horario de consulta y un formulario genérico que nadie contesta hasta el lunes. Todo eso es un paciente que se va al siguiente resultado.
+## La cita es tuya, no del portal
 
-## Lo que hago distinto en una web sanitaria
+Estar en un portal puede valer como canal. Que sea el único sitio donde reservan no: pagas por aparecer, sales rodeado de competencia y el recurrente vuelve a pasar por el escaparate de otro. Monto la reserva en tu propia web, conectada a tu agenda cuando tiene sentido —horarios reales, duración por servicio, confirmación—. Mutuas: se dicen claro cuáles, porque es de lo primero que miran.
 
-### La cita es tuya, no del portal
+## Publicidad sanitaria: textos con el freno puesto
 
-Estar en un portal tipo Doctoralia no está mal como canal de captación. Lo que no tiene sentido es que sea el **único** sitio donde te pueden reservar. Ahí pagas por aparecer, sales rodeado de compañeros de profesión y el paciente que ya venía buscándote termina comparando precios contigo al lado.
+Nada de garantizar resultados ni milagros en cuatro sesiones. Explico método, primera visita, duración, material y seguimiento. Vende sin exponerte. Lo dudoso lo contrastas con tu colegio antes de publicar —soy diseñador, no tu asesor legal.
 
-Monto la reserva dentro de tu propia web, conectada a tu agenda: horarios reales, servicios con su duración, confirmación y recordatorio. El paciente recurrente, que en una consulta es el que sostiene la agenda, no vuelve a pasar por el escaparate de nadie. Y si trabajas con mutuas, se dice claramente cuáles, porque es de las primeras cosas que mira la gente antes de reservar.
+## Formularios y RGPD: lo mínimo en el correo
 
-### Lo que puedes publicar y lo que no, escrito ya de fábrica
+Los datos de salud son categoría especial. Un campo «cuéntame qué te pasa» convierte tu bandeja en historial clínico sin protección. Formularios con nombre, contacto, servicio y franja; consentimiento explícito; detalle clínico en consulta o en tu software de gestión.
 
-Esta es la parte que casi nadie te resuelve. La publicidad sanitaria está regulada y tu colegio profesional tiene además su propio código: no se garantizan resultados, los antes y después están limitados y los testimonios de curación son terreno minado. Un copy de agencia normal te escribiría "recupera tu vida en 4 sesiones" y te metería en un lío.
+## Fichas de profesional (la página que casi nadie hace)
 
-Escribo los textos ya con ese límite puesto: en vez de prometer resultados, explico el método, la primera visita, cuánto dura, qué material usas y cómo es el seguimiento. Vende igual de bien y no te expone. Lo que quede dudoso, lo revisas con tu colegio antes de publicar.
+Una ficha por persona: nombre, colegio y nº de colegiado, formación real, en qué trata, foto de verdad y botón de reserva. Confianza para el paciente y puertas de entrada en Google por especialidad.
 
-### Un formulario que no pregunta lo que no debe
+## Por tipología (en esta URL — cero URLs nuevas)
 
-Los datos de salud son categoría especial en el RGPD. Traducido: un campo libre donde el paciente cuenta sus síntomas convierte tu bandeja de correo en un historial clínico sin protección. Por eso mis formularios de clínica piden lo mínimo —nombre, contacto, servicio y franja horaria—, con consentimiento explícito, política de privacidad enlazada y el detalle clínico recogido donde toca: en consulta o en tu software de gestión.
+### Clínicas dentales
 
-## La ficha de cada profesional: la página que casi nadie hace
+Urgencias, primera visita, mutuas y especialidades (ortodoncia, implantes…) en páginas o bloques claros. Apoyo blog: [web clínica dental](/blog/web-clinica-dental-cantabria).
 
-En una clínica, el paciente no confía en el logo: confía en la persona que le va a poner las manos encima. Por eso hago **una ficha por profesional**, no una foto de grupo con un pie de foto.
+### Fisioterapia
 
-En cada ficha: nombre, colegio y número de colegiado, formación y especialización real, en qué trata, una foto de verdad y su botón de reserva. Le quita al paciente la duda de si está ante alguien acreditado, funciona como página de aterrizaje para búsquedas de especialidad —"fisioterapia suelo pélvico", "psicología infantil", "ortodoncia invisible"— y a Google le deja claro quién firma lo que se publica.
+Suelo pélvico, deporte, readaptación… cada línea con su explicación y su CTA de cita. Caso real: [Fisio Mamá](/proyectos/fisio-mama). Apoyo: [web fisioterapia Santander](/blog/web-fisioterapia-santander).
 
-Si tienes tres profesionales y cuatro especialidades, dejas de tener "una clínica" en Google y pasas a tener siete puertas de entrada distintas, cada una respondiendo a una búsqueda diferente.
+### Psicología
 
-## Tres frenos que me pone toda consulta antes de encargar la web
+Tono cuidadoso, cita discreta (formulario / enlace, no solo teléfono a gritos), sin promesas de resultado. Apoyo: [web psicólogo](/blog/web-psicologo-cantabria).
 
-**"Mi web ya me la hizo el proveedor del software de gestión."** Normal, viene en el pack. El problema es que esa web es la misma plantilla que la del resto de clínicas que usan ese software, con tu logo arriba: mismo texto, misma estructura, mismos titulares. Google ya tiene esa página indexada muchas veces y a ti te toca competir siendo idéntico. Además vive dentro de su plataforma: si un día cambias de software, te quedas sin web. Yo te hago la web tuya y la reserva se conecta a lo que ya usas.
+### Nutrición, estética, veterinaria y otras consultas
 
-**"Yo no puedo publicar según qué, así que la web me sirve de poco."** Justo al revés. Como no puedes prometer resultados, ganas por lo único que queda: explicar mejor que nadie. La clínica que cuenta con detalle cómo es la primera visita, qué duele y qué no, si hace falta acompañante o cuánto tarda en notarse algo, se lleva al paciente indeciso. Las restricciones no te quitan argumentos, te obligan a tener los buenos.
+Misma lógica: tipología aquí; detalle largo en blog tipológico enlazado al pilar. Apoyos: [nutricionista](/blog/web-nutricionista-cantabria), [estética](/blog/web-centro-estetica-cantabria), [veterinaria](/blog/web-clinica-veterinaria-cantabria).
 
-**"A mí los pacientes me vienen por recomendación."** Y seguirán viniendo. Pero antes de llamarte, esa recomendación te busca en Google para comprobar que existes, ver dónde estás y mirar reseñas. Si lo que encuentra es una web caduca o directamente nada, la recomendación se enfría. Tu web no sustituye al boca a boca: lo confirma. Te lo cuento más largo en el blog, en [la web de una clínica de fisioterapia en Santander](/blog/web-fisioterapia-santander) y en [qué necesita la web de un psicólogo](/blog/web-psicologo-cantabria).
+## Rangos (mismos precios publicados — IVA incluido)
 
-## Qué necesito de ti y qué cuesta
+Clínica con varias especialidades y fichas de equipo suele encajar en **Pro 699€** (6 páginas). One-page **299€**, Básica **549€**, ecommerce **desde 999€** si aplica. Dominio, hosting y mantenimiento: ver [/precios/](/precios). Marca previa o pack: [/branding-cantabria/](/branding-cantabria). Visión general del servicio: [/diseno-web-cantabria/](/diseno-web-cantabria).
 
-Empezamos con una conversación de media hora para saber qué especialidades quieres empujar, qué mutuas trabajas y con qué software de citas te manejas. Yo escribo los textos —tú sólo corriges lo clínico—, monto el diseño, conecto la reserva y dejo el aviso legal, la política de privacidad y la de cookies en su sitio.
+## Para quién
 
-Los precios son los mismos que para todos, sin recargo por sector: **299€** una web de una página, **549€** la de cuatro páginas y **699€** la Pro de seis, que es la que suele encajar en una clínica con varias especialidades y fichas de equipo. Aparte, dominio 19,99€/año, alojamiento 49€/año y mantenimiento 190€/año si quieres que los cambios de horarios, tarifas o altas de profesional los haga yo. Lo tienes todo desglosado en [precios](/precios).
+- Clínicas y consultas en Cantabria (una o varias especialidades).
+- Quien está solo en portal y quiere recuperar la cita recurrente.
+- Quien arrastra la plantilla del software de gestión (misma web que media provincia).
+- Quien necesita textos y formularios alineados con publicidad sanitaria y RGPD —sin drama alarmista.
 
-Si además la clínica es nueva o arrastra un logo hecho a la carrera, la identidad se trabaja antes que la web: [branding en Cantabria](/branding-cantabria). En salud la marca no decora, marca el tono con el que te lee alguien asustado.
+## Prueba social (solo proyectos reales)
 
-## Un ejemplo real, sin adornos
+- **[Fisio Mamá](/proyectos/fisio-mama)** — Fisioterapia de embarazo y posparto en Santander: marca y web a la vez, textos que acompañan y reserva sin obligar a descolgar.
 
-Con [Fisio Mamá](/proyectos/fisio-mama), fisioterapia de embarazo y posparto en Santander, hice marca y web a la vez. El encargo era delicado: hablarle a una mujer en un momento vulnerable sin caer en lo cursi ni en la promesa fácil. Identidad serena, textos que acompañan en vez de vender y una web pensada para que la paciente entienda cada servicio y reserve sin tener que descolgar el teléfono.
+Otros proyectos del estudio (contexto, no «casos clínica» inventados): [Periquete](/proyectos/centro-infantil-periquete), [Explora Siam](/proyectos/explora-siam), [CantabriaMásCerca](/proyectos/cantabriamascerca), [Click & Cargo](/proyectos/click-and-cargo). Hub: [/proyectos/](/proyectos).
 
-¿Tienes una clínica o una consulta en Cantabria? Escríbeme desde [contacto](/contacto), cuéntame tu especialidad y te digo qué necesita tu web —y qué te están vendiendo que no necesitas.
+## Pedir presupuesto
+
+Escríbeme tu especialidad, si trabajas mutuas y con qué agenda o software de citas te manejas. Te digo qué necesita tu web —y qué te están vendiendo que no necesitas.
+
+**[Pedir presupuesto →](/contacto)**

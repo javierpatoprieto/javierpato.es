@@ -43,3 +43,5 @@ Muchos centros viven en Instagram, y está bien. Pero la web es **tu casa**: lo 
 Una [web bonita y funcional desde 299€](/precios), con buenas fotos y reserva online, ya transforma cómo te ve quien aún no te conoce.
 
 ¿Tienes un centro de estética, un salón de belleza o una peluquería en Cantabria? Mira cómo trabajo las [webs para peluquerías y centros de estética](/diseno-web-cantabria/zonas#peluquerias-estetica): fotos, reserva y marca en el mismo paquete. Si prefieres preguntarme antes, [escríbeme](/contacto).
+
+Si tu centro es consulta o clínica (no solo peluquería), el servicio canónico está en [diseño web para clínicas en Cantabria](/diseno-web-clinicas-cantabria).
