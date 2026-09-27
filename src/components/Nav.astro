@@ -1,20 +1,27 @@
 ---
 const { path = Astro.url.pathname } = Astro.props;
-const links = [
-  { href: '/diseno-web-cantabria', label: 'Diseño web' },
-  { href: '/branding-cantabria', label: 'Marca' },
-  { href: '/diseno-grafico-cantabria', label: 'Gráfica' },
-  { href: '/precios', label: 'Precios' },
+
+const primary = [
   { href: '/proyectos', label: 'Proyectos' },
+  { href: '/precios', label: 'Precios' },
   { href: '/blog', label: 'Blog' },
   { href: '/estudio', label: 'Estudio' },
 ];
+
+const services = [
+  { href: '/diseno-web-cantabria', title: 'Diseño web', hint: 'Sitios y producto' },
+  { href: '/branding-cantabria', title: 'Marca', hint: 'Identidad y voice' },
+  { href: '/diseno-grafico-cantabria', title: 'Gráfica', hint: 'Print y digital' },
+];
+
 const PHONE = '+34669385624';
-const active = (h: string) => h === '/' ? path === '/' : path.startsWith(h);
+const PHONE_DISPLAY = '669 385 624';
+const active = (h: string) => (h === '/' ? path === '/' : path.startsWith(h));
+const servicesOpen = services.some((s) => active(s.href));
 ---
 <header class="nav" data-nav>
   <div class="wrap nav__inner">
-    <a href="/" class="nav__brand">
+    <a href="/" class="nav__brand" data-loc="nav">
       <span class="nav__avatar" aria-hidden="true">
         <svg viewBox="0 0 100 100" width="26" height="26">
           <circle cx="37" cy="30" r="5.5" fill="#fff"/>
@@ -27,80 +34,666 @@ const active = (h: string) => h === '/' ? path === '/' : path.startsWith(h);
     </a>
 
     <nav class="nav__pill" aria-label="Principal">
-      {links.map((l) => <a href={l.href} class={`nav__link ${active(l.href) ? 'is-active' : ''}`} aria-current={active(l.href) ? 'page' : undefined}>{l.label}</a>)}
+      <div class={`nav__dd ${servicesOpen ? 'is-active' : ''}`} data-dd>
+        <button
+          type="button"
+          class={`nav__link nav__dd-trigger ${servicesOpen ? 'is-active' : ''}`}
+          data-dd-trigger
+          aria-expanded="false"
+          aria-controls="nav-servicios-menu"
+          id="nav-servicios-btn"
+        >
+          Servicios
+          <svg class="nav__caret" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true" focusable="false">
+            <path d="M1 1.5 L6 6.5 L11 1.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div
+          class="nav__dd-panel"
+          id="nav-servicios-menu"
+          role="menu"
+          aria-labelledby="nav-servicios-btn"
+          hidden
+          data-dd-panel
+        >
+          {services.map((s) => (
+            <a
+              href={s.href}
+              class={`nav__dd-item ${active(s.href) ? 'is-active' : ''}`}
+              role="menuitem"
+              data-loc="nav"
+              aria-current={active(s.href) ? 'page' : undefined}
+            >
+              <span class="nav__dd-title">{s.title}</span>
+              <span class="nav__dd-hint">{s.hint}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {primary.map((l) => (
+        <a
+          href={l.href}
+          class={`nav__link ${active(l.href) ? 'is-active' : ''}`}
+          aria-current={active(l.href) ? 'page' : undefined}
+          data-loc="nav"
+        >{l.label}</a>
+      ))}
     </nav>
 
     <div class="nav__actions">
-      <button class="nav__icon" data-theme-toggle aria-label="Cambiar tema claro/oscuro"><span class="nav__toggle" aria-hidden="true"></span></button>
+      <button class="nav__icon" data-theme-toggle aria-label="Cambiar tema claro/oscuro" type="button">
+        <span class="nav__toggle" aria-hidden="true"></span>
+      </button>
       <a href={`tel:${PHONE}`} class="nav__icon nav__tel" aria-label="Llamar a Javier Pato" data-loc="nav">
         <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       </a>
-      <a href="/contacto" class="nav__btn">Pide presupuesto</a>
-      <button class="nav__burger" data-burger aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+      <a href="/contacto" class="nav__btn" data-loc="nav">Pide presupuesto</a>
+      <button
+        class="nav__burger"
+        data-burger
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-mobile-panel"
+      >
+        <span class="nav__burger-bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="nav__burger-x" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6 L18 18"/><path d="M18 6 L6 18"/></svg>
+        </span>
+      </button>
     </div>
   </div>
 
-  <nav class="nav__mobile" data-mobile aria-label="Menú móvil">
-    {links.map((l) => <a href={l.href} class={`nav__mlink ${active(l.href) ? 'is-active' : ''}`}>{l.label}</a>)}
-    <a href={`tel:${PHONE}`} class="nav__mlink" data-loc="nav-movil">Llámame · 669 385 624</a>
-    <a href="/contacto" class="btn btn--green nav__mcta">Pide presupuesto →</a>
+  <nav class="nav__mobile" id="nav-mobile-panel" data-mobile aria-label="Menú móvil" hidden>
+    <div class="nav__mobile-inner">
+      <div class={`nav__m-serv ${servicesOpen ? 'is-open' : ''}`} data-m-serv>
+        <button
+          type="button"
+          class="nav__mrow nav__mrow--serv"
+          data-m-serv-trigger
+          aria-expanded={servicesOpen ? 'true' : 'false'}
+          aria-controls="nav-m-servicios"
+          id="nav-m-servicios-btn"
+        >
+          <span class="nav__mrow-label">Servicios</span>
+          <span class="nav__mrow-num" aria-hidden="true">01</span>
+        </button>
+        <div class="nav__m-serv-list" id="nav-m-servicios" role="group" aria-labelledby="nav-m-servicios-btn" data-m-serv-list>
+          {services.map((s) => (
+            <a
+              href={s.href}
+              class={`nav__mcard ${active(s.href) ? 'is-active' : ''}`}
+              data-loc="nav-movil"
+              aria-current={active(s.href) ? 'page' : undefined}
+            >
+              <span class="nav__mcard-title">{s.title}</span>
+              <span class="nav__mcard-hint">{s.hint}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {primary.map((l, i) => (
+        <a
+          href={l.href}
+          class={`nav__mrow ${active(l.href) ? 'is-active' : ''}`}
+          data-loc="nav-movil"
+          aria-current={active(l.href) ? 'page' : undefined}
+        >
+          <span class="nav__mrow-label">{l.label}</span>
+          <span class="nav__mrow-num" aria-hidden="true">{`0${i + 2} ${l.label}`}</span>
+        </a>
+      ))}
+
+      <div class="nav__mfoot">
+        <a href={`tel:${PHONE}`} class="nav__mphone" data-loc="nav-movil">Llámame · {PHONE_DISPLAY}</a>
+        <a href="/contacto" class="nav__mcta" data-loc="nav-movil">Pide presupuesto</a>
+      </div>
+    </div>
   </nav>
 </header>
 
 <script is:inline>
   (function () {
     var nav = document.querySelector('[data-nav]');
-    var burger = document.querySelector('[data-burger]');
-    if (!nav || !burger) return;
-    function close() { nav.classList.remove('is-open'); burger.setAttribute('aria-expanded', 'false'); }
-    burger.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
+    if (!nav) return;
+
+    var burger = nav.querySelector('[data-burger]');
+    var mobile = nav.querySelector('[data-mobile]');
+    var dd = nav.querySelector('[data-dd]');
+    var ddTrigger = nav.querySelector('[data-dd-trigger]');
+    var ddPanel = nav.querySelector('[data-dd-panel]');
+    var mServ = nav.querySelector('[data-m-serv]');
+    var mServTrigger = nav.querySelector('[data-m-serv-trigger]');
+
+    function setDd(open) {
+      if (!dd || !ddTrigger || !ddPanel) return;
+      dd.classList.toggle('is-open', open);
+      ddTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) ddPanel.removeAttribute('hidden');
+      else ddPanel.setAttribute('hidden', '');
+    }
+
+    function setMobile(open) {
+      if (!burger || !mobile) return;
+      nav.classList.toggle('is-open', open);
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      if (open) {
+        mobile.removeAttribute('hidden');
+        document.documentElement.style.overflow = 'hidden';
+      } else {
+        mobile.setAttribute('hidden', '');
+        document.documentElement.style.overflow = '';
+      }
+    }
+
+    function setMServ(open) {
+      if (!mServ || !mServTrigger) return;
+      mServ.classList.toggle('is-open', open);
+      mServTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    if (ddTrigger) {
+      ddTrigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setDd(ddTrigger.getAttribute('aria-expanded') !== 'true');
+      });
+    }
+
+    if (burger) {
+      burger.addEventListener('click', function () {
+        var open = burger.getAttribute('aria-expanded') !== 'true';
+        setDd(false);
+        setMobile(open);
+      });
+    }
+
+    if (mServTrigger) {
+      mServTrigger.addEventListener('click', function () {
+        setMServ(mServTrigger.getAttribute('aria-expanded') !== 'true');
+      });
+    }
+
+    document.addEventListener('click', function (e) {
+      if (dd && dd.classList.contains('is-open') && !dd.contains(e.target)) setDd(false);
     });
-    nav.querySelectorAll('[data-mobile] a').forEach(function (a) { a.addEventListener('click', close); });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      if (dd && dd.classList.contains('is-open')) {
+        setDd(false);
+        if (ddTrigger) ddTrigger.focus();
+        return;
+      }
+      if (nav.classList.contains('is-open')) {
+        setMobile(false);
+        if (burger) burger.focus();
+      }
+    });
+
+    if (mobile) {
+      mobile.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { setMobile(false); });
+      });
+    }
+
+    if (ddPanel) {
+      ddPanel.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { setDd(false); });
+      });
+    }
   })();
 </script>
 
 <style>
-  .nav { position: sticky; top: 0; z-index: 60; padding-block: clamp(12px, 2vw, 22px); transition: background var(--dur) var(--ease-soft), padding var(--dur) var(--ease-soft), box-shadow var(--dur) var(--ease-soft); }
-  .nav.is-stuck, .nav.is-open { background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: saturate(1.2) blur(14px); padding-block: 10px; box-shadow: 0 1px 0 var(--line), 0 10px 30px -22px rgba(0,0,0,0.5); }
-  .nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-  .nav__brand { display: inline-flex; align-items: center; gap: 12px; }
-  .nav__avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; }
-  .nav__name { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; }
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    padding-block: clamp(12px, 2vw, 22px);
+    transition:
+      background var(--dur) var(--ease-soft),
+      padding var(--dur) var(--ease-soft),
+      box-shadow var(--dur) var(--ease-soft);
+  }
+  .nav.is-stuck,
+  .nav.is-open {
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: saturate(1.2) blur(14px);
+    padding-block: 10px;
+    box-shadow: 0 1px 0 var(--line), 0 10px 30px -22px rgba(0, 0, 0, 0.5);
+  }
+  .nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .nav__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    flex: none;
+  }
+  .nav__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+  }
+  .nav__name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+  }
 
-  .nav__pill { display: flex; align-items: center; gap: 4px; background: color-mix(in srgb, var(--card) 78%, transparent); backdrop-filter: blur(10px); border: 1px solid var(--line); padding: 6px; border-radius: var(--radius-pill); box-shadow: 0 6px 24px -14px rgba(0,0,0,0.4); }
-  .nav__link { font-family: var(--font-display); font-weight: 600; font-size: 0.95rem; padding: 9px 16px; border-radius: var(--radius-pill); color: var(--ink); transition: background var(--dur) var(--ease-soft), color var(--dur) var(--ease-soft); }
-  .nav__link:hover { color: var(--accent-ink); }
-  .nav__link.is-active { background: var(--accent); color: #fff; }
+  /* —— Glass pill —— */
+  .nav__pill {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: color-mix(in srgb, var(--card) 80%, transparent);
+    backdrop-filter: saturate(1.2) blur(14px);
+    -webkit-backdrop-filter: saturate(1.2) blur(14px);
+    border: 1px solid color-mix(in srgb, var(--line) 70%, var(--accent) 12%);
+    padding: 6px;
+    border-radius: var(--radius-pill);
+    box-shadow:
+      0 8px 28px -12px rgba(24, 18, 25, 0.28),
+      0 2px 8px -4px rgba(24, 18, 25, 0.12);
+  }
+  .nav__link {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+    padding: 9px 16px;
+    border-radius: var(--radius-pill);
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    transition:
+      background 220ms var(--ease-soft),
+      color 220ms var(--ease-soft);
+  }
+  .nav__link:hover {
+    background: var(--t-warm);
+    color: var(--accent-ink);
+  }
+  .nav__link.is-active {
+    background: var(--accent);
+    color: #fff;
+  }
+  .nav__link.is-active:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+  .nav__caret {
+    flex: none;
+    transition: transform 220ms var(--ease-soft);
+  }
+  .nav__dd.is-open .nav__caret,
+  .nav__dd-trigger[aria-expanded='true'] .nav__caret {
+    transform: rotate(180deg);
+  }
 
-  .nav__actions { display: flex; gap: 8px; align-items: center; }
-  .nav__icon { width: 46px; height: 46px; border-radius: 14px; background: var(--bg-2); border: 1px solid var(--line); display: grid; place-items: center; transition: transform var(--dur) var(--ease); }
-  .nav__icon:hover { transform: translateY(-2px); }
-  .nav__tel { color: var(--ink); }
-  .nav__tel:hover { color: var(--accent-ink); border-color: var(--accent); }
-  @media (max-width: 900px) { .nav__tel { display: none; } }
-  .nav__toggle { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--ink); background: linear-gradient(90deg, var(--ink) 50%, transparent 50%); transition: transform var(--dur) var(--ease); }
-  [data-theme="dark"] .nav__toggle { transform: rotate(180deg); }
-  .nav__btn { display: inline-flex; align-items: center; background: var(--btn-bg); color: var(--btn-fg); font-family: var(--font-display); font-weight: 600; font-size: 0.95rem; padding: 12px 18px; border-radius: 14px; transition: transform var(--dur) var(--ease); }
-  .nav__btn:hover { transform: translateY(-2px); }
+  /* —— Servicios dropdown —— */
+  .nav__dd {
+    position: relative;
+  }
+  .nav__dd-panel {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 240px;
+    padding: 8px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow:
+      0 16px 40px -18px rgba(24, 18, 25, 0.35),
+      0 4px 12px -6px rgba(24, 18, 25, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    z-index: 70;
+  }
+  .nav__dd-panel[hidden] {
+    display: none;
+  }
+  .nav__dd-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    color: var(--ink);
+    transition: background 180ms var(--ease-soft), color 180ms var(--ease-soft);
+  }
+  .nav__dd-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.98rem;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+  }
+  .nav__dd-hint {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    color: var(--ink-mute);
+    line-height: 1.3;
+  }
+  .nav__dd-item:hover,
+  .nav__dd-item:focus-visible {
+    background: var(--t-warm);
+    outline: none;
+  }
+  .nav__dd-item:hover .nav__dd-title,
+  .nav__dd-item:focus-visible .nav__dd-title,
+  .nav__dd-item.is-active .nav__dd-title {
+    color: var(--accent);
+  }
+  .nav__dd-item.is-active {
+    background: var(--t-warm);
+  }
 
-  /* Hamburguesa */
-  .nav__burger { display: none; width: 46px; height: 46px; border-radius: 14px; background: var(--bg-2); border: 1px solid var(--line); flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
-  .nav__burger span { width: 18px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease); }
-  .nav.is-open .nav__burger span:first-child { transform: translateY(3.5px) rotate(45deg); }
-  .nav.is-open .nav__burger span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+  /* —— Actions —— */
+  .nav__actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex: none;
+  }
+  .nav__icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1px solid var(--line);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 14px -8px rgba(24, 18, 25, 0.28);
+    transition: transform var(--dur) var(--ease), border-color 220ms var(--ease-soft);
+    color: var(--ink);
+  }
+  .nav__icon:hover {
+    transform: translateY(-2px);
+  }
+  .nav__tel:hover {
+    color: var(--accent-ink);
+    border-color: var(--accent);
+  }
+  @media (max-width: 900px) {
+    .nav__tel {
+      display: none;
+    }
+  }
+  .nav__toggle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--ink);
+    background: linear-gradient(90deg, var(--ink) 50%, transparent 50%);
+    transition: transform var(--dur) var(--ease);
+  }
+  :global([data-theme='dark']) .nav__toggle {
+    transform: rotate(180deg);
+  }
+  .nav__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 13px 22px;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--accent) 18%, transparent),
+      0 8px 28px -8px color-mix(in srgb, var(--accent) 55%, transparent),
+      0 2px 8px -2px rgba(24, 18, 25, 0.35);
+    transition: transform var(--dur) var(--ease), box-shadow 220ms var(--ease-soft);
+  }
+  .nav__btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--accent) 28%, transparent),
+      0 12px 36px -8px color-mix(in srgb, var(--accent) 65%, transparent),
+      0 4px 12px -2px rgba(24, 18, 25, 0.4);
+  }
 
-  /* Menú móvil */
-  .nav__mobile { display: none; flex-direction: column; gap: 4px; padding: 8px var(--gutter) 20px; }
-  .nav__mlink { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; padding: 12px 4px; color: var(--ink); border-bottom: 1px solid var(--line); }
-  .nav__mlink.is-active { color: var(--accent-ink); }
-  .nav__mcta { margin-top: 14px; justify-content: center; }
+  /* —— Burger —— */
+  .nav__burger {
+    display: none;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1px solid var(--line);
+    place-items: center;
+    box-shadow: 0 4px 14px -8px rgba(24, 18, 25, 0.28);
+    color: var(--ink);
+    position: relative;
+  }
+  .nav__burger-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .nav__burger-bars span {
+    width: 18px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+  }
+  .nav__burger-x {
+    display: none;
+  }
+  .nav.is-open .nav__burger-bars {
+    display: none;
+  }
+  .nav.is-open .nav__burger-x {
+    display: grid;
+    place-items: center;
+  }
+
+  /* —— Mobile panel —— */
+  .nav__mobile {
+    display: none;
+  }
+  .nav__mobile[hidden] {
+    display: none !important;
+  }
+  .nav__mobile-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px var(--gutter) 28px;
+    max-height: calc(100dvh - 72px);
+    overflow-y: auto;
+    background:
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--t-warm) 55%, var(--bg)) 0%,
+        var(--bg) 42%,
+        var(--bg) 100%
+      );
+  }
+  .nav__mrow {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 2px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    background: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  .nav__mrow-label {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+  }
+  .nav__mrow-num {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: color-mix(in srgb, var(--accent) 55%, var(--ink-mute));
+    flex: none;
+    white-space: nowrap;
+  }
+  .nav__mrow.is-active .nav__mrow-label,
+  .nav__mrow--serv[aria-expanded='true'] .nav__mrow-label {
+    color: var(--accent);
+  }
+  .nav__mrow--serv[aria-expanded='true'] .nav__mrow-num,
+  .nav__m-serv.is-open .nav__mrow-num {
+    color: var(--accent);
+  }
+  .nav__m-serv {
+    border-bottom: 1px solid var(--line);
+  }
+  .nav__m-serv .nav__mrow {
+    border-bottom: 0;
+  }
+  .nav__m-serv-list {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px 0 18px;
+  }
+  .nav__m-serv.is-open .nav__m-serv-list {
+    display: flex;
+  }
+  .nav__mcard {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 16px 18px;
+    background: var(--card);
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    box-shadow: 0 6px 18px -12px rgba(24, 18, 25, 0.22);
+    color: var(--ink);
+    transition: background 180ms var(--ease-soft);
+  }
+  .nav__mcard-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.02em;
+  }
+  .nav__mcard-hint {
+    font-size: 0.88rem;
+    color: var(--ink-mute);
+  }
+  .nav__mcard:hover,
+  .nav__mcard.is-active {
+    background: var(--t-warm);
+    border-color: color-mix(in srgb, var(--accent) 25%, var(--line));
+  }
+  .nav__mcard:hover .nav__mcard-title,
+  .nav__mcard.is-active .nav__mcard-title {
+    color: var(--accent);
+  }
+  .nav__mfoot {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+  }
+  .nav__mphone {
+    text-align: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--ink-soft);
+  }
+  .nav__mphone:hover {
+    color: var(--accent-ink);
+  }
+  .nav__mcta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 16px 22px;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--accent) 18%, transparent),
+      0 10px 32px -6px color-mix(in srgb, var(--accent) 60%, transparent),
+      0 4px 12px -2px rgba(24, 18, 25, 0.35);
+  }
 
   @media (max-width: 900px) {
-    .nav__pill { display: none; }
-    .nav__burger { display: flex; }
-    .nav.is-open .nav__mobile { display: flex; }
+    .nav__pill {
+      display: none;
+    }
+    .nav__btn {
+      display: none;
+    }
+    .nav__burger {
+      display: grid;
+    }
+    .nav.is-open .nav__mobile {
+      display: block;
+    }
+    .nav.is-open {
+      background: color-mix(in srgb, var(--t-warm) 40%, var(--bg));
+      box-shadow: none;
+      padding-block: 12px;
+    }
   }
-  @media (max-width: 480px) { .nav__name { display: none; } }
+  @media (max-width: 480px) {
+    .nav__name {
+      display: none;
+    }
+  }
+
+  /* Compact pill on mid widths so CTA stays 1 line */
+  @media (min-width: 901px) and (max-width: 1100px) {
+    .nav__link {
+      padding: 9px 12px;
+      font-size: 0.9rem;
+    }
+    .nav__btn {
+      padding: 12px 16px;
+      font-size: 0.9rem;
+    }
+    .nav__name {
+      font-size: 1.1rem;
+    }
+  }
 </style>
