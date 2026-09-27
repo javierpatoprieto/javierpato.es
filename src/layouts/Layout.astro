@@ -145,6 +145,17 @@ const baseLd = {
   ],
 };
 
+// Elena Semana 3: en /diseno-web-espana/ no anunciar 299/549/699 (ni precios de oferta) en JSON-LD global.
+{
+  const path = Astro.url.pathname.replace(/\/$/, '');
+  if (path === '/diseno-web-espana' || path.endsWith('/diseno-web-espana')) {
+    for (const offer of baseLd.hasOfferCatalog?.itemListElement ?? []) {
+      delete offer.price;
+      delete offer.priceSpecification;
+    }
+  }
+}
+
 const personLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
