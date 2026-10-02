@@ -22,14 +22,14 @@ Cada mensaje de "¿tienes hueco el jueves?" a las once de la noche es una interr
 
 ## Enseña tu trabajo, no solo tus precios
 
-En este sector se compra con los ojos. Tus mejores cortes, tus colores, tu local: una web que enseñe eso vende más que una lista de tarifas. Aquí ayuda una buena [sesión de fotos](/blog/fotografia-producto-cantabria) y una [identidad de marca](/blog/branding-cantabria) con personalidad, que te separe de la peluquería genérica de al lado.
+En este sector se compra con los ojos. Tus mejores cortes, tus colores, tu local: una web que enseñe eso vende más que una lista de tarifas. Aquí ayuda una buena [sesión de fotos](/blog/fotografia-producto-cantabria/) y una [identidad de marca](/blog/branding-cantabria/) con personalidad, que te separe de la peluquería genérica de al lado.
 
 ## Que te encuentren "cerca de mí"
 
-Cuando alguien nuevo en el barrio busca *"barbería cerca de mí"* o *"peluquería en Santander"*, quieres salir. Eso es [SEO local](/blog/seo-local-cantabria): tu [ficha de Google](/blog/google-business-profile-cantabria) al día, con fotos y reseñas, y una web rápida.
+Cuando alguien nuevo en el barrio busca *"barbería cerca de mí"* o *"peluquería en Santander"*, quieres salir. Eso es [SEO local](/blog/seo-local-cantabria/): tu [ficha de Google](/blog/google-business-profile-cantabria/) al día, con fotos y reseñas, y una web rápida.
 
 ## Empezar es sencillo
 
-Una [web one page desde 299€](/precios) con tus servicios, tus fotos y un botón de reserva ya te cambia la semana. Nada de plataformas caras: algo tuyo, bonito y que llene la agenda.
+Una [web one page desde 299€](/precios/) con tus servicios, tus fotos y un botón de reserva ya te cambia la semana. Nada de plataformas caras: algo tuyo, bonito y que llene la agenda.
 
-¿Tienes una peluquería o barbería en Cantabria y sigues peleándote con el WhatsApp? Mira cómo trabajo las [webs para peluquerías y centros de estética](/diseno-web-cantabria/zonas#peluquerias-estetica): fotos, reserva y marca en el mismo paquete. Si prefieres preguntarme antes, [escríbeme](/contacto).
+¿Tienes una peluquería o barbería en Cantabria y sigues peleándote con el WhatsApp? Mira cómo trabajo las [webs para peluquerías y centros de estética](/diseno-web-cantabria/zonas/#peluquerias-estetica): fotos, reserva y marca en el mismo paquete. Si prefieres preguntarme antes, [escríbeme](/contacto/).

@@ -1,7 +1,8 @@
 ---
-title: "Tienda online en Cantabria: cómo empezar"
+title: "Cómo empezar a vender por internet: guía"
 description: "Guía para montar una tienda online siendo un negocio de Cantabria: qué necesitas, cuánto cuesta desde 999€ y los errores que arruinan las ventas."
 pubDate: 2026-06-12
+updatedDate: 2026-10-02
 keyword: "cómo empezar a vender por internet"
 tags: ["Ecommerce", "Diseño web"]
 tone: "stone"
@@ -14,7 +15,7 @@ Vender por internet ya no es solo para grandes marcas. Un negocio de Cantabria p
 
 ## ¿Te hace falta una tienda online?
 
-No siempre. A veces lo que necesitas es captar clientes locales y una buena [web con SEO](/diseno-web-cantabria) basta. La tienda tiene sentido cuando:
+No siempre. A veces lo que necesitas es captar clientes locales y una buena [web con SEO](/diseno-web-cantabria/) basta. La tienda tiene sentido cuando:
 
 - Vendes producto físico que se puede enviar.
 - Quieres vender fuera de tu zona.
@@ -30,7 +31,7 @@ No siempre. A veces lo que necesitas es captar clientes locales y una buena [web
 
 ## Cuánto cuesta
 
-Una tienda online a medida arranca **desde 999€**, según catálogo y funciones. Puedes ver el detalle en [precios](/precios). Aparte está el mantenimiento, porque una tienda es un ser vivo: productos que cambian, pedidos, stock.
+Una tienda online a medida arranca **desde 999€**, según catálogo y funciones. Puedes ver el detalle en [precios](/precios/). Aparte está el mantenimiento, porque una tienda es un ser vivo: productos que cambian, pedidos, stock.
 
 ## Los errores que matan las ventas
 
@@ -47,4 +48,4 @@ Para la mayoría de negocios de Cantabria, una tienda bien hecha y rápida es m�
 
 No hace falta lanzar con 500 productos. Empieza con los que mejor se venden, mira qué funciona y crece con datos. Una tienda enfocada vende más que una gigante y caótica.
 
-¿Tienes producto y quieres venderlo online? Mira cómo monto una [tienda online en Cantabria](/tienda-online-cantabria): qué incluye, plazos y desde cuánto sale.
+¿Tienes producto y quieres venderlo online? Mira cómo monto una [tienda online en Cantabria](/tienda-online-cantabria/): qué incluye, plazos y desde cuánto sale.

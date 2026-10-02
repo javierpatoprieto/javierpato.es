@@ -35,4 +35,4 @@ El botón principal es "Cuéntame tu viaje por WhatsApp", y debajo: "Te contesta
 
 ¿Será difícil la ruta? ¿Qué moto llevamos? ¿Puedo dormir solo? Las dudas que Dani recibía una y otra vez están en la página con respuestas honestas. Cada duda resuelta es una reserva más cerca.
 
-Es una web pensada para una sola cosa: que quien sueña con ese viaje escriba. Lo cuento con más detalle en [cómo vender un viaje desde una sola página](/blog/como-vender-un-viaje-desde-una-landing-explora-siam).
+Es una web pensada para una sola cosa: que quien sueña con ese viaje escriba. Lo cuento con más detalle en [cómo vender un viaje desde una sola página](/blog/como-vender-un-viaje-desde-una-landing-explora-siam/).

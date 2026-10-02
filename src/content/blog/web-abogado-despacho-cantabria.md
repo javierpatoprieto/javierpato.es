@@ -21,11 +21,11 @@ Un cliente que busca abogado casi nunca lo hace por gusto: tiene un problema y q
 
 ## Solvencia, no palabrería
 
-El error típico de las webs de despacho es sonar a boletín oficial: párrafos densos, tópicos ("compromiso, rigor, cercanía") y cero personalidad. Una web bien hecha dice lo mismo con menos palabras y más credibilidad. Aquí es donde el [branding](/blog/branding-cantabria) y el diseño trabajan juntos: transmitir seriedad sin resultar frío.
+El error típico de las webs de despacho es sonar a boletín oficial: párrafos densos, tópicos ("compromiso, rigor, cercanía") y cero personalidad. Una web bien hecha dice lo mismo con menos palabras y más credibilidad. Aquí es donde el [branding](/blog/branding-cantabria/) y el diseño trabajan juntos: transmitir seriedad sin resultar frío.
 
 ## Que te encuentren cuando surge el problema
 
-Cuando alguien busca *"abogado laboralista Santander"* o *"despacho de herencias en Torrelavega"*, quieres aparecer. Eso se trabaja con [SEO local](/blog/seo-local-cantabria): tu [ficha de Google](/blog/google-business-profile-cantabria) al día, reseñas y una web rápida con tus áreas y tu zona bien claras.
+Cuando alguien busca *"abogado laboralista Santander"* o *"despacho de herencias en Torrelavega"*, quieres aparecer. Eso se trabaja con [SEO local](/blog/seo-local-cantabria/): tu [ficha de Google](/blog/google-business-profile-cantabria/) al día, reseñas y una web rápida con tus áreas y tu zona bien claras.
 
 ## Contenido que además capta
 
@@ -37,6 +37,6 @@ Una web de servicios jurídicos con formularios necesita aviso legal, política 
 
 ## Empezar es sencillo
 
-Para la mayoría de despachos, una [web bien resuelta desde 299€](/precios) que transmita solvencia y facilite el contacto ya marca la diferencia frente al despacho de al lado. Luego se crece: áreas de práctica, blog jurídico, casos.
+Para la mayoría de despachos, una [web bien resuelta desde 299€](/precios/) que transmita solvencia y facilite el contacto ya marca la diferencia frente al despacho de al lado. Luego se crece: áreas de práctica, blog jurídico, casos.
 
-¿Tienes un despacho en Cantabria y tu web no está a la altura de tu trabajo? Así planteo el [diseño web en Cantabria](/diseno-web-cantabria) para negocios de servicios como el tuyo, y si prefieres contármelo antes, [escríbeme](/contacto).
+¿Tienes un despacho en Cantabria y tu web no está a la altura de tu trabajo? Así planteo el [diseño web en Cantabria](/diseno-web-cantabria/) para negocios de servicios como el tuyo, y si prefieres contármelo antes, [escríbeme](/contacto/).

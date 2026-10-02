@@ -22,18 +22,18 @@ El viajero muchas veces te descubre en un portal… pero luego busca tu nombre e
 
 ## Las fotos venden la estancia
 
-En turismo se compra soñando. Fotos grandes, con buena luz, de la casa, las vistas y los detalles que te hacen especial. Aquí una buena [sesión de fotos](/blog/fotografia-producto-cantabria) se paga sola en reservas. La web solo tiene que ponerlas donde brillen.
+En turismo se compra soñando. Fotos grandes, con buena luz, de la casa, las vistas y los detalles que te hacen especial. Aquí una buena [sesión de fotos](/blog/fotografia-producto-cantabria/) se paga sola en reservas. La web solo tiene que ponerlas donde brillen.
 
 ## En inglés, si buscas al turista de fuera
 
-Buena parte del turismo de Cantabria viene de fuera. Una [web en varios idiomas](/blog/web-multilingue-negocio-turistico-cantabria) te abre a un cliente que el vecino de al lado no está captando.
+Buena parte del turismo de Cantabria viene de fuera. Una [web en varios idiomas](/blog/web-multilingue-negocio-turistico-cantabria/) te abre a un cliente que el vecino de al lado no está captando.
 
 ## Que te encuentren por zona
 
-*"Casa rural en los Valles Pasiegos"*, *"apartamento en Comillas"*, *"hotel con encanto en Liébana"*: quien busca así ya quiere reservar. Salir ahí es [SEO local](/blog/seo-local-cantabria) y una [ficha de Google](/blog/google-business-profile-cantabria) con reseñas y fotos.
+*"Casa rural en los Valles Pasiegos"*, *"apartamento en Comillas"*, *"hotel con encanto en Liébana"*: quien busca así ya quiere reservar. Salir ahí es [SEO local](/blog/seo-local-cantabria/) y una [ficha de Google](/blog/google-business-profile-cantabria/) con reseñas y fotos.
 
 ## Empezar es sencillo
 
-Una [web desde 299€](/precios) con tus fotos, tus tarifas y un botón de reserva o contacto directo ya empieza a quitarte dependencia de los portales. Luego se crece: motor de reservas, calendario, ofertas de temporada.
+Una [web desde 299€](/precios/) con tus fotos, tus tarifas y un botón de reserva o contacto directo ya empieza a quitarte dependencia de los portales. Luego se crece: motor de reservas, calendario, ofertas de temporada.
 
-¿Tienes alojamiento en Cantabria y vives colgado de las comisiones? Aquí te cuento cómo hago webs de [turismo rural en Cantabria](/diseno-web-cantabria/zonas#turismo-rural) con reserva directa. Si quieres que mire la tuya antes, [escríbeme](/contacto).
+¿Tienes alojamiento en Cantabria y vives colgado de las comisiones? Aquí te cuento cómo hago webs de [turismo rural en Cantabria](/diseno-web-cantabria/zonas/#turismo-rural) con reserva directa. Si quieres que mire la tuya antes, [escríbeme](/contacto/).

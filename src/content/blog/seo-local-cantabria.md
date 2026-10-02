@@ -20,7 +20,7 @@ Es todo lo que haces para salir en búsquedas con intención geográfica: *"fisi
 
 ### 1. Google Business Profile
 
-Tu ficha de Google (la que sale en el mapa) es **lo más importante** en local. Bien rellenada, con categoría correcta, fotos, horario y reseñas, puede traerte más clientes que la propia web. Le dedico una guía entera en [Google Business Profile para negocios de Cantabria](/blog/google-business-profile-cantabria).
+Tu ficha de Google (la que sale en el mapa) es **lo más importante** en local. Bien rellenada, con categoría correcta, fotos, horario y reseñas, puede traerte más clientes que la propia web. Le dedico una guía entera en [Google Business Profile para negocios de Cantabria](/blog/google-business-profile-cantabria/).
 
 ### 2. Reseñas
 
@@ -32,7 +32,7 @@ Aquí entra el diseño: una web que **carga rápido**, se ve bien en el móvil y
 
 ### 4. Páginas pensadas por servicio y zona
 
-En vez de una sola página genérica, ayuda tener páginas específicas: una para cada servicio importante, mencionando la zona. Es justo lo que hago en la página de [diseño web en Cantabria](/diseno-web-cantabria).
+En vez de una sola página genérica, ayuda tener páginas específicas: una para cada servicio importante, mencionando la zona. Es justo lo que hago en la página de [diseño web en Cantabria](/diseno-web-cantabria/).
 
 ### 5. Contenido útil (un blog)
 
@@ -52,4 +52,4 @@ Escribir guías que respondan a lo que busca tu cliente —como esta— te posic
 4. Publica **contenido** poco a poco.
 5. Sé **constante**. Quien aguanta, sube.
 
-¿Tu web es lenta o no sale en Google? Empieza por la base: así hago el [diseño web en Cantabria](/diseno-web-cantabria), rápido y con la zona bien marcada. Si prefieres que le eche un vistazo a la que ya tienes, [cuéntame tu caso](/contacto).
+¿Tu web es lenta o no sale en Google? Empieza por la base: así hago el [diseño web en Cantabria](/diseno-web-cantabria/), rápido y con la zona bien marcada. Si prefieres que le eche un vistazo a la que ya tienes, [cuéntame tu caso](/contacto/).

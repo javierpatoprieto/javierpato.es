@@ -25,14 +25,14 @@ A veces basta con una **evolución**: ordenar lo que ya tienes, actualizar el lo
 
 ## Qué implica hacerlo bien
 
-Un rebranding serio revisa: quién eres hoy, a quién te diriges, cómo quieres que te perciban y cómo lo trasladamos a un sistema —logo, color, tipografía, tono— que luego se aplica a la [web](/precios), la papelería y las redes. Es [branding](/blog/branding-cantabria) con cabeza, no un lavado de cara al azar.
+Un rebranding serio revisa: quién eres hoy, a quién te diriges, cómo quieres que te perciban y cómo lo trasladamos a un sistema —logo, color, tipografía, tono— que luego se aplica a la [web](/precios/), la papelería y las redes. Es [branding](/blog/branding-cantabria/) con cabeza, no un lavado de cara al azar.
 
 ## El momento suele ser ahora
 
-Si estás rehaciendo la web, es el momento perfecto para revisar también la marca: sale más a cuenta hacerlo junto que parcheado. Aquí es donde tener una sola mano —[estudio](/estudio)— ahorra dinero y dolores de cabeza.
+Si estás rehaciendo la web, es el momento perfecto para revisar también la marca: sale más a cuenta hacerlo junto que parcheado. Aquí es donde tener una sola mano —[estudio](/estudio/)— ahorra dinero y dolores de cabeza.
 
 ## Empezar es sencillo
 
 Cuéntame cómo te ves hoy y a dónde quieres llegar, y te digo con sinceridad si necesitas un rebranding entero o solo poner orden.
 
-¿Sientes que tu marca ya no te representa? Así trabajo el [branding en Cantabria](/branding-cantabria), de la idea al manual de uso. Si quieres una opinión antes de decidir, [escríbeme](/contacto).
+¿Sientes que tu marca ya no te representa? Así trabajo el [branding en Cantabria](/branding-cantabria/), de la idea al manual de uso. Si quieres una opinión antes de decidir, [escríbeme](/contacto/).

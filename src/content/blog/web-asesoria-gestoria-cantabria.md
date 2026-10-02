@@ -28,7 +28,7 @@ Quién le va a llevar los papeles. Una foto real del equipo (o tuya) y dos líne
 
 ### Servicios en lenguaje de persona
 
-Nada de "cumplimiento normativo tributario". "Te llevo los impuestos, las nóminas y los papeles con Hacienda y la Seguridad Social, y te aviso antes de cada plazo". Ese trabajo de [mensaje](/proyectos/servicio/ux-mensaje) es lo que diferencia.
+Nada de "cumplimiento normativo tributario". "Te llevo los impuestos, las nóminas y los papeles con Hacienda y la Seguridad Social, y te aviso antes de cada plazo". Ese trabajo de [mensaje](/proyectos/servicio/ux-mensaje/) es lo que diferencia.
 
 ### Precio, o al menos orientación
 
@@ -36,11 +36,11 @@ Muchas asesorías esconden los precios y el cliente lo interpreta como "caro". U
 
 ### Pedir cita sin fricción
 
-Botón de [WhatsApp](/blog/boton-whatsapp-web-negocio-cantabria), teléfono y un formulario corto. Y una frase que explique qué pasa después: "Te llamamos en 24 h para una primera consulta sin compromiso".
+Botón de [WhatsApp](/blog/boton-whatsapp-web-negocio-cantabria/), teléfono y un formulario corto. Y una frase que explique qué pasa después: "Te llamamos en 24 h para una primera consulta sin compromiso".
 
 ### SEO local bien hecho
 
-"Asesoría fiscal en Santander", "gestoría laboral en Torrelavega": secciones por servicio y ciudad, [ficha de Google](/blog/google-business-profile-cantabria) cuidada y reseñas de clientes. Es un sector con mucha búsqueda local y poca competencia bien hecha. Más en [SEO local en Cantabria](/blog/seo-local-cantabria).
+"Asesoría fiscal en Santander", "gestoría laboral en Torrelavega": secciones por servicio y ciudad, [ficha de Google](/blog/google-business-profile-cantabria/) cuidada y reseñas de clientes. Es un sector con mucha búsqueda local y poca competencia bien hecha. Más en [SEO local en Cantabria](/blog/seo-local-cantabria/).
 
 ## Un extra que funciona: contenido útil
 
@@ -48,6 +48,6 @@ Un artículo al trimestre respondiendo lo que te preguntan siempre ("¿qué gast
 
 ## Lo que cuesta
 
-Una web de asesoría bien hecha, con servicios, equipo, contacto y base de SEO, entra en el [pack web desde 299€](/precios), y en menos de dos semanas está online. Si además quieres renovar la imagen, mira [rebranding: cuándo renovar tu marca](/blog/rebranding-cuando-renovar-tu-marca).
+Una web de asesoría bien hecha, con servicios, equipo, contacto y base de SEO, entra en el [pack web desde 299€](/precios/), y en menos de dos semanas está online. Si además quieres renovar la imagen, mira [rebranding: cuándo renovar tu marca](/blog/rebranding-cuando-renovar-tu-marca/).
 
-¿Tienes una asesoría o gestoría en Cantabria y tu web no te trae clientes? Le doy la vuelta: mira cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria) y qué incluye cada pack. Si quieres que revise la tuya antes, [escríbeme](/contacto).
+¿Tienes una asesoría o gestoría en Cantabria y tu web no te trae clientes? Le doy la vuelta: mira cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria/) y qué incluye cada pack. Si quieres que revise la tuya antes, [escríbeme](/contacto/).

@@ -26,7 +26,7 @@ Cuando alguien busca dentista, casi siempre llega con una de tres cosas: dolor, 
 
 Las webs de las grandes cadenas son todas iguales: stock, sonrisas perfectas de banco de imágenes y cero personalidad. Ahí tienes la oportunidad. Una **identidad de marca propia** —tu color, tu tipografía, fotos reales de tu clínica y tu equipo— te separa del montón y comunica que eres un sitio con nombre y apellidos, no un número de expediente.
 
-Esto es justo donde el [branding](/blog/branding-cantabria) y el diseño web trabajan juntos: no es decorar, es transmitir "aquí te van a cuidar".
+Esto es justo donde el [branding](/blog/branding-cantabria/) y el diseño web trabajan juntos: no es decorar, es transmitir "aquí te van a cuidar".
 
 ## La cita online, sin teléfono de por medio
 
@@ -34,7 +34,7 @@ Mucha gente pospone ir al dentista precisamente por la pereza de llamar. Quítal
 
 ## Que te encuentren con "dentista cerca de mí"
 
-Cuando alguien busca *"clínica dental en Santander"* o *"implantes Torrelavega"*, quieres aparecer. Eso se trabaja con [SEO local](/blog/seo-local-cantabria): tu [Google Business Profile](/blog/google-business-profile-cantabria) al día, reseñas y una web rápida con tus servicios y tu zona bien claros.
+Cuando alguien busca *"clínica dental en Santander"* o *"implantes Torrelavega"*, quieres aparecer. Eso se trabaja con [SEO local](/blog/seo-local-cantabria/): tu [Google Business Profile](/blog/google-business-profile-cantabria/) al día, reseñas y una web rápida con tus servicios y tu zona bien claros.
 
 ## Lo legal no es opcional
 
@@ -42,6 +42,6 @@ Una web de salud necesita aviso legal, política de privacidad y un tratamiento 
 
 ## Empezar es sencillo
 
-Para la mayoría de clínicas, una [web bien resuelta desde 299€](/precios) que transmita confianza y facilite la cita ya marca diferencia. Luego se crece: casos antes/después, blog de salud bucodental, más prueba social.
+Para la mayoría de clínicas, una [web bien resuelta desde 299€](/precios/) que transmita confianza y facilite la cita ya marca diferencia. Luego se crece: casos antes/después, blog de salud bucodental, más prueba social.
 
-¿Tienes una clínica dental en Cantabria y tu web no está a la altura de tu trabajo? Aquí tienes el detalle de cómo hago [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria), con la cita y lo legal resueltos. Si prefieres que mire la tuya primero, [escríbeme](/contacto).
+¿Tienes una clínica dental en Cantabria y tu web no está a la altura de tu trabajo? Aquí tienes el detalle de cómo hago [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria/), con la cita y lo legal resueltos. Si prefieres que mire la tuya primero, [escríbeme](/contacto/).

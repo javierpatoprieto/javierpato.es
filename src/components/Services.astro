@@ -1,12 +1,12 @@
 ---
 // Estudio de marca + IA. Cada servicio con su botón.
 const services = [
-  { k: 'Branding', d: 'Logo, identidad visual, sistema y voz de marca. No un dibujito bonito: la base con la que tu negocio deja de parecer aficionado y empieza a cobrar lo que vale, en Cantabria y donde haga falta.', c: 'warm', cta: 'Ver branding', href: '/branding-cantabria' },
-  { k: 'Diseño web', d: 'Webs a medida en Cantabria que cargan en un parpadeo, salen en Google con SEO local y convierten visitas en clientes. Nada de plantillas recicladas. Desde 299€ con IVA incluido, y online en días, no en meses.', c: 'stone', cta: 'Ver diseño web', href: '/diseno-web-cantabria' },
-  { k: 'Diseño gráfico', d: 'Cartas, redes, packaging, campañas, cartelería… La imagen del día a día de tu negocio, coherente y con criterio, para que todo lo que tocas parezca de marca seria y no de apaño de última hora.', c: 'deep', cta: 'Ver diseño gráfico', href: '/diseno-grafico-cantabria' },
-  { k: 'Fotografía de producto', d: 'Imágenes de producto que dan ganas de comprar, generadas y dirigidas con IA. La calidad de un plató sin alquilar plató ni vaciarte la cuenta. Ideal para tu web, tu tienda online y tus redes.', c: 'stone', cta: 'Lo quiero', href: '/contacto' },
-  { k: 'Vídeo corporativo', d: 'Vídeo de marca que se ve caro sin costar como una productora. Generado con IA y dirigido con ojo de director de arte, para reels, web o campañas que de verdad se vean.', c: 'warm', cta: 'Hablar de vídeo', href: '/contacto' },
-  { k: 'Reportajes & contenido', d: 'El contenido visual que tu negocio necesita para no parar de publicar y no morir en el intento. Tú me cuentas, yo lo dirijo y lo produzco con criterio. Constancia sin volverte loco.', c: 'deep', cta: 'Cuéntame', href: '/contacto' },
+  { k: 'Branding', d: 'Logo, identidad visual, sistema y voz de marca. No un dibujito bonito: la base con la que tu negocio deja de parecer aficionado y empieza a cobrar lo que vale, en Cantabria y donde haga falta.', c: 'warm', cta: 'Ver branding', href: '/branding-cantabria/' },
+  { k: 'Diseño web', d: 'Webs a medida en Cantabria que cargan en un parpadeo, salen en Google con SEO local y convierten visitas en clientes. Nada de plantillas recicladas. Desde 299€ con IVA incluido, y online en días, no en meses.', c: 'stone', cta: 'Ver diseño web', href: '/diseno-web-cantabria/' },
+  { k: 'Diseño gráfico', d: 'Cartas, redes, packaging, campañas, cartelería… La imagen del día a día de tu negocio, coherente y con criterio, para que todo lo que tocas parezca de marca seria y no de apaño de última hora.', c: 'deep', cta: 'Ver diseño gráfico', href: '/diseno-grafico-cantabria/' },
+  { k: 'Fotografía de producto', d: 'Imágenes de producto que dan ganas de comprar, generadas y dirigidas con IA. La calidad de un plató sin alquilar plató ni vaciarte la cuenta. Ideal para tu web, tu tienda online y tus redes.', c: 'stone', cta: 'Lo quiero', href: '/contacto/' },
+  { k: 'Vídeo corporativo', d: 'Vídeo de marca que se ve caro sin costar como una productora. Generado con IA y dirigido con ojo de director de arte, para reels, web o campañas que de verdad se vean.', c: 'warm', cta: 'Hablar de vídeo', href: '/contacto/' },
+  { k: 'Reportajes & contenido', d: 'El contenido visual que tu negocio necesita para no parar de publicar y no morir en el intento. Tú me cuentas, yo lo dirijo y lo produzco con criterio. Constancia sin volverte loco.', c: 'deep', cta: 'Cuéntame', href: '/contacto/' },
 ];
 ---
 <section id="estudio" class="section services">
@@ -25,6 +25,13 @@ const services = [
         </div>
       ))}
     </div>
+    <p class="services__more" data-reveal>
+      Lo que más me piden en Cantabria:
+      <a href="/blog/diseno-logotipo-cantabria/">diseño de logotipo</a>,
+      <a href="/diseno-grafico-cantabria/">diseño gráfico</a> y
+      <a href="/diseno-grafico-cantabria/#dossier">dossier comercial</a>, y
+      <a href="/tienda-online-cantabria/">tiendas online</a> para vender sin intermediarios.
+    </p>
   </div>
 </section>
 
@@ -46,6 +53,8 @@ const services = [
   .scard--deep .scard__d { opacity: 0.9; }
   .scard__btn { align-self: flex-start; display: inline-flex; background: color-mix(in srgb, currentColor 12%, transparent); color: inherit; font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; padding: 9px 16px; border-radius: var(--radius-pill); transition: background var(--dur) var(--ease-soft), transform var(--dur) var(--ease); }
   .scard__btn:hover { background: var(--accent); color: #fff; transform: translateX(3px); }
+  .services__more { margin-top: var(--s-5); color: var(--ink-soft); font-size: 1.0625rem; line-height: 1.6; max-width: 70ch; }
+  .services__more a { color: var(--accent-ink); font-weight: 600; border-bottom: 1px solid currentColor; }
   @media (min-width: 700px) { .services__grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1040px) { .services__grid { grid-template-columns: repeat(3, 1fr); } }
 </style>

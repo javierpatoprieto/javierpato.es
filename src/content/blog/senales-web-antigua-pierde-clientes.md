@@ -26,7 +26,7 @@ El diseño envejece, y el cliente lo nota aunque no sepa por qué. Una web antic
 
 ## 4. No sale en Google
 
-Si te buscas y no apareces, tienes un problema de [SEO local](/blog/seo-local-cantabria). Una web técnicamente vieja se posiciona peor: estructura mala, lenta, sin los datos que Google necesita.
+Si te buscas y no apareces, tienes un problema de [SEO local](/blog/seo-local-cantabria/). Una web técnicamente vieja se posiciona peor: estructura mala, lenta, sin los datos que Google necesita.
 
 ## 5. Te da reparo enseñarla
 
@@ -39,6 +39,6 @@ Esta es la más honesta. Si cuando un cliente potencial te pide la web sientes u
 - Una imagen que **te hace parecer lo que vales**.
 - Menos competir por precio: cuando pareces serio, dejas de competir por quién cobra menos y pasas a competir por quién da más confianza.
 
-Un rediseño no tiene por qué ser caro ni eterno: muchas veces se resuelve [desde 299€](/precios) y en una semana.
+Un rediseño no tiene por qué ser caro ni eterno: muchas veces se resuelve [desde 299€](/precios/) y en una semana.
 
-¿Tu web da más vergüenza que clientes? Mira qué incluye un [rediseño de web en Cantabria](/diseno-web-cantabria) y, si quieres que le eche un vistazo antes, [cuéntame tu caso](/contacto).
+¿Tu web da más vergüenza que clientes? Mira qué incluye un [rediseño de web en Cantabria](/diseno-web-cantabria/) y, si quieres que le eche un vistazo antes, [cuéntame tu caso](/contacto/).

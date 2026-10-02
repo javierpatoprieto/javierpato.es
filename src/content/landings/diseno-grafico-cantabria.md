@@ -1,8 +1,8 @@
 ---
-title: "Diseño gráfico en Cantabria: dossier y flyers | Javier Pato"
-description: "Diseño gráfico para negocios de Cantabria: dossier comercial, catálogo, flyers, cartas y packaging con criterio de estudio. Presupuesto cerrado en 24 h."
+title: "Diseño gráfico en Cantabria: dossier y catálogos"
+description: "Diseño gráfico en Cantabria: dossier comercial, catálogo, cartas, flyers y packaging. Proceso claro, entrega en 3–7 días y presupuesto cerrado en 24 h."
 kicker: "Diseño gráfico · Cantabria"
-h1: "Diseño gráfico en Cantabria<br />que hace que te <span>tomen en serio</span>."
+h1: "Diseño gráfico y dossier<br />en Cantabria que hacen<br />que te <span>tomen en serio</span>."
 lead: "Dossier comercial, catálogo de producto, cartas, flyers, packaging y plantillas de redes. Las piezas con las que tu cliente te juzga antes de conocerte, hechas con el mismo criterio que tu marca y tu web. Presupuesto cerrado en 24 horas."
 keyword: "diseño gráfico Cantabria"
 intent: "sector"
@@ -19,6 +19,8 @@ order: 20
 faqs:
   - q: "¿Cuánto cuesta un dossier comercial en Cantabria?"
     a: "Un dossier de 8-12 páginas, con maquetación a medida y textos revisados, va de 150€ a 390€ según extensión y si hay que producir imágenes. Si ya tienes identidad de marca definida, está en la parte baja. Precio cerrado antes de empezar, siempre."
+  - q: "¿Cuánto tarda el diseño de un dossier?"
+    a: "Entre 3 y 7 días desde que tengo los textos y las imágenes. Un dossier corto con la marca ya definida va al extremo bajo; uno largo, con fotos por producir o textos por reescribir, al alto. Si tienes una fecha de feria o de reunión, dímela en la primera llamada y se planifica hacia atrás."
   - q: "¿Trabajas solo el diseño o también la imprenta?"
     a: "Las dos cosas. Te entrego los artes finales listos para imprenta (con sangre, marcas y perfil de color correcto) y, si quieres, gestiono yo la impresión con imprentas de Cantabria con las que ya trabajo. Tú eliges si prefieres llevarlo a la tuya."
   - q: "¿Puedo editar las piezas yo después?"
@@ -47,13 +49,25 @@ Eso es lo que hago: que lo que llega al cliente esté a la altura de lo que vend
 - **Plantillas de redes.** Para que publiques cada semana sin que cada pieza parezca de una marca distinta.
 - **Papelería y presentaciones.** Tarjetas, firmas de email, plantillas de PowerPoint o Keynote que no rompan la marca.
 
-## Cómo se ordena un dossier que sí se lee
+<h2 id="dossier">Diseño de dossier en Cantabria: cómo se ordena uno que sí se lee</h2>
 
 El dossier es la pieza que más me piden y la que peor suele estar hecha, porque casi todo el mundo lo monta en el orden equivocado: empieza por "quiénes somos", sigue con la historia de la empresa y deja lo que vendes para la página seis. Para entonces el que lo abrió en el móvil, entre reunión y reunión, ya lo ha cerrado.
 
 El orden que funciona es el contrario. Primero, qué problema resuelves y para quién, en una portada que se entienda sin leer nada más. Después, el servicio o el producto con lo que de verdad se compara: qué incluye, en qué formatos, con qué plazos. Luego la prueba —trabajos, clientes, cifras que tú sí tengas— y solo al final quién eres tú. La página de cierre no es un "gracias": es qué tiene que hacer el que ha llegado hasta ahí, con nombre, teléfono y un enlace que funcione.
 
 Hay una decisión técnica que casi nadie toma y cambia el resultado: **un dossier para mandar por email no se maqueta igual que uno para presentar en pantalla ni que uno impreso**. El de email tiene que pesar poco, leerse en vertical en un móvil y no depender de tipografías raras. El de reunión puede ser apaisado y respirar más. Si vas a usarlo en los tres sitios, se hacen dos versiones desde el mismo original, no una a la que se le cambia el tamaño y queda con los textos flotando.
+
+### Qué incluye el diseño de un dossier
+
+- **Estructura y orden del contenido**, no solo maquetación: te propongo qué va en cada página y qué sobra.
+- **Revisión de textos** para que se lean en diagonal: titulares que cuentan algo, frases cortas y datos donde hacen falta.
+- **Maquetación a medida** con tu marca: tipografías, color, retícula y tratamiento de imágenes.
+- **Dos salidas desde el mismo original** cuando hace falta: PDF ligero para enviar por email y leer en el móvil, y versión para presentar en pantalla o imprimir.
+- **Archivo editable o plantilla** para que puedas actualizar precios, fechas o casos sin rehacerlo.
+
+### Para qué se usa un dossier en Cantabria
+
+Los encargos que más se repiten aquí son concretos: la empresa industrial o de servicios que presenta una oferta a un cliente grande o a una licitación; el alojamiento rural o la empresa de turismo activo que manda su propuesta a agencias y a grupos; el restaurante o la finca que envía su dossier de eventos y bodas; y la marca de producto local que va a una feria o quiere entrar en tiendas gourmet de fuera de Cantabria. Cada uno se ordena distinto, porque quien lo lee decide cosas distintas.
 
 ## Flyers y cartelería: se diseña para una distancia
 
@@ -71,13 +85,17 @@ Vengo de agencia y de departamento de marketing, así que antes de abrir el prog
 
 Aquí está el error más caro que veo repetido: ir parcheando. Un logo de una web de encargos, una carta hecha por un familiar, unas redes de otro estilo y una web de plantilla. Cada pieza por separado puede no estar mal, pero **el conjunto transmite «de andar por casa»**.
 
-Trabajo como estudio: [identidad de marca](/branding-cantabria), [diseño web](/diseno-web-cantabria) y gráfica salen de la misma mano y del mismo criterio. Un solo interlocutor, un solo sistema, cero reuniones para explicar por tercera vez a qué te dedicas.
+Trabajo como estudio: [identidad de marca](/branding-cantabria/), [diseño web](/diseno-web-cantabria/) y gráfica salen de la misma mano y del mismo criterio. Si todavía no tienes logo, empieza por ahí: en esta guía cuento cómo es el [diseño de logotipo en Cantabria](/blog/diseno-logotipo-cantabria/) y qué te tienen que entregar. Y si el catálogo va a acabar en una [tienda online](/tienda-online-cantabria/), las fotos y las fichas se preparan una sola vez para las dos cosas. Un solo interlocutor, un solo sistema, cero reuniones para explicar por tercera vez a qué te dedicas.
 
 ## De la llamada al arte final
 
 1. **Llamada de 20 minutos.** Qué pieza necesitas, para quién y para cuándo. De ahí sale el precio cerrado, en 24 horas y en un email de diez líneas, no en un presupuesto de doce páginas.
 2. **Propuesta visual.** Te enseño la dirección antes de rematar el detalle, para que corrijas pronto y barato.
 3. **Artes finales.** Listos para imprenta o para digital, más las plantillas editables de lo que cambia a menudo.
+
+**Plazos:** la mayoría de piezas se entregan **en 3 a 7 días** desde que tengo textos e imágenes. Una pieza suelta va rápida; un catálogo o un dossier largo, con fotos por producir, necesita el plazo largo. Si hay una fecha que manda —una feria, una inauguración, el arranque de temporada—, se planifica hacia atrás desde ella.
+
+**Qué te llevas en cualquier encargo:** artes finales en PDF para imprenta (con sangre, marcas de corte y perfil de color correcto), versión digital ligera para enviar y publicar, y los editables o plantillas de lo que vayas a cambiar tú. Los archivos son tuyos.
 
 ## Precios orientativos
 
@@ -89,4 +107,4 @@ Trabajo como estudio: [identidad de marca](/branding-cantabria), [diseño web](/
 
 Todo con precio cerrado antes de empezar. Si tu proyecto se sale de aquí, te lo digo en la primera llamada en vez de estirarlo.
 
-¿Tienes una pieza entre manos y no sabes por dónde empezar? Cuéntamela y te digo qué necesita de verdad —aunque sea menos de lo que pensabas.
+¿No sabes qué piezas te hacen falta y en qué orden? En el blog hay una guía sobre [qué diseño gráfico necesita un negocio local](/blog/diseno-grafico-cantabria/). Y si tienes una pieza entre manos, [cuéntamela](/contacto/) y te digo qué necesita de verdad —aunque sea menos de lo que pensabas.

@@ -44,7 +44,7 @@ Cuando repartes tu negocio en cinco secciones —inicio, sobre mí, servicios, t
 
 Una página única te fuerza a ordenar el argumento en el orden en que se decide de verdad: **qué haces, para quién, cómo trabajas, qué cuesta más o menos, y cómo se te contrata**. Todo en un solo scroll, sin clics intermedios donde perder gente. Además tiene una ventaja práctica muy poco romántica: es la única web que un autónomo ocupado realmente termina, porque las decisiones son pocas y se toman en una tarde.
 
-Y a efectos de Google, una página con contenido real y concreto vale más que cinco vacías. Lo desarrollo en la [guía de diseño web en Cantabria](/diseno-web-cantabria) si quieres el detalle.
+Y a efectos de Google, una página con contenido real y concreto vale más que cinco vacías. Lo desarrollo en la [guía de diseño web en Cantabria](/diseno-web-cantabria/) si quieres el detalle.
 
 ## Qué necesitas tener listo antes de encargarla (menos de lo que crees)
 
@@ -56,7 +56,7 @@ Aquí es donde la mayoría se atasca, así que lo dejo por escrito. Para arranca
 - **Un teléfono o WhatsApp de contacto** y, si lo tienes, tu ficha de Google.
 - **Fotos.** Las tuyas del móvil valen más de lo que crees si están hechas con luz de día.
 
-No necesitas textos redactados. No necesitas un logo. No necesitas tener decidida la paleta de colores ni haber mirado webs de referencia. Esa parte es mi trabajo: yo escribo la página a partir de una conversación contigo, y tú la corriges. Si quieres ir sobre seguro, tengo una lista más completa en [qué necesito para hacer mi página web](/blog/que-necesito-para-hacer-mi-pagina-web).
+No necesitas textos redactados. No necesitas un logo. No necesitas tener decidida la paleta de colores ni haber mirado webs de referencia. Esa parte es mi trabajo: yo escribo la página a partir de una conversación contigo, y tú la corriges. Si quieres ir sobre seguro, tengo una lista más completa en [qué necesito para hacer mi página web](/blog/que-necesito-para-hacer-mi-pagina-web/).
 
 ## Instagram no es una web (y se nota cuando te buscan por tu nombre)
 
@@ -76,11 +76,11 @@ Es la más honesta de todas y la entiendo. Míralo así: 299€ es una vez, no t
 
 ### "No tengo contenido ni fotos"
 
-Casi nadie lo tiene. Los textos los escribo yo a partir de lo que me cuentes hablando, que es donde los autónomos explican bien su trabajo, mucho mejor que por escrito. Con las fotos hay tres caminos: usar las tuyas y limpiarlas, dirigir una sesión sencilla, o generar imágenes con IA cuando el servicio no es fotografiable —algo que hago a diario en [ArtiMindArt](/proyectos/artimindart), mi propio estudio.
+Casi nadie lo tiene. Los textos los escribo yo a partir de lo que me cuentes hablando, que es donde los autónomos explican bien su trabajo, mucho mejor que por escrito. Con las fotos hay tres caminos: usar las tuyas y limpiarlas, dirigir una sesión sencilla, o generar imágenes con IA cuando el servicio no es fotografiable —algo que hago a diario en [ArtiMindArt](/proyectos/artimindart/), mi propio estudio.
 
 ### "No se me da la tecnología"
 
-No te hace falta. Te entrego la web funcionando, con el dominio configurado y el formulario probado. No hay panel que aprender ni actualizaciones que vigilar. Si un día quieres tocar un precio o cambiar una foto, te lo enseño; si prefieres no acercarte nunca, el [mantenimiento anual](/blog/mantenimiento-web-cantabria) de 190€ existe justo para eso.
+No te hace falta. Te entrego la web funcionando, con el dominio configurado y el formulario probado. No hay panel que aprender ni actualizaciones que vigilar. Si un día quieres tocar un precio o cambiar una foto, te lo enseño; si prefieres no acercarte nunca, el [mantenimiento anual](/blog/mantenimiento-web-cantabria/) de 190€ existe justo para eso.
 
 ### "¿Y si luego quiero cambiarla?"
 
@@ -96,7 +96,7 @@ Aquí no hay letra pequeña, así que lo pongo entero:
 - **Dominio: 19,99€ al año. Alojamiento: 49€ al año.** Eso es lo que cuesta que tu web siga en pie: menos de 70€ anuales.
 - **Mantenimiento: 190€ al año**, opcional, si quieres que los cambios y las actualizaciones sean cosa mía.
 
-El desglose completo está en [precios](/precios), sin formularios ni "consúltanos".
+El desglose completo está en [precios](/precios/), sin formularios ni "consúltanos".
 
 ### Por qué un autónomo con web propia puede pedir más
 
@@ -104,7 +104,7 @@ Esto no va de magia ni de porcentajes. Va de una cosa muy sencilla: **el precio 
 
 Un autónomo que solo tiene WhatsApp llega a la conversación desnudo. El cliente no sabe cómo trabajas, qué incluye tu servicio ni con quién te ha comparado antes. Sin contexto, lo único que puede comparar es el número. Y cuando lo único comparable es el número, siempre gana el más barato.
 
-Un autónomo con una página propia llega con el terreno preparado: el cliente ya ha leído cómo trabajas, ya ha visto ejemplos, ya sabe que existe un método detrás. El presupuesto llega a alguien que ha decidido antes que quiere trabajar contigo, y esa conversación es otra. Es la misma lógica que aplico en proyectos de servicios como [Fisio Mamá](/proyectos/fisio-mama): cuando la web explica bien el trabajo, deja de discutirse el precio y se discute la fecha.
+Un autónomo con una página propia llega con el terreno preparado: el cliente ya ha leído cómo trabajas, ya ha visto ejemplos, ya sabe que existe un método detrás. El presupuesto llega a alguien que ha decidido antes que quiere trabajar contigo, y esa conversación es otra. Es la misma lógica que aplico en proyectos de servicios como [Fisio Mamá](/proyectos/fisio-mama/): cuando la web explica bien el trabajo, deja de discutirse el precio y se discute la fecha.
 
 ## Cómo trabajamos
 
@@ -112,4 +112,4 @@ Hablamos una vez, entre veinte minutos y media hora, por teléfono o por videoll
 
 Trabajo solo, así que hablas conmigo de principio a fin. Ni cuentas de gestor de proyectos, ni tres personas distintas escribiéndote, ni presupuestos que crecen a mitad de camino. El precio se cierra antes de empezar y es el que pagas.
 
-¿Eres autónomo en Cantabria y llevas meses aplazando esto? [Cuéntame qué haces](/contacto) y te digo, sin adornos, si te compensa una página o si con lo que ya tienes te apañas. A veces la respuesta es la segunda.
+¿Eres autónomo en Cantabria y llevas meses aplazando esto? [Cuéntame qué haces](/contacto/) y te digo, sin adornos, si te compensa una página o si con lo que ya tienes te apañas. A veces la respuesta es la segunda.

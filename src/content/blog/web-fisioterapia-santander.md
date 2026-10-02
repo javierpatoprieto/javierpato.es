@@ -30,7 +30,7 @@ El mayor salto para una clínica es **quitar fricción a la cita**. Un botón de
 
 ## SEO local: que te encuentren con dolor de espalda
 
-Cuando alguien busca *"fisioterapeuta en Santander"* o *"suelo pélvico Torrelavega"*, quieres salir. Eso se trabaja con [SEO local](/blog/seo-local-cantabria): tu Google Business Profile, reseñas y una web rápida con tus servicios y tu zona bien claros.
+Cuando alguien busca *"fisioterapeuta en Santander"* o *"suelo pélvico Torrelavega"*, quieres salir. Eso se trabaja con [SEO local](/blog/seo-local-cantabria/): tu Google Business Profile, reseñas y una web rápida con tus servicios y tu zona bien claros.
 
 ## Cumple con lo legal
 
@@ -38,6 +38,6 @@ Una web de salud debe tener su aviso legal, política de privacidad y el tratami
 
 ## Empezar es sencillo
 
-Para muchas clínicas pequeñas, una [web bien resuelta desde 299€](/precios) que transmita confianza y facilite la cita ya marca la diferencia. Luego se crece: blog de consejos, más servicios, más prueba social.
+Para muchas clínicas pequeñas, una [web bien resuelta desde 299€](/precios/) que transmita confianza y facilite la cita ya marca la diferencia. Luego se crece: blog de consejos, más servicios, más prueba social.
 
-¿Eres fisioterapeuta o tienes una clínica en Cantabria? Mira cómo hago [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria) y, si trabajas en la capital, la página de [diseño web en Santander](/diseno-web-santander). Para lo demás, [cuéntame tu caso](/contacto).
+¿Eres fisioterapeuta o tienes una clínica en Cantabria? Mira cómo hago [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria/) y, si trabajas en la capital, la página de [diseño web en Santander](/diseno-web-santander/). Para lo demás, [cuéntame tu caso](/contacto/).

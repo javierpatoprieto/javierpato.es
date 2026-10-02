@@ -32,10 +32,10 @@ Al final el mantenimiento no vende "actualizaciones": vende dormir tranquilo. Sa
 
 ## Mejor con quien te hizo la web
 
-Si la web la hago yo, el mantenimiento es natural: conozco cada pieza y los cambios son rápidos. Forma parte de trabajar como [estudio](/estudio) de confianza, no de picar y desaparecer.
+Si la web la hago yo, el mantenimiento es natural: conozco cada pieza y los cambios son rápidos. Forma parte de trabajar como [estudio](/estudio/) de confianza, no de picar y desaparecer.
 
 ## Empezar es sencillo
 
-Tanto si ya tienes web como si te hago una [nueva](/precios), el mantenimiento es claro y sin letra pequeña: 190€/año, para que tú te ocupes de tu negocio y de la web me ocupe yo.
+Tanto si ya tienes web como si te hago una [nueva](/precios/), el mantenimiento es claro y sin letra pequeña: 190€/año, para que tú te ocupes de tu negocio y de la web me ocupe yo.
 
-¿Tienes una web en Cantabria que nadie toca desde hace años? Si está para revisión, la mantengo; si ya no da más de sí, mejor mirar un [diseño web en Cantabria](/diseno-web-cantabria) nuevo. [Enséñamela](/contacto) y te digo cuál de las dos es.
+¿Tienes una web en Cantabria que nadie toca desde hace años? Si está para revisión, la mantengo; si ya no da más de sí, mejor mirar un [diseño web en Cantabria](/diseno-web-cantabria/) nuevo. [Enséñamela](/contacto/) y te digo cuál de las dos es.

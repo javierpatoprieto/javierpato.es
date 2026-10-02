@@ -52,23 +52,23 @@ Una ficha por persona: nombre, colegio y nº de colegiado, formación real, en q
 
 ### Clínicas dentales
 
-Urgencias, primera visita, mutuas y especialidades (ortodoncia, implantes…) en páginas o bloques claros. Apoyo blog: [web clínica dental](/blog/web-clinica-dental-cantabria).
+Urgencias, primera visita, mutuas y especialidades (ortodoncia, implantes…) en páginas o bloques claros. Apoyo blog: [web clínica dental](/blog/web-clinica-dental-cantabria/).
 
 ### Fisioterapia
 
-Suelo pélvico, deporte, readaptación… cada línea con su explicación y su CTA de cita. Caso real: [Fisio Mamá](/proyectos/fisio-mama). Apoyo: [web fisioterapia Santander](/blog/web-fisioterapia-santander).
+Suelo pélvico, deporte, readaptación… cada línea con su explicación y su CTA de cita. Caso real: [Fisio Mamá](/proyectos/fisio-mama/). Apoyo: [web fisioterapia Santander](/blog/web-fisioterapia-santander/).
 
 ### Psicología
 
-Tono cuidadoso, cita discreta (formulario / enlace, no solo teléfono a gritos), sin promesas de resultado. Apoyo: [web psicólogo](/blog/web-psicologo-cantabria).
+Tono cuidadoso, cita discreta (formulario / enlace, no solo teléfono a gritos), sin promesas de resultado. Apoyo: [web psicólogo](/blog/web-psicologo-cantabria/).
 
 ### Nutrición, estética, veterinaria y otras consultas
 
-Misma lógica: tipología aquí; detalle largo en blog tipológico enlazado al pilar. Apoyos: [nutricionista](/blog/web-nutricionista-cantabria), [estética](/blog/web-centro-estetica-cantabria), [veterinaria](/blog/web-clinica-veterinaria-cantabria).
+Misma lógica: tipología aquí; detalle largo en blog tipológico enlazado al pilar. Apoyos: [nutricionista](/blog/web-nutricionista-cantabria/), [estética](/blog/web-centro-estetica-cantabria/), [veterinaria](/blog/web-clinica-veterinaria-cantabria/).
 
 ## Rangos (mismos precios publicados — IVA incluido)
 
-Clínica con varias especialidades y fichas de equipo suele encajar en **Pro 699€** (6 páginas). One-page **299€**, Básica **549€**, ecommerce **desde 999€** si aplica. Dominio, hosting y mantenimiento: ver [/precios/](/precios). Marca previa o pack: [/branding-cantabria/](/branding-cantabria). Visión general del servicio: [/diseno-web-cantabria/](/diseno-web-cantabria).
+Clínica con varias especialidades y fichas de equipo suele encajar en **Pro 699€** (6 páginas). One-page **299€**, Básica **549€**, ecommerce **desde 999€** si aplica. Dominio, hosting y mantenimiento: ver [/precios/](/precios/). Marca previa o pack: [/branding-cantabria/](/branding-cantabria/). Visión general del servicio: [/diseno-web-cantabria/](/diseno-web-cantabria/).
 
 ## Para quién
 
@@ -79,12 +79,12 @@ Clínica con varias especialidades y fichas de equipo suele encajar en **Pro 699
 
 ## Prueba social (solo proyectos reales)
 
-- **[Fisio Mamá](/proyectos/fisio-mama)** — Fisioterapia de embarazo y posparto en Santander: marca y web a la vez, textos que acompañan y reserva sin obligar a descolgar.
+- **[Fisio Mamá](/proyectos/fisio-mama/)** — Fisioterapia de embarazo y posparto en Santander: marca y web a la vez, textos que acompañan y reserva sin obligar a descolgar.
 
-Otros proyectos del estudio (contexto, no «casos clínica» inventados): [Periquete](/proyectos/centro-infantil-periquete), [Explora Siam](/proyectos/explora-siam), [CantabriaMásCerca](/proyectos/cantabriamascerca), [Click & Cargo](/proyectos/click-and-cargo). Hub: [/proyectos/](/proyectos).
+Otros proyectos del estudio (contexto, no «casos clínica» inventados): [Periquete](/proyectos/centro-infantil-periquete/), [Explora Siam](/proyectos/explora-siam/), [CantabriaMásCerca](/proyectos/cantabriamascerca/), [Click & Cargo](/proyectos/click-and-cargo/). Hub: [/proyectos/](/proyectos/).
 
 ## Pedir presupuesto
 
 Escríbeme tu especialidad, si trabajas mutuas y con qué agenda o software de citas te manejas. Te digo qué necesita tu web —y qué te están vendiendo que no necesitas.
 
-**[Pedir presupuesto →](/contacto)**
+**[Pedir presupuesto →](/contacto/)**

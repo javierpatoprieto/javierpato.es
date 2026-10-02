@@ -56,11 +56,11 @@ const jsonld = {
   '@type': 'CollectionPage',
   name: `${label} en Cantabria — Proyectos de Javier Pato`,
   description: `Proyectos de ${lower} para negocios de Cantabria diseñados por Javier Pato.`,
-  url: `https://javierpato.es/proyectos/servicio/${slugify(label)}`,
+  url: `https://javierpato.es/proyectos/servicio/${slugify(label)}/`,
   hasPart: items.map((p) => ({
     '@type': 'CreativeWork',
     name: p.data.title,
-    url: `https://javierpato.es/proyectos/${p.slug}`,
+    url: `https://javierpato.es/proyectos/${p.slug}/`,
   })),
 };
 ---
@@ -72,7 +72,7 @@ const jsonld = {
 >
   <section class="section sv-hero has-aura">
     <div class="wrap">
-      <nav class="sv-bc" aria-label="Migas"><a href="/proyectos">Proyectos</a> <span aria-hidden="true">/</span> <span>{label}</span></nav>
+      <nav class="sv-bc" aria-label="Migas"><a href="/proyectos/">Proyectos</a> <span aria-hidden="true">/</span> <span>{label}</span></nav>
       <span class="sv-eyebrow" data-reveal>Servicio · Cantabria</span>
       <h1 class="sv-h1 tbar" data-reveal>{label} en Cantabria</h1>
       <p class="sv-lead" data-reveal>
@@ -86,7 +86,7 @@ const jsonld = {
     <div class="wrap">
       <div class="sv-grid" data-stagger>
         {items.map((p) => (
-          <a class={`sv-card sv-card--${p.data.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
+          <a class={`sv-card sv-card--${p.data.tone}`} href={`/proyectos/${p.slug}/`} data-reveal>
             <div class="sv-cover">
               <img src={homeShots[p.slug] ?? p.data.shotDesktop} alt={`${p.data.title} — ${lower} en Cantabria`} loading="lazy" width="1600" height="1096" />
             </div>
@@ -100,7 +100,7 @@ const jsonld = {
         ))}
       </div>
 
-      <p class="sv-back" data-reveal><a href="/proyectos" class="btn btn--ghost">← Todos los proyectos</a></p>
+      <p class="sv-back" data-reveal><a href="/proyectos/" class="btn btn--ghost">← Todos los proyectos</a></p>
     </div>
   </section>
 

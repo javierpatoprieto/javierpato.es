@@ -24,7 +24,7 @@ La clienta (o cliente) decide en segundos, y lo hace mirando. Tu web tiene que e
 
 ## La marca te hace memorable (y te sube el ticket)
 
-En un sector saturado, la diferencia entre "una más" y "ese sitio tan chulo" es la **marca**. Un nombre, un logo, una paleta y un tono coherentes —en la web, en Instagram, en el escaparate— hacen que te recuerden y que tu precio se perciba justo. El [branding](/blog/branding-cantabria) no es un lujo aquí: es lo que te permite cobrar lo que vales.
+En un sector saturado, la diferencia entre "una más" y "ese sitio tan chulo" es la **marca**. Un nombre, un logo, una paleta y un tono coherentes —en la web, en Instagram, en el escaparate— hacen que te recuerden y que tu precio se perciba justo. El [branding](/blog/branding-cantabria/) no es un lujo aquí: es lo que te permite cobrar lo que vales.
 
 ## La reserva online llena la agenda sola
 
@@ -32,7 +32,7 @@ El mayor cambio para un centro de estética o una peluquería es **dejar que res
 
 ## Que te encuentren al buscar tu zona
 
-Cuando alguien busca *"centro de estética en Santander"* o *"peluquería Torrelavega"*, quieres aparecer. Eso es [SEO local](/blog/seo-local-cantabria): tu [Google Business Profile](/blog/google-business-profile-cantabria) cuidado, reseñas y una web rápida con tus servicios y tu zona claros.
+Cuando alguien busca *"centro de estética en Santander"* o *"peluquería Torrelavega"*, quieres aparecer. Eso es [SEO local](/blog/seo-local-cantabria/): tu [Google Business Profile](/blog/google-business-profile-cantabria/) cuidado, reseñas y una web rápida con tus servicios y tu zona claros.
 
 ## Tu web y tu Instagram, en el mismo idioma
 
@@ -40,8 +40,8 @@ Muchos centros viven en Instagram, y está bien. Pero la web es **tu casa**: lo 
 
 ## Empezar es sencillo
 
-Una [web bonita y funcional desde 299€](/precios), con buenas fotos y reserva online, ya transforma cómo te ve quien aún no te conoce.
+Una [web bonita y funcional desde 299€](/precios/), con buenas fotos y reserva online, ya transforma cómo te ve quien aún no te conoce.
 
-¿Tienes un centro de estética, un salón de belleza o una peluquería en Cantabria? Mira cómo trabajo las [webs para peluquerías y centros de estética](/diseno-web-cantabria/zonas#peluquerias-estetica): fotos, reserva y marca en el mismo paquete. Si prefieres preguntarme antes, [escríbeme](/contacto).
+¿Tienes un centro de estética, un salón de belleza o una peluquería en Cantabria? Mira cómo trabajo las [webs para peluquerías y centros de estética](/diseno-web-cantabria/zonas/#peluquerias-estetica): fotos, reserva y marca en el mismo paquete. Si prefieres preguntarme antes, [escríbeme](/contacto/).
 
-Si tu centro es consulta o clínica (no solo peluquería), el servicio canónico está en [diseño web para clínicas en Cantabria](/diseno-web-clinicas-cantabria).
+Si tu centro es consulta o clínica (no solo peluquería), el servicio canónico está en [diseño web para clínicas en Cantabria](/diseno-web-clinicas-cantabria/).

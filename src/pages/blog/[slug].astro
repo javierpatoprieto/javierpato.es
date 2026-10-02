@@ -11,7 +11,7 @@ const { Content } = await post.render();
 const d = post.data;
 const fmt = (date: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
 
-const postUrl = `https://javierpato.es/blog/${post.slug}`;
+const postUrl = `https://javierpato.es/blog/${post.slug}/`;
 const coverUrl = new URL(d.cover, 'https://javierpato.es').toString();
 
 const jsonld = [
@@ -22,18 +22,27 @@ const jsonld = [
     description: d.description,
     image: coverUrl,
     datePublished: d.pubDate.toISOString(),
-    dateModified: d.pubDate.toISOString(),
+    dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
+    inLanguage: 'es-ES',
     keywords: d.keyword,
-    author: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
-    publisher: { '@type': 'Person', name: 'Javier Pato' },
-    mainEntityOfPage: postUrl,
+    author: { '@type': 'Person', '@id': 'https://javierpato.es/#javier', name: 'Javier Pato', url: 'https://javierpato.es/estudio/' },
+    publisher: { '@type': 'Person', '@id': 'https://javierpato.es/#javier', name: 'Javier Pato' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+    url: postUrl,
   },
+  ...(d.faqs.length
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: d.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+      }]
+    : []),
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://javierpato.es/blog' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://javierpato.es/blog/' },
       { '@type': 'ListItem', position: 3, name: d.title, item: postUrl },
     ],
   },
@@ -42,8 +51,8 @@ const jsonld = [
 <Layout title={`${d.title} | Javier Pato`} description={d.description} ogImage={d.cover} jsonld={jsonld}>
   <article class="section post">
     <div class="wrap post__wrap">
-      <nav class="post__bc" aria-label="Migas"><a href="/blog">Blog</a> <span aria-hidden="true">/</span> <span>{d.tags[0] ?? 'Artículo'}</span></nav>
-      <span class="post__meta">{d.read} de lectura · {fmt(d.pubDate)}</span>
+      <nav class="post__bc" aria-label="Migas"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span> <span>{d.tags[0] ?? 'Artículo'}</span></nav>
+      <span class="post__meta">{d.read} de lectura · {fmt(d.pubDate)}{d.updatedDate && <> · Actualizado el {fmt(d.updatedDate)}</>}</span>
       <h1 class="post__h1">{d.title}</h1>
       <p class="post__intro">{d.description}</p>
       {/* LCP del artículo: nunca lazy. width/height = la caja renderizada (16/9,
@@ -55,12 +64,21 @@ const jsonld = [
         <Content />
       </div>
 
+      {d.faqs.length > 0 && (
+        <section class="post__faq" aria-labelledby="faq-t">
+          <h2 id="faq-t" class="post__faq-t">Preguntas frecuentes</h2>
+          {d.faqs.map((f) => (
+            <details class="post__q"><summary>{f.q}</summary><p>{f.a}</p></details>
+          ))}
+        </section>
+      )}
+
       <aside class="post__cta">
         <h2 class="post__cta-t">¿Quieres una web así para tu negocio?</h2>
         <p>Diseño web y marca en Cantabria desde 299€. Una charla de 20 min y te digo qué necesitas — sin compromiso.</p>
         <div class="post__cta-btns">
-          <a href="/precios" class="btn btn--green">Ver precios →</a>
-          <a href="/contacto" class="btn btn--ghost">Hablar conmigo</a>
+          <a href="/precios/" class="btn btn--green">Ver precios →</a>
+          <a href="/contacto/" class="btn btn--ghost">Hablar conmigo</a>
         </div>
       </aside>
     </div>
@@ -83,6 +101,14 @@ const jsonld = [
     .post__body :global(strong) { color: var(--ink); font-weight: 700; }
     .post__body :global(a) { color: var(--accent-ink); font-weight: 600; border-bottom: 1px solid currentColor; }
     .post__body :global(blockquote) { border-left: 3px solid var(--accent); padding-left: 18px; margin: var(--s-4) 0; color: var(--ink-soft); font-style: italic; }
+    .post__faq { margin-top: var(--s-7); display: grid; gap: 12px; }
+    .post__faq-t { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.5rem,3vw,2rem); margin-bottom: var(--s-3); line-height: 1.1; }
+    .post__q { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(16px,2vw,22px) clamp(18px,2.4vw,26px); }
+    .post__q summary { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+    .post__q summary::-webkit-details-marker { display: none; }
+    .post__q summary::after { content: '+'; color: var(--accent-ink); font-size: 1.4rem; flex: none; transition: transform var(--dur) var(--ease-soft); }
+    .post__q[open] summary::after { transform: rotate(45deg); }
+    .post__q p { color: var(--ink-soft); line-height: 1.6; margin-top: 12px; }
     .post__cta { background: var(--panel); color: var(--panel-ink); border-radius: var(--radius-lg); padding: clamp(28px,4vw,44px); margin-top: var(--s-7); }
     .post__cta-t { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.4rem,3vw,2rem); color: var(--panel-ink); margin-bottom: 10px; }
     .post__cta p { opacity: 0.85; margin-bottom: var(--s-4); max-width: 50ch; }

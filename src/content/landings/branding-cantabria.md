@@ -32,9 +32,9 @@ faqs:
 
 «Branding» no es un manual de 80 páginas que nadie abre. Es decidir, a propósito, qué idea construyes en la cabeza de quien te ve —web, tarjeta, rótulo, Instagram— y dejarlo escrito para que cualquiera lo aplique igual.
 
-El [artículo del blog](/blog/branding-cantabria) explica el concepto; **esta URL es el servicio**.
+El [artículo del blog](/blog/branding-cantabria/) explica el concepto; **esta URL es el servicio**.
 
-## Diseño de logotipo Cantabria vs identidad completa
+## Logotipo suelto o identidad completa
 
 | Encargo | Qué te llevas | Desde (IVA incl.) |
 |---------|---------------|-------------------|
@@ -43,11 +43,11 @@ El [artículo del blog](/blog/branding-cantabria) explica el concepto; **esta UR
 | **Marca + Web** | Identidad + web de 4 páginas (misma estrategia, un solo encaje) | 790€ |
 | **Rediseño** | Según qué haya que conservar | Presupuesto |
 
-El logo suelto sirve para arrancar. La identidad evita que el rotulista, el community y el de la web improvisen cada uno su versión de tu marca.
+Si lo que buscas es solo el logo, en esta guía cuento cómo es el [diseño de logotipo en Cantabria](/blog/diseno-logotipo-cantabria/): proceso, archivos y plazos. El logo suelto sirve para arrancar. La identidad evita que el rotulista, el community y el de la web improvisen cada uno su versión de tu marca.
 
 ## Por qué el pack marca + web suele salir a cuenta
 
-Si haces la web antes que la marca, acabas pagando dos veces: colores que no aguantan, tipografías sin licencia web, logo que no se lee a 32 px. Cuando la identidad va primero (o a la vez), la [web](/diseno-web-cantabria) sale del mismo sistema. Una sola conversación de estrategia alimenta las dos piezas.
+Si haces la web antes que la marca, acabas pagando dos veces: colores que no aguantan, tipografías sin licencia web, logo que no se lee a 32 px. Cuando la identidad va primero (o a la vez), la [web](/diseno-web-cantabria/) sale del mismo sistema. Una sola conversación de estrategia alimenta las dos piezas.
 
 ## Qué pruebas pasa cualquier logo antes de enseñártelo
 
@@ -76,13 +76,13 @@ Archivos tuyos para siempre: vectorial para imprenta, PNG transparentes, version
 
 ## Prueba social (solo proyectos reales)
 
-- **[Centro Infantil Periquete](/proyectos/centro-infantil-periquete)** — Caso de sistema, no de «logo bonito»: la identidad tenía que sostener calidez y método a la vez, y funcionar igual en cartel, circular y pantalla. Reserva de plaza sin líos.
-- **[Fisio Mamá](/proyectos/fisio-mama)** — Marca + web a la vez: tono sereno para un momento vulnerable, sin cursilería ni promesa fácil.
+- **[Centro Infantil Periquete](/proyectos/centro-infantil-periquete/)** — Caso de sistema, no de «logo bonito»: la identidad tenía que sostener calidez y método a la vez, y funcionar igual en cartel, circular y pantalla. Reserva de plaza sin líos.
+- **[Fisio Mamá](/proyectos/fisio-mama/)** — Marca + web a la vez: tono sereno para un momento vulnerable, sin cursilería ni promesa fácil.
 
-Más trabajo: [/proyectos/](/proyectos).
+Más trabajo: [/proyectos/](/proyectos/).
 
 ## Pedir presupuesto
 
 Cuéntame qué vendes, a quién, y si el problema es el logo, el sistema entero o solo ordenar lo que ya tienes. Te digo qué necesitas —logo, identidad o pack marca + web— con precio cerrado.
 
-**[Pedir presupuesto →](/contacto)** · Rangos también en esta página y coherentes con [/precios/](/precios) (web) + branding publicado.
+**[Pedir presupuesto →](/contacto/)** · Rangos también en esta página y coherentes con [/precios/](/precios/) (web) + branding publicado.

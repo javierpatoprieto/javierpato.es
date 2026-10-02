@@ -25,6 +25,8 @@ faqs:
     a: "La ley te obliga a devolver el importe del producto y el coste del envío estándar de ida. El envío de vuelta puede pagarlo el cliente, pero solo si se lo has informado con claridad antes de comprar; si no lo pusiste, lo pagas tú. Por eso las condiciones de venta no son un copia y pega: te ahorran discusiones y dinero."
   - q: "Vendo alimentación, ¿puedo enviar a toda España?"
     a: "Sí, cuidando dos cosas: el embalaje y el plazo (si el producto es fresco, el transporte manda sobre todo lo demás) y el etiquetado obligatorio, que en la ficha online también tiene que aparecer. Ojo además con el desistimiento: los productos perecederos y los precintados por higiene tienen excepciones que conviene dejar escritas."
+  - q: "¿Cuánto se tarda en tener la tienda online funcionando?"
+    a: "Dos o tres semanas desde que tengo las fotos, los precios y los datos de envío. Lo que más alarga el plazo casi nunca es el montaje: es reunir el catálogo. Por eso te paso al principio una plantilla con lo que necesito de cada producto."
 ---
 
 ## Tu producto es de aquí; tu margen se va fuera
@@ -51,7 +53,7 @@ Aquí ya aparecen las variantes: talla, color, formato de 250 g o 500 g, packs. 
 
 Si ya vendes en tienda física con un TPV, o tienes proveedor con stock cambiante, lo que manda es la integración: que no tengas que meter el mismo producto dos veces ni vender algo que se acabó ayer. Eso encarece el proyecto y hay que decirlo antes, no a mitad.
 
-Te digo cuál de las tres eres en la primera llamada, aunque la respuesta sea "para lo que vendes, con una [web bien hecha](/diseno-web-cantabria) y un carrito sencillo vas sobrado".
+Te digo cuál de las tres eres en la primera llamada, aunque la respuesta sea "para lo que vendes, con una [web bien hecha](/diseno-web-cantabria/) y un carrito sencillo vas sobrado".
 
 ## Pagos, envíos y devoluciones: donde se cae la venta
 
@@ -71,9 +73,9 @@ No necesitas un almacén ni un contrato de operador logístico. Necesitas saber 
 
 Una ficha no es una foto y un precio. Es el momento en el que alguien decide si se fía. Lo que pongo en las tuyas: el nombre tal y como lo buscaría un cliente (no tu código interno), qué es y para quién, tamaño o peso real y comparado con algo reconocible, de qué está hecho, quién lo hace, cuánto tarda en llegar y qué pasa si no le gusta. Todo eso arriba, sin obligar a bajar tres pantallas.
 
-Y las fotos. Una tienda de producto local se sostiene sobre la imagen: fondo limpio para ver el producto, contexto para imaginarlo en casa y detalle para juzgar el acabado. Si no las tienes, se producen; es parte del [diseño gráfico](/diseno-grafico-cantabria) del proyecto y suele ser la inversión que más se nota en la conversión.
+Y las fotos. Una tienda de producto local se sostiene sobre la imagen: fondo limpio para ver el producto, contexto para imaginarlo en casa y detalle para juzgar el acabado. Si no las tienes, se producen; es parte del [diseño gráfico](/diseno-grafico-cantabria/) del proyecto y suele ser la inversión que más se nota en la conversión.
 
-Las fichas, además, son las páginas que te traen tráfico. Cada una es una entrada a Google por el nombre de lo que vendes, que es justo lo que trabajo cuando montamos el [SEO local](/blog/seo-local-cantabria) de la tienda.
+Las fichas, además, son las páginas que te traen tráfico. Cada una es una entrada a Google por el nombre de lo que vendes, que es justo lo que trabajo cuando montamos el [SEO local](/blog/seo-local-cantabria/) de la tienda.
 
 ## Lo que la ley te va a exigir
 
@@ -91,10 +93,29 @@ No es para asustar: es media jornada de trabajo bien hecho que evita una reclama
 
 **"No tengo stock para tanto."** Mejor. Empezar con pocos productos es la decisión correcta, no la de conformarse: menos fichas que mantener, menos dinero parado y una tienda que se entiende a la primera. Ampliar es fácil; recortar una tienda inflada, no.
 
+## Qué incluye una tienda online
+
+- **Catálogo ordenado:** categorías, filtros y variantes (talla, formato, packs) pensadas para cómo busca tu cliente, no para cómo lo tienes en el almacén.
+- **Fichas de producto completas** con fotos, medidas reales, composición y plazo de entrega a la vista.
+- **Pagos configurados:** tarjeta y los métodos que encajen con tu cliente, con la comisión metida en tus números antes de fijar precios.
+- **Envíos y devoluciones:** tarifas según peso y destino, la política visible desde la ficha y, si tienes local, la opción de recoger en tienda para quien vive cerca.
+- **La parte legal:** condiciones de venta, desistimiento de 14 días con su formulario, privacidad, cookies y confirmación de pedido.
+- **SEO de base:** títulos y descripciones de cada ficha y categoría, para que el nombre de lo que vendes te traiga visitas.
+- **Formación grabada** para que subas productos, cambies precios y gestiones pedidos sin depender de nadie.
+- **Tu marca, entera:** si aún no tienes logo o el que tienes no aguanta en pequeño, conviene resolverlo antes; aquí explico cómo es el [diseño de logotipo en Cantabria](/blog/diseno-logotipo-cantabria/). Y si además vendes a tiendas o distribuidores, el mismo catálogo sirve de base para tu [dossier comercial](/diseno-grafico-cantabria/#dossier).
+
+## Cómo se monta, paso a paso
+
+1. **Llamada de veinte minutos.** Qué vendes, cuántas referencias, cuánto pesa la caja más grande y a dónde envías. Sale una propuesta con precio cerrado.
+2. **Catálogo.** Te paso una plantilla con lo que necesito de cada producto. Si faltan fotos, se producen en esta fase.
+3. **Montaje.** Estructura, fichas, pagos, envíos y textos legales.
+4. **Pruebas reales.** Compras de principio a fin, incluido un cobro y una devolución, en móvil y ordenador.
+5. **Salida y formación.** Publicamos, te enseño a llevarla y te quedas con la grabación.
+
 ## Plazos y precio
 
-Dos o tres semanas desde que tengo tus fotos, tus precios y tus datos de envío. El proceso es corto: llamada de veinte minutos, propuesta con precio cerrado, montaje del catálogo, pruebas de compra reales de principio a fin —incluido un cobro y una devolución— y salida.
+Dos o tres semanas desde que tengo tus fotos, tus precios y tus datos de envío. Si quieres llegar a una fecha concreta —campaña de Navidad, temporada de verano—, cuéntamela al principio: el catálogo se prepara hacia atrás desde ella.
 
-**Tienda online desde 999€**, según catálogo y funcionalidades. El resto de opciones y los costes anuales de dominio, alojamiento y mantenimiento están en [precios](/precios), a la vista. Yo no me llevo ningún porcentaje de tus ventas: la tienda es tuya el día que se publica.
+**Tienda online desde 999€**, según catálogo y funcionalidades. El resto de opciones y los costes anuales de dominio, alojamiento y mantenimiento están en [precios](/precios/), a la vista. Yo no me llevo ningún porcentaje de tus ventas: la tienda es tuya el día que se publica.
 
-Cuéntame qué vendes, cuántas referencias tienes y cuánto pesa la caja más grande, y te digo en un rato si esto te sale a cuenta. [Escríbeme](/contacto) y lo vemos.
+Cuéntame qué vendes, cuántas referencias tienes y cuánto pesa la caja más grande, y te digo en un rato si esto te sale a cuenta. [Escríbeme](/contacto/) y lo vemos.

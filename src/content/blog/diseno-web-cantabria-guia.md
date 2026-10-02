@@ -16,7 +16,7 @@ Buscar **diseño web en Cantabria** y comparar opciones puede ser un lío: preci
 
 Antes de pedir presupuestos, ten claro el objetivo. No es lo mismo:
 
-- **Presencia básica:** que te encuentren y vean qué haces (una [web one-page](/precios) basta).
+- **Presencia básica:** que te encuentren y vean qué haces (una [web one-page](/precios/) basta).
 - **Captación:** que la web te traiga clientes (necesitas SEO local y buenos textos).
 - **Vender online:** una tienda con catálogo y pagos.
 
@@ -26,7 +26,7 @@ Si quien te atiende no te pregunta esto, mala señal.
 
 1. **Cargar rápido.** Si tarda más de 3 segundos, pierdes visitas.
 2. **Verse perfecta en el móvil.** La mayoría de tu tráfico local entra desde el teléfono.
-3. **Salir en Google.** Estructura, velocidad y datos de tu negocio para el [SEO local](/blog/seo-local-cantabria).
+3. **Salir en Google.** Estructura, velocidad y datos de tu negocio para el [SEO local](/blog/seo-local-cantabria/).
 4. **Diseño con criterio.** Tipografía, color y espacio pensados, no una plantilla recoloreada.
 5. **Una llamada a la acción clara.** Que se sepa qué hacer: llamar, reservar, comprar.
 
@@ -43,10 +43,10 @@ Una plantilla puede valer para salir del paso, pero te limita y se parece a otra
 
 ## Local importa
 
-Trabajar con alguien de Cantabria tiene ventaja: entiende a tu cliente, conoce el mercado de [Santander](/diseno-web-santander), [Torrelavega](/diseno-web-torrelavega) o los valles, y puedes tratar con una persona, no con un ticket de soporte.
+Trabajar con alguien de Cantabria tiene ventaja: entiende a tu cliente, conoce el mercado de [Santander](/diseno-web-santander/), [Torrelavega](/diseno-web-torrelavega/) o los valles, y puedes tratar con una persona, no con un ticket de soporte.
 
 ## La pregunta clave para filtrar
 
 Cuando pidas presupuesto, pregunta: *"¿Cómo va a ayudar esta web a que entren más clientes?"*. Si la respuesta es concreta (SEO local, textos que convierten, velocidad), vas bien. Si es vaga, sigue buscando.
 
-¿Quieres una opinión honesta sobre tu caso? Empieza por ver cómo respondo yo a esa pregunta en [diseño web en Cantabria](/diseno-web-cantabria): qué incluyo, cómo trabajo y en cuánto entrego. Y si te encaja, [cuéntame qué haces](/contacto) y te digo qué necesitas, sin venderte de más.
+¿Quieres una opinión honesta sobre tu caso? Empieza por ver cómo respondo yo a esa pregunta en [diseño web en Cantabria](/diseno-web-cantabria/): qué incluyo, cómo trabajo y en cuánto entrego. Y si te encaja, [cuéntame qué haces](/contacto/) y te digo qué necesitas, sin venderte de más.

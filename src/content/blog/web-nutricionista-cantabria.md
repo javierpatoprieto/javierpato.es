@@ -28,11 +28,11 @@ Una de las grandes ventajas de tu profesión es que el seguimiento online funcio
 
 ## Tu marca te separa del intrusismo
 
-En un sector con tanto ruido, una **identidad seria y cuidada** comunica profesionalidad antes de leer una sola palabra. Color, tipografía, tono y buenas fotos coherentes hacen que tu perfil pese más que el del "coach" de turno. Ahí es donde [el branding](/blog/branding-cantabria) trabaja a tu favor.
+En un sector con tanto ruido, una **identidad seria y cuidada** comunica profesionalidad antes de leer una sola palabra. Color, tipografía, tono y buenas fotos coherentes hacen que tu perfil pese más que el del "coach" de turno. Ahí es donde [el branding](/blog/branding-cantabria/) trabaja a tu favor.
 
 ## El blog te posiciona como experto
 
-Pocos sectores ganan tanto con contenido como la nutrición. Responder dudas reales —"¿qué desayunar?", "mitos de los hidratos"— atrae a quien busca en Google y, de paso, demuestra tu criterio. Es [SEO local](/blog/seo-local-cantabria) y autoridad a la vez: te encuentran y, además, te creen.
+Pocos sectores ganan tanto con contenido como la nutrición. Responder dudas reales —"¿qué desayunar?", "mitos de los hidratos"— atrae a quien busca en Google y, de paso, demuestra tu criterio. Es [SEO local](/blog/seo-local-cantabria/) y autoridad a la vez: te encuentran y, además, te creen.
 
 ## Quita fricción a la primera consulta
 
@@ -40,6 +40,6 @@ Reservar la primera cita tiene que ser de un par de clics: formulario simple, Wh
 
 ## Empezar es sencillo
 
-Una [web profesional desde 299€](/precios) que transmita rigor y facilite la reserva ya te coloca por delante de la mayoría. Después se crece con blog, más prueba social y packs.
+Una [web profesional desde 299€](/precios/) que transmita rigor y facilite la reserva ya te coloca por delante de la mayoría. Después se crece con blog, más prueba social y packs.
 
-¿Eres nutricionista o dietista en Cantabria (o trabajas online)? Aquí tienes cómo hago las [webs para clínicas y consultas en Cantabria](/diseno-web-clinicas-cantabria), con la reserva y lo legal atados. Si quieres comentar tu caso, [escríbeme](/contacto).
+¿Eres nutricionista o dietista en Cantabria (o trabajas online)? Aquí tienes cómo hago las [webs para clínicas y consultas en Cantabria](/diseno-web-clinicas-cantabria/), con la reserva y lo legal atados. Si quieres comentar tu caso, [escríbeme](/contacto/).

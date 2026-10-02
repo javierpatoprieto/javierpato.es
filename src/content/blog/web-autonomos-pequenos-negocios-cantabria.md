@@ -22,14 +22,14 @@ Tu competencia grande ya sale en Google. Tú compites con cercanía y trato, per
 
 ## No necesitas una web enorme
 
-El error es pensar en webs de 10 páginas. Para empezar, una [web de una página (299€)](/precios) bien hecha basta: quién eres, qué haces, por qué tú y cómo contactarte. Directa y rápida. Se entrega en **3 días**.
+El error es pensar en webs de 10 páginas. Para empezar, una [web de una página (299€)](/precios/) bien hecha basta: quién eres, qué haces, por qué tú y cómo contactarte. Directa y rápida. Se entrega en **3 días**.
 
 ## Lo que sí o sí tiene que tener
 
 1. **Quedar claro qué haces** en 5 segundos.
 2. **Cómo contactarte** visible (WhatsApp, teléfono, formulario).
 3. **Verse bien en el móvil**, que es por donde te van a mirar.
-4. **Salir en Google** para tu servicio y tu zona ([SEO local](/blog/seo-local-cantabria)).
+4. **Salir en Google** para tu servicio y tu zona ([SEO local](/blog/seo-local-cantabria/)).
 5. Un par de **reseñas o casos** que den confianza.
 
 ## El coste real (y por qué compensa)
@@ -38,6 +38,6 @@ Una web para autónomo en Cantabria arranca en 299€, más el dominio y el aloj
 
 ## Hazlo con criterio, no con plantilla
 
-La tentación de montarte algo gratis en una tarde es real, pero el resultado suele transmitir justo lo que no quieres. Una web con criterio te hace [parecer lo que vales](/blog/branding-cantabria) — y eso, siendo pequeño, es tu mayor ventaja.
+La tentación de montarte algo gratis en una tarde es real, pero el resultado suele transmitir justo lo que no quieres. Una web con criterio te hace [parecer lo que vales](/blog/branding-cantabria/) — y eso, siendo pequeño, es tu mayor ventaja.
 
-¿Eres autónomo en Cantabria y aún no tienes web (o tienes una que da pena)? Mira qué incluye una [web para autónomos en Cantabria](/diseno-web-autonomos-cantabria) y con qué plazos trabajo. Si tienes dudas antes de decidir, [escríbeme](/contacto).
+¿Eres autónomo en Cantabria y aún no tienes web (o tienes una que da pena)? Mira qué incluye una [web para autónomos en Cantabria](/diseno-web-autonomos-cantabria/) y con qué plazos trabajo. Si tienes dudas antes de decidir, [escríbeme](/contacto/).

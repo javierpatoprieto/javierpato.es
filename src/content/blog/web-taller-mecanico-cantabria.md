@@ -21,7 +21,7 @@ El cliente medio de un taller no entiende de coches, y eso le da miedo: teme que
 
 ## Aparecer en el momento exacto
 
-Cuando a alguien le pasa algo con el coche, busca ya: *"taller cerca de mí"*, *"cambio de neumáticos Santander"*, *"pre-ITV Torrelavega"*. Si no sales, va a la competencia. Salir se trabaja con [SEO local](/blog/seo-local-cantabria) y una [ficha de Google](/blog/google-business-profile-cantabria) bien cuidada, con reseñas y fotos de tu taller real.
+Cuando a alguien le pasa algo con el coche, busca ya: *"taller cerca de mí"*, *"cambio de neumáticos Santander"*, *"pre-ITV Torrelavega"*. Si no sales, va a la competencia. Salir se trabaja con [SEO local](/blog/seo-local-cantabria/) y una [ficha de Google](/blog/google-business-profile-cantabria/) bien cuidada, con reseñas y fotos de tu taller real.
 
 ## Pedir cita sin tener que llamar
 
@@ -29,10 +29,10 @@ Mucha gente pospone llevar el coche solo por la pereza de llamar en horario de t
 
 ## Confianza también por fuera
 
-Una web ordenada, con fotos reales y un tono claro, transmite lo mismo que un taller limpio: aquí se hacen las cosas bien. Es la versión digital de la primera impresión. Una [identidad de marca](/blog/branding-cantabria) sencilla ayuda a que te recuerden y te recomienden.
+Una web ordenada, con fotos reales y un tono claro, transmite lo mismo que un taller limpio: aquí se hacen las cosas bien. Es la versión digital de la primera impresión. Una [identidad de marca](/blog/branding-cantabria/) sencilla ayuda a que te recuerden y te recomienden.
 
 ## Empezar es sencillo
 
-Una [web desde 299€](/precios) con tus servicios, tu zona y un contacto fácil ya te pone por delante de los talleres que ni salen en Google. 
+Una [web desde 299€](/precios/) con tus servicios, tu zona y un contacto fácil ya te pone por delante de los talleres que ni salen en Google. 
 
-¿Tienes un taller en Cantabria y quieres que te encuentren los clientes que hoy van a otro? Aquí te cuento cómo hago el [diseño web en Cantabria](/diseno-web-cantabria), con la zona y los servicios bien marcados. Si quieres preguntarme algo antes, [escríbeme](/contacto).
+¿Tienes un taller en Cantabria y quieres que te encuentren los clientes que hoy van a otro? Aquí te cuento cómo hago el [diseño web en Cantabria](/diseno-web-cantabria/), con la zona y los servicios bien marcados. Si quieres preguntarme algo antes, [escríbeme](/contacto/).

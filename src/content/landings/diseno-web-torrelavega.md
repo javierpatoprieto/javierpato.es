@@ -40,25 +40,25 @@ Mi trabajo es simple de contar: **que ganes esa búsqueda antes de que arranque 
 
 El segundo error habitual es pensar en pequeño. Torrelavega es cabecera de una comarca entera: mucha gente de Cartes, Reocín, Los Corrales, Barreda o Suances no compra en su pueblo, compra aquí. Pero ese vecino no pasa por tu puerta ni se entera por el boca a boca de tu calle. **Ese vecino te encuentra buscando o no te encuentra.**
 
-Por eso las webs que hago para negocios de aquí no dicen solo "Torrelavega": nombran la comarca, explican desde dónde viene la gente y hasta dónde llegas tú. Es lo que trabajo en el [SEO local](/blog/seo-local-cantabria) de cada proyecto, y es la diferencia entre competir por una calle o por un valle.
+Por eso las webs que hago para negocios de aquí no dicen solo "Torrelavega": nombran la comarca, explican desde dónde viene la gente y hasta dónde llegas tú. Es lo que trabajo en el [SEO local](/blog/seo-local-cantabria/) de cada proyecto, y es la diferencia entre competir por una calle o por un valle.
 
 ## Dos negocios muy distintos conviven aquí
 
 ### Si tienes comercio o servicio de calle
 
-Web que carga rápido en el móvil, con lo que la gente busca de verdad antes de moverse: qué vendes, si lo tienes, cuánto cuesta, dónde aparcar y cómo llegar. Ficha de Google conectada y bien montada, fotos reales de tu local y un camino directo a WhatsApp o al teléfono. Sobre esto escribí en detalle en [la guía para comercios de Torrelavega](/blog/pagina-web-comercio-local-torrelavega).
+Web que carga rápido en el móvil, con lo que la gente busca de verdad antes de moverse: qué vendes, si lo tienes, cuánto cuesta, dónde aparcar y cómo llegar. Ficha de Google conectada y bien montada, fotos reales de tu local y un camino directo a WhatsApp o al teléfono. Sobre esto escribí en detalle en [la guía para comercios de Torrelavega](/blog/pagina-web-comercio-local-torrelavega/).
 
 ### Si tu negocio es industrial, taller o B2B
 
 Torrelavega tiene un tejido que no vive del paseante: naves, talleres, proveedores, empresas de servicios que venden a otras empresas. Ahí nadie ve tu fachada. Tu cliente es alguien que busca proveedor desde un ordenador, entra en cuatro webs y descarta en dos minutos las que no le dejan comprobar qué hacen, para quién y con qué medios. Para esos negocios monto webs que explican lo técnico sin jerga, enseñan capacidad y trabajos reales, y dan una vía de contacto que no sea un formulario que nadie contesta.
 
-Si necesitas vender también fuera del mostrador, lo natural es dar el salto a una [tienda online](/tienda-online-cantabria) sin depender de marketplaces que se llevan tu margen.
+Si necesitas vender también fuera del mostrador, lo natural es dar el salto a una [tienda online](/tienda-online-cantabria/) sin depender de marketplaces que se llevan tu margen.
 
 ## Un proyecto real de esta zona
 
 No te lo cuento en abstracto. **CantabriaMásCerca** es un negocio de servicios del valle del Besaya —cuidado de segundas residencias, recados y gestiones— que arrancaba desde cero. Antes de diseñar una sola pantalla trabajamos el concepto: a quién se dirige, qué servicio es el principal y qué precios se enseñan.
 
-La web se ordenó alrededor de dos clientes muy distintos: el propietario que tiene casa aquí pero vive fuera, y el vecino del valle que no llega a todo. Cada uno entra por su puerta. Los precios están a la vista antes de que nadie escriba, y en vez de prometer informes, la web enseña la conversación real de WhatsApp que recibe el cliente tras cada visita. Se creó la ficha de Google conectada a la web y se nombraron municipios y valles, porque quien busca desde Madrid o Bilbao escribe el nombre de su pueblo, no el de la provincia. Puedes verlo entero en [el caso de CantabriaMásCerca](/proyectos/cantabriamascerca).
+La web se ordenó alrededor de dos clientes muy distintos: el propietario que tiene casa aquí pero vive fuera, y el vecino del valle que no llega a todo. Cada uno entra por su puerta. Los precios están a la vista antes de que nadie escriba, y en vez de prometer informes, la web enseña la conversación real de WhatsApp que recibe el cliente tras cada visita. Se creó la ficha de Google conectada a la web y se nombraron municipios y valles, porque quien busca desde Madrid o Bilbao escribe el nombre de su pueblo, no el de la provincia. Puedes verlo entero en [el caso de CantabriaMásCerca](/proyectos/cantabriamascerca/).
 
 ## Las tres pegas que salen siempre en el Besaya
 
@@ -86,6 +86,6 @@ Plazos reales: **3 días** la one-page, **una semana** las webs de 4 y 6 página
 
 One-page a medida **299€**. Web de 4 páginas **549€**. De 6 páginas **699€**. Tienda online **desde 999€**.
 
-Los gastos anuales van por separado porque son tuyos y a tu nombre: el dominio cuesta 19,99€ al año, el alojamiento 49€ y el mantenimiento —opcional— 190€, que cubre cambios, copias de seguridad y actualizaciones. Si algún año prefieres llevarlo tú o llevártelo a otro sitio, puedes: nada de esto te ata. Todo desglosado en [precios](/precios).
+Los gastos anuales van por separado porque son tuyos y a tu nombre: el dominio cuesta 19,99€ al año, el alojamiento 49€ y el mantenimiento —opcional— 190€, que cubre cambios, copias de seguridad y actualizaciones. Si algún año prefieres llevarlo tú o llevártelo a otro sitio, puedes: nada de esto te ata. Todo desglosado en [precios](/precios/).
 
-¿Tienes un negocio en Torrelavega o en el Besaya y quieres que te encuentren antes de que tu cliente coja el coche? [Cuéntame qué haces](/contacto) y te digo sin rodeos qué necesitas y qué no.
+¿Tienes un negocio en Torrelavega o en el Besaya y quieres que te encuentren antes de que tu cliente coja el coche? [Cuéntame qué haces](/contacto/) y te digo sin rodeos qué necesitas y qué no.

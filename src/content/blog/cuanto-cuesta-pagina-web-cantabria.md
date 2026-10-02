@@ -19,9 +19,9 @@ En la práctica, para un negocio local en Cantabria te vas a mover en estos rang
 - **Web de una página (one-page): desde 299€.** Perfecta para empezar: presentas el negocio, los servicios y el contacto en una sola página bien resuelta.
 - **Web de 4 páginas: alrededor de 549€.** Cuando necesitas separar servicios, sobre mí y contacto con algo más de recorrido.
 - **Web de 6 páginas: alrededor de 699€.** Para contarlo todo bien, con espacio para blog o casos.
-- **Tienda online: desde 999€.** Catálogo, pagos y la base para [vender por internet](/tienda-online-cantabria).
+- **Tienda online: desde 999€.** Catálogo, pagos y la base para [vender por internet](/tienda-online-cantabria/).
 
-Puedes ver el desglose completo y configurar tu presupuesto en la [página de precios](/precios), y qué entra exactamente en cada plan lo detallo en [diseño web en Cantabria](/diseno-web-cantabria).
+Puedes ver el desglose completo y configurar tu presupuesto en la [página de precios](/precios/), y qué entra exactamente en cada plan lo detallo en [diseño web en Cantabria](/diseno-web-cantabria/).
 
 ## ¿Por qué hay tanta diferencia con una agencia?
 
@@ -48,4 +48,4 @@ Aparte del diseño, hay dos costes anuales pequeños: el **dominio** (tu .es o .
 
 Una web profesional en Cantabria para un negocio local arranca en **299€** y sube según páginas y funciones. Lo importante no es el número, sino que cada euro esté trabajando para que tu negocio **parezca lo que vale y venda más**.
 
-Si quieres saber exactamente cuánto costaría la tuya, empieza por ver cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria). Y si lo tienes claro, dime qué haces y lo vemos en una [charla de 20 minutos](/contacto). Sin compromiso.
+Si quieres saber exactamente cuánto costaría la tuya, empieza por ver cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria/). Y si lo tienes claro, dime qué haces y lo vemos en una [charla de 20 minutos](/contacto/). Sin compromiso.

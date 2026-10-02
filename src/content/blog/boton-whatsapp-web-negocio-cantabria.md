@@ -28,11 +28,11 @@ El enlace puede abrir el chat con un texto ya escrito: "Hola, quiero pedir cita 
 
 ### 3. Con una frase que quite miedo
 
-Junto al botón, algo corto: "Te contesto yo, normalmente en menos de 24 h". Es lo que hice en la landing de [Explora Siam](/proyectos/explora-siam): "Te contesta Dani, no un bot". Decir quién responde y cuándo multiplica los mensajes.
+Junto al botón, algo corto: "Te contesto yo, normalmente en menos de 24 h". Es lo que hice en la landing de [Explora Siam](/proyectos/explora-siam/): "Te contesta Dani, no un bot". Decir quién responde y cuándo multiplica los mensajes.
 
 ### 4. Un solo objetivo por pantalla
 
-Si en el mismo sitio hay "llama", "escribe", "reserva" y "descarga", nadie hace nada. WhatsApp como principal y una alternativa secundaria (formulario o teléfono) para quien lo prefiera. Más sobre esto en [landing que convierte](/blog/landing-page-que-convierte-cantabria).
+Si en el mismo sitio hay "llama", "escribe", "reserva" y "descarga", nadie hace nada. WhatsApp como principal y una alternativa secundaria (formulario o teléfono) para quien lo prefiera. Más sobre esto en [landing que convierte](/blog/landing-page-que-convierte-cantabria/).
 
 ### 5. Medido
 
@@ -47,6 +47,6 @@ Cada clic en el botón se registra como evento. Así sabes cuántos contactos tr
 
 ## Y si el problema son las llamadas
 
-Hay negocios, sobre todo gremios, donde el problema es el contrario: no llegan a coger el teléfono porque están trabajando. Para eso hay soluciones con IA que atienden la llamada y te pasan el aviso por WhatsApp. Lo cuento en [marketing con IA para pequeños negocios](/blog/marketing-con-ia-pequenos-negocios-cantabria).
+Hay negocios, sobre todo gremios, donde el problema es el contrario: no llegan a coger el teléfono porque están trabajando. Para eso hay soluciones con IA que atienden la llamada y te pasan el aviso por WhatsApp. Lo cuento en [marketing con IA para pequeños negocios](/blog/marketing-con-ia-pequenos-negocios-cantabria/).
 
-¿Tu web tiene botón de WhatsApp o solo un formulario que nadie rellena? Esto lo dejo montado y medido en cada [diseño web en Cantabria](/diseno-web-cantabria) que hago. Si prefieres contármelo antes, [escríbeme](/contacto).
+¿Tu web tiene botón de WhatsApp o solo un formulario que nadie rellena? Esto lo dejo montado y medido en cada [diseño web en Cantabria](/diseno-web-cantabria/) que hago. Si prefieres contármelo antes, [escríbeme](/contacto/).

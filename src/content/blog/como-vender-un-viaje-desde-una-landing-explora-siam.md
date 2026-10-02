@@ -10,11 +10,11 @@ read: "6 min"
 cover: "/img/proj-explora-sm.webp"
 ---
 
-Dani, desde Santander, dejó un trabajo de casi dos décadas para llevar grupos pequeños en moto por el norte de Tailandia. Tenía el viaje, tenía la pasión y tenía un problema: explicárselo a desconocidos y que se fiaran lo bastante como para dar 400 € de señal. Ese era el encargo de [Explora Siam](/proyectos/explora-siam). Y lo que resolví ahí vale para cualquiera que venda una experiencia: rutas, talleres, retiros, catas, escapadas.
+Dani, desde Santander, dejó un trabajo de casi dos décadas para llevar grupos pequeños en moto por el norte de Tailandia. Tenía el viaje, tenía la pasión y tenía un problema: explicárselo a desconocidos y que se fiaran lo bastante como para dar 400 € de señal. Ese era el encargo de [Explora Siam](/proyectos/explora-siam/). Y lo que resolví ahí vale para cualquiera que venda una experiencia: rutas, talleres, retiros, catas, escapadas.
 
 ## 1. Una página, no una web
 
-Un viaje al año y un grupo de seis a ocho personas. No necesita "quiénes somos", "destinos" ni "blog". Necesita una página que cuente el viaje en orden y que termine en una conversación. Todo lo que no ayuda a decidir, fuera. Es la lógica de la [landing que convierte](/blog/landing-page-que-convierte-cantabria).
+Un viaje al año y un grupo de seis a ocho personas. No necesita "quiénes somos", "destinos" ni "blog". Necesita una página que cuente el viaje en orden y que termine en una conversación. Todo lo que no ayuda a decidir, fuera. Es la lógica de la [landing que convierte](/blog/landing-page-que-convierte-cantabria/).
 
 ## 2. Los datos duros, arriba
 
@@ -26,7 +26,7 @@ Ruta, fechas, duración, grupo y precio: en una tarjeta, nada más entrar. Quien
 
 ## 4. WhatsApp con nombre y apellidos
 
-El botón principal no dice "contacto": dice "Cuéntame tu viaje por WhatsApp", y debajo, "Te contesta Dani, no un bot". Un formulario como alternativa para quien lo prefiera, y una barra fija en el móvil para que el botón siempre esté a mano. Cómo montar esto bien lo explico en [el botón de WhatsApp en tu web](/blog/boton-whatsapp-web-negocio-cantabria).
+El botón principal no dice "contacto": dice "Cuéntame tu viaje por WhatsApp", y debajo, "Te contesta Dani, no un bot". Un formulario como alternativa para quien lo prefiera, y una barra fija en el móvil para que el botón siempre esté a mano. Cómo montar esto bien lo explico en [el botón de WhatsApp en tu web](/blog/boton-whatsapp-web-negocio-cantabria/).
 
 ## 5. Responder las dudas antes de que las hagan
 
@@ -42,6 +42,6 @@ No reserva ni cobra. "Escribir no reserva nada. Solo empieza la conversación". 
 
 ## Lo que puedes copiar para tu negocio
 
-Si vendes una experiencia (un curso, una escapada, un retiro, una cata en Cantabria), esto aplica igual: una sola página, datos claros arriba, precio honesto, preguntas respondidas, tu cara y una forma de contacto humana. Nada de esto es tecnología: es criterio. Y se puede tener online en días, dentro de la [web one page desde 299€](/precios).
+Si vendes una experiencia (un curso, una escapada, un retiro, una cata en Cantabria), esto aplica igual: una sola página, datos claros arriba, precio honesto, preguntas respondidas, tu cara y una forma de contacto humana. Nada de esto es tecnología: es criterio. Y se puede tener online en días, dentro de la [web one page desde 299€](/precios/).
 
-¿Vendes una experiencia y tu web no la cuenta bien? Te la monto con este mismo criterio: así trabajo el [diseño web en Cantabria](/diseno-web-cantabria). Y si quieres contármela antes, [escríbeme](/contacto).
+¿Vendes una experiencia y tu web no la cuenta bien? Te la monto con este mismo criterio: así trabajo el [diseño web en Cantabria](/diseno-web-cantabria/). Y si quieres contármela antes, [escríbeme](/contacto/).

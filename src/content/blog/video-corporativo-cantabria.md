@@ -21,7 +21,7 @@ La gente no lee, escanea. Y lo que sí ve entero, muchas veces, es un vídeo. Un
 
 ## Vídeo real + IA: producción sin presupuestos de agencia
 
-Aquí es donde marco la diferencia. Uso IA como herramienta de producción para hacer vídeo que antes solo estaba al alcance de quien pagaba una productora entera: animaciones, ambientes, versiones para cada red. Esto me permite entregar en menos tiempo y sin el precio de una gran agencia. Es parte de mi forma de trabajar como [estudio](/estudio).
+Aquí es donde marco la diferencia. Uso IA como herramienta de producción para hacer vídeo que antes solo estaba al alcance de quien pagaba una productora entera: animaciones, ambientes, versiones para cada red. Esto me permite entregar en menos tiempo y sin el precio de una gran agencia. Es parte de mi forma de trabajar como [estudio](/estudio/).
 
 ## Un vídeo, muchos usos
 
@@ -29,10 +29,10 @@ Una misma pieza bien planteada te da: el vídeo de cabecera de tu web, cortes pa
 
 ## Que acompañe a la web, no que vaya suelto
 
-Un vídeo funciona mejor cuando forma parte de un conjunto: tu [web](/precios), tu [marca](/blog/branding-cantabria) y tus [fotos](/blog/fotografia-producto-cantabria) hablando el mismo idioma. Ahí es donde tener una sola mano para todo se nota.
+Un vídeo funciona mejor cuando forma parte de un conjunto: tu [web](/precios/), tu [marca](/blog/branding-cantabria/) y tus [fotos](/blog/fotografia-producto-cantabria/) hablando el mismo idioma. Ahí es donde tener una sola mano para todo se nota.
 
 ## Empezar es sencillo
 
 Cuéntame qué quieres contar y para qué canal, y te propongo una pieza a tu medida y a tu presupuesto.
 
-¿Tienes un negocio en Cantabria que se explicaría mejor en vídeo que en texto? El vídeo entra dentro de lo que hago en [diseño gráfico en Cantabria](/diseno-grafico-cantabria), junto a la fotografía y las piezas para redes. Cuéntame qué quieres contar y te propongo una pieza: [escríbeme](/contacto).
+¿Tienes un negocio en Cantabria que se explicaría mejor en vídeo que en texto? El vídeo entra dentro de lo que hago en [diseño gráfico en Cantabria](/diseno-grafico-cantabria/), junto a la fotografía y las piezas para redes. Cuéntame qué quieres contar y te propongo una pieza: [escríbeme](/contacto/).

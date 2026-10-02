@@ -129,10 +129,10 @@ const jsonld = [
   {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': 'https://javierpato.es/diseno-web-cantabria#servicio',
+    '@id': 'https://javierpato.es/diseno-web-cantabria/#servicio',
     name: 'Diseño web en Cantabria',
     serviceType: 'Diseño y desarrollo de páginas web',
-    url: 'https://javierpato.es/diseno-web-cantabria',
+    url: 'https://javierpato.es/diseno-web-cantabria/',
     description:
       'Diseño y desarrollo de páginas web a medida para negocios de Cantabria, con SEO local técnico incluido, precio cerrado y entrega en una semana o menos. One-page desde 299€, 4 páginas 549€, 6 páginas 699€ y tienda online desde 999€.',
     provider: { '@id': 'https://javierpato.es/#estudio' },
@@ -149,7 +149,7 @@ const jsonld = [
     ],
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: 'https://javierpato.es/contacto',
+      serviceUrl: 'https://javierpato.es/contacto/',
       availableLanguage: { '@type': 'Language', name: 'Español' },
     },
     hasOfferCatalog: {
@@ -162,7 +162,7 @@ const jsonld = [
           description: 'Una sola página a medida, entregada en 3 días.',
           price: '299',
           priceCurrency: 'EUR',
-          url: 'https://javierpato.es/precios',
+          url: 'https://javierpato.es/precios/',
           itemOffered: { '@type': 'Service', name: 'Diseño web one-page', serviceType: 'Diseño web' },
         },
         {
@@ -171,7 +171,7 @@ const jsonld = [
           description: 'Cuatro páginas a medida con SEO local, entregadas en 1 semana.',
           price: '549',
           priceCurrency: 'EUR',
-          url: 'https://javierpato.es/precios',
+          url: 'https://javierpato.es/precios/',
           itemOffered: { '@type': 'Service', name: 'Diseño web de 4 páginas', serviceType: 'Diseño web' },
         },
         {
@@ -180,7 +180,7 @@ const jsonld = [
           description: 'Seis páginas a medida con SEO local y blog opcional, entregadas en 1 semana.',
           price: '699',
           priceCurrency: 'EUR',
-          url: 'https://javierpato.es/precios',
+          url: 'https://javierpato.es/precios/',
           itemOffered: { '@type': 'Service', name: 'Diseño web de 6 páginas', serviceType: 'Diseño web' },
         },
         {
@@ -189,7 +189,7 @@ const jsonld = [
           description: 'Ecommerce con catálogo, pagos y envíos, entregado en 2 o 3 semanas.',
           price: '999',
           priceCurrency: 'EUR',
-          url: 'https://javierpato.es/tienda-online-cantabria',
+          url: 'https://javierpato.es/tienda-online-cantabria/',
           priceSpecification: {
             '@type': 'PriceSpecification',
             priceCurrency: 'EUR',
@@ -215,7 +215,7 @@ const jsonld = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
-      { '@type': 'ListItem', position: 2, name: 'Diseño web en Cantabria', item: 'https://javierpato.es/diseno-web-cantabria' },
+      { '@type': 'ListItem', position: 2, name: 'Diseño web en Cantabria', item: 'https://javierpato.es/diseno-web-cantabria/' },
     ],
   },
 ];
@@ -252,8 +252,8 @@ const planes = [
         <h1 class="lp-h1" data-reveal>Diseño web en <span class="lp-accent">Cantabria</span></h1>
         <p class="lp-lead" data-reveal>Webs a medida para negocios de Santander, Torrelavega y toda la región: rápidas, pensadas para Google local y diseñadas para que te escriban —no para decorar.</p>
         <div class="lp-cta" data-reveal>
-          <a href="/contacto" class="btn btn--green">Pide presupuesto →</a>
-          <a href="/proyectos" class="btn btn--ghost">Ver trabajos</a>
+          <a href="/contacto/" class="btn btn--green">Pide presupuesto →</a>
+          <a href="/proyectos/" class="btn btn--ghost">Ver trabajos</a>
         </div>
       </div>
       <div class="lp-mock" data-reveal aria-hidden="true">
@@ -279,7 +279,7 @@ const planes = [
   <section class="section lp-sec">
     <div class="wrap">
       <h2 class="lp-h2" data-reveal>Por qué esta es la URL canónica<br />de diseño web en Cantabria</h2>
-      <p class="lp-p" data-reveal style="margin-top:0">Si buscas <strong>diseño web Cantabria</strong>, <strong>diseñador web Cantabria</strong> o <strong>página web Cantabria</strong>, esta es la página de servicio. Aquí está el criterio, el alcance, los rangos y cómo se pide presupuesto. La <a href="/blog/diseno-web-cantabria-guia" class="tlink">guía del blog</a> explica cómo elegir proveedor; esta URL es donde se contrata.</p>
+      <p class="lp-p" data-reveal style="margin-top:0">Si buscas <strong>diseño web Cantabria</strong>, <strong>diseñador web Cantabria</strong> o <strong>página web Cantabria</strong>, esta es la página de servicio. Aquí está el criterio, el alcance, los rangos y cómo se pide presupuesto. La <a href="/blog/diseno-web-cantabria-guia/" class="tlink">guía del blog</a> explica cómo elegir proveedor; esta URL es donde se contrata.</p>
 
       <h3 class="lp-sub" data-reveal>Qué significa «a medida» (y qué no)</h3>
       <p class="lp-p" data-reveal style="margin-top:0">A medida no es sinónimo de caro ni de seis meses de reuniones. Significa que la estructura, el mensaje y el diseño responden a tu negocio —no a una plantilla recoloreada.</p>
@@ -299,39 +299,39 @@ const planes = [
       </div>
 
       <h3 class="lp-sub" data-reveal>Diseñador web en Cantabria: criterio de estudio, trato directo</h3>
-      <p class="lp-p" data-reveal style="margin-top:0">Trabajas con una persona, no con un ticket. Encaje en una charla corta, precio cerrado antes de empezar y plazos que se cumplen. El ticket habitual de un proyecto completo (web + marca o web con varias secciones y criterio de conversión) se mueve en rango de proyecto serio; los planes de entrada están publicados en <a href="/precios" class="tlink">precios</a> para quien necesita arrancar más ligero.</p>
+      <p class="lp-p" data-reveal style="margin-top:0">Trabajas con una persona, no con un ticket. Encaje en una charla corta, precio cerrado antes de empezar y plazos que se cumplen. El ticket habitual de un proyecto completo (web + marca o web con varias secciones y criterio de conversión) se mueve en rango de proyecto serio; los planes de entrada están publicados en <a href="/precios/" class="tlink">precios</a> para quien necesita arrancar más ligero.</p>
 
       <h3 class="lp-sub" data-reveal>Página web en Cantabria: tamaño correcto</h3>
-      <p class="lp-p" data-reveal style="margin-top:0">No «cuantas más páginas mejor». One-page 299€ · Básica (4 pág.) 549€ · Pro (6 pág.) 699€ · Ecommerce desde 999€. Detalle, extras y comparativa: <a href="/precios" class="tlink">/precios/</a>.</p>
+      <p class="lp-p" data-reveal style="margin-top:0">No «cuantas más páginas mejor». One-page 299€ · Básica (4 pág.) 549€ · Pro (6 pág.) 699€ · Ecommerce desde 999€. Detalle, extras y comparativa: <a href="/precios/" class="tlink">/precios/</a>.</p>
 
       <h3 class="lp-sub" data-reveal>Diseño web Santander y resto de Cantabria</h3>
-      <p class="lp-p" data-reveal style="margin-top:0">El SEO local no es repetir el municipio cuarenta veces. Es responder a cómo busca tu cliente en tu zona. Si operas en la capital, amplía en <a href="/diseno-web-santander" class="tlink">diseño web en Santander</a>. Si estás en el Besaya: <a href="/diseno-web-torrelavega" class="tlink">diseño web en Torrelavega</a>. Autónomos: <a href="/diseno-web-autonomos-cantabria" class="tlink">diseño web para autónomos</a>. Tienda online (mención): <a href="/tienda-online-cantabria" class="tlink">tienda online en Cantabria</a>.</p>
+      <p class="lp-p" data-reveal style="margin-top:0">El SEO local no es repetir el municipio cuarenta veces. Es responder a cómo busca tu cliente en tu zona. Si operas en la capital, amplía en <a href="/diseno-web-santander/" class="tlink">diseño web en Santander</a>. Si estás en el Besaya: <a href="/diseno-web-torrelavega/" class="tlink">diseño web en Torrelavega</a>. Autónomos: <a href="/diseno-web-autonomos-cantabria/" class="tlink">diseño web para autónomos</a>. Tienda online (mención): <a href="/tienda-online-cantabria/" class="tlink">tienda online en Cantabria</a>.</p>
 
       <h3 class="lp-sub" data-reveal>Para quién</h3>
       <p class="lp-p" data-reveal style="margin-top:0">Esta página es el hub. Si tu sector tiene reglas o fricción propia, baja al vertical:</p>
       <ul class="lp-ul" data-reveal>
-        <li class="lp-li"><b>Clínica, consulta o gabinete.</b> <a href="/diseno-web-clinicas-cantabria" class="tlink">Diseño web para clínicas</a></li>
-        <li class="lp-li"><b>Bar, restaurante o local de hostelería.</b> <a href="/diseno-web-hosteleria-cantabria" class="tlink">Diseño web para hostelería</a></li>
+        <li class="lp-li"><b>Clínica, consulta o gabinete.</b> <a href="/diseno-web-clinicas-cantabria/" class="tlink">Diseño web para clínicas</a></li>
+        <li class="lp-li"><b>Bar, restaurante o local de hostelería.</b> <a href="/diseno-web-hosteleria-cantabria/" class="tlink">Diseño web para hostelería</a></li>
         <li class="lp-li"><b>Despacho, industria, servicios B2B o negocio general.</b> Quédate aquí o pide presupuesto: el encaje se decide en la llamada.</li>
-        <li class="lp-li"><b>Logo / identidad antes (o a la vez).</b> <a href="/branding-cantabria" class="tlink">Branding en Cantabria</a></li>
-        <li class="lp-li"><b>Autónomo con alcance contenido.</b> <a href="/diseno-web-autonomos-cantabria" class="tlink">Webs para autónomos</a></li>
+        <li class="lp-li"><b>Logo / identidad antes (o a la vez).</b> <a href="/branding-cantabria/" class="tlink">Branding en Cantabria</a></li>
+        <li class="lp-li"><b>Autónomo con alcance contenido.</b> <a href="/diseno-web-autonomos-cantabria/" class="tlink">Webs para autónomos</a></li>
       </ul>
 
       <h3 class="lp-sub" data-reveal>Prueba social (solo proyectos reales)</h3>
       <ul class="lp-ul" data-reveal>
-        <li class="lp-li"><b><a href="/proyectos/fisio-mama" class="tlink">Fisio Mamá</a>.</b> Marca + web para fisioterapia de embarazo y posparto en Santander.</li>
-        <li class="lp-li"><b><a href="/proyectos/centro-infantil-periquete" class="tlink">Centro Infantil Periquete</a>.</b> Identidad y web orientada a reserva de plaza.</li>
-        <li class="lp-li"><b><a href="/proyectos/explora-siam" class="tlink">Explora Siam</a>.</b> Landing de viaje que termina en WhatsApp.</li>
-        <li class="lp-li"><b><a href="/proyectos/cantabriamascerca" class="tlink">CantabriaMásCerca</a>.</b> Negocio nuevo contado claro y listo para Google.</li>
-        <li class="lp-li"><b><a href="/proyectos/click-and-cargo" class="tlink">Click &amp; Cargo</a>.</b> Web técnica, rápida y directa.</li>
+        <li class="lp-li"><b><a href="/proyectos/fisio-mama/" class="tlink">Fisio Mamá</a>.</b> Marca + web para fisioterapia de embarazo y posparto en Santander.</li>
+        <li class="lp-li"><b><a href="/proyectos/centro-infantil-periquete/" class="tlink">Centro Infantil Periquete</a>.</b> Identidad y web orientada a reserva de plaza.</li>
+        <li class="lp-li"><b><a href="/proyectos/explora-siam/" class="tlink">Explora Siam</a>.</b> Landing de viaje que termina en WhatsApp.</li>
+        <li class="lp-li"><b><a href="/proyectos/cantabriamascerca/" class="tlink">CantabriaMásCerca</a>.</b> Negocio nuevo contado claro y listo para Google.</li>
+        <li class="lp-li"><b><a href="/proyectos/click-and-cargo/" class="tlink">Click &amp; Cargo</a>.</b> Web técnica, rápida y directa.</li>
       </ul>
-      <p class="lp-p" data-reveal>Portfolio completo: <a href="/proyectos" class="tlink">/proyectos/</a>.</p>
+      <p class="lp-p" data-reveal>Portfolio completo: <a href="/proyectos/" class="tlink">/proyectos/</a>.</p>
 
       <h3 class="lp-sub" data-reveal>Pedir presupuesto</h3>
       <p class="lp-p" data-reveal style="margin-top:0">Cuéntame qué negocio tienes, en qué municipio operas y qué te está fallando hoy (web vieja, no sales, no conviertes). Te respondo el mismo día con un plan y un precio cerrado —sin compromiso y sin presupuestos de doce páginas.</p>
       <div class="lp-cta" data-reveal>
-        <a href="/contacto" class="btn btn--green">Pedir presupuesto →</a>
-        <a href="/precios" class="btn btn--ghost">Ver rangos en precios</a>
+        <a href="/contacto/" class="btn btn--green">Pedir presupuesto →</a>
+        <a href="/precios/" class="btn btn--ghost">Ver rangos en precios</a>
       </div>
     </div>
   </section>
@@ -350,7 +350,7 @@ const planes = [
       </div>
       <p class="lp-zonas" data-reveal>
         ¿No estás en Santander? Lo que necesita tu web cambia bastante según dónde tengas el negocio.
-        Te lo cuento zona por zona en <a href="/diseno-web-cantabria/zonas" class="tlink">diseño web en Cantabria por municipios</a> —Camargo,
+        Te lo cuento zona por zona en <a href="/diseno-web-cantabria/zonas/" class="tlink">diseño web en Cantabria por municipios</a> —Camargo,
         El Astillero, Piélagos, Laredo, Castro Urdiales y Reinosa—, más peluquerías y turismo rural.
       </p>
     </div>
@@ -395,7 +395,7 @@ const planes = [
           </article>
         ))}
       </div>
-      <p class="lp-p lp-p--mt" data-reveal>Si tu caso es una consulta, un gabinete o un centro sanitario, el criterio cambia bastante por el asunto de las citas y los datos: lo tengo desarrollado en <a href="/diseno-web-clinicas-cantabria" class="tlink">diseño web para clínicas</a>. Si vives de la carta y de las reservas, mira <a href="/diseno-web-hosteleria-cantabria" class="tlink">webs para hostelería</a>. Si estás empezando tú solo y lo que te frena es el presupuesto, la conversación es otra y la tienes en <a href="/diseno-web-autonomos-cantabria" class="tlink">webs para autónomos</a>. Y para vender y cobrar online, todo lo específico está en <a href="/tienda-online-cantabria" class="tlink">tienda online en Cantabria</a>.</p>
+      <p class="lp-p lp-p--mt" data-reveal>Si tu caso es una consulta, un gabinete o un centro sanitario, el criterio cambia bastante por el asunto de las citas y los datos: lo tengo desarrollado en <a href="/diseno-web-clinicas-cantabria/" class="tlink">diseño web para clínicas</a>. Si vives de la carta y de las reservas, mira <a href="/diseno-web-hosteleria-cantabria/" class="tlink">webs para hostelería</a>. Si estás empezando tú solo y lo que te frena es el presupuesto, la conversación es otra y la tienes en <a href="/diseno-web-autonomos-cantabria/" class="tlink">webs para autónomos</a>. Y para vender y cobrar online, todo lo específico está en <a href="/tienda-online-cantabria/" class="tlink">tienda online en Cantabria</a>.</p>
     </div>
   </section>
 
@@ -405,7 +405,7 @@ const planes = [
       <p class="lp-iva" data-reveal>Todos con el IVA incluido: lo que ves es lo que pagas.</p>
       <div class="lp-planes" data-stagger>
         {planes.map((p) => (
-          <a href="/precios" class={`lp-plan ${p.pop ? 'is-pop' : ''}`} data-reveal>
+          <a href="/precios/" class={`lp-plan ${p.pop ? 'is-pop' : ''}`} data-reveal>
             {p.pop && <span class="lp-plan__b">El más elegido</span>}
             <span class="lp-plan__n">{p.n}</span>
             <span class="lp-plan__p">{p.p}</span>
@@ -414,7 +414,7 @@ const planes = [
           </a>
         ))}
       </div>
-      <p class="lp-precios__note" data-reveal><a href="/precios" class="tlink">Configura tu web y ve el total al momento →</a></p>
+      <p class="lp-precios__note" data-reveal><a href="/precios/" class="tlink">Configura tu web y ve el total al momento →</a></p>
     </div>
   </section>
 
@@ -432,7 +432,7 @@ const planes = [
           <ul class="lp-ul lp-ul--no">{seoNo.map((s) => (<li class="lp-li">{s}</li>))}</ul>
         </div>
       </div>
-      <p class="lp-p lp-p--mt" data-reveal>Y una cosa más, por si te la ha vendido alguien: posicionar en Cantabria no va de repetir "diseño web Santander" cuarenta veces en la portada. Va de que cada página responda a una búsqueda concreta y lo haga mejor que las demás. Por eso trabajo el servicio separado por zonas y por sectores en vez de amontonarlo todo aquí: si tu negocio está en la capital, mira <a href="/diseno-web-santander" class="tlink">diseño web en Santander</a>; si estás en el Besaya, <a href="/diseno-web-torrelavega" class="tlink">diseño web en Torrelavega</a>.</p>
+      <p class="lp-p lp-p--mt" data-reveal>Y una cosa más, por si te la ha vendido alguien: posicionar en Cantabria no va de repetir "diseño web Santander" cuarenta veces en la portada. Va de que cada página responda a una búsqueda concreta y lo haga mejor que las demás. Por eso trabajo el servicio separado por zonas y por sectores en vez de amontonarlo todo aquí: si tu negocio está en la capital, mira <a href="/diseno-web-santander/" class="tlink">diseño web en Santander</a>; si estás en el Besaya, <a href="/diseno-web-torrelavega/" class="tlink">diseño web en Torrelavega</a>.</p>
     </div>
   </section>
 
@@ -476,7 +476,7 @@ const planes = [
           </div>
         ))}
       </div>
-      <p class="lp-p lp-p--mt" data-reveal>Si quieres ver cómo queda todo esto en proyectos reales —una clínica, un software de logística, un negocio montado desde cero en el Besaya— están en <a href="/proyectos" class="tlink">el portfolio</a>, con lo que se decidió en cada uno y por qué.</p>
+      <p class="lp-p lp-p--mt" data-reveal>Si quieres ver cómo queda todo esto en proyectos reales —una clínica, un software de logística, un negocio montado desde cero en el Besaya— están en <a href="/proyectos/" class="tlink">el portfolio</a>, con lo que se decidió en cada uno y por qué.</p>
     </div>
   </section>
 
@@ -486,27 +486,27 @@ const planes = [
       <div class="lp-mapa__grid" data-stagger>
         <div class="lp-mg" data-reveal>
           <h3 class="lp-mg__t">Por zona</h3>
-          <p class="lp-mg__d">Cada municipio tiene su tipo de cliente y su competencia. Empieza por <a href="/diseno-web-santander" class="tlink">Santander</a> o <a href="/diseno-web-torrelavega" class="tlink">Torrelavega</a>, o mira <a href="/diseno-web-cantabria/zonas" class="tlink">el listado completo de zonas</a> si estás en la costa oriental, en Camargo o en los valles.</p>
+          <p class="lp-mg__d">Cada municipio tiene su tipo de cliente y su competencia. Empieza por <a href="/diseno-web-santander/" class="tlink">Santander</a> o <a href="/diseno-web-torrelavega/" class="tlink">Torrelavega</a>, o mira <a href="/diseno-web-cantabria/zonas/" class="tlink">el listado completo de zonas</a> si estás en la costa oriental, en Camargo o en los valles.</p>
         </div>
         <div class="lp-mg" data-reveal>
           <h3 class="lp-mg__t">Por sector</h3>
-          <p class="lp-mg__d">Lo que necesita una <a href="/diseno-web-clinicas-cantabria" class="tlink">clínica</a> no se parece en nada a lo que necesita un <a href="/diseno-web-hosteleria-cantabria" class="tlink">bar o un restaurante</a>, ni a lo que le sirve a un <a href="/diseno-web-autonomos-cantabria" class="tlink">autónomo</a> que empieza. Cada uno tiene su página con sus propias objeciones.</p>
+          <p class="lp-mg__d">Lo que necesita una <a href="/diseno-web-clinicas-cantabria/" class="tlink">clínica</a> no se parece en nada a lo que necesita un <a href="/diseno-web-hosteleria-cantabria/" class="tlink">bar o un restaurante</a>, ni a lo que le sirve a un <a href="/diseno-web-autonomos-cantabria/" class="tlink">autónomo</a> que empieza. Cada uno tiene su página con sus propias objeciones.</p>
         </div>
         <div class="lp-mg" data-reveal>
           <h3 class="lp-mg__t">Si además vendes</h3>
-          <p class="lp-mg__d">Cobrar online cambia el proyecto entero: catálogo, pagos, envíos y devoluciones. Todo lo específico, en <a href="/tienda-online-cantabria" class="tlink">tienda online en Cantabria</a>.</p>
+          <p class="lp-mg__d">Cobrar online cambia el proyecto entero: catálogo, pagos, envíos y devoluciones. Todo lo específico, en <a href="/tienda-online-cantabria/" class="tlink">tienda online en Cantabria</a>.</p>
         </div>
         <div class="lp-mg" data-reveal>
           <h3 class="lp-mg__t">Si el problema es la marca</h3>
-          <p class="lp-mg__d">A veces la web no es lo primero. Si tu logo lo hizo un cuñado en 2014 o no tienes ni colores propios, se empieza por <a href="/branding-cantabria" class="tlink">branding</a>. Y si lo que te faltan son piezas —dossier, cartelería, catálogo—, eso es <a href="/diseno-grafico-cantabria" class="tlink">diseño gráfico</a>.</p>
+          <p class="lp-mg__d">A veces la web no es lo primero. Si tu logo lo hizo un cuñado en 2014 o no tienes ni colores propios, se empieza por <a href="/branding-cantabria/" class="tlink">branding</a>. Y si lo que te faltan son piezas —dossier, cartelería, catálogo—, eso es <a href="/diseno-grafico-cantabria/" class="tlink">diseño gráfico</a>.</p>
         </div>
         <div class="lp-mg" data-reveal>
           <h3 class="lp-mg__t">Si solo quieres el número</h3>
-          <p class="lp-mg__d">Elige plan, marca extras y ve el total al momento en <a href="/precios" class="tlink">precios</a>. Sin formulario de por medio ni "consúltanos sin compromiso".</p>
+          <p class="lp-mg__d">Elige plan, marca extras y ve el total al momento en <a href="/precios/" class="tlink">precios</a>. Sin formulario de por medio ni "consúltanos sin compromiso".</p>
         </div>
         <div class="lp-mg" data-reveal>
           <h3 class="lp-mg__t">Si ya lo tienes claro</h3>
-          <p class="lp-mg__d">Cuéntame qué negocio tienes y qué te está fallando hoy en <a href="/contacto" class="tlink">contacto</a>. Veinte minutos y sales con un plan y un precio, contrates o no.</p>
+          <p class="lp-mg__d">Cuéntame qué negocio tienes y qué te está fallando hoy en <a href="/contacto/" class="tlink">contacto</a>. Veinte minutos y sales con un plan y un precio, contrates o no.</p>
         </div>
       </div>
     </div>
@@ -520,7 +520,7 @@ const planes = [
           <details class="lp-q" data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
         ))}
       </div>
-      <p class="lp-p lp-p--mt" data-reveal>¿Te queda alguna que no esté aquí? Escríbemela y te contesto yo, no un formulario automático: <a href="/contacto" class="tlink">ir a contacto →</a></p>
+      <p class="lp-p lp-p--mt" data-reveal>¿Te queda alguna que no esté aquí? Escríbemela y te contesto yo, no un formulario automático: <a href="/contacto/" class="tlink">ir a contacto →</a></p>
     </div>
   </section>
 

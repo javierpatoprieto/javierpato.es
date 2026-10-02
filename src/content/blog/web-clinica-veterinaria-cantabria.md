@@ -27,7 +27,7 @@ Un dueño asustado a las 23:00 busca *"veterinario urgencias Santander"* desde e
 
 ## Cercanía: el tono lo cambia todo
 
-La veterinaria de barrio compite con franquicias y con centros grandes. Tu ventaja es el trato. Eso se transmite con **fotos reales** (tu equipo, tu clínica, animales de verdad), una voz cercana y una [identidad de marca propia](/blog/branding-cantabria) que te separe del genérico de stock.
+La veterinaria de barrio compite con franquicias y con centros grandes. Tu ventaja es el trato. Eso se transmite con **fotos reales** (tu equipo, tu clínica, animales de verdad), una voz cercana y una [identidad de marca propia](/blog/branding-cantabria/) que te separe del genérico de stock.
 
 ## Cita y recordatorios online
 
@@ -35,10 +35,10 @@ Facilitar la cita por WhatsApp o formulario reduce llamadas y huecos. Y para lo 
 
 ## Que te encuentren en tu zona
 
-Cuando alguien busca *"veterinario cerca de mí"* o *"clínica veterinaria Torrelavega"*, quieres salir. Se trabaja con [SEO local](/blog/seo-local-cantabria), tu [ficha de Google](/blog/google-business-profile-cantabria) al día y una web con tus servicios y tu zona bien claros.
+Cuando alguien busca *"veterinario cerca de mí"* o *"clínica veterinaria Torrelavega"*, quieres salir. Se trabaja con [SEO local](/blog/seo-local-cantabria/), tu [ficha de Google](/blog/google-business-profile-cantabria/) al día y una web con tus servicios y tu zona bien claros.
 
 ## Empezar es sencillo
 
-Una [web bien resuelta desde 299€](/precios) que transmita confianza y facilite el contacto ya marca diferencia para una clínica. Luego se crece: blog de consejos de salud animal, más servicios, más prueba social.
+Una [web bien resuelta desde 299€](/precios/) que transmita confianza y facilite el contacto ya marca diferencia para una clínica. Luego se crece: blog de consejos de salud animal, más servicios, más prueba social.
 
-¿Tienes una clínica veterinaria en Cantabria? Así hago las [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria): cita fácil, urgencias visibles y el cuidado con el que tratas a cada animal por delante. Si quieres consultarme algo antes, [cuéntame](/contacto).
+¿Tienes una clínica veterinaria en Cantabria? Así hago las [webs para clínicas en Cantabria](/diseno-web-clinicas-cantabria/): cita fácil, urgencias visibles y el cuidado con el que tratas a cada animal por delante. Si quieres consultarme algo antes, [cuéntame](/contacto/).

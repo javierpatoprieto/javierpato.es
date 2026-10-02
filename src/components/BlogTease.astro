@@ -11,11 +11,11 @@ const fmt = (d: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', mont
   <div class="wrap">
     <header class="bt__head" data-reveal>
       <h2 class="bt__title">Del blog.<br /><span class="bt__a">Lo último.</span></h2>
-      <a href="/blog" class="btn btn--ghost">Ver todo el blog →</a>
+      <a href="/blog/" class="btn btn--ghost">Ver todo el blog →</a>
     </header>
     <div class="bt__grid" data-stagger>
       {posts.map((p) => (
-        <a class="btcard" href={`/blog/${p.slug}`} data-reveal>
+        <a class="btcard" href={`/blog/${p.slug}/`} data-reveal>
           <span class="btcard__cover"><img src={p.data.cover} alt="" loading="lazy" decoding="async" width="1600" height="1000" /></span>
           <span class="btcard__meta">{p.data.read} · {fmt(p.data.pubDate)}</span>
           <h3 class="btcard__t">{p.data.title}</h3>

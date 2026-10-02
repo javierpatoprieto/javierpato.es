@@ -87,7 +87,7 @@ const GREETING = '¡Hola! Soy Javi 👋 Cuéntame qué negocio tienes y qué te 
       typing.classList.add('cw__msg--typing');
 
       try {
-        const r = await fetch('/api/chat', {
+        const r = await fetch('/api/chat/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ messages: history }),

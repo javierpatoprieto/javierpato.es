@@ -46,7 +46,7 @@ const sizes = carousel
 
     <div class={carousel ? 'work__grid work__grid--carousel' : 'work__grid'} id={carousel ? 'work-track' : undefined} data-work-track={carousel ? '' : undefined} data-stagger style={`--work-cols:${cols}`}>
       {items.map((p) => (
-        <a class={`work__card work__card--${p.tone}`} href={`/proyectos/${p.slug}`} data-reveal>
+        <a class={`work__card work__card--${p.tone}`} href={`/proyectos/${p.slug}/`} data-reveal>
           <div class="work__cover">
             <img
               src={p.img}
@@ -71,7 +71,7 @@ const sizes = carousel
     </div>
 
     <div class="work__more" data-reveal>
-      <a href="/proyectos" class="btn btn--green">Ver más proyectos →</a>
+      <a href="/proyectos/" class="btn btn--green">Ver más proyectos →</a>
     </div>
   </div>
 </section>

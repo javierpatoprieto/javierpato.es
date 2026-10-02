@@ -29,7 +29,7 @@ No es magia, es estructura:
 
 ## El texto vende más que el diseño bonito
 
-Una landing preciosa que no dice nada no convierte. La clave está en el mensaje: hablar del problema del cliente, no de ti. Ahí es donde mi trabajo de [estudio](/estudio) —mensaje, diseño y web juntos— marca la diferencia frente a una plantilla vacía.
+Una landing preciosa que no dice nada no convierte. La clave está en el mensaje: hablar del problema del cliente, no de ti. Ahí es donde mi trabajo de [estudio](/estudio/) —mensaje, diseño y web juntos— marca la diferencia frente a una plantilla vacía.
 
 ## Landing + campaña van de la mano
 
@@ -37,6 +37,6 @@ Si vas a invertir en anuncios, la landing es lo que decide si ese dinero se conv
 
 ## Empezar es sencillo
 
-Cuéntame qué quieres promocionar y a quién, y te monto una landing pensada para convertir, lista para enchufar a tus anuncios. Puede ser [one page desde 299€](/precios) o parte de un proyecto de [diseño web en Cantabria](/diseno-web-cantabria) más grande.
+Cuéntame qué quieres promocionar y a quién, y te monto una landing pensada para convertir, lista para enchufar a tus anuncios. Puede ser [one page desde 299€](/precios/) o parte de un proyecto de [diseño web en Cantabria](/diseno-web-cantabria/) más grande.
 
-¿Vas a invertir en publicidad y no quieres malgastarla? Mira cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria) o [dime qué vas a promocionar](/contacto) y te digo si te compensa una landing aparte.
+¿Vas a invertir en publicidad y no quieres malgastarla? Mira cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria/) o [dime qué vas a promocionar](/contacto/) y te digo si te compensa una landing aparte.

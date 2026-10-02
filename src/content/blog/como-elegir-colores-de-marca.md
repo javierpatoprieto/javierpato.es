@@ -25,14 +25,14 @@ Antes de leer nada, el color ya te ha dicho algo: si eres cercano o serio, barat
 
 ## Una paleta es un sistema, no un color
 
-Una buena paleta tiene un color principal, uno o dos de apoyo, y neutros para el texto y los fondos. Y reglas de cuándo se usa cada uno. Eso es lo que da coherencia a tu [marca](/blog/branding-cantabria) en la web, el cartel y las redes: que siempre pareces tú.
+Una buena paleta tiene un color principal, uno o dos de apoyo, y neutros para el texto y los fondos. Y reglas de cuándo se usa cada uno. Eso es lo que da coherencia a tu [marca](/blog/branding-cantabria/) en la web, el cartel y las redes: que siempre pareces tú.
 
 ## Del color a todo lo demás
 
-El color es una pieza del puzzle, junto con el [logo](/blog/diseno-logotipo-cantabria) y la tipografía. Cuando encajan, tu negocio se reconoce de un vistazo. Cuando van sueltos, la gente no te retiene. Ese conjunto —color, logo y tipografía— es justo lo que entrego en el [servicio de branding en Cantabria](/branding-cantabria), y forma parte de cómo trabajo como [estudio](/estudio).
+El color es una pieza del puzzle, junto con el [logo](/blog/diseno-logotipo-cantabria/) y la tipografía. Cuando encajan, tu negocio se reconoce de un vistazo. Cuando van sueltos, la gente no te retiene. Ese conjunto —color, logo y tipografía— es justo lo que entrego en el [servicio de branding en Cantabria](/branding-cantabria/), y forma parte de cómo trabajo como [estudio](/estudio/).
 
 ## Empezar es sencillo
 
-Si estás lanzando o renovando tu negocio, elegir bien la paleta desde el principio te ahorra rehacerlo todo más tarde. Y si ya tienes [web](/precios), la afinamos para que trabaje a tu favor.
+Si estás lanzando o renovando tu negocio, elegir bien la paleta desde el principio te ahorra rehacerlo todo más tarde. Y si ya tienes [web](/precios/), la afinamos para que trabaje a tu favor.
 
-¿Estás montando o renovando una marca en Cantabria y no sabes por dónde empezar con el color? Mira qué incluye el [diseño de marca y logotipo](/branding-cantabria) —paleta, tipografía y normas de uso— o [cuéntamelo](/contacto) y te digo por dónde tirar.
+¿Estás montando o renovando una marca en Cantabria y no sabes por dónde empezar con el color? Mira qué incluye el [diseño de marca y logotipo](/branding-cantabria/) —paleta, tipografía y normas de uso— o [cuéntamelo](/contacto/) y te digo por dónde tirar.

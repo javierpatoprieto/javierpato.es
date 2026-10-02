@@ -6,12 +6,15 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     keyword: z.string(),
     tags: z.array(z.string()).default([]),
     tone: z.enum(['warm', 'stone', 'deep']).default('warm'),
     emoji: z.string().default('✦'),
     cover: z.string(),
     read: z.string().default('5 min'),
+    // Preguntas frecuentes visibles al final del post + FAQPage en JSON-LD.
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
   }),
 });
 

@@ -2,16 +2,16 @@
 const { path = Astro.url.pathname } = Astro.props;
 
 const primary = [
-  { href: '/proyectos', label: 'Proyectos' },
-  { href: '/precios', label: 'Precios' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/estudio', label: 'Estudio' },
+  { href: '/proyectos/', label: 'Proyectos' },
+  { href: '/precios/', label: 'Precios' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/estudio/', label: 'Estudio' },
 ];
 
 const services = [
-  { href: '/diseno-web-cantabria', title: 'Diseño web', hint: 'Sitios y producto' },
-  { href: '/branding-cantabria', title: 'Marca', hint: 'Identidad y voice' },
-  { href: '/diseno-grafico-cantabria', title: 'Gráfica', hint: 'Print y digital' },
+  { href: '/diseno-web-cantabria/', title: 'Diseño web', hint: 'Sitios y producto' },
+  { href: '/branding-cantabria/', title: 'Marca', hint: 'Identidad y voice' },
+  { href: '/diseno-grafico-cantabria/', title: 'Gráfica', hint: 'Print y digital' },
 ];
 
 const PHONE = '+34669385624';
@@ -88,7 +88,7 @@ const servicesOpen = services.some((s) => active(s.href));
       <a href={`tel:${PHONE}`} class="nav__icon nav__tel" aria-label="Llamar a Javier Pato" data-loc="nav">
         <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       </a>
-      <a href="/contacto" class="nav__btn" data-loc="nav">Pide presupuesto</a>
+      <a href="/contacto/" class="nav__btn" data-loc="nav">Pide presupuesto</a>
       <button
         class="nav__burger"
         data-burger
@@ -148,7 +148,7 @@ const servicesOpen = services.some((s) => active(s.href));
 
       <div class="nav__mfoot">
         <a href={`tel:${PHONE}`} class="nav__mphone" data-loc="nav-movil">Llámame · {PHONE_DISPLAY}</a>
-        <a href="/contacto" class="nav__mcta" data-loc="nav-movil">Pide presupuesto</a>
+        <a href="/contacto/" class="nav__mcta" data-loc="nav-movil">Pide presupuesto</a>
       </div>
     </div>
   </nav>

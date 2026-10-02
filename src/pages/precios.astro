@@ -32,9 +32,9 @@ const noIncluye = [
   { t: 'Campañas de pago', d: 'Google Ads y Meta Ads no van dentro. La web queda lista para recibir ese tráfico y para medirlo, pero ni gestiono la campaña ni pongo el presupuesto de anuncios.' },
   { t: 'Gestión de redes sociales', d: 'No publico por ti ni llevo tu Instagram.' },
   { t: 'Fotografía y vídeo', d: 'Si tienes fotos, las recorto, las optimizo y las coloco. Si no tienes ninguna, hay que resolverlo antes de maquetar: una web bonita con fotos malas sigue siendo una web con fotos malas.' },
-  { t: 'Logotipo y marca', d: 'Si llegas sin logo, sin colores y sin tipografías, la web se queda coja. Eso es otro trabajo: <a href="/branding-cantabria" class="tlink">branding en Cantabria</a>.' },
-  { t: 'Piezas gráficas', d: 'Dossier, flyers, cartas, rótulos o etiquetas no entran en un plan de web. Van por su lado: <a href="/diseno-grafico-cantabria" class="tlink">diseño gráfico en Cantabria</a>.' },
-  { t: 'Dar de alta tus productos uno a uno', d: 'En el plan de ecommerce monto la tienda, dejo el catálogo funcionando y te enseño a usarlo. Meter 300 referencias a mano es otra faena: lo vemos en <a href="/tienda-online-cantabria" class="tlink">tienda online</a>.' },
+  { t: 'Logotipo y marca', d: 'Si llegas sin logo, sin colores y sin tipografías, la web se queda coja. Eso es otro trabajo: <a href="/branding-cantabria/" class="tlink">branding en Cantabria</a>.' },
+  { t: 'Piezas gráficas', d: 'Dossier, flyers, cartas, rótulos o etiquetas no entran en un plan de web. Van por su lado: <a href="/diseno-grafico-cantabria/" class="tlink">diseño gráfico en Cantabria</a>.' },
+  { t: 'Dar de alta tus productos uno a uno', d: 'En el plan de ecommerce monto la tienda, dejo el catálogo funcionando y te enseño a usarlo. Meter 300 referencias a mano es otra faena: lo vemos en <a href="/tienda-online-cantabria/" class="tlink">tienda online</a>.' },
   { t: 'Contenido nuevo cada mes', d: 'El mantenimiento (190€/año) cubre cambios, copias de seguridad y soporte. No cubre escribirte un artículo al mes ni rehacer secciones enteras.' },
 ];
 const faqs = [
@@ -52,7 +52,7 @@ const offers = [
     price: p.price,
     priceCurrency: 'EUR',
     priceSpecification: { '@type': 'PriceSpecification', price: p.price, priceCurrency: 'EUR', valueAddedTaxIncluded: true },
-    url: 'https://javierpato.es/contacto',
+    url: 'https://javierpato.es/contacto/',
     availability: 'https://schema.org/InStock',
     areaServed: 'Cantabria',
   })),
@@ -63,7 +63,7 @@ const offers = [
     price: a.price,
     priceCurrency: 'EUR',
     priceSpecification: { '@type': 'PriceSpecification', price: a.price, priceCurrency: 'EUR', valueAddedTaxIncluded: true },
-    url: 'https://javierpato.es/contacto',
+    url: 'https://javierpato.es/contacto/',
     availability: 'https://schema.org/InStock',
     areaServed: 'Cantabria',
   })),
@@ -74,7 +74,7 @@ const jsonld = [
     name: 'Diseño web en Cantabria',
     areaServed: 'Cantabria',
     provider: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
-    url: 'https://javierpato.es/precios',
+    url: 'https://javierpato.es/precios/',
     offers,
   },
   {
@@ -85,7 +85,7 @@ const jsonld = [
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://javierpato.es' },
-      { '@type': 'ListItem', position: 2, name: 'Precios', item: 'https://javierpato.es/precios' },
+      { '@type': 'ListItem', position: 2, name: 'Precios', item: 'https://javierpato.es/precios/' },
     ],
   },
 ];
@@ -100,7 +100,7 @@ const jsonld = [
       <span class="pr-k" data-reveal>Precios · Diseño web Cantabria</span>
       <h1 class="pr-h1" data-reveal>Precios claros.<br /><span class="pr-a">Cero sustos.</span></h1>
       <p class="pr-lead" data-reveal>Aquí no hay "depende" ni presupuestos de 12 páginas. Eliges plan, marcas los extras y ves el total al momento —lo que cuesta tu web en Cantabria, claro y a la cara. Entrega en <strong>una semana o menos</strong> y precio cerrado antes de empezar. <strong>Todos los precios llevan el IVA incluido</strong>: lo que ves es lo que pagas.</p>
-      <p class="pr-cross" data-reveal><a href="/diseno-web-cantabria" class="tlink">¿Primero quieres ver cómo trabajo? Mira el servicio de diseño web en Cantabria →</a></p>
+      <p class="pr-cross" data-reveal><a href="/diseno-web-cantabria/" class="tlink">¿Primero quieres ver cómo trabajo? Mira el servicio de diseño web en Cantabria →</a></p>
     </div>
   </section>
 
@@ -148,7 +148,7 @@ const jsonld = [
           <div class="pr-sum-total"><span id="pr-total">549€</span></div>
           <p class="pr-sum-note" id="pr-note">Web Básica · entrega en 1 semana</p>
           <ul class="pr-sum-list" id="pr-list"></ul>
-          <a href="/contacto" class="btn btn--green pr-sum-cta" id="pr-cta">Reservar esta web →</a>
+          <a href="/contacto/" class="btn btn--green pr-sum-cta" id="pr-cta">Reservar esta web →</a>
           <p class="pr-sum-fine">Precio orientativo, IVA incluido. Lo cerramos en una charla de 20 min, sin compromiso.</p>
         </div>
       </aside>
@@ -189,7 +189,7 @@ const jsonld = [
           </tbody>
         </table>
       </div>
-      <p class="pr-table__foot" data-reveal>Dominio (19,99€/año), alojamiento (49€/año) y mantenimiento (190€/año) son extras opcionales en los cuatro planes. Si lo tuyo es vender online y quieres ver cómo monto una tienda antes de decidir, pásate por <a href="/tienda-online-cantabria" class="tlink">tienda online en Cantabria</a>.</p>
+      <p class="pr-table__foot" data-reveal>Dominio (19,99€/año), alojamiento (49€/año) y mantenimiento (190€/año) son extras opcionales en los cuatro planes. Si lo tuyo es vender online y quieres ver cómo monto una tienda antes de decidir, pásate por <a href="/tienda-online-cantabria/" class="tlink">tienda online en Cantabria</a>.</p>
     </div>
   </section>
 
@@ -205,7 +205,7 @@ const jsonld = [
           </li>
         ))}
       </ul>
-      <p class="pr-nope__end" data-reveal>Tampoco va la web en dos idiomas: duplicar todo en inglés es duplicar páginas y trabajo, así que se habla antes de empezar. Si algo de esto lo necesitas, se dice en la primera charla y se pone en el presupuesto. Lo que no va a pasar es que aparezca en la factura sin avisar. <a href="/contacto" class="tlink">Cuéntame qué necesitas →</a></p>
+      <p class="pr-nope__end" data-reveal>Tampoco va la web en dos idiomas: duplicar todo en inglés es duplicar páginas y trabajo, así que se habla antes de empezar. Si algo de esto lo necesitas, se dice en la primera charla y se pone en el presupuesto. Lo que no va a pasar es que aparezca en la factura sin avisar. <a href="/contacto/" class="tlink">Cuéntame qué necesitas →</a></p>
     </div>
   </section>
 
@@ -254,7 +254,7 @@ const jsonld = [
         noteEl.textContent = `Web ${pname}` + (extras ? ` + ${addonEls().length && [...addonEls()].filter(a=>a.checked).length} extra(s)` : '');
         listEl.innerHTML = rows.join('');
         const subject = encodeURIComponent(`Web ${pname} — ${fmt(total)}`);
-        ctaEl.href = `/contacto`;
+        ctaEl.href = `/contacto/`;
         ctaEl.setAttribute('data-mailto', `mailto:javier@javierpato.es?subject=${subject}`);
       }
       planEls().forEach((e) => e.addEventListener('change', recalc));

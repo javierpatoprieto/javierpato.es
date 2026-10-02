@@ -31,7 +31,7 @@ Si te suena, no es un problema de tu negocio: es un problema de **percepción**,
 
 ## Branding y web: el mismo idioma
 
-Una marca solo funciona si es **coherente**, y el sitio donde más se ve es tu web. Por eso el [diseño web en Cantabria](/diseno-web-cantabria) y el [diseño gráfico](/diseno-grafico-cantabria) deberían salir del mismo criterio. Una marca dicha a medias confunde; una marca coherente convence.
+Una marca solo funciona si es **coherente**, y el sitio donde más se ve es tu web. Por eso el [diseño web en Cantabria](/diseno-web-cantabria/) y el [diseño gráfico](/diseno-grafico-cantabria/) deberían salir del mismo criterio. Una marca dicha a medias confunde; una marca coherente convence.
 
 ## Cómo empezar sin gastar una fortuna
 
@@ -44,4 +44,4 @@ No necesitas un manual de marca de 80 páginas. Necesitas lo esencial bien hecho
 
 Con eso ya juegas en otra liga.
 
-¿Tu marca transmite lo que vales? Si no estás seguro, esa es la señal. Aquí tienes el detalle del [servicio de branding y diseño de logotipo en Cantabria](/branding-cantabria) —qué incluye, plazos y precios— o cuéntame tu negocio y te doy una opinión honesta.
+¿Tu marca transmite lo que vales? Si no estás seguro, esa es la señal. Aquí tienes el detalle del [servicio de branding y diseño de logotipo en Cantabria](/branding-cantabria/) —qué incluye, plazos y precios— o cuéntame tu negocio y te doy una opinión honesta.

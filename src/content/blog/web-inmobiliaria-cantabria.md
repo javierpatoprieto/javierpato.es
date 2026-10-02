@@ -20,11 +20,11 @@ Si vives de vender y alquilar inmuebles, seguramente pagas cada mes a los grande
 
 ## Las fotos lo son casi todo
 
-Un piso con fotos oscuras y torcidas se vende peor y más barato. Aquí entra la [fotografía de producto](/blog/fotografia-producto-cantabria) —en este caso, de inmueble— y una web que las presente con el espacio que merecen. La diferencia entre "otro anuncio" y "quiero ver esta casa" muchas veces es la primera imagen.
+Un piso con fotos oscuras y torcidas se vende peor y más barato. Aquí entra la [fotografía de producto](/blog/fotografia-producto-cantabria/) —en este caso, de inmueble— y una web que las presente con el espacio que merecen. La diferencia entre "otro anuncio" y "quiero ver esta casa" muchas veces es la primera imagen.
 
 ## Que te encuentren en tu zona
 
-Cuando alguien busca *"pisos en venta en Santander"* o *"inmobiliaria en Torrelavega"*, quieres estar. Eso se trabaja con [SEO local](/blog/seo-local-cantabria) y una [ficha de Google](/blog/google-business-profile-cantabria) cuidada, con reseñas de clientes que ya confiaron en ti.
+Cuando alguien busca *"pisos en venta en Santander"* o *"inmobiliaria en Torrelavega"*, quieres estar. Eso se trabaja con [SEO local](/blog/seo-local-cantabria/) y una [ficha de Google](/blog/google-business-profile-cantabria/) cuidada, con reseñas de clientes que ya confiaron en ti.
 
 ## Captar más y depender menos
 
@@ -32,6 +32,6 @@ Cada lead que entra por tu web es un lead que no has pagado a un portal. No se t
 
 ## Empezar es sencillo
 
-Para empezar, una [web bien resuelta desde 299€](/precios) con tus inmuebles destacados, captación de propietarios y contacto directo ya te diferencia. Luego se crece: buscador de propiedades, sincronización con tu CRM, blog de zona.
+Para empezar, una [web bien resuelta desde 299€](/precios/) con tus inmuebles destacados, captación de propietarios y contacto directo ya te diferencia. Luego se crece: buscador de propiedades, sincronización con tu CRM, blog de zona.
 
-¿Tienes una inmobiliaria en Cantabria y tu web no está a la altura de las casas que vendes? Aquí te cuento cómo hago el [diseño web en Cantabria](/diseno-web-cantabria) y qué entra en cada pack. Si quieres que revise la tuya primero, [escríbeme](/contacto).
+¿Tienes una inmobiliaria en Cantabria y tu web no está a la altura de las casas que vendes? Aquí te cuento cómo hago el [diseño web en Cantabria](/diseno-web-cantabria/) y qué entra en cada pack. Si quieres que revise la tuya primero, [escríbeme](/contacto/).

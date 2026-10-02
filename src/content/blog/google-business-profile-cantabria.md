@@ -30,7 +30,7 @@ Es tu ficha en Google: nombre, ubicación, horario, fotos, reseñas y teléfono.
 - **Horario actualizado**, incluidos festivos.
 - **Fotos buenas y frecuentes:** local, producto, equipo. Las fichas con fotos reciben muchas más visitas.
 - **Servicios y descripción** bien escritos, mencionando lo que ofreces y tu zona con naturalidad.
-- **Enlace a tu web**, idealmente a una página relevante como la de [diseño web en Cantabria](/diseno-web-cantabria) si eres del sector.
+- **Enlace a tu web**, idealmente a una página relevante como la de [diseño web en Cantabria](/diseno-web-cantabria/) si eres del sector.
 
 ## Las reseñas: tu mejor activo
 
@@ -42,7 +42,7 @@ Google Business Profile deja publicar "novedades" (ofertas, eventos, productos).
 
 ## Ficha + web = combo ganador
 
-La ficha te da visibilidad inmediata; la web te da credibilidad y conversión. Juntas, son imbatibles en local. Si tu web es lenta o vieja, la ficha rinde menos — todo suma. Más sobre esto en [SEO local en Cantabria](/blog/seo-local-cantabria).
+La ficha te da visibilidad inmediata; la web te da credibilidad y conversión. Juntas, son imbatibles en local. Si tu web es lenta o vieja, la ficha rinde menos — todo suma. Más sobre esto en [SEO local en Cantabria](/blog/seo-local-cantabria/).
 
 ## Resumen en 3 pasos
 
@@ -50,4 +50,4 @@ La ficha te da visibilidad inmediata; la web te da credibilidad y conversión. J
 2. Rellénala **entera** y con buenas fotos.
 3. Consigue **reseñas** y mantenla viva.
 
-¿Quieres que tu negocio salga en el mapa y en Google? Te monto la ficha y la web a juego: aquí tienes cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria), con el SEO local incluido. Si prefieres contármelo primero, [escríbeme](/contacto).
+¿Quieres que tu negocio salga en el mapa y en Google? Te monto la ficha y la web a juego: aquí tienes cómo trabajo el [diseño web en Cantabria](/diseno-web-cantabria/), con el SEO local incluido. Si prefieres contármelo primero, [escríbeme](/contacto/).

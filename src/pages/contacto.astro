@@ -79,7 +79,7 @@ import Contact from '../components/Contact.astro';
         </div>
         <label class="qz__consent" for="q-rgpd">
           <input id="q-rgpd" type="checkbox" required />
-          <span>He leído y acepto la <a href="/privacidad" target="_blank" rel="noopener">política de privacidad</a>.</span>
+          <span>He leído y acepto la <a href="/privacidad/" target="_blank" rel="noopener">política de privacidad</a>.</span>
         </label>
         <button type="submit" class="qz__send">Enviar por WhatsApp →</button>
         <p class="qz__alt">¿Prefieres email? <a href="#" id="qz-mail" class="tlink">Enviar por correo</a></p>
@@ -143,9 +143,9 @@ import Contact from '../components/Contact.astro';
         lastSent = payload;
         try {
           if (navigator.sendBeacon) {
-            navigator.sendBeacon('/api/lead', new Blob([payload], { type: 'application/json' }));
+            navigator.sendBeacon('/api/lead/', new Blob([payload], { type: 'application/json' }));
           } else {
-            fetch('/api/lead', {
+            fetch('/api/lead/', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: payload,

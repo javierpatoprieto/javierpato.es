@@ -21,7 +21,7 @@ const fmt = (d: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', mont
 
       <div class="blg__grid" data-stagger>
         {posts.map((p) => (
-          <a class="bcard" href={`/blog/${p.slug}`} data-reveal>
+          <a class="bcard" href={`/blog/${p.slug}/`} data-reveal>
             <span class="bcard__cover"><img src={p.data.cover} alt="" loading="lazy" decoding="async" width="1600" height="1000" /></span>
             <span class="bcard__meta">{p.data.read} · {fmt(p.data.pubDate)}</span>
             <h2 class="bcard__title">{p.data.title}</h2>

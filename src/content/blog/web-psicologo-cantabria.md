@@ -24,7 +24,7 @@ En psicología, el tono lo es todo. Una web fría o demasiado clínica aleja; un
 
 ## Tu forma de escribir es tu marca
 
-En este sector, el copy importa tanto como el diseño. Cómo te diriges al visitante —con respeto, sin promesas mágicas, sin postureo— construye confianza. Ese tono, junto a una [identidad visual serena](/blog/branding-cantabria), es lo que hace que alguien piense "con esta persona sí".
+En este sector, el copy importa tanto como el diseño. Cómo te diriges al visitante —con respeto, sin promesas mágicas, sin postureo— construye confianza. Ese tono, junto a una [identidad visual serena](/blog/branding-cantabria/), es lo que hace que alguien piense "con esta persona sí".
 
 ## Privacidad: aquí es sagrado
 
@@ -36,10 +36,10 @@ Llamar por teléfono cuando estás mal cuesta mucho. Por eso un formulario senci
 
 ## Que te encuentren cuando buscan ayuda
 
-Cuando alguien busca *"psicólogo en Santander"* o *"terapia de pareja Cantabria"*, quieres salir. Se trabaja con [SEO local](/blog/seo-local-cantabria), tu [ficha de Google](/blog/google-business-profile-cantabria) y una web rápida y clara sobre lo que tratas y tu zona.
+Cuando alguien busca *"psicólogo en Santander"* o *"terapia de pareja Cantabria"*, quieres salir. Se trabaja con [SEO local](/blog/seo-local-cantabria/), tu [ficha de Google](/blog/google-business-profile-cantabria/) y una web rápida y clara sobre lo que tratas y tu zona.
 
 ## Empezar es sencillo
 
-Una [web cuidada desde 299€](/precios) que transmita calma y facilite el contacto ya marca la diferencia para una consulta. Después se crece: un blog que ayude de verdad posiciona y, de paso, demuestra tu criterio.
+Una [web cuidada desde 299€](/precios/) que transmita calma y facilite el contacto ya marca la diferencia para una consulta. Después se crece: un blog que ayude de verdad posiciona y, de paso, demuestra tu criterio.
 
-¿Eres psicólogo o terapeuta en Cantabria? Así hago las [webs para clínicas y consultas en Cantabria](/diseno-web-clinicas-cantabria): calma, privacidad cuidada y primera cita a un clic. Si quieres contármelo antes, [cuéntame tu caso](/contacto).
+¿Eres psicólogo o terapeuta en Cantabria? Así hago las [webs para clínicas y consultas en Cantabria](/diseno-web-clinicas-cantabria/): calma, privacidad cuidada y primera cita a un clic. Si quieres contármelo antes, [cuéntame tu caso](/contacto/).

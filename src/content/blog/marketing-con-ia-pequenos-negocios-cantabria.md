@@ -18,21 +18,21 @@ No es un botón mágico que hace tu marketing solo. Es una **herramienta de prod
 
 ## Lo que la IA te permite hacer hoy
 
-- **Imágenes de producto y campaña** sin montar un plató caro: tu producto en cualquier ambiente. Es parte de lo que hago en [fotografía](/blog/fotografia-producto-cantabria).
-- **Vídeo** de presentación y para redes sin una productora detrás. Lo cuento en [vídeo corporativo](/blog/video-corporativo-cantabria).
+- **Imágenes de producto y campaña** sin montar un plató caro: tu producto en cualquier ambiente. Es parte de lo que hago en [fotografía](/blog/fotografia-producto-cantabria/).
+- **Vídeo** de presentación y para redes sin una productora detrás. Lo cuento en [vídeo corporativo](/blog/video-corporativo-cantabria/).
 - **Contenido y textos** para tu web y tus redes, con tu tono, más rápido.
 - **Variaciones sin fin:** la misma idea adaptada a cada red, cada formato, cada temporada.
 
 ## Mi otro proyecto: ArtiMindArt
 
-Todo esto no es teoría: llevo [ArtiMindArt](/proyectos), mi estudio creativo con IA, donde produzco imágenes y vídeo de moda que venden sin sesión de fotos. Lo que aprendo ahí lo aplico a tu negocio. No te vendo humo de IA: te enseño resultados.
+Todo esto no es teoría: llevo [ArtiMindArt](/proyectos/), mi estudio creativo con IA, donde produzco imágenes y vídeo de moda que venden sin sesión de fotos. Lo que aprendo ahí lo aplico a tu negocio. No te vendo humo de IA: te enseño resultados.
 
 ## La IA no sustituye a la marca
 
-Ojo: la IA produce, pero sin una [marca](/blog/branding-cantabria) coherente detrás, es ruido bonito. La estrategia, el color, el tono y el mensaje siguen mandando, y eso se define antes: es lo que hago en el [branding en Cantabria](/branding-cantabria). La IA solo hace que producir todo eso sea más rápido y barato para ti.
+Ojo: la IA produce, pero sin una [marca](/blog/branding-cantabria/) coherente detrás, es ruido bonito. La estrategia, el color, el tono y el mensaje siguen mandando, y eso se define antes: es lo que hago en el [branding en Cantabria](/branding-cantabria/). La IA solo hace que producir todo eso sea más rápido y barato para ti.
 
 ## Empezar es sencillo
 
-Cuéntame qué necesitas —imágenes, vídeo, contenido para redes— y te propongo cómo sacarle partido a la IA para tu negocio, con criterio y sin que parezca hecho por una máquina. Va de la mano de tu [web](/precios) y tu marca.
+Cuéntame qué necesitas —imágenes, vídeo, contenido para redes— y te propongo cómo sacarle partido a la IA para tu negocio, con criterio y sin que parezca hecho por una máquina. Va de la mano de tu [web](/precios/) y tu marca.
 
-¿Tienes un negocio en Cantabria y quieres marketing de nivel sin presupuesto de multinacional? Empieza por lo que sostiene todo lo demás: el [diseño gráfico y de marca en Cantabria](/diseno-grafico-cantabria). Luego la IA multiplica. [Cuéntame qué necesitas](/contacto).
+¿Tienes un negocio en Cantabria y quieres marketing de nivel sin presupuesto de multinacional? Empieza por lo que sostiene todo lo demás: el [diseño gráfico y de marca en Cantabria](/diseno-grafico-cantabria/). Luego la IA multiplica. [Cuéntame qué necesitas](/contacto/).

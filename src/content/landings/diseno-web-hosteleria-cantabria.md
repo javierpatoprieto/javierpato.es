@@ -34,7 +34,7 @@ En treinta segundos un grupo descarta el sitio sin fotos, el PDF ilegible y el q
 
 En Cantabria además hay dos negocios en uno: verano (visitante que decide en el móvil) e invierno (vecino, menú del día, peña de los jueves). Antes de diseñar, aclaramos cuál te está fallando.
 
-Esta es la URL de servicio. El [blog de hostelería](/blog/web-hosteleria-cantabria) y el de [carta/menú](/blog/diseno-carta-menu-restaurante-cantabria) apoyan; no sustituyen.
+Esta es la URL de servicio. El [blog de hostelería](/blog/web-hosteleria-cantabria/) y el de [carta/menú](/blog/diseno-carta-menu-restaurante-cantabria/) apoyan; no sustituyen.
 
 ## Carta en móvil (texto real, no PDF escaneado)
 
@@ -50,7 +50,7 @@ Panel simple: primeros, segundos, postre → guardar → publicado. Desde el mó
 
 ## Ficha de Google + web, misma verdad
 
-Muchos deciden en la ficha: fotos, reseñas, horario. La ficha enlaza a menú y reserva de tu web; la web repite los mismos datos. Sin contradicciones. Apoyo: [Google Business](/blog/google-business-profile-cantabria), [SEO local](/blog/seo-local-cantabria).
+Muchos deciden en la ficha: fotos, reseñas, horario. La ficha enlaza a menú y reserva de tu web; la web repite los mismos datos. Sin contradicciones. Apoyo: [Google Business](/blog/google-business-profile-cantabria/), [SEO local](/blog/seo-local-cantabria/).
 
 ## Reserva: teléfono, WhatsApp o calendario
 
@@ -72,7 +72,7 @@ Luz de día junto a ventana, fondo limpio, los platos que más salen —no la ca
 | Más secciones / contenido | Pro 6 pág. | 699€ |
 | Vender producto propio online | Ecommerce | desde 999€ |
 
-Extras: dominio 19,99€/año, alojamiento 49€/año, mantenimiento 190€/año. Detalle: [/precios/](/precios). Visión general: [/diseno-web-cantabria/](/diseno-web-cantabria).
+Extras: dominio 19,99€/año, alojamiento 49€/año, mantenimiento 190€/año. Detalle: [/precios/](/precios/). Visión general: [/diseno-web-cantabria/](/diseno-web-cantabria/).
 
 ## Para quién
 
@@ -87,16 +87,16 @@ No es para quien solo quiere un PDF colgado y olvidarse: eso ya lo tienes, y es 
 
 No inventamos un «restaurante demo». El criterio del estudio se ve en proyectos vivos del portfolio —misma exigencia de claridad y conversión:
 
-- **[Explora Siam](/proyectos/explora-siam)** — Una página que cuenta y termina en WhatsApp (lógica de decisión rápida, aplicable a reserva).
-- **[CantabriaMásCerca](/proyectos/cantabriamascerca)** — Negocio nuevo contado claro y listo para Google.
-- **[Click & Cargo](/proyectos/click-and-cargo)** — Rápida y directa al grano.
-- **[Centro Infantil Periquete](/proyectos/centro-infantil-periquete)** — Reserva sin llamadas ni líos.
-- **[Fisio Mamá](/proyectos/fisio-mama)** — Marca + web con tono cuidado.
+- **[Explora Siam](/proyectos/explora-siam/)** — Una página que cuenta y termina en WhatsApp (lógica de decisión rápida, aplicable a reserva).
+- **[CantabriaMásCerca](/proyectos/cantabriamascerca/)** — Negocio nuevo contado claro y listo para Google.
+- **[Click & Cargo](/proyectos/click-and-cargo/)** — Rápida y directa al grano.
+- **[Centro Infantil Periquete](/proyectos/centro-infantil-periquete/)** — Reserva sin llamadas ni líos.
+- **[Fisio Mamá](/proyectos/fisio-mama/)** — Marca + web con tono cuidado.
 
-Hub: [/proyectos/](/proyectos).
+Hub: [/proyectos/](/proyectos/).
 
 ## Pedir presupuesto
 
 Coge la carta que tengas ahora —aunque sea el PDF de hace dos años— y la miramos. En veinte minutos te digo qué está espantando reservas y qué se arregla en una entrega seria.
 
-**[Pedir presupuesto →](/contacto)**
+**[Pedir presupuesto →](/contacto/)**

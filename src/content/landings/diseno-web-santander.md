@@ -46,21 +46,21 @@ En la zona de Calle Burgos, el Mercado del Este o Puertochico hay tal densidad d
 
 ### Sardinero y temporada: dos negocios en el mismo local
 
-Si estás en el Sardinero o vives del movimiento del puerto y de los cruceros en temporada, tienes un negocio en verano y otro en invierno. El de verano atiende a alguien que no conoce la ciudad, no sabe cómo llegar y puede que no hable español; el de invierno atiende al de siempre. Eso se resuelve en la estructura de la web: contenido que funcione para el visitante de paso —ubicación, cómo llegar, qué se come, precios orientativos— sin esconder lo que le interesa al cliente fiel. Si tu público es de fuera, hay casos donde la versión en inglés se paga sola; en [Explora Siam](/proyectos/explora-siam) el problema era justo ese, vender algo a alguien que no te ha visto en su vida.
+Si estás en el Sardinero o vives del movimiento del puerto y de los cruceros en temporada, tienes un negocio en verano y otro en invierno. El de verano atiende a alguien que no conoce la ciudad, no sabe cómo llegar y puede que no hable español; el de invierno atiende al de siempre. Eso se resuelve en la estructura de la web: contenido que funcione para el visitante de paso —ubicación, cómo llegar, qué se come, precios orientativos— sin esconder lo que le interesa al cliente fiel. Si tu público es de fuera, hay casos donde la versión en inglés se paga sola; en [Explora Siam](/proyectos/explora-siam/) el problema era justo ese, vender algo a alguien que no te ha visto en su vida.
 
 ### Cuatro Caminos, Valdecilla, Peñacastillo: el cliente de barrio
 
 Fuera del centro cambia el juego. Aquí no compites con cuarenta negocios sino con dos o tres, y lo que decide es la cercanía y la confianza. La gente busca desde casa, quiere algo a diez minutos y mira una cosa antes que ninguna: dónde estás exactamente y cómo se llega. Poner el barrio, la calle, el aparcamiento y un mapa que funcione en el móvil es de las cosas más rentables que puedes hacer en una web de Santander, y es la que más se olvida.
 
-Un caso aparte: la zona de Valdecilla y toda la clínica privada de la ciudad. Cuando alguien busca un profesional sanitario, no compara precios, compara si se fía. Eso se transmite con el tono, con la foto del equipo y con poder pedir cita a las once de la noche sin llamar a nadie. Lo trabajé así en la web de [Fisio Mamá](/proyectos/fisio-mama).
+Un caso aparte: la zona de Valdecilla y toda la clínica privada de la ciudad. Cuando alguien busca un profesional sanitario, no compara precios, compara si se fía. Eso se transmite con el tono, con la foto del equipo y con poder pedir cita a las once de la noche sin llamar a nadie. Lo trabajé así en la web de [Fisio Mamá](/proyectos/fisio-mama/).
 
 ## Qué hago exactamente
 
 - **Escribo la web, no solo la maqueto.** Los textos los redacto yo con lo que me cuentes en la llamada. No te mando una plantilla con "lorem ipsum" para que la rellenes tú.
 - **Una página por servicio importante.** Si haces cuatro cosas, no las metes todas en un párrafo: cada una necesita su página para tener alguna opción en Google.
 - **Velocidad y móvil primero.** Se diseña para la pantalla en la que va a decidir el cliente, no para tu portátil.
-- **SEO local de verdad**: título y contenido que digan qué haces y en qué zona de Santander, direcciones y horarios marcados para Google, y la web conectada con tu ficha de Google Business. Si quieres entender cómo funciona esta parte, lo conté entero en la [guía de SEO local en Cantabria](/blog/seo-local-cantabria).
-- **Marca, si hace falta.** Si tu logo es de hace quince años y la web nueva lo va a dejar en evidencia, lo hablamos: también hago [identidad y branding](/branding-cantabria).
+- **SEO local de verdad**: título y contenido que digan qué haces y en qué zona de Santander, direcciones y horarios marcados para Google, y la web conectada con tu ficha de Google Business. Si quieres entender cómo funciona esta parte, lo conté entero en la [guía de SEO local en Cantabria](/blog/seo-local-cantabria/).
+- **Marca, si hace falta.** Si tu logo es de hace quince años y la web nueva lo va a dejar en evidencia, lo hablamos: también hago [identidad y branding](/branding-cantabria/).
 
 ## Las objeciones que me pone todo el mundo en Santander
 
@@ -80,10 +80,10 @@ La web de una página se entrega en tres días. Una de cuatro o seis páginas ll
 
 ## Precios cerrados, sin letra pequeña
 
-Web de una página, 299€. Web básica de cuatro páginas, 549€. Web pro de seis páginas, 699€. Tienda online desde 999€. Aparte, y solo si los quieres conmigo: dominio 19,99€/año, alojamiento 49€/año y mantenimiento 190€/año, que es tenerme detrás para cambios y actualizaciones en vez de llamar a nadie cuando algo se rompe. Está todo desglosado en la página de [precios](/precios), sin "consúltanos".
+Web de una página, 299€. Web básica de cuatro páginas, 549€. Web pro de seis páginas, 699€. Tienda online desde 999€. Aparte, y solo si los quieres conmigo: dominio 19,99€/año, alojamiento 49€/año y mantenimiento 190€/año, que es tenerme detrás para cambios y actualizaciones en vez de llamar a nadie cuando algo se rompe. Está todo desglosado en la página de [precios](/precios/), sin "consúltanos".
 
-Si lo tuyo es vender producto y no captar llamadas, el enfoque cambia bastante y lo tienes explicado en [tienda online](/tienda-online-cantabria).
+Si lo tuyo es vender producto y no captar llamadas, el enfoque cambia bastante y lo tienes explicado en [tienda online](/tienda-online-cantabria/).
 
 ## Cuéntame qué pasa con tu web
 
-Escríbeme desde [contacto](/contacto), dime qué negocio tienes en Santander y qué esperas de la web que hoy no está pasando. Te contesto con lo que yo haría, un precio cerrado y un plazo. Si creo que no necesitas rehacerla, también te lo digo: prefiero eso a cobrarte por algo que no te hace falta.
+Escríbeme desde [contacto](/contacto/), dime qué negocio tienes en Santander y qué esperas de la web que hoy no está pasando. Te contesto con lo que yo haría, un precio cerrado y un plazo. Si creo que no necesitas rehacerla, también te lo digo: prefiero eso a cobrarte por algo que no te hace falta.

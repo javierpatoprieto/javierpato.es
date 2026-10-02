@@ -20,18 +20,18 @@ Cantabria vive del turismo, y buena parte de ese turismo no habla español. Un f
 
 ## Para quién es imprescindible
 
-Casas rurales, hoteles y [apartamentos](/blog/web-casa-rural-turismo-cantabria), restaurantes, empresas de actividades, guías, comercios en zonas turísticas… Si tu cliente puede venir de fuera, tu web debería hablarle en su idioma. Aunque sea solo español + inglés para empezar.
+Casas rurales, hoteles y [apartamentos](/blog/web-casa-rural-turismo-cantabria/), restaurantes, empresas de actividades, guías, comercios en zonas turísticas… Si tu cliente puede venir de fuera, tu web debería hablarle en su idioma. Aunque sea solo español + inglés para empezar.
 
 ## Bien hecho, no con el traductor automático
 
-Ojo con esto: una web traducida con el botón automático del navegador da mala imagen y errores que espantan. Multilingüe de verdad significa contenido preparado para cada idioma, con las etiquetas técnicas correctas para que Google entienda qué versión enseñar a cada persona. Es parte de hacer las cosas con criterio, como [estudio](/estudio).
+Ojo con esto: una web traducida con el botón automático del navegador da mala imagen y errores que espantan. Multilingüe de verdad significa contenido preparado para cada idioma, con las etiquetas técnicas correctas para que Google entienda qué versión enseñar a cada persona. Es parte de hacer las cosas con criterio, como [estudio](/estudio/).
 
 ## Coherente con tu marca
 
-Cambie el idioma que cambie, la web tiene que seguir siendo tú: misma [marca](/blog/branding-cantabria), mismas fotos, mismo tono. Solo cambian las palabras, no la sensación.
+Cambie el idioma que cambie, la web tiene que seguir siendo tú: misma [marca](/blog/branding-cantabria/), mismas fotos, mismo tono. Solo cambian las palabras, no la sensación.
 
 ## Empezar es sencillo
 
-Podemos arrancar con dos idiomas (español + inglés) y añadir más según de dónde te venga el cliente. Se monta sobre una [web bien hecha](/precios) desde el principio, sin parches.
+Podemos arrancar con dos idiomas (español + inglés) y añadir más según de dónde te venga el cliente. Se monta sobre una [web bien hecha](/precios/) desde el principio, sin parches.
 
-¿Tienes un negocio turístico en Cantabria y tu web solo habla español? Si además das de comer, mira cómo hago el [diseño web para hostelería en Cantabria](/diseno-web-hosteleria-cantabria), carta incluida. Y si quieres presupuesto del segundo idioma, [escríbeme](/contacto).
+¿Tienes un negocio turístico en Cantabria y tu web solo habla español? Si además das de comer, mira cómo hago el [diseño web para hostelería en Cantabria](/diseno-web-hosteleria-cantabria/), carta incluida. Y si quieres presupuesto del segundo idioma, [escríbeme](/contacto/).

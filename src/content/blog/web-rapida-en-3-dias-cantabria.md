@@ -10,11 +10,11 @@ read: "4 min"
 cover: "/img/blog-precio.webp"
 ---
 
-"Una web tarda meses." Es lo que casi todo el mundo cree, porque es lo que ha vivido: agencias que piden mil reuniones, presupuestos eternos y proyectos que se arrastran medio año. La realidad es que un negocio pequeño no necesita nada de eso. Una [web one page](/precios) bien planteada la tengo lista en **3 días**. Y no, no se nota la prisa.
+"Una web tarda meses." Es lo que casi todo el mundo cree, porque es lo que ha vivido: agencias que piden mil reuniones, presupuestos eternos y proyectos que se arrastran medio año. La realidad es que un negocio pequeño no necesita nada de eso. Una [web one page](/precios/) bien planteada la tengo lista en **3 días**. Y no, no se nota la prisa.
 
 ## Por qué se puede ir rápido
 
-La lentitud casi nunca es del diseño: es de la indecisión, las reuniones y el ir y venir. Si el proceso está bien montado y las decisiones se toman a tiempo, el trabajo en sí vuela. Yo trabajo como [estudio](/estudio) de una sola mano: no hay cadena de intermediarios ni correos perdidos entre departamentos.
+La lentitud casi nunca es del diseño: es de la indecisión, las reuniones y el ir y venir. Si el proceso está bien montado y las decisiones se toman a tiempo, el trabajo en sí vuela. Yo trabajo como [estudio](/estudio/) de una sola mano: no hay cadena de intermediarios ni correos perdidos entre departamentos.
 
 ## Mi proceso en 3 días
 
@@ -24,7 +24,7 @@ La lentitud casi nunca es del diseño: es de la indecisión, las reuniones y el 
 
 ## Rápido no es chapucero
 
-Rápido significa sin perder el tiempo, no sin criterio. La web sale con lo que importa: carga veloz, [móvil perfecto](/blog/errores-diseno-web-que-espantan-clientes), contacto fácil y [base de SEO local](/blog/seo-local-cantabria) para que te encuentren. Lo que sobra —reuniones de relleno, funciones que nadie usa— es lo que quitamos.
+Rápido significa sin perder el tiempo, no sin criterio. La web sale con lo que importa: carga veloz, [móvil perfecto](/blog/errores-diseno-web-que-espantan-clientes/), contacto fácil y [base de SEO local](/blog/seo-local-cantabria/) para que te encuentren. Lo que sobra —reuniones de relleno, funciones que nadie usa— es lo que quitamos.
 
 ## Para quién es esto
 
@@ -34,4 +34,4 @@ Para autónomos y negocios que necesitan estar online **ya**: acabas de abrir, t
 
 Si me pasas el contenido a tiempo, en tres días estás online. Así de simple.
 
-¿Necesitas una web ya para tu negocio en Cantabria y no quieres esperar medio año? Mira qué incluye el [diseño web en Cantabria](/diseno-web-cantabria) y elige pack; con el contenido a tiempo, en tres días estás online. Dudas, por [aquí](/contacto).
+¿Necesitas una web ya para tu negocio en Cantabria y no quieres esperar medio año? Mira qué incluye el [diseño web en Cantabria](/diseno-web-cantabria/) y elige pack; con el contenido a tiempo, en tres días estás online. Dudas, por [aquí](/contacto/).

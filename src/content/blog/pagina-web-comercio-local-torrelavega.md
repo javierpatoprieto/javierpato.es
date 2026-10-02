@@ -14,7 +14,7 @@ El comercio de Torrelavega compite contra dos gigantes: las grandes superficies 
 
 ## La cercanía también se busca en Google
 
-Cada vez más gente quiere comprar cerca: *"tienda de ... en Torrelavega"*, *"... cerca de mí"*. Si cuando te buscan no apareces, ganan los de siempre. Aparecer se trabaja con [SEO local](/blog/seo-local-cantabria) y una [ficha de Google](/blog/google-business-profile-cantabria) al día, con fotos de tu tienda real y reseñas de tus clientes.
+Cada vez más gente quiere comprar cerca: *"tienda de ... en Torrelavega"*, *"... cerca de mí"*. Si cuando te buscan no apareces, ganan los de siempre. Aparecer se trabaja con [SEO local](/blog/seo-local-cantabria/) y una [ficha de Google](/blog/google-business-profile-cantabria/) al día, con fotos de tu tienda real y reseñas de tus clientes.
 
 ## Qué necesita la web de un comercio
 
@@ -25,7 +25,7 @@ Cada vez más gente quiere comprar cerca: *"tienda de ... en Torrelavega"*, *"..
 
 ## No hace falta montar un Amazon
 
-Muchos comercios creen que web = tienda online complicada. No necesariamente. A veces lo que más vende es una web sencilla que te encuentre, te presente y lleve al cliente a tu puerta o a tu WhatsApp. Y si quieres vender online, se hace una [tienda](/blog/tienda-online-cantabria) a tu ritmo.
+Muchos comercios creen que web = tienda online complicada. No necesariamente. A veces lo que más vende es una web sencilla que te encuentre, te presente y lleve al cliente a tu puerta o a tu WhatsApp. Y si quieres vender online, se hace una [tienda](/blog/tienda-online-cantabria/) a tu ritmo.
 
 ## Lo local, con orgullo
 
@@ -33,6 +33,6 @@ Una web con personalidad, con tu marca y tu tono, comunica lo que una gran caden
 
 ## Empezar es sencillo
 
-Una [web desde 299€](/precios) que te ponga en el mapa de Torrelavega ya te separa del comercio que no sale ni en Google. 
+Una [web desde 299€](/precios/) que te ponga en el mapa de Torrelavega ya te separa del comercio que no sale ni en Google. 
 
-¿Tienes una tienda en Torrelavega y sientes que solo te encuentran los de siempre? Aquí te cuento cómo trabajo el [diseño web para negocios de Torrelavega](/diseno-web-torrelavega), y si prefieres contármelo por escrito, [escríbeme](/contacto).
+¿Tienes una tienda en Torrelavega y sientes que solo te encuentran los de siempre? Aquí te cuento cómo trabajo el [diseño web para negocios de Torrelavega](/diseno-web-torrelavega/), y si prefieres contármelo por escrito, [escríbeme](/contacto/).

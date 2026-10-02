@@ -56,7 +56,7 @@ const jsonld = {
   description: d.summary,
   image: new URL(heroShot, 'https://javierpato.es').toString(),
   creator: { '@type': 'Person', name: 'Javier Pato', url: 'https://javierpato.es' },
-  url: `https://javierpato.es/proyectos/${p.slug}`,
+  url: `https://javierpato.es/proyectos/${p.slug}/`,
 };
 ---
 <Layout
@@ -67,12 +67,12 @@ const jsonld = {
   <article class={`pc pc--${d.tone}`}>
     <section class="section pc-hero">
       <div class="wrap">
-        <nav class="pc-bc" aria-label="Migas"><a href="/proyectos">Proyectos</a> <span aria-hidden="true">/</span> <span>{d.title}</span></nav>
+        <nav class="pc-bc" aria-label="Migas"><a href="/proyectos/">Proyectos</a> <span aria-hidden="true">/</span> <span>{d.title}</span></nav>
         <span class="pc-eyebrow" data-reveal>{d.sector} · {d.year}</span>
         <h1 class="pc-h1" data-reveal>{d.title}</h1>
         <p class="pc-summary" data-reveal>{d.summary}</p>
         <div class="pc-meta" data-reveal>
-          <ul class="pc-services">{d.services.map((s) => <li><a href={`/proyectos/servicio/${slugify(s)}`}>{s}</a></li>)}</ul>
+          <ul class="pc-services">{d.services.map((s) => <li><a href={`/proyectos/servicio/${slugify(s)}/`}>{s}</a></li>)}</ul>
           <a class="pc-url" href={`https://${d.url}`} target="_blank" rel="noopener">{d.url} ↗</a>
         </div>
       </div>
@@ -121,7 +121,7 @@ const jsonld = {
 
     <section class="section pc-next">
       <div class="wrap">
-        <a class="pc-next__card" href={`/proyectos/${next.slug}`}>
+        <a class="pc-next__card" href={`/proyectos/${next.slug}/`}>
           <span class="pc-eyebrow">Siguiente proyecto</span>
           <span class="pc-next__title">{next.data.title} →</span>
         </a>

@@ -24,18 +24,18 @@ Menos es más, pero solo cuando está bien hecho. Ese equilibrio es diseño, no 
 
 ## Atraer al cliente correcto
 
-Una web bien planteada no solo enseña: filtra. Comunica tu estilo y tu nivel de forma que el cliente que llega ya viene alineado contigo, y no pierdes tiempo con encargos que no encajan. Ahí es donde el mensaje y la [identidad de marca](/blog/branding-cantabria) importan tanto como las fotos.
+Una web bien planteada no solo enseña: filtra. Comunica tu estilo y tu nivel de forma que el cliente que llega ya viene alineado contigo, y no pierdes tiempo con encargos que no encajan. Ahí es donde el mensaje y la [identidad de marca](/blog/branding-cantabria/) importan tanto como las fotos.
 
 ## Que te encuentren sin perder categoría
 
-Sí, también quieres aparecer cuando alguien busca *"arquitecto en Santander"* o *"interiorismo en Cantabria"*. Eso se trabaja con [SEO local](/blog/seo-local-cantabria) sin sacrificar la elegancia de la web. Una cosa no está reñida con la otra.
+Sí, también quieres aparecer cuando alguien busca *"arquitecto en Santander"* o *"interiorismo en Cantabria"*. Eso se trabaja con [SEO local](/blog/seo-local-cantabria/) sin sacrificar la elegancia de la web. Una cosa no está reñida con la otra.
 
 ## Hecha por alguien que también diseña
 
-Aquí tienes una ventaja: yo también soy diseñador. Entiendo por qué te importa el interletrado y el margen, y no te voy a llenar la web de florituras. Trabajo como [estudio](/estudio): una sola mano para marca, web y dirección visual.
+Aquí tienes una ventaja: yo también soy diseñador. Entiendo por qué te importa el interletrado y el margen, y no te voy a llenar la web de florituras. Trabajo como [estudio](/estudio/): una sola mano para marca, web y dirección visual.
 
 ## Empezar es sencillo
 
-Un buen portfolio no tiene por qué costar una fortuna. Desde una [web bien resuelta](/precios) que ponga tus proyectos donde brillan, se construye la presencia que tu trabajo merece.
+Un buen portfolio no tiene por qué costar una fortuna. Desde una [web bien resuelta](/precios/) que ponga tus proyectos donde brillan, se construye la presencia que tu trabajo merece.
 
-¿Tienes un estudio en Cantabria y tu web no está a la altura de lo que proyectas? Aquí tienes el detalle de cómo hago [diseño web en Cantabria](/diseno-web-cantabria), con el mismo criterio que tú aplicas a tus espacios. Si quieres enseñarme tus proyectos primero, [escríbeme](/contacto).
+¿Tienes un estudio en Cantabria y tu web no está a la altura de lo que proyectas? Aquí tienes el detalle de cómo hago [diseño web en Cantabria](/diseno-web-cantabria/), con el mismo criterio que tú aplicas a tus espacios. Si quieres enseñarme tus proyectos primero, [escríbeme](/contacto/).
