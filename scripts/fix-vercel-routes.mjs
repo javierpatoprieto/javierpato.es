@@ -19,7 +19,7 @@ const isSlash308 = (r) => r.status === 308 && r.headers?.Location?.endsWith('/')
 const isOld301 = (r) => r.status === 301 && typeof r.src === 'string' && !r.src.startsWith('^');
 
 for (const r of routes) {
-  if (isSlash308(r)) r.src = r.src.replaceAll('([^/]+?)', '((?!_)[^/.]+?)');
+  if (isSlash308(r)) r.src = r.src.replaceAll('([^/]+?)', '([^/.]+?)');
   if (isOld301(r)) r.src = `${r.src.replace(/\/$/, '')}/?`;
 }
 const api308 = routes
