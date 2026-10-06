@@ -12,6 +12,9 @@
 // 4) @astrojs/vercel 7 solo conoce Node 18/20: con Node 24 escribe
 //    'nodejs18.x' (retirado en Vercel). Se fija el runtime de las funciones al
 //    Node con el que se construye (engines.node = 24.x en Vercel).
+// 5) javierpato.vercel.app hace 301 a https://javierpato.es conservando la
+//    ruta: Bing lo indexaba como otra web. Va la primera, antes del
+//    filesystem, para que ningún fichero ni página responda 200 en ese host.
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const file = new URL('../.vercel/output/config.json', import.meta.url);
@@ -35,9 +38,16 @@ const old301 = routes.filter(isOld301);
 const resto = routes.filter((r) => !isOld301(r));
 const primero308 = resto.findIndex(isSlash308);
 resto.splice(primero308 === -1 ? 0 : primero308, 0, ...old301, ...api308);
+const vercelApp301 = {
+  src: '^/(.*)$',
+  has: [{ type: 'host', value: 'javierpato.vercel.app' }],
+  headers: { Location: 'https://javierpato.es/$1' },
+  status: 301,
+};
+resto.unshift(vercelApp301);
 config.routes = resto;
 writeFileSync(file, JSON.stringify(config, null, 2));
-console.log(`[fix-vercel-routes] ${old301.length} redirects 301 adelantados; 308 sin ficheros; ${api308.length} endpoints /api con 308 a la barra.`);
+console.log(`[fix-vercel-routes] ${old301.length} redirects 301 adelantados; 308 sin ficheros; ${api308.length} endpoints /api con 308 a la barra; 301 de javierpato.vercel.app.`);
 
 const major = process.versions.node.split('.')[0];
 const fnDir = new URL('../.vercel/output/functions/', import.meta.url);
