@@ -76,7 +76,7 @@ Facebook te sirve para hablar con quien ya te sigue. No compite en Google por lo
 
 ## El orden en que hacemos las cosas
 
-Primero hablamos de tu zona de reparto real. No de la que te gustaría: la de verdad. Si eres un taller que atiende hasta Cabezón pero no sube a Reinosa, eso decide qué municipios entran en la web y cuáles no, y es la primera decisión que tomamos. Después vamos a qué te compran de verdad, que casi nunca es lo que tienes en el rótulo.
+Primero hablamos de tu zona de reparto real. No de la que te gustaría: la de verdad. Si eres un taller que atiende hasta Cabezón pero no sube a [Reinosa](/diseno-web-cantabria/zonas/#reinosa), eso decide qué municipios entran en la web y cuáles no, y es la primera decisión que tomamos. Después vamos a qué te compran de verdad, que casi nunca es lo que tienes en el rótulo.
 
 Con eso escribo yo la estructura y los textos, diseño, monto y publico. No te mando un documento para que rellenes: te enseño la web hecha y la corriges viéndola como la va a ver tu cliente. Trato directo conmigo, sin comerciales ni cuentas que reenvían correos.
 

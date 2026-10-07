@@ -20,7 +20,7 @@ Cantabria vive del turismo, y buena parte de ese turismo no habla español. Un f
 
 ## Para quién es imprescindible
 
-Casas rurales, hoteles y [apartamentos](/blog/web-casa-rural-turismo-cantabria/), restaurantes, empresas de actividades, guías, comercios en zonas turísticas… Si tu cliente puede venir de fuera, tu web debería hablarle en su idioma. Aunque sea solo español + inglés para empezar.
+Casas rurales, hoteles y [apartamentos](/blog/web-casa-rural-turismo-cantabria/), restaurantes, empresas de actividades, guías, comercios en [zonas turísticas](/diseno-web-cantabria/zonas/#turismo-rural)… Si tu cliente puede venir de fuera, tu web debería hablarle en su idioma. Aunque sea solo español + inglés para empezar.
 
 ## Bien hecho, no con el traductor automático
 

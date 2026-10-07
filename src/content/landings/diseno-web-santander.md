@@ -50,7 +50,7 @@ Si estás en el Sardinero o vives del movimiento del puerto y de los cruceros en
 
 ### Cuatro Caminos, Valdecilla, Peñacastillo: el cliente de barrio
 
-Fuera del centro cambia el juego. Aquí no compites con cuarenta negocios sino con dos o tres, y lo que decide es la cercanía y la confianza. La gente busca desde casa, quiere algo a diez minutos y mira una cosa antes que ninguna: dónde estás exactamente y cómo se llega. Poner el barrio, la calle, el aparcamiento y un mapa que funcione en el móvil es de las cosas más rentables que puedes hacer en una web de Santander, y es la que más se olvida.
+Fuera del centro cambia el juego. Aquí no compites con cuarenta negocios sino con dos o tres, y lo que decide es la cercanía y la confianza. La gente busca desde casa, quiere algo a diez minutos y mira una cosa antes que ninguna: dónde estás exactamente y cómo se llega. Poner el barrio, la calle, el aparcamiento y un mapa que funcione en el móvil es de las cosas más rentables que puedes hacer en una web de Santander, y es la que más se olvida. Si tu negocio está ya fuera de la capital, en Camargo, Astillero o Piélagos, lo cuento en [diseño web por zonas de Cantabria](/diseno-web-cantabria/zonas/).
 
 Un caso aparte: la zona de Valdecilla y toda la clínica privada de la ciudad. Cuando alguien busca un profesional sanitario, no compara precios, compara si se fía. Eso se transmite con el tono, con la foto del equipo y con poder pedir cita a las once de la noche sin llamar a nadie. Lo trabajé así en la web de [Fisio Mamá](/proyectos/fisio-mama/).
 

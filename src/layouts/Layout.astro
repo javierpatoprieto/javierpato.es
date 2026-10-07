@@ -18,6 +18,8 @@ interface Props {
   jsonld?: object;
   /** Directiva robots. Solo hay que pasarla para desindexar (p. ej. 'noindex, follow'). */
   robots?: string;
+  /** Sin canonical ni og:url (p. ej. la 404, que se sirve en cualquier ruta). */
+  noCanonical?: boolean;
 }
 const {
   title,
@@ -25,6 +27,7 @@ const {
   ogImage = '/og.jpg',
   jsonld,
   robots = 'index, follow, max-image-preview:large',
+  noCanonical = false,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://javierpato.es').toString();
 
@@ -208,7 +211,7 @@ const personLd = {
 
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    {!noCanonical && <link rel="canonical" href={canonical} />}
     <meta name="google-site-verification" content="celvGrPsozKtBpMmTXXF39LFyiwQp8R5Rb9yLJ-K4rM" />
     <meta name="robots" content={robots} />
     <meta name="author" content="Javier Pato" />
@@ -221,7 +224,7 @@ const personLd = {
     <meta property="og:site_name" content="Javier Pato" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
+    {!noCanonical && <meta property="og:url" content={canonical} />}
     <meta property="og:image" content={new URL(ogImage, Astro.site ?? 'https://javierpato.es').toString()} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />

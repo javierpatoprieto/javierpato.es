@@ -1,0 +1,42 @@
+---
+// 404 propia. Vercel la sirve con código 404 en cualquier ruta que no exista
+// (ruta de error en .vercel/output/config.json). noindex y sin canonical: no
+// es una URL que deba indexarse, y queda fuera del sitemap (astro.config).
+import Layout from '../layouts/Layout.astro';
+
+const links = [
+  ['Inicio', '/'],
+  ['Diseño web en Cantabria', '/diseno-web-cantabria/'],
+  ['Proyectos', '/proyectos/'],
+  ['Blog', '/blog/'],
+];
+---
+<Layout
+  title="Página no encontrada | Javier Pato"
+  description="Esta página no existe o se ha movido. Desde aquí puedes volver al inicio, ver proyectos, leer el blog o escribirme."
+  robots="noindex, follow"
+  noCanonical
+>
+  <section class="section nf">
+    <div class="wrap nf__wrap">
+      <span class="nf__k">Error 404</span>
+      <h1 class="nf__h">Esta página no existe <span>(o se ha movido)</span></h1>
+      <p class="nf__l">
+        El enlace está roto o la página cambió de sitio. No pasa nada: lo que buscabas seguramente está a un clic.
+      </p>
+      <ul class="nf__links">
+        {links.map(([t, href]) => <li><a href={href} class="btn btn--ghost">{t}</a></li>)}
+        <li><a href="/contacto/" class="btn btn--green">Escríbeme →</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <style>
+    .nf__wrap { max-width: 760px; }
+    .nf__k { display: block; font-family: var(--font-body); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); margin-bottom: var(--s-4); }
+    .nf__h { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 700; line-height: 1.05; }
+    .nf__h span { color: var(--accent); }
+    .nf__l { font-size: 1.125rem; line-height: 1.6; color: var(--ink-mute); margin: var(--s-4) 0 var(--s-6); max-width: 56ch; }
+    .nf__links { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; padding: 0; margin: 0; }
+  </style>
+</Layout>

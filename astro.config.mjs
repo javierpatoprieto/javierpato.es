@@ -36,6 +36,7 @@ const taxonomiasFinas = (() => {
   return [...cuenta.entries()].filter(([, n]) => n < 2).map(([s]) => `/proyectos/servicio/${s}/`);
 })();
 
+const legales = ['/aviso-legal/', '/privacidad/', '/cookies/'];
 
 // lastmod real por URL: fecha del último commit que tocó el fichero fuente de
 // la página (contenido .md o .astro). En los posts cuenta también
@@ -69,10 +70,14 @@ const max = (...ds) => {
 const lastmodFor = (pathname) => {
   const seg = pathname.replace(/^\/|\/$/g, '').split('/').filter(Boolean);
   if (seg.length === 0) return gitDate('src/pages/index.astro', ...readdirSync('src/components').map((f) => `src/components/${f}`));
-  if (seg[0] === 'blog' && seg.length === 1) return gitDate('src/pages/blog/index.astro', ...md('src/content/blog'));
+  if (seg[0] === 'blog' && seg.length === 1)
+    return max(gitDate('src/pages/blog/index.astro'), ...md('src/content/blog').map((f) => fmDate(f, 'updatedDate') ?? fmDate(f, 'pubDate')));
   if (seg[0] === 'blog') {
+    // Fecha editorial (la misma que dateModified del JSON-LD): updatedDate o
+    // pubDate. El último commit no sirve: cambios mecánicos de enlaces en
+    // todos los posts (p. ej. la barra final) los marcaban como modificados.
     const f = `src/content/blog/${seg[1]}.md`;
-    return max(gitDate(f), fmDate(f, 'updatedDate'), fmDate(f, 'pubDate'));
+    return fmDate(f, 'updatedDate') ?? fmDate(f, 'pubDate') ?? gitDate(f);
   }
   if (seg[0] === 'proyectos' && seg.length === 1) return gitDate('src/pages/proyectos.astro', ...md('src/content/proyectos'));
   if (seg[0] === 'proyectos' && seg[1] === 'servicio') return gitDate('src/pages/proyectos/servicio/[service].astro', ...md('src/content/proyectos'));
@@ -97,7 +102,12 @@ export default defineConfig({
   adapter: vercel(),
   integrations: [
     sitemap({
-      filter: (page) => !taxonomiasFinas.some((t) => new URL(page).pathname === t),
+      // Fuera del sitemap: taxonomías con noindex, legales (siguen indexables,
+      // pero no son páginas que haya que pedir a Google que rastree) y la 404.
+      filter: (page) => {
+        const path = new URL(page).pathname;
+        return !taxonomiasFinas.includes(path) && !legales.includes(path) && !path.startsWith('/404');
+      },
       serialize: (item) => {
         const fecha = lastmodFor(new URL(item.url).pathname) ?? buildDate;
         return { ...item, lastmod: fecha.toISOString() };
