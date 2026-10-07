@@ -34,7 +34,7 @@ Mucha gente pospone ir al dentista precisamente por la pereza de llamar. Quítal
 
 ## Que te encuentren con "dentista cerca de mí"
 
-Cuando alguien busca *"clínica dental en Santander"* o *"implantes Torrelavega"*, quieres aparecer. Eso se trabaja con [SEO local](/blog/seo-local-cantabria/): tu [Google Business Profile](/blog/google-business-profile-cantabria/) al día, reseñas y una web rápida con tus servicios y tu zona bien claros.
+Cuando alguien busca *"clínica dental en Santander"* o *"implantes Torrelavega"*, quieres aparecer. Eso se trabaja con [SEO local](/blog/seo-local-cantabria/): tu [Google Business Profile](/blog/google-business-profile-cantabria/) al día, reseñas y una web rápida con tus servicios y tu zona bien claros. Si tu clínica está en la capital, te cuento cómo lo enfoco en mi página de [diseño web para negocios de Santander](/diseno-web-santander/).
 
 ## Lo legal no es opcional
 

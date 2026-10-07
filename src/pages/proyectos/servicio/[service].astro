@@ -41,6 +41,10 @@ const homeShots = {
 // fuera, y la de diseño web listaba los seis proyectos y llegaba a 199.
 const titleLargo = `${label} en Cantabria — Proyectos | Javier Pato`;
 const seoTitle = titleLargo.length > 60 ? `${label} en Cantabria | Javier Pato` : titleLargo;
+// /diseno-web/ no debe competir con /diseno-web-cantabria/ por «Diseño web en Cantabria».
+const esDisenoWeb = slugify(label) === 'diseno-web';
+const h1 = esDisenoWeb ? 'Proyectos de diseño web' : `${label} en Cantabria`;
+const pageTitle = esDisenoWeb && seoTitle.includes('Diseño web en Cantabria') ? 'Proyectos de diseño web | Javier Pato' : seoTitle;
 
 const nombres = items.map((p) => p.data.title);
 const describir = (n: number) => {
@@ -65,7 +69,7 @@ const jsonld = {
 };
 ---
 <Layout
-  title={seoTitle}
+  title={pageTitle}
   description={seoDescription}
   robots={thin ? 'noindex, follow' : undefined}
   jsonld={jsonld}
@@ -74,7 +78,7 @@ const jsonld = {
     <div class="wrap">
       <nav class="sv-bc" aria-label="Migas"><a href="/proyectos/">Proyectos</a> <span aria-hidden="true">/</span> <span>{label}</span></nav>
       <span class="sv-eyebrow" data-reveal>Servicio · Cantabria</span>
-      <h1 class="sv-h1 tbar" data-reveal>{label} en Cantabria</h1>
+      <h1 class="sv-h1 tbar" data-reveal>{h1}</h1>
       <p class="sv-lead" data-reveal>
         {items.length === 1 ? 'Un proyecto' : `${items.length} proyectos`} donde el {lower} fue clave para que el negocio
         parezca lo que vale y venda más. Trabajo real para negocios de Cantabria.

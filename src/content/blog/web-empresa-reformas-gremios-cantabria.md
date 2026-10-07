@@ -24,7 +24,7 @@ Es lo que más vende en este sector. Un antes y después de un baño, hecho con 
 
 ### Zona clara
 
-"Reformas en Torrelavega, Santander y toda Cantabria". Escrito, no supuesto. Google lo necesita para el [SEO local](/blog/seo-local-cantabria/) y el cliente para saber que vas a su pueblo.
+"Reformas en Torrelavega, Santander y toda Cantabria". Escrito, no supuesto. Google lo necesita para el [SEO local](/blog/seo-local-cantabria/) y el cliente para saber que vas a su pueblo. Si trabajas sobre todo en el Besaya, aquí tienes cómo planteo una [web para empresas de Torrelavega](/diseno-web-torrelavega/).
 
 ### Presupuesto fácil, por WhatsApp
 

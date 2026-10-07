@@ -26,7 +26,7 @@ En este sector se compra con los ojos. Tus mejores cortes, tus colores, tu local
 
 ## Que te encuentren "cerca de mí"
 
-Cuando alguien nuevo en el barrio busca *"barbería cerca de mí"* o *"peluquería en Santander"*, quieres salir. Eso es [SEO local](/blog/seo-local-cantabria/): tu [ficha de Google](/blog/google-business-profile-cantabria/) al día, con fotos y reseñas, y una web rápida.
+Cuando alguien nuevo en el barrio busca *"barbería cerca de mí"* o *"peluquería en Santander"*, quieres salir. Eso es [SEO local](/blog/seo-local-cantabria/): tu [ficha de Google](/blog/google-business-profile-cantabria/) al día, con fotos y reseñas, y una web rápida. Si tu salón está en la ciudad, aquí explico mi [diseño de páginas web en Santander](/diseno-web-santander/).
 
 ## Empezar es sencillo
 

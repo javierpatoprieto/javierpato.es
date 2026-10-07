@@ -21,7 +21,7 @@ El cliente medio de un taller no entiende de coches, y eso le da miedo: teme que
 
 ## Aparecer en el momento exacto
 
-Cuando a alguien le pasa algo con el coche, busca ya: *"taller cerca de mí"*, *"cambio de neumáticos Santander"*, *"pre-ITV Torrelavega"*. Si no sales, va a la competencia. Salir se trabaja con [SEO local](/blog/seo-local-cantabria/) y una [ficha de Google](/blog/google-business-profile-cantabria/) bien cuidada, con reseñas y fotos de tu taller real.
+Cuando a alguien le pasa algo con el coche, busca ya: *"taller cerca de mí"*, *"cambio de neumáticos Santander"*, *"pre-ITV Torrelavega"*. Si no sales, va a la competencia. Salir se trabaja con [SEO local](/blog/seo-local-cantabria/) y una [ficha de Google](/blog/google-business-profile-cantabria/) bien cuidada, con reseñas y fotos de tu taller real. Si tu taller está en la comarca, echa un ojo a cómo trabajo el [diseño web en Torrelavega](/diseno-web-torrelavega/).
 
 ## Pedir cita sin tener que llamar
 
