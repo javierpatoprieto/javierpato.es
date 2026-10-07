@@ -4,38 +4,10 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel/serverless';
 
-// Las taxonomías /proyectos/servicio/<x> con un solo caso van con noindex
-// (lo emite [service].astro). Meterlas en el sitemap sería pedirle a Google
-// que rastree lo que le estamos diciendo que no indexe: en Search Console
-// eso sale como "Enviada, pero marcada como noindex". Así que se calculan
-// aquí a partir del frontmatter y se excluyen.
-const slugify = (s) =>
-  s
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/\p{Diacritic}/gu, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-
-const taxonomiasFinas = (() => {
-  const cuenta = new Map();
-  for (const f of readdirSync('src/content/proyectos').filter((f) => f.endsWith('.md'))) {
-    const fm = readFileSync(`src/content/proyectos/${f}`, 'utf8').split(/^---\s*$/m)[1] ?? '';
-    // El frontmatter usa `services: ["A", "B"]` (flow), pero admito también la
-    // lista con guiones por si mañana alguien la escribe así.
-    const inline = fm.match(/^services:\s*\[([^\]]*)\]/m)?.[1];
-    const bloque = fm.match(/^services:\s*\n((?:[ \t]*-[ \t].*\n)+)/m)?.[1];
-    const crudos = inline
-      ? inline.split(',')
-      : (bloque ?? '').split('\n').map((l) => l.replace(/^[ \t]*-[ \t]*/, ''));
-    for (const crudo of crudos) {
-      const s = slugify(crudo.trim().replace(/^["']|["']$/g, ''));
-      if (s) cuenta.set(s, (cuenta.get(s) ?? 0) + 1);
-    }
-  }
-  return [...cuenta.entries()].filter(([, n]) => n < 2).map(([s]) => `/proyectos/servicio/${s}/`);
-})();
-
+// Las taxonomías /proyectos/servicio/<x> van todas con noindex (lo emite
+// [service].astro). Meterlas en el sitemap sería pedirle a Google que rastree
+// lo que le estamos diciendo que no indexe ("Enviada, pero marcada como
+// noindex" en Search Console), así que se excluyen por prefijo.
 const legales = ['/aviso-legal/', '/privacidad/', '/cookies/'];
 
 // lastmod real por URL: fecha del último commit que tocó el fichero fuente de
@@ -106,7 +78,7 @@ export default defineConfig({
       // pero no son páginas que haya que pedir a Google que rastree) y la 404.
       filter: (page) => {
         const path = new URL(page).pathname;
-        return !taxonomiasFinas.includes(path) && !legales.includes(path) && !path.startsWith('/404');
+        return !path.startsWith('/proyectos/servicio/') && !legales.includes(path) && !path.startsWith('/404');
       },
       serialize: (item) => {
         const fecha = lastmodFor(new URL(item.url).pathname) ?? buildDate;
@@ -125,5 +97,7 @@ export default defineConfig({
     '/diseno-web-castro-urdiales': '/diseno-web-cantabria/zonas/#castro-urdiales',
     '/diseno-web-peluquerias-estetica-cantabria': '/diseno-web-cantabria/zonas/#peluquerias-estetica',
     '/diseno-web-turismo-rural-cantabria': '/diseno-web-cantabria/zonas/#turismo-rural',
+    // Posts fusionados (canibalizaban la misma búsqueda): 301 al post ganador.
+    '/blog/web-despacho-asesoria-cantabria-encargos': '/blog/web-asesoria-gestoria-cantabria/',
   },
 });

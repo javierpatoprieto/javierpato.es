@@ -1,16 +1,28 @@
 ---
 title: "Web para asesorías y gestorías en Cantabria"
-description: "Cómo debe ser la web de una asesoría fiscal o laboral en Cantabria para captar autónomos y pymes: claridad, caras visibles y pedir cita en un clic."
+description: "Cómo debe ser la web de una asesoría, gestoría o despacho en Cantabria para generar encargos de autónomos y pymes: claridad, caras visibles y pedir cita en un clic."
 pubDate: 2026-09-02
+updatedDate: 2026-10-07
 keyword: "diseño web asesoría Cantabria"
 tags: ["Sectores", "Diseño web"]
 tone: "stone"
 emoji: "📊"
-read: "5 min"
+read: "7 min"
 cover: "/img/blog-grafico.webp"
 ---
 
 Cambiar de asesoría da pereza y da miedo. Por eso el autónomo que busca "asesoría en Santander" o "gestoría Torrelavega" no llama al primero: mira tres o cuatro webs y elige al que le transmite que no le va a liar. Tu web tiene un trabajo concreto: que esa persona sienta que contigo va a estar tranquila. Y que pedir una primera cita cueste un clic.
+
+## Lo que mira quien elige asesoría o despacho
+
+El autónomo o la pyme que compara webs se hace cuatro preguntas en segundos:
+
+1. **¿Haces lo que necesito?** Laboral, fiscal, mercantil, herencias, extranjería… La especialidad tiene que verse, no esconderse tras «servicios integrales».
+2. **¿Me fío?** Caras reales, colegiación o trayectoria, reseñas y un lenguaje claro, no de boletín oficial.
+3. **¿Puedo contactar sin drama?** Teléfono, WhatsApp o un formulario corto, y qué pasa después.
+4. **¿Me atiendes en mi zona?** Santander, Torrelavega o el resto de Cantabria, dicho con naturalidad.
+
+Si fallas en la confianza o en el botón de contacto, pierdes el encargo aunque Google te traiga la visita.
 
 ## El problema de la mayoría de webs de asesorías
 
@@ -41,6 +53,32 @@ Botón de [WhatsApp](/blog/boton-whatsapp-web-negocio-cantabria/), teléfono y u
 ### SEO local bien hecho
 
 "Asesoría fiscal en Santander", "gestoría laboral en Torrelavega": secciones por servicio y ciudad, [ficha de Google](/blog/google-business-profile-cantabria/) cuidada y reseñas de clientes. Es un sector con mucha búsqueda local y poca competencia bien hecha. Más en [SEO local en Cantabria](/blog/seo-local-cantabria/).
+
+## Las páginas mínimas
+
+No hace falta un portal de veinte páginas. Para generar encargos basta con esto:
+
+| Página | Para qué sirve |
+|--------|----------------|
+| **Inicio** | Promesa clara, para quién trabajas y botón de contacto arriba |
+| **Servicios o áreas** | Una puerta por especialidad, para que el cliente se reconozca |
+| **Equipo o sobre mí** | Caras, nombres y credenciales |
+| **Contacto o pedir cita** | Sin fricción y con una respuesta prometida |
+| **Prueba** (bloque o página) | Reseñas, casos anonimizados o logos de clientes |
+
+## Errores que espantan el encargo
+
+- **Un PDF de presentación como web.** Nadie lo lee en el móvil, no posiciona y no convierte.
+- **El contacto enterrado en el footer.** Visitas sin llamadas.
+- **Fotos de stock y tópicos** («compromiso, rigor, cercanía»). En un despacho huelen a vacío.
+- **«Trabajamos para todo el mundo».** Si no dices para quién trabajas, no te elige nadie.
+- **Lo legal descuidado.** Formularios sin aviso de privacidad en un sector de confianza son una mala señal.
+
+Más señales en [errores de diseño web que espantan clientes](/blog/errores-diseno-web-que-espantan-clientes/).
+
+## Marca e identidad
+
+Una web de asesoría vende seriedad sin frialdad, y eso no lo arregla una plantilla. Si el logo, el color y el tono no acompañan, la web amplifica el problema: ahí conviene trabajar identidad y web a la vez ([branding en Cantabria](/branding-cantabria/)). Si la marca ya está clara, el trabajo es estructura, mensaje y conversión.
 
 ## Un extra que funciona: contenido útil
 

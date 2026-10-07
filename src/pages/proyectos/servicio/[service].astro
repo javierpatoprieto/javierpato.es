@@ -23,11 +23,10 @@ export async function getStaticPaths() {
 const { label, items } = Astro.props;
 const lower = label.toLowerCase();
 
-// Taxonomías con un solo proyecto: página fina. No merece estar en el índice,
-// pero sí que Google siga los enlaces hacia el caso real. Layout.astro acepta
-// la prop `robots`, así que la directiva sale en el <head> y no hay dos metas
-// en conflicto.
-const thin = items.length < 2;
+// Todas las taxonomías van con noindex, follow: son listados sin texto propio
+// (solo la tarjeta de cada caso) que competían con las landings de servicio.
+// Google debe seguir los enlaces hacia los casos reales, pero no indexarlas.
+// Layout.astro acepta la prop `robots`, así que no hay dos metas en conflicto.
 
 // Imágenes "de ambiente" de la home por proyecto (fallback al shot del caso)
 const homeShots = {
@@ -71,7 +70,7 @@ const jsonld = {
 <Layout
   title={pageTitle}
   description={seoDescription}
-  robots={thin ? 'noindex, follow' : undefined}
+  robots="noindex, follow"
   jsonld={jsonld}
 >
   <section class="section sv-hero has-aura">
