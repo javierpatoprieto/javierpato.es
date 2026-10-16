@@ -11,13 +11,13 @@ read: "7 min"
 cover: "/img/blog-web.webp"
 faqs:
   - q: "¿Necesito tienda online si ya tengo tienda física en Torrelavega?"
-    a: "No necesariamente. Muchos comercios venden más con una web sencilla que explica qué tienen, dónde están y cómo contactar, y que lleva al cliente a la tienda o al WhatsApp. La [tienda online](/blog/tienda-online-cantabria/) tiene sentido cuando ya te piden envíos o cuando tienes producto que se vende bien sin probarlo. Se puede empezar por la web y añadir la tienda después."
+    a: "No necesariamente. Muchos comercios venden más con una web sencilla que explica qué tienen, dónde están y cómo contactar, y que lleva al cliente a la tienda o al WhatsApp. La tienda online tiene sentido cuando ya te piden envíos o cuando tienes producto que se vende bien sin probarlo. Se puede empezar por la web y añadir la tienda después."
   - q: "¿La ficha de Google sustituye a la web del comercio?"
-    a: "No. La [ficha de Google](/blog/google-business-profile-cantabria/) te pone en el mapa y en las búsquedas «cerca de mí»; la web cuenta lo que la ficha no cabe: qué marcas trabajas, qué servicios das, quién atiende y por qué merece la pena venir. Se refuerzan: la ficha enlaza a la web y la web confirma que eres un negocio real con datos coherentes."
+    a: "No. La ficha de Google te pone en el mapa y en las búsquedas «cerca de mí»; la web cuenta lo que la ficha no cabe: qué marcas trabajas, qué servicios das, quién atiende y por qué merece la pena venir. Se refuerzan: la ficha enlaza a la web y la web confirma que eres un negocio real con datos coherentes."
   - q: "¿Tengo que subir todo mi catálogo con precios?"
     a: "No. Para un comercio de barrio suele bastar con las familias de producto, las marcas que trabajas y algunos artículos destacados con fotos reales. Si el stock cambia mucho, es mejor invitar a preguntar por WhatsApp que tener un catálogo desactualizado. Lo importante es que el cliente sepa si tienes lo que busca antes de desplazarse."
   - q: "¿Cómo consigo que me encuentren los de fuera de Torrelavega?"
-    a: "Diciendo con claridad dónde estás y a quién das servicio. Si te visitan desde los pueblos de alrededor o haces entregas en la comarca, cuéntalo en la web y en la ficha. Eso, junto con un [SEO local](/blog/seo-local-cantabria/) bien trabajado, ayuda a salir en búsquedas de la zona y no solo de tu calle."
+    a: "Diciendo con claridad dónde estás y a quién das servicio. Si te visitan desde los pueblos de alrededor o haces entregas en la comarca, cuéntalo en la web y en la ficha. Eso, junto con un SEO local bien trabajado, ayuda a salir en búsquedas de la zona y no solo de tu calle."
 ---
 
 El comercio de Torrelavega compite contra dos gigantes: las grandes superficies y el gigante de internet. Contra sus precios y su catálogo infinito no vas a ganar. Pero hay algo que ellos no tienen y tú sí: **cercanía, trato y ser de aquí**. Tu web tiene que contar exactamente eso, y hacer que te encuentren quienes prefieren comprar en el barrio.

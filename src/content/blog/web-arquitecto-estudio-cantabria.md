@@ -15,9 +15,9 @@ faqs:
   - q: "¿Cuántos proyectos debo publicar en el portfolio?"
     a: "Los que representen el trabajo que quieres seguir haciendo, no todos los que has hecho. Es mejor un puñado de proyectos bien contados, con buenas fotos y algo de texto, que una galería larga y desigual. Lo que enseñas es lo que te van a pedir."
   - q: "No tengo fotos profesionales de todas mis obras, ¿qué hago?"
-    a: "Empieza por las que sí estén a la altura y ve sumando. Para lo que falte pueden servir renders, planos o fotos de proceso, siempre presentados como lo que son. Merece la pena invertir en [fotografía](/blog/fotografia-producto-cantabria/) de las obras clave: en tu sector la imagen es el argumento principal."
+    a: "Empieza por las que sí estén a la altura y ve sumando. Para lo que falte pueden servir renders, planos o fotos de proceso, siempre presentados como lo que son. Merece la pena invertir en fotografía de las obras clave: en tu sector la imagen es el argumento principal."
   - q: "¿Se puede posicionar en Google una web tan visual y con poco texto?"
-    a: "Sí, si cada proyecto lleva un texto breve con el tipo de obra, el municipio y el enfoque, y las fotos están optimizadas y con descripciones. Con eso, una página de servicios clara y la [ficha de Google](/blog/google-business-profile-cantabria/) al día, el [SEO local](/blog/seo-local-cantabria/) funciona sin romper la estética."
+    a: "Sí, si cada proyecto lleva un texto breve con el tipo de obra, el municipio y el enfoque, y las fotos están optimizadas y con descripciones. Con eso, una página de servicios clara y la ficha de Google al día, el SEO local funciona sin romper la estética."
 ---
 
 Si tu trabajo es diseñar espacios, tu web no puede ser fea. Suena obvio, pero es el error más común: arquitectos y estudios con proyectos preciosos y una web de plantilla que los hace parecer del montón. En tu sector, **la web es una muestra de tu criterio**. Si está mal resuelta, el cliente asume que tus proyectos también.

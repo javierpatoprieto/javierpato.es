@@ -11,13 +11,13 @@ read: "7 min"
 cover: "/img/blog-web.webp"
 faqs:
   - q: "¿Hace falta una web si ya tengo ficha de Google del taller?"
-    a: "Sí. La [ficha de Google](/blog/google-business-profile-cantabria/) te pone en el mapa y en «taller cerca de mí»; la web explica servicios, marcas, cómo pedir cita y por qué confiar en ti cuando el cliente no entiende de coches. Se refuerzan: la ficha enlaza a la web y la web confirma horario, dirección y teléfono coherentes."
+    a: "Sí. La ficha de Google te pone en el mapa y en «taller cerca de mí»; la web explica servicios, marcas, cómo pedir cita y por qué confiar en ti cuando el cliente no entiende de coches. Se refuerzan: la ficha enlaza a la web y la web confirma horario, dirección y teléfono coherentes."
   - q: "¿Necesito cita online desde el primer día?"
-    a: "No. Un botón claro de [WhatsApp](/blog/boton-whatsapp-web-negocio-cantabria/) o un formulario sencillo («qué le pasa al coche, matrícula, cuándo te viene bien») ya quita la barrera de llamar en horario laboral. Un calendario de citas tiene sentido cuando el volumen te come el teléfono, no antes."
+    a: "No. Un botón claro de WhatsApp o un formulario sencillo («qué le pasa al coche, matrícula, cuándo te viene bien») ya quita la barrera de llamar en horario laboral. Un calendario de citas tiene sentido cuando el volumen te come el teléfono, no antes."
   - q: "¿Debo publicar precios de mecánica o de neumáticos en la web?"
     a: "Solo si son estables y quieres decirlos. En muchos talleres funciona mejor explicar cómo se hace el presupuesto (diagnosis, piezas, mano de obra) y invitar a pedir cita o WhatsApp, que colgar tarifas que cambian con el vehículo. Lo importante es que el cliente sepa qué haces y que no habrá sorpresas."
   - q: "¿Cómo me encuentran si estoy fuera de Santander?"
-    a: "Diciendo con claridad el municipio y a quién das servicio. Quien busca «pre-ITV Torrelavega», «cambio de neumáticos en Castro» o «taller en Cantabria» necesita ver zona, servicios y cómo llegar. Eso, con [SEO local](/blog/seo-local-cantabria/) y ficha al día, ayuda más que un texto genérico de «soluciones integrales»."
+    a: "Diciendo con claridad el municipio y a quién das servicio. Quien busca «pre-ITV Torrelavega», «cambio de neumáticos en Castro» o «taller en Cantabria» necesita ver zona, servicios y cómo llegar. Eso, con SEO local y ficha al día, ayuda más que un texto genérico de «soluciones integrales»."
 ---
 
 El cliente medio de un taller no entiende de coches, y eso le da miedo: teme que le cobren de más o le cambien cosas que no hacían falta. Por eso, cuando busca taller, no busca el más barato: busca **el de fiar**. Y esa confianza empieza mucho antes de que entre por la puerta: empieza en Google.

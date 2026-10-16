@@ -15,9 +15,9 @@ faqs:
   - q: "¿Necesito un motor de reservas desde el primer día?"
     a: "No. Una web clara con fotos, tarifas, disponibilidad aproximada y un botón de contacto o WhatsApp ya recupera margen. El calendario o motor de reservas tiene sentido cuando el volumen de consultas te come tiempo o cuando quieres cobrar depósito online. Empezar simple y crecer evita pagar por una herramienta que aún no usas."
   - q: "¿Hace falta la web en inglés si mi casa está en zona rural?"
-    a: "Si te llegan (o quieres llegar) viajeros de fuera, sí ayuda. Una [web en varios idiomas](/blog/web-multilingue-negocio-turistico-cantabria/) con español e inglés como mínimo reduce fricción en normas, check-in y cancelación. No hace falta traducir el archivo entero el primer día: prioriza inicio, alojamiento, tarifas, cómo llegar y contacto."
+    a: "Si te llegan (o quieres llegar) viajeros de fuera, sí ayuda. Una web en varios idiomas con español e inglés como mínimo reduce fricción en normas, check-in y cancelación. No hace falta traducir el archivo entero el primer día: prioriza inicio, alojamiento, tarifas, cómo llegar y contacto."
   - q: "¿La ficha de Google sustituye a la web?"
-    a: "No. La [ficha de Google](/blog/google-business-profile-cantabria/) te hace visible en el mapa y en «cerca de mí»; la web cierra la reserva con fotos grandes, tarifas, políticas y un canal directo. Se refuerzan: la ficha enlaza a la web y la web confirma que eres un negocio real con reseñas y datos coherentes."
+    a: "No. La ficha de Google te hace visible en el mapa y en «cerca de mí»; la web cierra la reserva con fotos grandes, tarifas, políticas y un canal directo. Se refuerzan: la ficha enlaza a la web y la web confirma que eres un negocio real con reseñas y datos coherentes."
 ---
 
 Cantabria es un destino que se vende solo: mar, montaña, pueblos con encanto. El problema no es que no te encuentren, es **dónde** te encuentran. Si toda tu reserva pasa por Booking o Airbnb, cada noche que llenas le regalas entre un 15% y un 20% a la plataforma. Una web propia con reserva directa recupera ese margen.
