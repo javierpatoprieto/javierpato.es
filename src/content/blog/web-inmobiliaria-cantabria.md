@@ -17,7 +17,7 @@ faqs:
   - q: "¿Cómo consigo que la web me traiga propietarios que quieran vender?"
     a: "Con una página pensada solo para ellos: qué haces por un propietario, cómo trabajas, en qué zonas y un formulario corto para pedir una valoración. Si además aparece cuando alguien busca vender en su municipio y tu ficha de Google tiene reseñas reales, trabaja para ti todos los días."
   - q: "¿Merece la pena hacer páginas por zonas como Santander, Torrelavega o la costa?"
-    a: "Sí, si tienes algo real que contar de cada una: inmuebles que trabajas allí y qué suele buscar quien compra o alquila. Una página por zona con contenido propio ayuda al [SEO local](/blog/seo-local-cantabria/); una página copiada cambiando solo el nombre del pueblo, no."
+    a: "Sí, si tienes algo real que contar de cada una: inmuebles que trabajas allí y qué suele buscar quien compra o alquila. Una página por zona con contenido propio ayuda al SEO local; una página copiada cambiando solo el nombre del pueblo, no."
 ---
 
 Si vives de vender y alquilar inmuebles, seguramente pagas cada mes a los grandes portales. Están bien para llegar, pero tienen un problema: allí eres un anuncio más, al lado de tu competencia, y el cliente no te recuerda a ti, recuerda al portal. Tu web propia es lo único que es **tuyo de verdad**.
