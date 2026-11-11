@@ -1,8 +1,8 @@
 ---
-title: "Branding en Cantabria: qué es (guía)"
-description: "Qué es el branding, por qué un negocio de Cantabria con la marca cuidada puede cobrar más y las cuatro señales de que la tuya necesita una vuelta."
+title: "Qué es el branding de un negocio y cuándo renovarlo"
+description: "Qué es el branding más allá del logo, cómo notar si tu marca frena las ventas y por dónde empezar sin encargar un manual de ochenta páginas."
 pubDate: 2026-06-10
-keyword: "por qué importa el branding en un negocio local"
+keyword: "qué es el branding de un negocio"
 tags: ["Branding", "Diseño gráfico"]
 tone: "warm"
 emoji: "✦"
@@ -44,4 +44,4 @@ No necesitas un manual de marca de 80 páginas. Necesitas lo esencial bien hecho
 
 Con eso ya juegas en otra liga.
 
-¿Tu marca transmite lo que vales? Si no estás seguro, esa es la señal. Aquí tienes el detalle del [servicio de branding y diseño de logotipo en Cantabria](/branding-cantabria/) —qué incluye, plazos y precios— o cuéntame tu negocio y te doy una opinión honesta.
+¿Tu marca transmite lo que vales? Si no estás seguro, esa es la señal. El detalle de qué incluye, los plazos y los precios está en el [servicio de branding y diseño de logotipo en Cantabria](/branding-cantabria/). Si prefieres contármelo antes, te doy una opinión honesta.

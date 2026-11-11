@@ -1,8 +1,8 @@
 ---
-title: "Guía: cómo elegir diseño web en Cantabria"
-description: "Cómo elegir quién te hace la web en Cantabria sin tirar el dinero: qué mirar, qué preguntar y las cuatro señales de alarma antes de firmar nada."
+title: "Cómo elegir quién te hace la web y qué preguntarle"
+description: "Qué mirar en un presupuesto de página web, qué preguntar antes de firmar y las señales de alarma para no pagar dos veces el mismo trabajo."
 pubDate: 2026-06-18
-keyword: "diseño web Cantabria"
+keyword: "cómo elegir un diseñador web"
 tags: ["Diseño web", "Guía"]
 tone: "stone"
 emoji: "🧭"
@@ -10,7 +10,7 @@ read: "7 min"
 cover: "/img/blog-web.webp"
 ---
 
-Buscar **diseño web en Cantabria** y comparar opciones puede ser un lío: precios que van de 99€ a 5.000€, plantillas disfrazadas de "a medida" y promesas de "primera página de Google" que nadie cumple. Esta guía es para que elijas con criterio.
+Comparar quién te hace la página web puede ser un lío: precios que van de 99€ a 5.000€, plantillas disfrazadas de "a medida" y promesas de "primera página de Google" que nadie cumple. Esta guía es para que elijas con criterio, no por el municipio que ponga en el anuncio.
 
 ## Primero: ¿qué necesitas de verdad?
 
@@ -49,4 +49,4 @@ Trabajar con alguien de Cantabria tiene ventaja: entiende a tu cliente, conoce e
 
 Cuando pidas presupuesto, pregunta: *"¿Cómo va a ayudar esta web a que entren más clientes?"*. Si la respuesta es concreta (SEO local, textos que convierten, velocidad), vas bien. Si es vaga, sigue buscando.
 
-¿Quieres una opinión honesta sobre tu caso? Empieza por ver cómo respondo yo a esa pregunta en [diseño web en Cantabria](/diseno-web-cantabria/): qué incluyo, cómo trabajo y en cuánto entrego. Y si te encaja, [cuéntame qué haces](/contacto/) y te digo qué necesitas, sin venderte de más.
+¿Quieres una opinión honesta sobre tu caso? En el [servicio de diseño web en Cantabria](/diseno-web-cantabria/) cuento qué incluyo, cómo trabajo y en cuánto entrego. Y si te encaja, [cuéntame qué haces](/contacto/) y te digo qué necesitas, sin venderte de más.

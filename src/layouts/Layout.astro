@@ -35,7 +35,7 @@ const baseLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   '@id': 'https://javierpato.es/#estudio',
-  name: 'Javier Pato — Diseño web en Cantabria',
+  name: 'Javier Pato — Diseño web y marca',
   description,
   url: 'https://javierpato.es',
   image: 'https://javierpato.es/og.jpg',
@@ -49,8 +49,10 @@ const baseLd = {
   },
   logo: {
     '@type': 'ImageObject',
-    url: 'https://javierpato.es/favicon.svg',
-    contentUrl: 'https://javierpato.es/favicon.svg',
+    url: 'https://javierpato.es/logo-javier-pato.png',
+    contentUrl: 'https://javierpato.es/logo-javier-pato.png',
+    width: 1024,
+    height: 1024,
   },
   geo: { '@type': 'GeoCoordinates', latitude: 43.4623, longitude: -3.8099 },
   areaServed: [
@@ -145,6 +147,8 @@ const baseLd = {
   sameAs: [
     'https://instagram.com/javierpato',
     'https://x.com/ArtiMindArt',
+    'https://www.domestika.org/es/javierrrr',
+    'https://www.linkedin.com/in/javierpato',
   ],
 };
 
@@ -189,6 +193,8 @@ const personLd = {
   sameAs: [
     'https://instagram.com/javierpato',
     'https://x.com/ArtiMindArt',
+    'https://www.domestika.org/es/javierrrr',
+    'https://www.linkedin.com/in/javierpato',
   ],
 };
 ---
@@ -252,9 +258,18 @@ const personLd = {
     <script>
       const els = document.querySelectorAll('[data-reveal]');
       const reduceMotion = typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reduceMotion) {
+      if (reduceMotion || !('IntersectionObserver' in window)) {
         els.forEach((el) => el.classList.add('in'));
-      } else if ('IntersectionObserver' in window) {
+      } else {
+        // La primera pantalla se queda como está en el CSS (visible). Solo se
+        // anima lo que empieza por debajo del pliegue: si el H1 o la entradilla
+        // arrancaran en opacity 0, Lighthouse no tendría LCP hasta el script.
+        const fold = window.innerHeight;
+        const below: Element[] = [];
+        els.forEach((el) => {
+          if (el.getBoundingClientRect().top < fold) el.classList.add('in');
+          else { el.classList.add('reveal-wait'); below.push(el); }
+        });
         const io = new IntersectionObserver((entries) => {
           entries.forEach((e) => {
             if (e.isIntersecting) {
@@ -265,11 +280,10 @@ const personLd = {
             }
           });
         }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-        els.forEach((el) => io.observe(el));
-        const force = () => els.forEach((el) => { if (el.getBoundingClientRect().top < innerHeight * 0.95) el.classList.add('in'); });
-        force(); addEventListener('load', force);
-        setTimeout(() => els.forEach((el) => el.classList.add('in')), 1500);
-      } else { els.forEach((el) => el.classList.add('in')); }
+        below.forEach((el) => io.observe(el));
+        // Si el observer no llega a disparar, nada se queda en blanco.
+        setTimeout(() => below.forEach((el) => el.classList.add('in')), 4000);
+      }
 
       const nav = document.querySelector('[data-nav]');
       if (nav) addEventListener('scroll', () => nav.classList.toggle('is-stuck', scrollY > 30), { passive: true });
