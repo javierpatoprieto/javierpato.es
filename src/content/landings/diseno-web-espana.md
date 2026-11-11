@@ -93,7 +93,7 @@ Cuéntame qué negocio tienes, en qué provincia operas y qué te está fallando
 
 Esta página es la puerta nacional / remota. Si buscas **diseño web en Cantabria** con foco local, el hub de servicio es otro:
 
-- **[Diseño web en Cantabria](/diseno-web-cantabria/)** — URL canónica de servicio local (A).
-- Clínica, consulta o gabinete → **[Diseño web para clínicas](/diseno-web-clinicas-cantabria/)** (C).
-- Bar, restaurante o hostelería → **[Diseño web para hostelería](/diseno-web-hosteleria-cantabria/)** (D).
-- ¿Necesitas logo / identidad a la vez? → **[Branding en Cantabria](/branding-cantabria/)** (B) — solo si el caso pide marca + web.
+- **[Diseño web en Cantabria](/diseno-web-cantabria/)** — el servicio para negocios de la región, con SEO local.
+- Clínica, consulta o gabinete → **[diseño web para clínicas en Cantabria](/diseno-web-clinicas-cantabria/)**.
+- Bar, restaurante o hostelería → **[diseño web para hostelería en Cantabria](/diseno-web-hosteleria-cantabria/)**.
+- Si el proyecto pide logo e identidad además de la web → **[branding en Cantabria](/branding-cantabria/)**.

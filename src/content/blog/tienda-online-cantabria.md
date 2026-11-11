@@ -1,9 +1,9 @@
 ---
-title: "Cómo empezar a vender por internet: guía"
-description: "Cómo montar una tienda online en Cantabria: plataforma, pagos, envíos, fotos y SEO, cuánto cuesta desde 999€ y los errores que frenan las ventas."
+title: "Cómo montar una tienda online: costes y decisiones"
+description: "Qué decidir antes de vender por internet: plataforma, pagos, envíos y fotos, cuánto suele costar una tienda y los errores que dejan el carrito a medias."
 pubDate: 2026-06-12
 updatedDate: 2026-10-21
-keyword: "cómo empezar a vender por internet"
+keyword: "cómo montar una tienda online"
 tags: ["Ecommerce", "Diseño web"]
 tone: "stone"
 emoji: "🛒"
@@ -112,4 +112,4 @@ Un orden sensato para arrancar:
 4. **Monta la tienda**, pruébala comprando tú y publícala.
 5. **Mira los datos** al cabo de unas semanas y amplía lo que funciona.
 
-¿Tienes producto y quieres venderlo online? Mira cómo monto una [tienda online en Cantabria](/tienda-online-cantabria/): qué incluye, plazos y desde cuánto sale. Si prefieres contármelo primero, [escríbeme](/contacto/).
+¿Tienes producto y quieres venderlo online? En el [servicio de tienda online para negocios de Cantabria](/tienda-online-cantabria/) está qué incluye, los plazos y desde cuánto sale. Si prefieres contármelo primero, [escríbeme](/contacto/).

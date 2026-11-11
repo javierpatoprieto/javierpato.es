@@ -1,9 +1,9 @@
 ---
-title: "Qué diseño gráfico necesita un negocio local"
-description: "Logotipo, identidad, dossier, cartas, redes, packaging: qué piezas de diseño gráfico necesita de verdad un negocio local y en qué orden hacerlas."
+title: "Qué piezas de diseño gráfico encargar y en qué orden"
+description: "Logo, carta, dossier, redes o packaging: qué diseño gráfico necesita un negocio, cómo priorizarlo y cómo elegir por dónde empezar."
 pubDate: 2026-06-16
 updatedDate: 2026-10-02
-keyword: "qué piezas de diseño gráfico necesita un negocio"
+keyword: "qué piezas de diseño gráfico encargar"
 tags: ["Diseño gráfico", "Branding"]
 tone: "warm"
 emoji: "🎨"
@@ -47,4 +47,4 @@ No hace falta hacerlo todo de golpe. Hace falta empezar con criterio y crecer co
 
 El error que más sale caro es ir parcheando: un logo de Fiverr, una carta hecha en Word, unas redes de otro estilo… El conjunto transmite "de andar por casa", aunque cada pieza por separado no esté mal. La marca se construye en el **todo**, no en las partes.
 
-¿Quieres una imagen coherente para tu negocio en Cantabria? Mira qué incluye el [servicio de diseño gráfico en Cantabria](/diseno-grafico-cantabria/) —dossier, catálogo, cartas, packaging— con precios orientativos y plazos. O cuéntame qué tienes entre manos y te digo por dónde empezaría.
+¿Quieres una imagen coherente y no sabes por qué pieza empezar? En el [servicio de diseño gráfico en Cantabria](/diseno-grafico-cantabria/) está qué incluye —dossier, catálogo, cartas, packaging—, con precios orientativos y plazos. O cuéntame qué tienes entre manos y te digo por dónde empezaría.
